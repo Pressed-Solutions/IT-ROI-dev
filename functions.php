@@ -1951,3 +1951,37 @@ return $result;
 
 add_filter( 'wpcf7_validate_text', 'is_number', 10, 2 );
 add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );
+
+// events
+add_action('init', 'register_event_type');
+function register_event_type() {
+register_post_type('event', array(
+'label' => 'Events',
+'description' => '',
+'public' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'capability_type' => 'post',
+'map_meta_cap' => true,
+'hierarchical' => false,
+'rewrite' => array('slug' => 'event', 'with_front' => true),
+'query_var' => true,
+'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'labels' => array (
+  'name' => 'Events',
+  'singular_name' => 'Event',
+  'menu_name' => 'Events',
+  'add_new' => 'Add Event',
+  'add_new_item' => 'Add New Event',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Event',
+  'new_item' => 'New Event',
+  'view' => 'View Event',
+  'view_item' => 'View Event',
+  'search_items' => 'Search Events',
+  'not_found' => 'No Events Found',
+  'not_found_in_trash' => 'No Events Found in Trash',
+  'parent' => 'Parent Event',
+)
+) ); }
+?>
