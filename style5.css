@@ -1,0 +1,963 @@
+/***************** Define Font Family **************************/
+@font-face {
+    font-family: 'MavenProMedium';
+    src: url('fonts/MavenPro-Medium.eot')format('eot'),
+        url('fonts/MavenPro-Medium.eot#iefix') format('embedded-opentype'),
+        url('fonts/MavenPro-Medium.woff') format('woff'),
+        url('fonts/MavenPro-Medium.ttf') format('truetype'),
+        url('fonts/MavenPro-Medium.svg#MavenProMedium') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenProRegular';
+    src: url('fonts/regular/MavenPro-Regular.eot')format('eot'),
+        url('fonts/regular/MavenPro-Regular.eot#iefix') format('embedded-opentype'),
+        url('fonts/regular/MavenPro-Regular.woff') format('woff'),
+        url('fonts/regular/MavenPro-Regular.ttf') format('truetype'),
+        url('fonts/regular/MavenPro-Regular.svg#MavenProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/********************************************/
+
+/* ppm boss css started */
+.content_body 
+{
+    background: url("images/background.jpg") repeat scroll 0 0 transparent;
+    min-height: 300px;
+    width: 1200px;
+}
+.head 
+{
+    background: none repeat scroll 0 0 #E6E6E6;
+    border: 1px solid #CCCCCC;
+    height: 85px;
+    /*padding-left: 10px;*/
+    width: 1200px;
+}
+
+#menu-item-1079 a
+{
+    float: left;
+
+
+    overflow: hidden;
+}
+/*#menu-item-1079 a:hover
+{
+  height: 114px;
+  margin-top: -57px;
+  overflow: hidden;
+  width: 327px;
+}*/
+#menu-item-1081 a
+{
+    float: left;
+
+
+    overflow: hidden;
+}
+/*#menu-item-1081 a:hover
+{
+  height: 114px;
+  margin-top: -57px;
+  overflow: hidden;
+  
+}*/
+#menu-item-1082 a
+{
+    float: left;
+
+
+    overflow: hidden;
+}
+/*#menu-item-1082  a:hover
+{
+  height: 114px;
+  margin-top: -57px;
+  overflow: hidden;
+ }*/
+.mail_boss 
+{
+    background: url("images/mail.png") repeat scroll 0 0 transparent;
+    float: left;
+
+
+}
+/*.mail_boss:hover 
+{
+  background: url("images/mail.png") repeat scroll center top transparent;
+  height: 81px;
+  margin-top: -42px;
+  overflow: hidden;
+  width: 70px;
+ }*/
+.head .phone 
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    color: #126AA9;
+    float: left;
+    font-size: 1.7em;
+    font-weight: 300;
+    height: 68px;
+    padding: 0 2px;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: -14px;
+}
+.mail
+{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.menu-ppm-boss-menu-container ul li a 
+{
+    color: #126AA9;
+    font-size: 1.1em;
+    font-weight: 100;
+    text-decoration: none;
+    vertical-align: top;
+}
+.menu-ppm-boss-menu-container ul li
+{
+    /* margin-top: -10px;*/
+    overflow: hidden;
+    float:left;  
+    margin-right: 70px;
+}
+.watch_boss 
+{
+    background: url("images/watch_webinar.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 58px;
+    width: 247px;
+}
+.schedule_boss 
+{
+    background: url("images/schedule_demo.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 58px;
+    width: 229px;
+}
+.schedule_boss:hover 
+{
+    background: url("images/schedule_demo.png") repeat scroll center top transparent;
+    height: 116px;
+    margin-top: -57px;
+    overflow: hidden;
+    width: 229px;
+}
+.watch_boss:hover 
+{
+    background: url("images/watch_webinar.png") repeat scroll center top transparent;
+    height: 116px;
+    margin-top: -57px;
+    overflow: hidden;
+    width: 247px;
+}
+.content_sharepoint 
+{
+    border-bottom: 1px solid #CCCCCC;
+    border-right: thin solid #CCCCCC;
+    border-left: thin solid #CCCCCC;
+    margin: auto;
+}
+.sharepoint_title 
+{
+    padding-top: 35px;
+    text-align: center;
+}
+
+
+
+.sharepoint_title h1 {
+    color: #000000;
+    font-family: 'MavenProMedium';
+    font-size: 3.3em;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    margin-bottom: -10px;
+    margin-top: 8px;
+}
+.sharepoint_title h2
+{
+    font-family: 'MavenProMedium';
+    color: #000000;
+    font-size: 2em;
+    /*font-size: 2.5em;*/
+    font-weight: 400;
+    line-height: 0;
+}
+
+.docboss_sharepoint_title 
+{
+    padding-top: 35px;
+    text-align: center;
+}
+.docboss_sharepoint_title h1 {
+    color: #000000;
+    font-family: 'MavenProMedium';
+    font-size: 3.3em;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    margin-bottom: -10px;
+    margin-top: 8px;
+}
+.docboss_sharepoint_title h2
+{
+    font-family: 'MavenProMedium';
+    color: #000000;
+    font-size: 2em;
+    /*font-size: 2.5em;*/
+    font-weight: 400;
+    line-height: 0;
+    padding-right: 12px;
+}
+.docboss_sharepoint_background 
+{
+    background: url("images/ppm_docc_boss_sharepoint.png") no-repeat scroll 0 0 transparent;
+    height: 380px;
+    margin: 90px auto auto;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 873px;
+}
+.bot_white 
+{
+    background: url("images/pleca_inf.png") repeat scroll 0 0 transparent;
+    height: 70px;
+}
+.docboss_sharepoint_background span
+{
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+
+}
+.an1_sharepoint ul li
+{
+    font-size: 12px;
+
+}
+.an1_sharepoint 
+{
+    left: -5px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    top: 15px;
+}
+.an2_sharepoint 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 140px;
+    text-align: left;
+    top: 7px;
+}
+.an3_sharepoint 
+{
+    left: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 211px;
+}
+.an4_sharepoint 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 19px;
+    text-align: left;
+    top: 102px;
+}
+.an5_sharepoint 
+{
+    left: 558px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    top: 337px;
+}
+.an6_sharepoint 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 55px;
+    text-align: left;
+    top: 208px;
+}
+.content_sharepoint_text 
+{
+    border-left: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+    border-bottom: 2px solid #CCCCCC;
+    margin: auto;
+    position: relative;
+}
+
+.top_white 
+{
+    background: url("images/pleca_top.png") repeat scroll 0 0 transparent;
+    height: 70px;
+}
+.content_sharepoint_text_title 
+{
+    left: 29%;
+    position: absolute;
+    top: 35px;
+}
+.content_sharepoint_text_body h4
+{
+
+    color: #000000;
+    letter-spacing: -1px;
+    line-height: 36px;
+    /*font-size: 5.1em;*/
+    font-size: 65px;
+    font-weight: lighter;
+}
+.content_sharepoint_text_title h3 {
+    font-size: 27px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.content_sharepoint_text_body h4 
+{
+    color: #333333;
+    display: block;
+    line-height: 36px;
+    margin-bottom: 55px;
+
+}
+.content_sharepoint_text_body p 
+{
+    font-size:11pt;
+    /*line-height: 30px;*/
+    padding: 0 55px;
+}
+.content_sharepoint_text_body 
+{
+    margin-bottom: 55px;
+    text-align: center;
+    margin-top: -75px;
+}
+
+.PPM_Boss_products 
+{
+    margin: 36px auto auto;
+    text-align: center;
+}
+.assignment_boss_rollover_inferior img
+{
+    float: left;
+    width: 90px;
+    margin-bottom: -89px;
+
+}
+.PPM_Boss_sharepoint_cont a:hover 
+{
+    text-decoration: none;
+}
+.assignment_boss_rollover_inferior  img:hover 
+{
+    height: 180px;
+    margin-top: -90px;
+    overflow: hidden;
+    width: 90px;
+    margin-bottom: 0px;
+}
+.an4_inferior_assignment 
+{
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.PPM_Boss_sharepoint_cont .assignmet_boss 
+{
+    float: left;
+    margin-right: 0;
+    width: 33%;
+    margin-bottom: 20px;
+}
+.PPM_Boss_sharepoint_cont .assignmet_boss_text 
+{
+    float: left;
+    text-align: left;
+    width: 68%;
+    min-height: 212px;
+}
+.PPM_Boss_sharepoint_cont .task_boss_sharepoint 
+{
+    float: left;
+    margin-right: 0;
+    width: 33%;
+}
+.PPM_Boss_sharepoint_cont1 .assignmet_boss
+{
+    float: left;
+    margin-right: 0;
+    width: 50%;
+}
+.PPM_Boss_sharepoint_cont1 .assignmet_boss_text 
+{
+    float: left;
+    text-align: left;
+    width: 68%;
+    min-height: 212px;
+}
+.PPM_Boss_sharepoint_cont1 .task_boss_sharepoint 
+{
+    float: left;
+    margin-right: 0;
+    width: 33%;
+}
+.an2_inferior_task 
+{
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    padding-left: 0;
+}
+.task_boss_rollover_inferior 
+{
+    background: url("images/task_boss_layout.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 89px;
+    width: 90px;
+}
+.PPM_Boss_sharepoint_cont .task_boss_sharepoint_text 
+{
+    float: left;
+    text-align: left;
+    width: 69%;
+}
+.PPM_Boss_sharepoint_cont .timesheet_boss_int 
+{
+    float: left;
+    width: 33%;
+}
+.an3_inferior_timesheet 
+{
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.timesheet_boss_rollover_inferior 
+{
+    background: url("images/timesheet_layout.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 90px;
+    width: 90px;
+}
+.PPM_Boss_sharepoint_cont .timesheet_boss_int_text 
+{
+    float: left;
+    text-align: left;
+    width: 68%;
+}
+.task_boss_rollover_inferior:hover 
+{
+    background: url("images/task_boss_layout.png") repeat scroll center top transparent;
+    height: 178px;
+    margin-top: -89px;
+    overflow: hidden;
+    width: 90px;
+}
+.timesheet_boss_rollover_inferior:hover 
+{
+    background: url("images/timesheet_layout.png") repeat scroll center top transparent;
+    height: 180px;
+    margin-top: -90px;
+    overflow: hidden;
+    width: 90px;
+}
+.PPM_Boss_sharepoint_cont 
+{
+    margin: 60px auto auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+    width: 99%;
+}
+.menu_inferior 
+{
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.mail_boss_inf 
+{
+    background: url("images/mail_inf.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 36px;
+    width: 62px;
+}
+.menu_inferior .phone 
+{
+    color: #126AA9;
+    float: left;
+    font-size: 1.7em;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 50px;
+}
+.mail_boss_inf:hover 
+{
+    background: url("images/mail_inf.png") repeat scroll center top transparent;
+    height: 72px;
+    margin-top: -37px;
+    overflow: hidden;
+    width: 62px;
+}
+.menu_inferior .headmenu 
+{
+    margin: 0 auto;
+    width: 996px;;
+}
+.mail_inf 
+{
+    margin-top: 1px;
+    overflow: hidden;
+}
+.phone_inf 
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    color: #126AA9;
+    float: left;
+    font-size: 1.7em;
+    font-weight: 300;
+    height: 68px;
+    padding: 0 2px;
+    text-align: center;
+    margin-right: 31px;
+    margin-top: 1px;
+}
+.menu_inferior .menu-ppm-boss-menu-container ul li
+{
+    float: left;
+    margin-right: 69px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.assignmet_boss_text p
+{
+    margin-bottom:0px;
+    color: #4D4D4D;
+    font-family: Lucida;
+    font-size: 10pt;
+    line-height: 150%;
+}
+
+.assignmet_boss_text p
+{
+    margin-bottom:0px;
+    fon
+}
+
+
+/* css of ppm boss sharepoint*/
+.ppmboss_sharepoint_background 
+{
+    background: url("images/ppm_document_boss_home.png") no-repeat scroll 0 0 transparent;
+    height: 380px;
+    /* margin: 125px 0 0 370px; */ /* change by client */
+    margin: 125px auto 0 auto;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 514px;
+}
+.an1 
+{
+    left: 7px;
+    overflow: hidden;
+    position: absolute;
+    top: -70px;
+}
+.doc_boss 
+{
+    background: url("images/doc_boss.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 112px;
+    width: 113px;
+}
+.doc_boss:hover
+{
+    background: url("images/doc_boss.png") repeat scroll center top transparent;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden;
+    width: 113px;
+}
+.porlet_boss 
+{
+    background: url("images/portletBoss_circle.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 111px;
+    width: 111px;
+}
+.porlet_boss:hover 
+{
+    background: url("images/portletBoss_circle_blue.png") repeat scroll center top transparent;
+    height: 111px;
+    overflow: hidden;
+    width: 111px;
+}
+.an3 
+{
+    left: -60px;
+    overflow: hidden;
+    position: absolute;
+    top: 82px;
+}
+.an4 
+{
+    overflow: hidden;
+    position: absolute;
+    right: -60px;
+    top: 82px;
+}
+.scrum_boss 
+{
+    background: url("images/scrum_boss.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 112px;
+    width: 113px;
+}
+.scrum_boss:hover 
+{
+    background: url("images/scrum_boss.png") repeat scroll center top transparent;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden;
+    width: 113px;
+}
+.an5 
+{
+    left: -8px;
+    overflow: hidden;
+    position: absolute;
+    top: 230px;
+}
+.assignment_boss 
+{
+    background: url("images/assignment_boss.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 112px;
+    width: 113px;
+}
+.assignment_boss:hover 
+{
+    background: url("images/assignment_boss.png") repeat scroll center top transparent;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden;
+    width: 113px;
+}
+.an6 
+{
+    overflow: hidden;
+    position: absolute;
+    right: -12px;
+    top: 230px;
+}
+.timesheet_boss 
+{
+    background: url("images/timesheet_boss.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 112px;
+    width: 113px;
+}
+.timesheet_boss:hover
+{
+    background: url("images/timesheet_boss.png") repeat scroll center top transparent;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden;
+    width: 113px;
+}
+.an2 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 1px;
+    top: -67px;
+}
+.task_boss 
+{
+    background: url("images/task_boss.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 112px;
+    width: 113px;
+}
+.task_boss:hover 
+{
+    background: url("images/task_boss.png") repeat scroll center top transparent;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden;
+    width: 113px;
+}
+
+/* ppm task page css background */
+.task_background 
+{
+    background: url("images/task_page.png") no-repeat scroll 0 0 transparent;
+    height: 520px;
+    margin: 54px auto auto;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 970px;
+}
+.an1_task 
+{
+    color: #FFFFFF;
+    left: 114px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 118px;
+}
+.an2_task 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 161px;
+    text-align: left;
+    top: 63px;
+}
+.an3_task 
+{
+    left: 668px;
+    overflow: hidden;
+    position: absolute;
+    top: 295px;
+}
+.an4_task 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 31px;
+    text-align: left;
+    top: 171px;
+}
+.an5_task 
+{
+    left: 70px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    top: 300px;
+}
+.an9_task 
+{
+    left: 690px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    top: 450px;
+}
+.an6_task 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 68px;
+    text-align: left;
+    top: 290px;
+}
+.task_background span
+{
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+}
+/*  timesheet background css*/
+.timesheet_background 
+{
+    background: url("images/timesheet_page.png") no-repeat scroll 0 0 transparent;
+    height: 470px;
+    margin: 40px auto auto;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 970px;
+}
+.timesheet_background span
+{
+    font-size: 12px;
+    line-height: 18px; 
+    display: block;
+}
+.an1_timesheet 
+{
+    color: #FFFFFF;
+    left: 114px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 118px;
+}
+.an2_timesheet 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 35px;
+    text-align: left;
+    top: 176px;
+}
+.an3_timesheet 
+{
+    left: 682px;
+    overflow: hidden;
+    position: absolute;
+    top: 339px;
+}
+.an4_timesheet 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 26px;
+    text-align: left;
+    top: 227px;
+}
+.an5_timesheet 
+{
+    left: 65px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    top: 364px;
+}
+.an9_timesheet 
+{
+    left: 770px;
+    overflow: hidden;
+    position: absolute;
+    top: 468px;
+}
+.an6_timesheet 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 68px;
+    text-align: left;
+    top: 337px;
+}
+/* assignment css */
+.assignment_background 
+{
+    background: url("images/assignment_page.png") no-repeat scroll 0 0 transparent;
+    height: 400px;
+    margin: 40px auto auto;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 970px;
+}
+.assignment_background span
+{
+    font-size: 11px;
+    line-height: 16px;
+    display: block;
+}
+.an1_assignment 
+{
+    color: #FFFFFF;
+    left: 114px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 118px;
+}
+.an2_assignment 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 140px;
+    text-align: left;
+    top: 97px;
+}
+.an3_assignment 
+{
+    left: 693px;
+    overflow: hidden;
+    position: absolute;
+    top: 305px;
+}
+.an4_assignment 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 19px;
+    text-align: left;
+    top: 196px;
+}
+.an5_assignment
+{
+    left: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 11px;
+}
+.an7_assignment 
+{
+    left: 225px;
+    overflow: hidden;
+    position: absolute;
+    top: 11px;
+}
+.an8_assignment 
+{
+    left: 26px;
+    overflow: hidden;
+    position: absolute;
+    top: 216px;
+}
+.an9_assignment 
+{
+    left: 210px;
+    overflow: hidden;
+    position: absolute;
+    top: 209px;
+}
+.an6_assignment 
+{
+    overflow: hidden;
+    position: absolute;
+    right: 59px;
+    text-align: left;
+    top: 304px;
+}
+
+.assignmet_boss a
+{
+    text-decoration: underline;
+}
+
+.xb3_header{
+    width: 100%;
+    height: 110px;
+
+    background-color: #EDF2F7;
+    margin-bottom: 34px;
+}
+
+.xb3_header img{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 50px;
+}

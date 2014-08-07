@@ -1,0 +1,452 @@
+
+
+/********************************Slider 1***************************************************/
+
+.slide1_background
+{
+   background-image: url(images/sliderimage/Slide_1_BG.png);
+   background-repeat: no-repeat;
+   float: left;
+   width: 800px; height: 300px; 
+}
+.slide1_logo{
+
+   width: 230px;
+   height: 230px;
+   float: left;
+   margin-top: 33px;
+   margin-left: 57px;
+   margin-right: 57px;
+}
+.slide1_title{
+    color: white;
+    float: left;
+    font-family: "MavenProBold";
+    font-size: 33.2pt;
+    line-height: 48px;
+    width: 450px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.slide1_content{
+    color: white;
+    float: left;
+    font-family: "MavenProMedium";
+     margin: 15px 0 0 2px;
+    width: 448px;
+  
+    font-size: 10.39pt;
+    line-height: 19px;
+}
+
+.slide1_content .spanwordspacing1{
+word-spacing:3px;
+}
+.slide1_content .spanwordspacing2{
+word-spacing: 0px;
+}
+.slide1_content .spanwordspacing3{
+word-spacing:1px;
+}
+
+.slide1_preseehow{
+   
+  float: left;
+    width: 230px;
+  margin-top: 26px;height: 28px;
+}
+.slide1_seehow{
+   
+    border: 1px solid;
+    color: #FFFFFF;
+    float: left;
+    font-family: "MavenProBold";
+    font-size: 13pt;
+    height: 28px;
+    line-height: 22px;
+    margin-left: -13px;
+    margin-top: 26px;
+    padding-left: 5px !important;
+    width: 84px;
+    background-color: rgb(0,94,153);
+    
+    
+}
+
+.slide1_seehow:hover{
+   
+    background-color: rgb(255,102,0);
+    border: 1px solid;
+    color: #FFFFFF;
+    float: left;
+    font-family: "MavenProBold";
+    font-size: 13pt;
+    height: 28px;
+    line-height: 22px;
+    margin-left: -13px;
+    margin-top: 26px;
+    padding-left: 5px !important;
+    width: 84px;
+}
+
+
+/********************************Slider 2 ***************************************************/
+
+.slide2_background
+{
+   background-image: url("images/sliderimage/slide_2_container.png");
+   background-repeat: no-repeat;
+   float: left;
+   width: 800px; height: 300px;
+     
+}
+.slide2_title{  
+	color: white;
+	font-family: "MavenProBold";
+	font-size: 62pt;
+	line-height: 48px;
+	float: right;
+	margin: 71px 50px 0 0;
+	text-align: left;
+	width: 430px;
+}
+
+.slide2_content {
+	color: #FFFFFF;
+	float: right;
+	font-family: "MavenProMedium";
+	font-size: 10.39pt;
+	line-height: 19px;
+	margin: 34px 49px 0 0;
+	width: 430px;
+	text-align: left;
+}
+/*
+.slide2_content{
+    color: white;
+   
+    font-family: "MavenProMedium";
+    font-size: 10.39pt;
+    line-height: 19px;
+	//float: left;
+   // margin: 34px 0 0 352px;
+	float: right;
+	margin: 34px 50px 0 0;
+}
+*/
+.slide2_content .spanwordspacing1{
+word-spacing:0px;
+}
+.slide2_content .spanwordspacing2{
+word-spacing: 0px;
+}
+.slide2_content .spanwordspacing3{
+word-spacing:0px;
+}
+.slide2_seehow{
+     background-color: rgb(0,94,153);
+     border: 1px solid;
+    color: white;
+    float: left;
+    font-family: "MavenProBold";
+    font-size: 11pt;
+    height: 27px;
+/*    line-height: 22px;*/
+    margin: 4px 0 0 480px;
+    padding-left: 5px !important;
+    padding-top: 0 !important;
+    width: 153px;
+}
+.slide2_seehow:hover{
+   
+    
+      background-color: rgb(255,102,0);
+      border: 1px solid;
+    color: white;
+    float: left;
+    font-family: "MavenProBold";
+    font-size: 11pt;
+    height: 27px;
+/*    line-height: 22px;*/
+     margin: 4px 0 0 480px;
+    padding-left: 5px !important;
+    padding-top: 0 !important;
+    width: 153px;
+}
+/********************************Slider 3***************************************************/
+
+.slide3_background
+{
+   background-image: url("images/sliderimage/Slide_3_empty_container.png");
+   background-repeat: no-repeat;
+   float: left;
+   width: 800px; height: 300px;
+   
+}
+
+.slide3_title
+{
+    color: #080707;
+    float: right;
+    font-family: "MavenProMedium";
+    font-size: 62pt;
+    line-height: 2;
+    margin-left: 295px;
+    margin-top: 2px;
+    position: absolute;
+    text-align: right;
+    text-shadow: -2px -1px 5px #A69322;
+    width: 450px;
+   
+}
+.slide3_subtitle{
+      color: black;
+    float: right;
+    font-family: "MavenProMedium";
+    font-size: 15.5pt;
+    letter-spacing: 0.3px;
+    line-height: 2;
+    margin-left: 192px;
+    margin-top: 127px;
+    position: absolute;
+    text-align: right;
+    width: 550px;
+     
+}
+
+/********************************Slider 4***************************************************/
+
+.slide4_background
+{
+    background-image: url("images/sliderimage/slide4_background.png");
+   background-repeat: no-repeat;
+   float: left;
+   width: 800px; height: 300px;
+  
+}
+
+.slide4_title
+{
+    color: #080707;
+    float: left;
+    font-family: "Times New Roman";
+    font-size: 77.5pt;
+    font-weight: bold;
+    line-height: 2;
+    margin: -45px 0 0 28px;
+    position: absolute;
+    text-align: left;
+    text-shadow: 5px 5px 10px #C8C9CA;
+   
+}
+.slide4_subtitle{
+    color: black;
+    float: right;
+    font-family: "Times New Roman";
+    font-size: 14.35pt;
+    line-height: 2;
+    margin-left: 41px;
+    margin-top: 110px;
+    position: absolute;
+    text-align: left;
+    
+     
+}
+
+.slide4_text1{
+   
+    color: #F16021;
+    float: left;
+    font-family: "Times New Roman";
+    font-size: 21.12pt;
+    font-weight: bold;
+    letter-spacing: 0.65px;
+    line-height: 2;
+    margin: 151px 0 0 197px;
+    position: absolute;
+    text-align: left;
+    width: 450px;
+     
+     
+}
+
+.slide4_text2{
+   
+    color: black;
+    float: right;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    line-height: 23px;
+    margin: 200px 0 0 194px;
+    position: absolute;
+    text-align: left;
+     
+}
+
+.slide4_text2 ul li{
+    color: #545152;
+    font-size: 10pt;
+    list-style: square outside none;
+    margin: 0 0 0 34px !important;
+    text-shadow: 5px 5px 10px #C0BFBF;
+
+   
+}
+
+.slide4_Learn_more{
+    background-color: rgb(0,94,153);
+    border: 1px solid;
+    color: white;
+    float: right;
+    font-family: "MavenProBold";
+    font-size: 14pt;
+    height: 29px;
+    letter-spacing: 0.3px;
+/*    line-height: 22px;*/
+    margin-left: 30px;
+    margin-right: 180px;
+    margin-top: 242px;
+    padding-left: 6px !important;
+    padding-top: 1px !important;
+    width: 120px;
+}
+.slide4_Learn_more:hover{
+   
+    background-color: rgb(255,102,0);
+    color: white;
+    float: right;
+    font-family: "MavenProBold";
+    font-size: 14pt;
+    height: 29px;
+    letter-spacing: 0.3px;
+/*    line-height: 22px;*/
+    margin-left: 30px;
+    margin-right: 180px;
+    margin-top: 242px;
+    padding-left: 6px !important;
+    padding-top: 1px !important;
+    width: 120px;
+}
+/********************************Slider 5***************************************************/
+
+.slide5_background
+{
+    background-image: url("images/sliderimage/slide_5_container.png");
+   background-repeat: no-repeat;
+   float: left;
+   width: 800px; height: 300px;
+   
+}
+
+.slide5_title
+{
+   color: #080707;
+    float: left;
+    font-family: MavenProBold;
+    font-size: 57pt;
+    font-weight: bold;
+    letter-spacing: -3px;
+    line-height: 2;
+    margin: -16px 0 0 22px;
+    position: absolute;
+    text-align: right;
+    text-shadow: -2px 2px 10px #A8A9AA;
+    width: 720px;
+}
+
+.slide5_subtitle{
+    color: #000000;
+    float: left;
+    font-family: "MavenProMedium";
+    font-size: 24.41pt;
+    letter-spacing: .9px;
+    line-height: 2;
+    margin: 106px 0 0 22px;
+    position: absolute;  
+	width: 720px;
+	text-align: right;
+}
+
+.slide5_text{
+   
+    color: black;
+    float: left;
+    font-family: "MavenProMedium";
+    font-size: 15pt;
+    letter-spacing: 0.38px;
+    line-height: 2;
+    margin: 175px 0 0 294px;
+    position: absolute;
+    text-align: right;
+
+}
+.slide5_Learn_more{
+    
+     background-color: #005E99;
+    border: 1px solid;
+    color: white;
+    float: right;
+    font-family: "MavenProBold";
+    font-size: 14pt;
+    height: 29px;
+    letter-spacing: 0.3px;
+/*    line-height: 22px;*/
+    margin-right: 55px;
+    margin-top: 231px;
+    padding-left: 8px !important;
+    padding-top: 0 !important;
+    width: 123px;
+}
+
+.slide5_Learn_more:hover{
+   
+    
+    background-color: rgb(255,102,0);
+    border: 1px solid;
+    color: white;
+    float: right;
+    font-family: "MavenProBold";
+    font-size: 14pt;
+    height: 29px;
+    letter-spacing: 0.3px;
+/*    line-height: 22px;*/
+    margin-right: 55px;
+    margin-top: 231px;
+    padding-left: 8px !important;
+    padding-top: 0 !important;
+    width: 123px;
+}
+@font-face 
+{
+    font-family: 'MavenProBold';
+    src: url('fonts/Maven_Pro_Bold.eot');
+    src: url('fonts/Maven_Pro_Bold.eot#iefix') format('embedded-opentype'),
+         url('fonts/Maven_Pro_Bold.woff') format('woff'),
+         url('fonts/Maven_Pro_Bold.ttf') format('truetype'),
+         url('fonts/Maven_Pro_Bold.svg#MavenProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenProRegular';
+    src: url('fonts/regular/MavenPro-Regular.eot');
+    src: url('fonts/regular/MavenPro-Regular.eot#iefix') format('embedded-opentype'),
+         url('fonts/regular/MavenPro-Regular.woff') format('woff'),
+         url('fonts/regular/MavenPro-Regular.ttf') format('truetype'),
+         url('fonts/regular/MavenPro-Regular.svg#MavenProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenProMedium';
+    src: url('fonts/MavenPro-Medium.eot');
+    src: url('fonts/MavenPro-Medium.eot#iefix') format('embedded-opentype'),
+         url('fonts/MavenPro-Medium.woff') format('woff'),
+         url('fonts/MavenPro-Medium.ttf') format('truetype'),
+         url('fonts/MavenPro-Medium.svg#MavenProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
