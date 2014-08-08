@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div class="container dmbs-container">
+<div class="dmbs-container">
 <!-- start content container -->
 <div class="row dmbs-content">
 <div class="col-md-12 dmbs-main event-page">
@@ -21,16 +21,26 @@ get_header(); ?>
     // the loop
     if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
-    <div class="col-md-8 main-tt maincon">
+    <div class="col-md-8 main-tt maincon container">
         <h2 class="page-header">Events</h2>
         <p>We are on a mission to make PPM simpler, and we're telling the world.<br>
         Connect and discover relevant, high-impact insight and innovations to help organizations maximize their IT-ROI for their universe</p>
         <div class="clear"></div>
     </div>
 
+    <div class="next-post">
+        <div class="next-event">
+        <?php next_post( '% ' , 'NEXT EVENT' , '' ); ?>
+        </div>
+    </div>
+
+</div>
+</div>
+
+ </div>
     <div class="dmbs-container">
     <div class="blue-bg"></div>
-    <div class="container dmbs-container">
+    <div class="container dmbs-container this-event">
         <div class="col-md-12 main-tt container">
             <div class="col-md-6 mainevt">
                 <div class="col-md-4 mainevt">

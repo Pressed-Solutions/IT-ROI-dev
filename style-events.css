@@ -1,9 +1,13 @@
 /* block elements */
-.dmbs-container {
+.container {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+.single-event .dmbs-container {
+    position: relative;
 }
 
 .dmbs-content {
@@ -34,7 +38,7 @@
 }
 
 .evt-content a {
-    color: #088+cb;
+    color: #0779cb;
 }
 
 .evt-content a:hover {
@@ -50,6 +54,11 @@
     font-size: 16px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+}
+
+.evt-time {
+    display: inline-block;
+    font-size: 14px;
 }
 
 .register-button a {
@@ -158,4 +167,56 @@ hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #eee;
+}
+
+
+/* single post views */
+.blue-bg {
+    background: #0e598f;
+    width: 100%;
+    margin-top: 6.5%;
+    height: 120px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.col-md-12.main-tt.container {
+    margin: auto;
+    padding: 20px 0;
+    border: 1px solid #a9a6a6;
+    background: white;
+    box-shadow: 0 0 8px #c0bbbb;
+}
+
+.mainevt .attachment-post-thumbnail {
+    margin: 0 10px;
+}
+
+.col-md-6 {
+    padding: 0 15px;
+}
+
+.col-md-6.Webinar h1 {
+    font-size: 72px;
+    color: black;
+    margin-top: 11px;
+}
+
+h2.page-headerWebinar {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 70px 0 10px;
+}
+
+.mainevt p {
+    margin-bottom: 10px;
+}
+
+.mainevt .register-button a {
+    font-size: 17px;
+}
+
+.mainevt .register-button a:hover {
+    text-decoration: underline;
 }
