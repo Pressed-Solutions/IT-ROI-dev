@@ -9,22 +9,10 @@
 
 get_header(); ?>
 
-<div class="content" >
-<div class="panel-display panel-2col clearfix" style="padding: 0px 0px 16px 0px;">
-<div class="panel-panel panel-col-first">
-<div class="inside">
-<div class="panel-pane pane-block pane-quicktabs-homepage-quicktab" >
-
-
-
-<div class="pane-content">
-<div  id="quicktabs-homepage_quicktab" class="quicktabs-wrapper quicktabs-style-nostyle"><div id="quicktabs-container-homepage_quicktab" class="quicktabs_main quicktabs-style-nostyle"><div  id="quicktabs-tabpage-homepage_quicktab-0" class="quicktabs-tabpage "><div id="block-views-latest-articles-block-1" class="block block-views">
-
-
-<div class="content">
-<div class="view view-latest-articles view-id-latest_articles view-display-id-block_1 view-dom-id-d2aad2774da5445702cc7a30b6ba6da6">
-
-<div class="view-content"  id="Top">
+<div class="container dmbs-container">
+<!-- start content container -->
+<div class="row dmbs-content">
+<div class="col-md-12 dmbs-main event-page">
    
     <?php
     // set flag to disable footer
@@ -128,22 +116,7 @@ get_header(); ?>
     <?php endif; ?>
 
     </div>
-</div><!-- div.view_content -->
-
-
-
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><!-- div.content -->
-</div><!-- div#block-system-main -->
-</section><!-- section#content -->
-</div><!-- div role="main" -->
 <?php get_footer(); ?>
