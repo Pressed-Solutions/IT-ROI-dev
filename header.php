@@ -128,7 +128,6 @@ if ($default_description == 1) {
         <link type="text/css" rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/style5.css" media="all"/>
         <link type="text/css" rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/skin_footer.css" media="all"/>
         <link type="text/css" rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/slidercss.css" media="all"/>
-        <link type="text/css" rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/style-events.css" media="all"/>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
     </head>
