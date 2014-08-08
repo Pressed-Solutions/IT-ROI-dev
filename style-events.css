@@ -176,6 +176,10 @@
 
 
 /* single post views */
+.single-event div[role="main"] {
+    width: 100%;
+}
+
 .blue-bg {
     background: #0e598f;
     width: 100%;
