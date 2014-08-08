@@ -15,6 +15,24 @@
     margin-bottom: 25px;
 }
 
+.next-post {
+    margin-bottom: 40px;
+}
+
+.next-event {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.next-event a {
+    font-size: 18px;
+    color: black;
+}
+
+.next-event a:hover {
+    text-decoration: underline;
+}
+
 .evt-post {
     margin-bottom: 100px;
 }
@@ -63,7 +81,7 @@
 
 .register-button a {
     background: #ff6600;
-    padding: 5px;
+    padding: 7px 15px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
