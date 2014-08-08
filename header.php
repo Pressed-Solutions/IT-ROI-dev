@@ -135,12 +135,12 @@ if ($default_description == 1) {
     $obj = get_queried_object();
     $custom_post_type = $obj->post_type;
 
-    $bodyclasses = "html front not-logged-in no-sidebars page-home";
+    $body_classes = "html front not-logged-in no-sidebars page-home ";
     if ($custom_post_type == "services" || $custom_post_type == "about" || $custom_post_type == 'itroiexperts' || $custom_post_type == "casolution") {
         $body_classes .= "backgroundimage";
     }
     else {
-        $body_class .= "backgroundwhite";
+        $body_classes .= "backgroundwhite";
     }
     ?>
     <body <?php body_class( $body_classes ); ?> >
