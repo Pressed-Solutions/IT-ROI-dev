@@ -1,17 +1,3 @@
-/*
-Theme Name: Pressed Solutions
-Theme URI: http://pressedsolutions.com
-Author: Brad Kuntz
-Author URI: http://pressedsolutions.com
-Description: A versatile and responsive Bootstrap WordPress for the Grand Lodge Confernce
-Version: 1.31
-License: GNU General Public License v3
-License URI: http://www.gnu.org/licenses/gpl.html
-Tags: one-column, two-columns, right-sidebar, fluid-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, theme-options, translation-ready
-Text Domain: Pressed Soltutions
-*/
-
-
 /* GENERAL SETTINGS */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
@@ -189,68 +175,6 @@ body {
 .hotel .hotel-address {
 	margin-bottom: 10px;
 }
-
-/* REGISTRATION FORM SETTINGS */
-.gform_body .title { width: 50px; float: left; margin-right: 10px; }
-.gform_body .first-name { width: 290px; float: left; margin-right: 10px; }
-.gform_body .middle-name { width: 100px; float: left; margin-right: 10px; }
-.gform_body .last-name { width: 290px; float: left; margin-right: 10px; }
-.gform_body .suffix { width: 100px; float: left; margin-right: 10px; }
-.gform_body .lady-fname { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .lady-lname { width: 290px; float: left; margin-right: 10px; }
-.gform_body .lodge-name { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .lodge-no { width: 100px; float: left; margin-right: 10px; }
-.gform_body .gl-no { width: 100px; float: left; margin-right: 10px; }
-.gform_body .representing-lodge { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .proxies-carried { width: 290px; float: left; margin-right: 10px; }
-.gform_body .home-address-1 { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .home-address-2 { width: 290px; float: left; margin-right: 10px; }
-.gform_body .city { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .state { width: 100px; float: left; margin-right: 10px; }
-.gform_body .zip { width: 100px; float: left; margin-right: 10px; }
-.gform_body .phone { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .email-address { width: 290px; float: left; margin-right: 10px; }
-.gform_body .special-needs { clear: both; }
-.gform_body .friday-session { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .quantity { width: 100px; float: left; margin-right: 10px; }
-
-.gform_body .attending-friday-session { float: left; clear: both; }
-.gform_body .attending-friday-session .gfield_label { float: left; width: 225px; }
-.gform_body .attending-friday-session .ginput_container { float: left; padding: 8px 10px 8px 25px; width: 150px; }
-.gform_body .friday-session-qty { float: left; }
-.gform_body .friday-session-qty .gfield_label { float: left; font-weight: normal !important; }
-.gform_body .friday-session-qty .ginput_container { float: left; margin: 5px; width: 100px; }
-
-.gform_body .attending-friday-lunch { float: left; clear: both;  }
-.gform_body .attending-friday-lunch .gfield_label { float: left; width: 225px; }
-.gform_body .attending-friday-lunch .ginput_container { float: left; padding: 8px 10px 8px 25px; width: 150px; }
-.gform_body .friday-lunch-qty { float: left; }
-.gform_body .friday-lunch-qty .gfield_label { float: left; font-weight: normal !important; }
-.gform_body .friday-lunch-qty .ginput_container { float: left; margin: 5px; width: 100px; }
-
-.gform_body .attending-ladies-lunch { float: left; clear: both;  }
-.gform_body .attending-ladies-lunch .gfield_label { float: left; width: 225px; }
-.gform_body .attending-ladies-lunch .ginput_container { float: left; padding: 8px 10px 8px 25px; width: 150px; }
-.gform_body .friday-ladies-lunch-qty { float: left; }
-.gform_body .friday-ladies-lunch-qty .gfield_label { float: left; font-weight: normal !important; }
-.gform_body .friday-ladies-lunch-qty .ginput_container { float: left; margin: 5px; width: 100px; }
-
-.gform_body .attending-friday-banquet { float: left; clear: both;  }
-.gform_body .attending-friday-banquet .gfield_label { float: left; width: 225px; }
-.gform_body .attending-friday-banquet .ginput_container { float: left; padding: 8px 10px 8px 25px; width: 150px; }
-.gform_body .friday-banquet-qty { float: left; }
-.gform_body .friday-banquet-qty .gfield_label { float: left; font-weight: normal !important; }
-.gform_body .friday-banquet-qty .ginput_container { float: left; margin: 5px; width: 100px; }
-
-.gform_body .attending-saturday-session { float: left; clear: both;  }
-.gform_body .attending-saturday-session .gfield_label { float: left; width: 225px; }
-.gform_body .attending-saturday-session .ginput_container { float: left; padding: 8px 10px 8px 25px; width: 150px; }
-.gform_body .saturday-session-qty { float: left; }
-.gform_body .saturday-session-qty .gfield_label { float: left; font-weight: normal !important; }
-.gform_body .saturday-session-qty .ginput_container { float: left; margin: 5px; width: 100px; }
-
-
-.gform_body .total { clear: both; text-align: right; }
 
 .page-notes { margin-top: 30px; }
 
