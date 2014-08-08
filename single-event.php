@@ -27,45 +27,11 @@ get_header(); ?>
                                                             <div class="view-content"  id="Top">
 
 
-		<?php 
-                $biography=$_GET['biography'];
+		<?php  // the loop
                 if ( have_posts() ) : 
 			 while ( have_posts() ) : the_post(); ?>
                         <div class="views-row views-row-1">
 
-             <?php   
-         if($biography)
-    {
-             ?><style>
-                 .post
-                 {
-                     margin-top: 18px;
-                     padding-right: 10px;
-                     padding-left: 30px;
-                 }
-                 .post h2
-                 {
-                     color:#222;
-                     font-family:"MavenProMedium";
-                     cursor: default;
-                     font-size: 20px;
-                 }
-                 .post-content
-                 {
-                     border-bottom: none;
-                 }
-                 strong
-                 {
-                     font-family:"MavenProMedium";
-                 }
-             </style>
-                            
-                            
-                            <?php
-    }
-    else
-    {
-                            ?>
              <style>
                  .post
                  {
@@ -78,9 +44,6 @@ get_header(); ?>
              </style>
                             
                             
-                            <?php
-    }
-?>
      <div class="post">
         <?php $key='permission';
         $post_id=$post->ID;
@@ -89,40 +52,9 @@ get_header(); ?>
                                                                                 <div class="field field-name-title field-type-ds field-label-hidden">
                                                                                     <div class="field-items">
                                                                                          <h1 style="font-size:0px;"></h1>
-          <br/> <?php   
-         if(!$biography)
-    {
-             ?>
-                         <div class="post-title" property="schema:name"><h2><?php echo the_title(); ?></h2></div>
-                         <?php
-    }
-    else if($biography)
-    {
-    ?>
-                         <div class="post-title" property="schema:name"><h1 style="color:#7C9120;font-size: 33px;"><?php echo the_title(); ?></h1>
-                    <h2 style="margin: 0 0 68px;padding: 5px 0 0;"> <?php $author_id=$post->post_author;
-                     echo the_author_meta( 'Position' , $author_id );?>  
-                    </h2> </div>                                                                
-                                                                                     <?php 
-    }
-         if($biography)
-    {
-             ?>
-                  <div class="avatarimg">
-                        <?php 
-                         $author=$post->author_ID;
-                         echo get_avatar( get_the_author_email(), '200');
-                         ?>
-                                                                        </div>
-         <?php
-                    }
-        
-         ?>
+          <br/>
+                     <div class="post-title" property="schema:name"><h2><?php echo the_title(); ?></h2></div>
                                                                                     </div>                                                             </div>
-        <?php   
-         if(!$biography)
-    {
-             ?>
           <div class="post-meta" style="margin-top: -10px;">Posted &#64; <?php
                                                                                  $post_date1=$post->post_date;
                                                                                  $post_date = date("m/d/Y", strtotime($post_date1));
@@ -146,9 +78,6 @@ foreach((get_the_category()) as $category)
 ?></span> | <a href="<?php the_permalink(); ?>"><?php  comments_number(); ?> »</a>                                             
                                                                                 </div>
                                                                                 </div>
-          <?php
-    }
-    ?>
                                                <div class="group_teaser_wrapper  group-teaser-wrapper speed-none effect-none">
                                                    <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                                                        <div class="field-items">
