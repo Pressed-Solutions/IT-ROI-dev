@@ -27,7 +27,11 @@ get_header(); ?>
 <div class="view view-latest-articles view-id-latest_articles view-display-id-block_1 view-dom-id-d2aad2774da5445702cc7a30b6ba6da6">
 <div class="view-content">
 
-<?php // theloop
+<?php
+    // set flag to disable footer
+    $GLOBALS['no_footer'] = true;
+
+    // the loop
     if ( have_posts() ) : while ( have_posts() ) : the_post();
 
         // single post

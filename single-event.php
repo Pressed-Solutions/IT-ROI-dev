@@ -26,7 +26,11 @@ get_header(); ?>
 
 <div class="view-content"  id="Top">
    
-    <?php // the loop
+    <?php
+    // set flag to disable footer
+    $GLOBALS['no_footer'] = true;
+
+    // the loop
     if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
     <div class="col-md-8 main-tt maincon">

@@ -10,6 +10,7 @@
  * @since Twenty Thirteen 1.0
  */
 
+if ( $GLOBALS['no_footer'] != true ) {
 ?>
 <div id="footerITnew">
     
@@ -94,8 +95,9 @@
   </div>
 </div>
 <div style="clear: both;"></div>
-</div>
+</div><!-- div#footerITnew -->
 
+<?php } // end check for $no_footer ?>
 	<?php wp_footer(); ?>
          	
         <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/source/jquery-1.10.1.min.js"></script>
