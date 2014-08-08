@@ -1,4 +1,161 @@
-.dbms-container {
+/* block elements */
+.dmbs-container {
     max-width: 768px;
     margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.dmbs-content {
+    clear: both;
+    margin-bottom: 25px;
+}
+
+.evt-post {
+    margin-bottom: 100px;
+}
+
+.evt-thumbnail {
+    padding: 40px 15px 0;
+}
+
+.evt-title {
+    color: #0779cb;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.evt-content {
+    min-height: 180px;
+    padding: 0 15px;
+    border-left: 1px solid #e3e3e3;
+    text-align: left;
+}
+
+.evt-content a {
+    color: #088+cb;
+}
+
+.evt-content a:hover {
+    text-decoration: underline;
+}
+
+.evt-content p {
+    margin-bottom: 1em;
+}
+
+.evt-date {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-button a {
+    background: #ff6600;
+    padding: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.register-button {
+    margin: 15px 0px 15px 0px;
+}
+
+.evt-post {
+    margin-bottom: 100px;
+}
+
+ /* text styles */
+.page-id-3238 .page-header,
+.single-event .page-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'MavenProBold', sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 70px 0 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid white;
+}
+
+.page-id-3238 h3,
+.single-event h3 {
+    font-size: 24px;
+}
+
+.UPCOMING-EVENTS {
+    text-align: center;
+    margin: 40px 0 80px;
+}
+
+.col-md8-.main-tt p,
+.maincon p {
+    text-align: center;
+}
+
+.maincon,
+.maincon p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* pagination */
+.pagination {
+    font-size:11px; /* Pagination text size */
+    line-height:13px; /* Pagination float direction */
+    margin: auto;
+    background: #126AA9;
+    padding: 0px 20px;
+}
+ 
+.pagination span, .pagination a {
+    display:block;
+    float:left;
+    margin: 2px 2px 2px 0;
+    padding: 6px 4px 5px 4px;
+    text-decoration:none;
+    width:auto;
+    color:#fff; /* Pagination text color */
+    background: #126AA9; /* Pagination non-active background color */
+    -webkit-transition: background .15s ease-in-out;
+    -moz-transition: background .15s ease-in-out;
+    -ms-transition: background .15s ease-in-out;
+    -o-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+    font-weight: bold;
+    font-size: 13px;
+}
+ 
+.pagination a:hover{
+    color:#fff;
+    background: #126AA9; /* Pagination background on hover */
+}
+ 
+.pagination .current{
+    padding: 6px 4px 5px 4px;
+    background: #126AA9; /* Current page background */
+    color:#fff;
+    font-weight: bold;
+}
+
+.pagination span:first-child {
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    display: inline;
+    margin: auto;
+}
+
+/* generic */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
 }
