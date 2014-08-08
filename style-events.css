@@ -167,7 +167,8 @@
 }
 
 /* generic */
-hr {
+.page-id-3238 hr,
+.single-event hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #eee;
