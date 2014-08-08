@@ -136,8 +136,8 @@ get_header(); ?>
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
+</div><!-- div.content -->
+</div><!-- div#block-system-main -->
+</section><!-- section#content -->
 </div>
 <?php get_footer(); ?>

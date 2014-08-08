@@ -138,9 +138,8 @@ get_header(); ?>
 </div>
 </div>
 </div>
-<?php  get_sidebar(); ?>
-</div>
-</div>
-</section><!-- div#content -->
+</div><!-- div.content -->
+</div><!-- div#block-system-main -->
+</section><!-- section#content -->
 </div><!-- div role="main" -->
 <?php get_footer(); ?>
