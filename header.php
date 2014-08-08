@@ -135,7 +135,7 @@ if ($default_description == 1) {
     $obj = get_queried_object();
     $custom_post_type = $obj->post_type;
     ?>
-    <body class="html front not-logged-in no-sidebars page-home <?php if ($custom_post_type == "services" || $custom_post_type == "about" || $custom_post_type == 'itroiexperts' || $custom_post_type == "casolution") { ?> backgroundimage <?php } else { ?> backgroundwhite <?php } ?> ">
+    <body class="html front not-logged-in no-sidebars page-home <?php if ($custom_post_type == "services" || $custom_post_type == "about" || $custom_post_type == 'itroiexperts' || $custom_post_type == "casolution") { ?> backgroundimage <?php } else { ?> backgroundwhite <?php } body_class(); ?> ">
         <header role="banner" class="clearfix" style="height:23px;margin-bottom: 0px;border-bottom: 1px solid #5c5c5c;line-height:20px;background-color: #000000;width:100%;">
             <div class="nav-wrapper" style="width:1268px;margin: auto;">
                 <div id="block-menu-menu-itroi-secondary" class="block block-menu" style="line-height: 20px;">
