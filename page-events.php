@@ -1,157 +1,154 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that other
- * 'pages' on your WordPress site will use a different template.
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
+* The template for displaying all pages.
+*
+* This is the template that displays all pages by default.
+* Please note that this is the WordPress construct of pages and that other
+* 'pages' on your WordPress site will use a different template.
+*
+* @package WordPress
+* @subpackage Twenty_Thirteen
+* @since Twenty Thirteen 1.0
+*/
 
 get_header(); ?>
 
-  <div class="content" >
-    <div class="panel-display panel-2col clearfix" style="padding: 0px 0px 16px 0px;">
-  <div class="panel-panel panel-col-first">
-    <div class="inside"><div class="panel-pane pane-block pane-views-latest-articles-block-2" >
-   
-  
-  <div class="pane-content">
-    <div class="view view-latest-articles view-id-latest_articles view-display-id-block_2 view-dom-id-2ce348f08e1407ac8b441212711a46a3">
-        
-  
-  
-      <?php /************************************************************ Silder Block *******************************************************************/ ?>  
-        <div class="view-content" style="padding-right: 11px;">
-            <div id="flexslider_views_slideshow_main_latest_articles-block_2" class="flexslider_views_slideshow_main views_slideshow_main">
-              <div class="flexslider" >
-                              <link type="text/css" rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/slidercss.css" media="all"/>
-                               <?php if(function_exists('shs_slider_view')){ shs_slider_view(); }else{dynamic_sidebar('sidebar-3');}   ?>
-              </div>
-              <div id="rss">
-                   <p> Home <a href="<?php echo site_url(); ?>/feed/" target="_blank">Rss Feed</a>  </p>
-              </div>
+<div class="content" >
+<div class="panel-display panel-2col clearfix" style="padding: 0px 0px 16px 0px;">
+<div class="panel-panel panel-col-first">
+<div class="inside">
+<div class="panel-pane pane-block pane-quicktabs-homepage-quicktab" >
+<div class="pane-content">
+<div  id="quicktabs-homepage_quicktab" class="quicktabs-wrapper quicktabs-style-nostyle">
+<div id="quicktabs-container-homepage_quicktab" class="quicktabs_main quicktabs-style-nostyle">
+<div  id="quicktabs-tabpage-homepage_quicktab-0" class="quicktabs-tabpage ">
+<div id="block-views-latest-articles-block-1" class="block block-views">
+<div class="content">
+<div class="view view-latest-articles view-id-latest_articles view-display-id-block_1 view-dom-id-d2aad2774da5445702cc7a30b6ba6da6">
+<div class="view-content">
+
+<?php // theloop
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+        // single post
+        if ( is_single() ) : ?>
+
+            <div <?php post_class(); ?>>
+
+                <h2 class="page-header"><?php the_title() ;?></h2>
+
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail(); ?>
+                    <div class="clear"></div>
+                <?php endif; ?>
+                <?php the_content(); ?>
+                <?php wp_link_pages(); ?>
+                <?php get_template_part('template-part', 'postmeta'); ?>
+                <?php comments_template(); ?>
+
             </div>
-        </div>
-<?php /************************************************************ Silder Block *******************************************************************/ ?>  
- 
-  
-  
-  
-  
-  
-  
-</div>  </div>
+        <?php
+        // list of posts
+        else : ?>
+           <div <?php post_class(); ?>>
 
-  
-  </div>
-         
-<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-recipe-of-the-day-panel-pane-1" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="view view-recipe-of-the-day view-id-recipe_of_the_day view-display-id-panel_pane_1 recipe-of-day view-dom-id-2d6cc28c03c7738e8d31aa702058465b">
-        
-  
-  </div>  </div>
+            <div class="col-md-8 main-tt maincon">
+                <h2 class="page-header">
+                    WEBINAR - <?php the_title(); ?>
+                </h2>
 
-  
-  </div>
+                <?php if ( has_post_thumbnail() ) : ?>
+                   <?php the_post_thumbnail(); ?>
+                    <div class="clear"></div>
+                <?php endif; ?>
+                <?php the_content(); ?>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <hr>
+            <div class="col-md-8 main-tt">
+                <h3 class="UPCOMING-EVENTS">UPCOMING EVENTS</h3>
 
-<div class="panel-separator"></div><div class="panel-pane pane-block pane-quicktabs-homepage-quicktab" >
-  
-      
-  
-  <div class="pane-content">
-    <div  id="quicktabs-homepage_quicktab" class="quicktabs-wrapper quicktabs-style-nostyle"><div id="quicktabs-container-homepage_quicktab" class="quicktabs_main quicktabs-style-nostyle"><div  id="quicktabs-tabpage-homepage_quicktab-0" class="quicktabs-tabpage "><div id="block-views-latest-articles-block-1" class="block block-views">
-
-    
-  <div class="content">
-    <div class="view view-latest-articles view-id-latest_articles view-display-id-block_1 view-dom-id-d2aad2774da5445702cc7a30b6ba6da6">
-  
-                                                            <div class="view-content">
-
-			<?php /* The loop */ 
-                        echo $_id=$_GET['author'];
-                        ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-                                    <div class="views-row views-row-1">
-
-                                                                       
-
-     <div class="ds-2col node node-article node-promoted node-teaser view-mode-teaser clearfix">
-      <div class="post">
-                                                                                <div class="field field-name-title field-type-ds field-label-hidden">
-                                                                                    <div class="field-items">
-                                                                                        <div class="field-item even" property="schema:name">
-                                                                                            <h1><?php //the_title(); ?></h1></div>
-                                                                                        
-                                                                                        
-                                                                                        <div class="field field-name-post-date field-type-ds field-label-hidden">
-                                                                                   
-                                                                                </div>
-                                                                                <div class="group_teaser_wrapper  group-teaser-wrapper speed-none effect-none"><div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                                                                                        <div class="field-items">
-                                                                                            <div class="field-item even" property="schema:articleBody content:encoded"><?php the_content(); ?>
-                                                                         </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>  </div>
-
-                                                                        </div>
-
-                                                                    </div>
-                                                                 <?php endwhile; ?>
-                                                            </div>
-
-                                                           
-
-
-
-                                                        </div>  </div>
-                                                </div>
-                                            </div>  </div>
-
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="views-row views-row-6">
-                                                                   
-
-                                                                </div>
-                                                            </div>
-
-                                                           
-
-
-
-
-                                                        </div>  </div>
-    </div>
-      </div>
-                                                
-    <?php get_sidebar(); ?>                                             
-    </div>
-     
-                                            </div>
-        
-       
-        
-    </div></div>  </div>
-
-
-                            </div>
+                <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <div class="evt-post"> <div class="col-md-3 evt-thumbnail">
+                        <?php if ( has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('full'); ?>
+                        <?php endif; ?></div>
+                        <div class="col-md-9 evt-content">
+                            <a href="<?php echo get_permalink(); ?>" ><div class="evt-title"><?php the_title(); ?></div></a>
+                            <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
+                            <div class="register-button"><a href="<?php the_field('register_now'); ?>" >Register Now</a></div><?php the_content(); ?>
                         </div>
+                        <div class="clear"></div>
                     </div>
+                <?php endwhile; ?>
 
+
+                <div class="pagen">
+                <div class="navigation">
+                    <?php
+                    // Bring $wp_query into the scope of the function
+                    global $wp_query;
+
+                    // Backup the original property value
+                    $backup_page_total = $wp_query->max_num_pages;
+
+                    // Copy the custom query property to the $wp_query object
+                    $wp_query->max_num_pages = $loop->max_num_pages;
+                    ?>
+                <?php if (function_exists("pagination")) {
+                    pagination($custom_query->max_num_pages);
+                } ?>
+                    <!-- now show the paging links -->
+
+                    <?php
+                    // Finally restore the $wp_query property to it's original value
+                    $wp_query->max_num_pages = $backup_page_total;
+                    ?>
+                    <div class="clear"></div>
                 </div>
+                </div>
+
             </div>
-        </div>
-    </section>
+
+            </div>
+
+            <?php  endif; ?>
+
+            <?php endwhile; ?>
+            <?php posts_nav_link(); ?>
+            <?php else: ?>
+
+            <?php get_404_template(); ?>
+
+            <?php endif; ?>
+
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<?php get_sidebar(); ?>                                             
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 </div>
 <?php get_footer(); ?>
