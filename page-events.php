@@ -39,7 +39,7 @@ get_header(); ?>
     <div class="col-md-8 main-tt">
         <h3 class="UPCOMING-EVENTS">UPCOMING EVENTS</h3>
 
-        <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
+        <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 5, 'paged' => get_query_var( 'paged' ) ) ); ?>
         <?php $counter = 1; ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <?php if ($counter == 1) { // first item?>
