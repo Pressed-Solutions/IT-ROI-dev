@@ -38,7 +38,7 @@ get_header(); ?>
     <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 5, 'paged' => get_query_var( 'paged' ) ) ); ?>
     <?php $counter = 1; ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-    <?php if ($counter == 1) { // first item?>
+    <?php if ($counter == 1) { // first item ?>
         <div class="dmbs-container">
             <div class="blue-bg"></div>
              <div class="container dmbs-container this-event">
@@ -54,13 +54,7 @@ get_header(); ?>
                             <h1>Webinar</h1>
                         </div>
                     </div>
-                    <div class="col-md-6 mainevt">
-                        <div class="col-md-4 mainevt">
-                            <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail(); ?>
-                                <div class="clear"></div>
-                            <?php endif; ?>
-                        </div>
+                    <div class="col-md-6 mainevt maincont">
                         <h2 class="page-headerWebinar">
                             <?php the_title(); ?>
                         </h2>
