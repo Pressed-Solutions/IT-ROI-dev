@@ -35,55 +35,58 @@ get_header(); ?>
 </div>
 </div>
 
-<div class="dmbs-container">
-    <div class="blue-bg"></div>
-    <div class="container dmbs-container this-event">
-        <div class="col-md-12 main-tt container">
-            <div class="col-md-6 mainevt">
-                <div class="col-md-4 mainevt">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail(); ?>
-                        <div class="clear"></div>
-                    <?php endif; ?>
-                </div>
-                <div class="col-md-6 Webinar mainevt">
-                    <h1>Webinar</h1>
-                </div>
-            </div>
-            <div class="col-md-6 mainevt">
-                <h2 class="page-headerWebinar">
-                    <?php the_title(); ?>
-                </h2>
-                <?php the_content(); ?>
-                <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
-                <div class="register-button"><a href="<?php the_field('register_now'); ?>" >Register Now</a></div>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-
-    </div>
-</div>
-
 <div class="container dmbs-container">
     <div class="col-md-8 main-tt">
         <h3 class="UPCOMING-EVENTS">UPCOMING EVENTS</h3>
 
         <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
+        <?php $counter = 1; ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="evt-post" id="post-<?php the_ID(); ?>">
-            <div class="col-md-3 evt-thumbnail">
-                <?php if ( has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('full'); ?>
-                <?php endif; ?>
+        <?php if ($counter == 1) { // first item?>
+            <div class="dmbs-container">
+                <div class="blue-bg"></div>
+                 <div class="container dmbs-container this-event">
+                    <div class="col-md-12 main-tt container">
+                        <div class="col-md-6 mainevt">
+                            <div class="col-md-4 mainevt">
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <?php the_post_thumbnail(); ?>
+                                    <div class="clear"></div>
+                                <?php endif; ?>
+                            </div>
+                            <h2 class="page-headerWebinar">
+                                <?php the_title(); ?>
+                            </h2>
+                            <?php the_content(); ?>
+                            <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
+                            <div class="register-button"><a href="<?php the_field('register_now'); ?>" >Register Now</a></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+            </div>       
+        <?php
+            $counter = $counter + 1; // increment counter
+        } // end first item
+        else { // all other items?>
+            <div class="evt-post" id="post-<?php the_ID(); ?>">
+                <div class="col-md-3 evt-thumbnail">
+                    <?php if ( has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('full'); ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-9 evt-content"><div class="evt-title"><?php the_title(); ?></div>
+                    <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
+                    <div class="register-button"><a href="#" >Register Now</a></div><?php the_content(); ?>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div class="col-md-9 evt-content"><div class="evt-title"><?php the_title(); ?></div>
-                <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
-                <div class="register-button"><a href="#" >Register Now</a></div><?php the_content(); ?>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <?php endwhile; ?>
+        <?php
+              $counter = $counter + 1; // increment counter
+        }; // end list of other items
+        endwhile; ?>
 
 
 
