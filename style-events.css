@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.single-event .dmbs-container {
+.dmbs-container {
     position: relative;
 }
 
@@ -82,10 +82,17 @@
 .register-button a {
     background: #ff6600;
     padding: 7px 15px;
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
+}
+
+.register-button a:active,
+.register-button a:focus,
+.register-button a:hover,
+.register-button a:visited {
+    color: white;
 }
 
 .register-button {
@@ -176,7 +183,7 @@
 
 
 /* single post views */
-.single-event div[role="main"] {
+.page-id-3238 div[role="main"] {
     width: 100%;
 }
 
