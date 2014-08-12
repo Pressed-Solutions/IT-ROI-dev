@@ -45,6 +45,17 @@ get_header(); ?>
                 <div class="col-md-12 main-tt container">
                     <div class="col-md-6 mainevt">
                         <div class="col-md-4 mainevt">
+                            <?php if ( has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail('full'); ?>
+                            <?php endif; ?>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col-md-6 Webinar mainevt">
+                            <h1>Webinar</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mainevt">
+                        <div class="col-md-4 mainevt">
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail(); ?>
                                 <div class="clear"></div>
