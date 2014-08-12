@@ -31,13 +31,6 @@ get_header(); ?>
         Connect and discover relevant, high-impact insight and innovations to help organizations maximize their IT-ROI for their universe</p>
         <div class="clear"></div>
     </div>
-
-    <div class="next-post">
-        <div class="next-event">
-        <?php next_post( '% ' , 'NEXT EVENT' , '' ); ?>
-        </div>
-    </div>
-
 </div>
 </div>
 
@@ -84,7 +77,7 @@ get_header(); ?>
                     <?php the_post_thumbnail('full'); ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-md-9 evt-content"><a href="<?php echo get_permalink(); ?>" ><div class="evt-title"><?php the_title(); ?></div></a>
+                <div class="col-md-9 evt-content"><div class="evt-title"><?php the_title(); ?></div>
                     <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
                     <div class="register-button"><a href="#" >Register Now</a></div><?php the_content(); ?>
                 </div>
