@@ -84,12 +84,12 @@
 
 .register-button a,
 .cta_button a {
-    background: #ff6600;
-    padding: 7px 15px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
+    background: #ff6600 !important;
+    padding: 7px 15px !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
 }
 
 .register-button a:active,

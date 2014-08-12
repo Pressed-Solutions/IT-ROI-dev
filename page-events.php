@@ -60,7 +60,7 @@ get_header(); ?>
                         </h2>
                         <?php the_content(); ?>
                         <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
-                        <div class="register-button"><?php the_field('register_now'); ?>" ></div>
+                        <div class="register-button"><?php the_field('register_now'); ?></div>
                     </div>
                     <div class="clear"></div>
                 </div>
