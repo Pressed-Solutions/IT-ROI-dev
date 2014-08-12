@@ -104,10 +104,6 @@
     margin: 15px 0px 15px 0px;
 }
 
-.inactive {
-    color: white;
-}
-
 .evt-post {
     margin-bottom: 100px;
 }
@@ -163,7 +159,7 @@
 }
 
 .pagination span,
-.pagination a {
+.pagination a.inactive {
     padding: 6px 4px 5px;
     background-color: #126aa9;
     color: white;

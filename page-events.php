@@ -97,7 +97,7 @@ get_header(); ?>
 
 
 
-        <!--<div class="pagen">
+        <div class="pagen">
         <div class="navigation">
         <?php
         // Bring $wp_query into the scope of the function
@@ -119,7 +119,7 @@ get_header(); ?>
         ?>
         <div class="clear"></div>
         </div>
-        </div>-->
+        </div>
 
     </div>
 
