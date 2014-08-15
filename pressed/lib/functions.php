@@ -4,7 +4,7 @@
 // Theme Information
 ////////////////////////////////////////////////////////////////////
 
-    $themename = "Colonial";
+    $themename = "IT-ROI";
     $developer_uri = "http://pressedsolutions.com";
     $shortname = "dm";
     $version = '1.29';
@@ -88,7 +88,7 @@ add_editor_style('css/editor-style.css');
 	add_action('admin_head', 'my_custom_fonts');
 
 function my_custom_fonts() {
-  echo '<link rel="stylesheet" href="../wp-content/themes/colonial/style.css" type="text/css" media="all" />';
+  echo '<link rel="stylesheet" href="../wp-content/themes/twentythirteen/pressed/style.css" type="text/css" media="all" />';
 }
 
 ////////////////////////////////////////////////////////////////////

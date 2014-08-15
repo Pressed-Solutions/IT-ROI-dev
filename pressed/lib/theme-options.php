@@ -7,7 +7,7 @@ load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/language
 ////////////////////////////////////////////////////////////////////
 
     function theme_options_menu() {
-        add_theme_page( 'DevDm Theme' . __('Options','pressedsolutions'), 'Rain City Eyewear' . __('Options','pressedsolutions'), 'manage_options', 'devdm-theme-options', 'devdm_theme_options' );
+        add_theme_page( 'DevDm Theme' . __('Options','pressedsolutions'), 'IT-ROI' . __('Options','pressedsolutions'), 'manage_options', 'devdm-theme-options', 'devdm_theme_options' );
     }
     add_action( 'admin_menu', 'theme_options_menu' );
 
@@ -16,7 +16,7 @@ load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/language
     function toolbar_link_to_mypage( $wp_admin_bar ) {
         $args = array(
             'id'    => 'devdm_theme_options',
-            'title' => __('Rain City Options','pressedsolutions'),
+            'title' => __('IT-ROI Options','pressedsolutions'),
             'href'  => home_url() . '/wp-admin/themes.php?page=devdm-theme-options',
             'meta'  => array( 'class' => 'devdm-theme-options' ),
             'parent' => 'site-name'
@@ -230,7 +230,7 @@ load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/language
 
             <div class="icon32" id="icon-options-general"></div>
 
-            <h2><a href="<?php echo $developer_uri ?>" target="_blank">Rain City Eyewear - Maintained by PressedSolutions.com</a></h2>
+            <h2><a href="<?php echo $developer_uri ?>" target="_blank">IT-ROI - Maintained by PressedSolutions.com</a></h2>
             <a href="http://pressedsolutions.com"><img src="http://www.pressedsolutions.com/wp-content/uploads/2013/10/presssolutions_newlogo.png" alt="Pressed Solutions" /></a>
 
                <?php

@@ -359,8 +359,6 @@ if ( ! isset( $content_width ) ) $content_width = 800;
 
 ////////////////////////////////////////////////////////////////////
 
-//register_new_royalslider_files(1);
-
 // filter the Gravity Forms button type
 
 add_filter("gform_submit_button", "form_submit_button", 10, 2);
