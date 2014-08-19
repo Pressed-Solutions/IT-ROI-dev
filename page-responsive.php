@@ -1,8 +1,7 @@
 <?php
 /*
- * Template Name: Pressed-Responsive
- * Description: A responsive page template built by PressedSolutions.com
- */
+Template Name: Pressed-Responsive
+*/
 
 get_header( 'responsive' ); ?>
 
