@@ -18,7 +18,7 @@
 
     $version = '1.29';
 
-    load_theme_textdomain( 'pressed', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'pressed', get_template_directory() . '/responsive/languages' );
 
 
 
@@ -46,7 +46,7 @@
 
     {
 
-        wp_register_style('bootstrap.css', get_template_directory_uri() . '/css/bootstrap.css', array(), '1', 'all' );
+        wp_register_style('bootstrap.css', get_template_directory_uri() . '/responsive/css/bootstrap.css', array(), '1', 'all' );
 
         wp_enqueue_style( 'bootstrap.css');
 
@@ -60,7 +60,7 @@
 
 //Editor Style
 
-add_editor_style('css/editor-style.css');
+add_editor_style('responsive/css/editor-style.css');
 
 
 // numbered pagination
@@ -116,7 +116,7 @@ function pagination($pages = '', $range = 4)
 
         global $version;
 
-        wp_enqueue_script('theme-js', get_template_directory_uri() . '/js/bootstrap.js',array( 'jquery' ),$version,true );
+        wp_enqueue_script('theme-js', get_template_directory_uri() . '/responsive/js/bootstrap.js',array( 'jquery' ),$version,true );
 
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/languages' );
+load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/responsive/languages' );
 
 /////////////////////////////////////////////////////////////////////
 // Add DevDm Theme Options to the Appearance Menu and Admin Bar
@@ -29,7 +29,7 @@ load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/language
 ////////////////////////////////////////////////////////////////////
 
     function devdm_theme_style() {
-        wp_enqueue_style('devdm-theme', get_template_directory_uri() . '/css/admin.css');
+        wp_enqueue_style('devdm-theme', get_template_directory_uri() . '/responsive/css/admin.css');
     }
     add_action('admin_enqueue_scripts', 'devdm_theme_style');
 
@@ -60,7 +60,7 @@ load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/language
     );
 
     $defaults = array(
-        'default-image'          => get_template_directory_uri() . '/img/deafaultlogo.png',
+        'default-image'          => get_template_directory_uri() . '/responsive/img/deafaultlogo.png',
         'width'                  => 300,
         'height'                 => 100,
         'flex-height'            => true,
@@ -231,7 +231,7 @@ load_theme_textdomain( 'pressedsolutions', get_template_directory() . '/language
             <div class="icon32" id="icon-options-general"></div>
 
             <h2><a href="<?php echo $developer_uri ?>" target="_blank">IT-ROI - Maintained by PressedSolutions.com</a></h2>
-            <a href="http://pressedsolutions.com"><img src="http://www.pressedsolutions.com/wp-content/uploads/2013/10/presssolutions_newlogo.png" alt="Pressed Solutions" /></a>
+            <a href="http://pressedsolutions.com"><img src="https://www.pressedsolutions.com/wp-content/uploads/2013/10/presssolutions_newlogo.png" alt="Pressed Solutions" /></a>
 
                <?php
                if ( ! isset( $_REQUEST['settings-updated'] ) )

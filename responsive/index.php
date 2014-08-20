@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('responsive/template-part', 'head'); ?>
 
-<?php get_template_part('template-part', 'topnav'); ?>
+<?php get_template_part('responsive/template-part', 'topnav'); ?>
 
 <div class="container dmbs-container">
 <!-- start content container -->
@@ -29,7 +29,7 @@
                             <?php endif; ?>
                             <?php the_content(); ?>
                             <?php wp_link_pages(); ?>
-                            <?php get_template_part('template-part', 'postmeta'); ?>
+                            <?php get_template_part('responsive/template-part', 'postmeta'); ?>
                             <?php comments_template(); ?>
 
                         </div>
@@ -48,7 +48,7 @@
                             <?php endif; ?>
                             <?php the_content(); ?>
                             <?php wp_link_pages(); ?>
-                            <?php get_template_part('template-part', 'postmeta'); ?>
+                            <?php get_template_part('responsive/template-part', 'postmeta'); ?>
                             <?php  if ( comments_open() ) : ?>
                                    <div class="clear"></div>
                                   <p class="text-right">

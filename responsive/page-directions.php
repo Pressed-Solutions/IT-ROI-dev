@@ -5,9 +5,9 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('responsive/template-part', 'head'); ?>
 
-<?php get_template_part('template-part', 'topnav-content'); ?>
+<?php get_template_part('responsive/template-part', 'topnav-content'); ?>
 
 <!-- start content container -->
 <div class="row dmbs-content">

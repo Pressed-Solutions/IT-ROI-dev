@@ -22,7 +22,7 @@
 ////////////////////////////////////////////////////////////////////
     function devdmbootstrap3_theme_stylesheets()
     {
-        wp_register_style('bootstrap.css', get_template_directory_uri() . '/css/bootstrap.css', array(), '1', 'all' );
+        wp_register_style('bootstrap.css', get_template_directory_uri() . '/responsive/css/bootstrap.css', array(), '1', 'all' );
         wp_enqueue_style( 'bootstrap.css');
         wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), array(), '1', 'all' );
     }
@@ -37,7 +37,7 @@ add_editor_style('css/editor-style.css');
     function devdmbootstrap3_theme_js()
     {
         global $version;
-        wp_enqueue_script('theme-js', get_template_directory_uri() . '/js/bootstrap.js',array( 'jquery' ),$version,true );
+        wp_enqueue_script('theme-js', get_template_directory_uri() . '/responsive/js/bootstrap.js',array( 'jquery' ),$version,true );
     }
     add_action('wp_enqueue_scripts', 'devdmbootstrap3_theme_js');
 
@@ -88,7 +88,7 @@ add_editor_style('css/editor-style.css');
 	add_action('admin_head', 'my_custom_fonts');
 
 function my_custom_fonts() {
-  echo '<link rel="stylesheet" href="../wp-content/themes/twentythirteen/responsive/style.css" type="text/css" media="all" />';
+  echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/responsive/style.css" type="text/css" media="all" />';
 }
 
 ////////////////////////////////////////////////////////////////////
