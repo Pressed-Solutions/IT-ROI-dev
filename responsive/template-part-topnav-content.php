@@ -32,12 +32,6 @@
 	</div>
     <!--container dmbs-container end-->
 
-<div class="content-header">
-    <div class="container page-title" style="margin: 0 auto; float: none;">
-    	<?php echo get_the_post_thumbnail($page->ID, 'full'); ?> 
-    </div>
-</div>
-
 </div>
 <!--header-wrapper end-->
 
