@@ -1,11 +1,5 @@
 <?php global $dm_settings; ?>
 
-<div class="top_menu">
-	<div class="container">
- 	<?php wp_nav_menu(array('theme_location' => "top_menu")); ?>
-	</div>
-   </div>
-
 <!--custom wrapper for header elements-->
 <div class="header-wrapper">
 <!--header-wrapper start-->
