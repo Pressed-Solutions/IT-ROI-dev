@@ -4,7 +4,7 @@
 <!-- end main container -->
 
     <div class="dmbs-footer">
-        <?php get_template_part('template-part', 'footernav'); ?>
+        <?php get_template_part('responsive/template-part', 'footernav'); ?>
     </div>
 
 <?php wp_footer(); ?>

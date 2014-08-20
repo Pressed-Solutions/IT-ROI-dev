@@ -5,9 +5,9 @@ Template Name: Pressed-Responsive
 
 get_header( 'responsive' ); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('responsive/template-part', 'head'); ?>
 
-<?php get_template_part('template-part', 'topnav-content'); ?>
+<?php get_template_part('responsive/template-part', 'topnav-content'); ?>
 
 <div class="container dmbs-container">
 <!-- start content container -->
