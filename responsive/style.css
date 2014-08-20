@@ -14,8 +14,8 @@ Text Domain: Pressed Soltutions
 
 /* GENERAL SETTINGS */
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-@import url(//fonts.googleapis.com/css?family=Maven+Pro:400,700,500);
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+@import url('//fonts.googleapis.com/css?family=Maven+Pro:400,700,500');
 
 body {
 	padding-bottom: 50px;
