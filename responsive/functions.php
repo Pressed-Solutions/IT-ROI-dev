@@ -64,6 +64,8 @@ add_editor_style('css/editor-style.css');
 
 
 // numbered pagination
+if ( ! function_exists( 'pagination' )
+{
 function pagination($pages = '', $range = 4)
 {  
      $showitems = ($range * 2)+1;  
@@ -99,6 +101,7 @@ function pagination($pages = '', $range = 4)
          if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
          echo "</div>\n";
      }
+}
 }
 
 ////////////////////////////////////////////////////////////////////

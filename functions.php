@@ -2022,4 +2022,6 @@ function pagination($pages = '', $range = 2)
      }
 }
 
+require_once('responsive/functions.php');
+
 ?>
