@@ -24,12 +24,12 @@
     {
         wp_register_style('bootstrap.css', get_template_directory_uri() . '/responsive/css/bootstrap.css', array(), '1', 'all' );
         wp_enqueue_style( 'bootstrap.css');
-        wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), array(), '1', 'all' );
+        wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/responsive/style.css', array(), '1', 'all' );
     }
     add_action('wp_enqueue_scripts', 'devdmbootstrap3_theme_stylesheets');
 
 //Editor Style
-add_editor_style('css/editor-style.css');
+add_editor_style('responsive/css/editor-style.css');
 
 ////////////////////////////////////////////////////////////////////
 // Register Bootstrap JS with jquery
