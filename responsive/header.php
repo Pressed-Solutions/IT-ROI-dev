@@ -10,6 +10,7 @@
         add_action( 'wp_enqueue_styles', 'add_bootstrap_styles' );
         function add_bootstrap_styles() {
             wp_enqueue_style( 'responsive-style', get_template_directory_uri() . '/responsive/style.css' );
+        }
         add_action( 'wp_enqueue_scripts', 'add_bootstrap_dropdown_script' );
         function add_bootstrap_dropdown_script() {
             wp_enqueue_style( 'bootstrap-hover-dropdown', get_template_directory_uri() . '/responsive/js/bootstrap-hover-dropdown.min.js' );
