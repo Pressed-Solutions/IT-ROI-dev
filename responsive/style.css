@@ -482,3 +482,27 @@ h2.page-headerWebinar {
     font-family: 'MavenProRegular';
     color: white;
 }
+.social-links {
+    display: block;
+}
+.social-links li {
+    display: inline-block;
+    height: 80px;
+    background-position: 0 0;
+    background-repeat: none;
+}
+.social-links li:hover {
+    background-position: 0 -80px;
+}
+.social-links .linkedin {
+    background-image: url('img/footer/linkedin_bot.png');
+}
+.social-links .facebook {
+    background-image: url('img/footer/facebook_bot.png');
+}
+.social-links .twitter {
+    background-image: url('img/footer/twitter_bot.png');
+}
+.social-links .youtube {
+    background-image: url('img/footer/youtube_bot.png');
+}

@@ -5,10 +5,10 @@
 <div class="footerITnew_content">
     <div class="social-links">
         <ul>
-            <li><a class="linkedin" href="<?php the_author_meta( 'linkedin', 1 ); ?>"></a></li>
-            <li><a class="facebook" href="<?php the_author_meta( 'facebook', 1 ); ?>"></a></li>
-            <li><a class="twitter" href="<?php the_author_meta( 'twitter', 1 ); ?>"></a></li>
-            <li class="youtube"><a href="<?php the_author_meta( 'youtube', 1 ); ?>"></a></li>
+            <li><a class="linkedin" href="<?php the_author_meta( 'linkedin', 1 ); ?>"><span class="hidden">LinkedIn</span></a></li>
+            <li><a class="facebook" href="<?php the_author_meta( 'facebook', 1 ); ?>"><span class="hidden">Facebook</span></a></li>
+            <li><a class="twitter" href="<?php the_author_meta( 'twitter', 1 ); ?>"><span class="hidden">Twitter</span></a></li>
+            <li class="youtube"><a href="<?php the_author_meta( 'youtube', 1 ); ?>"><span class="hidden">YouTube</span></a></li>
         </ul>
     </div>
   <div class="medium">
