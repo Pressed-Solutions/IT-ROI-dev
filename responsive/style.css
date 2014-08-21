@@ -487,31 +487,84 @@ h2.page-headerWebinar {
 }
 .social-links ul {
     padding: 0;
+    width: 100%;
 }
 .social-links li {
     display: inline-block;
     margin-right: -5px;
     margin-bottom: -5px;
+    min-width: 215px;
 }
 .social-links li a {
     display: block;
     height: 40px;
-    width: 215px;
     background-position: 0 0;
+    background-repeat: no-repeat;
 }
 .social-links li a:hover,
 .social-links li a:active {
     background-position: 0 -40px;
+    background-color: rgb(168, 168, 168);
 }
 .social-links .linkedin {
     background-image: url('img/footer/linkedin_bot.png');
+    background-color: rgb(18, 77, 122);
 }
 .social-links .facebook {
     background-image: url('img/footer/facebook_bot.png');
+    background-color: rgb(18, 106, 169);
 }
 .social-links .twitter {
     background-image: url('img/footer/twitter_bot.png');
+    background-color: rgb(0, 172, 237);
 }
 .social-links .youtube {
     background-image: url('img/footer/youtube_bot.png');
+    background-color: rgb(225, 78, 66);
+}
+
+@media screen and (min-width: 992px) {
+    .social-links li {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 455px) {
+    .social-links li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .social-links li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .medium .left,
+    .medium .right {
+        float: left;
+        display: block;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .medium .left {
+        padding-right: 1em;
+    }
+    .medium .right {
+        padding-left: 1em;
+    }
+    .medium .bottom {
+        clear: both;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .medium .left,
+    .media .right {
+        float: none;
+        width: 100%;
+    }
 }
