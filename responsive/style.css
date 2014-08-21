@@ -102,127 +102,6 @@ body {
     margin-right: 10px;
 }
 
-/* HOMEPAGE SLIDER SETTINGS */
-
-/* Homepage Slider */
-.homepage-slider {
-    width: 100%;
-    background: url(img/background-homepage-slider.jpg) center top no-repeat;
-    text-align: center;
-}
-
-.homepage-slider .nextend-loaded {
-    margin: 0 auto !important;
-}
-
-/* Content page header image */
-.content-header {
-    width: 100%;
-    background: url(img/background-homepage-slider.jpg) center center no-repeat;
-    float: left;
-    padding: 20px 0;
-}
-
-.content-header .page-title {
-    color: #fff;
-    margin: 0 auto;
-    padding: 0 0 0 10px;
-    text-align: left;
-}
-
-.content-header .page-title img {
-    width: 100%;
-    height: auto;
-}
-
-
-/* Homepage custom content */
-.custom-content {
-    margin: 25px 0 0;
-}
-
-/* Homepage custom content - US Map */
-.custom-content .us-map {
-
-}
-
-/* Homepage custom content - Homepage contact block */
-.custom-content .contact-details {
-}
-
-@media (min-width: 992px) {
-  .custom-content .contact-details {
-    padding-top: 50px;
-    }
-}
-
-.custom-content .contact-details h3 {
-    color: #3399cc;
-}
-
-.custom-content .contact-details .contact-phone {
-    margin: 0 0 5px;
-    padding-left: 25px;
-    background: url(img/icons/icon-phone.png) left center no-repeat;
-}
-.custom-content .contact-details .contact-mail {
-    padding-left: 25px;
-    background: url(img/icons/icon-mail.png) left center no-repeat;
-}
-
-
-/* Content seattings */
-
-/* REGISTRATION FORM SETTINGS */
-.gform_body .title { width: 50px; float: left; margin-right: 10px; }
-.gform_body .first-name { width: 290px; float: left; margin-right: 10px; }
-.gform_body .middle-name { width: 100px; float: left; margin-right: 10px; }
-.gform_body .last-name { width: 290px; float: left; margin-right: 10px; }
-.gform_body .suffix { width: 100px; float: left; margin-right: 10px; }
-.gform_body .home-address-1 { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .home-address-2 { width: 290px; float: left; margin-right: 10px; }
-.gform_body .city { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .state { width: 100px; float: left; margin-right: 10px; }
-.gform_body .zip { width: 100px; float: left; margin-right: 10px; }
-.gform_body .phone { width: 290px; float: left; margin-right: 10px; clear: both; }
-.gform_body .email-address { width: 290px; float: left; margin-right: 10px; }
-.gform_body .quantity { width: 100px; float: left; margin-right: 10px; }
-
-.gform_body .total { clear: both; text-align: right; }
-
-.page-notes { margin-top: 30px; }
-
-.dmbs-main {
-
-}
-
-.dmbs-left {
-
-}
-
-.dmbs-right {
-
-}
-
-.dmbs-footer-menu {
-
-}
-
-.dmbs-author-credits {
-
-}
-
-/* Footer Settings */
-.dmbs-footer {
-    height: 65px;
-    background: url(img/background-top-bar.png) left top repeat-x;
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: none;
-}
-
 .navbar-fixed-top, .navbar-fixed-bottom {
     position: relative;
 }
@@ -327,6 +206,102 @@ form.search-form.topbar input {
     font-weight: normal;
     margin-top: 17px;
 }
+
+
+/* HOMEPAGE SLIDER SETTINGS */
+
+/* Homepage Slider */
+.homepage-slider {
+    width: 100%;
+    background: url(img/background-homepage-slider.jpg) center top no-repeat;
+    text-align: center;
+}
+
+.homepage-slider .nextend-loaded {
+    margin: 0 auto !important;
+}
+
+/* Content page header image */
+.content-header {
+    width: 100%;
+    background: url(img/background-homepage-slider.jpg) center center no-repeat;
+    float: left;
+    padding: 20px 0;
+}
+
+.content-header .page-title {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+
+.content-header .page-title img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Homepage custom content */
+.custom-content {
+    margin: 25px 0 0;
+}
+
+/* Homepage custom content - US Map */
+.custom-content .us-map {
+
+}
+
+/* Homepage custom content - Homepage contact block */
+.custom-content .contact-details {
+}
+
+@media (min-width: 992px) {
+  .custom-content .contact-details {
+    padding-top: 50px;
+    }
+}
+
+.custom-content .contact-details h3 {
+    color: #3399cc;
+}
+
+.custom-content .contact-details .contact-phone {
+    margin: 0 0 5px;
+    padding-left: 25px;
+    background: url(img/icons/icon-phone.png) left center no-repeat;
+}
+.custom-content .contact-details .contact-mail {
+    padding-left: 25px;
+    background: url(img/icons/icon-mail.png) left center no-repeat;
+}
+
+
+/* Content settings */
+
+.page-notes { margin-top: 30px; }
+
+.dmbs-main {
+
+}
+
+.dmbs-left {
+
+}
+
+.dmbs-right {
+
+}
+
+.dmbs-footer-menu {
+
+}
+
+.dmbs-author-credits {
+
+}
+
+/* Events page */
 .event-page .page-header {
     text-align: center;
     text-transform: uppercase;
