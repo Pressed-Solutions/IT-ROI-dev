@@ -13,7 +13,7 @@
         }
         add_action( 'wp_enqueue_scripts', 'add_bootstrap_dropdown_script' );
         function add_bootstrap_dropdown_script() {
-            wp_enqueue_style( 'bootstrap-hover-dropdown', get_template_directory_uri() . '/responsive/js/bootstrap-hover-dropdown.min.js' );
+            wp_enqueue_script( 'bootstrap-hover-dropdown', get_template_directory_uri() . '/responsive/js/bootstrap-hover-dropdown.min.js' );
         }
     ?>
     <?php wp_head(); ?>
