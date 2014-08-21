@@ -282,6 +282,34 @@ body {
 .sub-menu a:hover {
     text-decoration: none;
 }
+/* main menu */
+#menu-menu li.dropdown:hover ul {
+    display: block;
+}
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover {
+    color: white;
+    padding: 12px 20px;
+}
+/* specific dropdown colors */
+.integrationmenu .dropdown-menu {
+    background-color: #0fa1e0;
+}
+.integrationmenu .dropdown-menu a:hover {
+    background-color: #0c7fb0;
+}
+.sharepointmenu .dropdown-menu {
+    background-color: #ff6600;
+}
+.sharepointmenu .dropdown-menu a:hover {
+    background-color: #ed5f01;
+}
+.servicesmenu .dropdown-menu {
+    background-color: #ffac1f;
+}
+.servicesmenu .dropdown-menu a:hover {
+    background-color: #e4950f;
+}
 form.search-form.topbar {
     float: right;
 }
