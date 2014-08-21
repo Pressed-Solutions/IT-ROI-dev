@@ -485,14 +485,23 @@ h2.page-headerWebinar {
 .social-links {
     display: block;
 }
+.social-links ul {
+    padding: 0;
+}
 .social-links li {
     display: inline-block;
-    height: 80px;
-    background-position: 0 0;
-    background-repeat: none;
+    margin-right: -5px;
+    margin-bottom: -5px;
 }
-.social-links li:hover {
-    background-position: 0 -80px;
+.social-links li a {
+    display: block;
+    height: 40px;
+    width: 215px;
+    background-position: 0 0;
+}
+.social-links li a:hover,
+.social-links li a:active {
+    background-position: 0 -40px;
 }
 .social-links .linkedin {
     background-image: url('img/footer/linkedin_bot.png');
