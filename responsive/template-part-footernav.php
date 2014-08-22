@@ -67,8 +67,20 @@
     </div><!-- div.right -->
 
     <div class="bottom">
-        <a class="small-logo" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
-            <?php wp_nav_menu( array(
+        <nav class="navbar navbar-inverse" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
+                    <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div><!-- div.navbar-header -->
+
+            <a class="small-logo" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
+
+        <?php wp_nav_menu( array(
                 'theme_location' => '',
                 'menu' => 'footer-1',
                 'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled',
@@ -77,6 +89,7 @@
                 'menu_class' => 'nav navbar-nav',
                 'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                 'walker' => new wp_bootstrap_navwalker()) ); ?>
+        </nav><!-- nav.navbar.navbar-inverse -->
     </div><!-- div.bottom -->
 
     <div class="copyright">
