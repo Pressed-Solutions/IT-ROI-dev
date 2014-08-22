@@ -9,7 +9,7 @@
     <?php
         add_action( 'wp_enqueue_styles', 'add_bootstrap_styles' );
         function add_bootstrap_styles() {
-            wp_enqueue_style( 'responsive-style', get_template_directory_uri() . '/responsive/style.css' );
+            wp_enqueue_style( 'responsive-style', 'http://dev.itroisolutions.com/wp-content/themes/twentythirteen/responsive/style.css' );
         }
     ?>
     <?php wp_head(); ?>
