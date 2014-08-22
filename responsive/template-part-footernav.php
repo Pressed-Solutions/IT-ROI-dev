@@ -67,10 +67,11 @@
     </div><!-- div.right -->
 
     <div class="bottom">
-        <div style="width:166px;float:left"><a itemprop="url" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a></div>
-            <?php wp_nav_menu( array( 'theme_location' => '','menu' =>'footer-1', 'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled') );?>
-    </div>
-    <div class="title">
+        <a class="small-logo" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
+            <?php wp_nav_menu( array( 'theme_location' => '', 'menu' => 'footer-1', 'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled', 'container' => 'div', 'container_class' => 'collapse navbar-collapse navbar-1-collapse', 'menu_class' 'nav navbar-nav', 'fallback_cb' => 'wp_bootstrap_navwalker::fallback', 'walker' => new wp_bootstrap_navwalker()) );?>
+    </div><!-- div.bottom -->
+
+    <div class="copyright">
         <?php wp_nav_menu( array( 'theme_location' => '','menu' =>'footer-2', 'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled') );?> <div class="itroi">&copy;<?php if ( date( 'Y') > 2014 ) { echo '2014&ndash;' . date( 'Y' ); } else { echo '2014'; } ?> IT-ROI Solutions</div>
     </div>
 </div><!-- div.medium.container -->
