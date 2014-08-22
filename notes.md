@@ -3,7 +3,9 @@
 
 #Todo
  - mark the menu as used for **Main Menu**
- - revert the change in commit [d5bc15a](https://github.com/macbookandrew/IT-ROI-dev/commit/d5bc15a) and [7847dbd](https://github.com/macbookandrew/IT-ROI-dev/commit/7847dbd)
+ - revert the change in commits [d5bc15a](https://github.com/macbookandrew/IT-ROI-dev/commit/d5bc15a) and [7847dbd](https://github.com/macbookandrew/IT-ROI-dev/commit/7847dbd)
 
-#Footer
- - To do it right, we should get the icons as SVG and use actual text
+#"Do It Right" Upgrades
+ - Footer social links: SVG icons, actual text
+ - Main menu: SVG icons, actual text
+ 
