@@ -6,12 +6,6 @@
     <title><?php wp_title('&laquo;', true, 'right'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <?php
-        add_action( 'wp_enqueue_styles', 'add_bootstrap_styles' );
-        function add_bootstrap_styles() {
-            wp_enqueue_style( 'responsive-style', 'http://dev.itroisolutions.com/wp-content/themes/twentythirteen/responsive/style.css' );
-        }
-    ?>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
