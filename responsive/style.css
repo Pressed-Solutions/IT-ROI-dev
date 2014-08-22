@@ -164,6 +164,10 @@ body {
 /* main menu */
 #logo {
     float: left;
+    margin-right: -25px;
+}
+.header-wrapper .caret {
+    display: none;
 }
 .header-wrapper .dropdown ul {
     min-width: 225px;
@@ -181,9 +185,10 @@ body {
     padding: 15px 10px 15px 52px;
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 40px;
 }
 /* specific dropdown icons and colors */
-.integrationmenu a {
+.integrationmenu > a {
     background: url('../images/menu-icons/Integrations.png');
 }
 .integrationmenu .dropdown-menu {
@@ -192,7 +197,7 @@ body {
 .integrationmenu .dropdown-menu a:hover {
     background-color: #0c7fb0;
 }
-.sharepointmenu a {
+.sharepointmenu > a {
     background: url('../images/menu-icons/Sharepoint.png');
 }
 .sharepointmenu .dropdown-menu {
@@ -201,13 +206,13 @@ body {
 .sharepointmenu .dropdown-menu a:hover {
     background-color: #ed5f01;
 }
-.mobilitymenu a {
+.mobilitymenu > a {
     background: url('../images/menu-icons/Mobility.png');
 }
-.reportingmenu a {
+.reportingmenu > a {
     background: url('../images/menu-icons/Reporting.png');
 }
-.servicesmenu a {
+.servicesmenu > a {
     background: url('../images/menu-icons/Services.png');
 }
 .servicesmenu .dropdown-menu {
@@ -629,7 +634,7 @@ h2.page-headerWebinar {
 
 @media screen and (min-width: 768px) {
     .header-wrapper .container {
-        width: 90%;
+        width: 95%;
     }
     .medium .left,
     .medium .right {
@@ -662,13 +667,13 @@ h2.page-headerWebinar {
 }
 
 /* Uncle Bear */
-@media screen and (min-width: 768px) and (max-width: 920px) {
-    .header-wrapper .menu-item img {
-        width: 75%;
-        height: 75%;
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .header-wrapper .container {
+        width: 100%;
     }
-    .header-wrapper .menu-item {
-        max-width: 20%;
+    .header-wrapper .navbar-nav > li > a {
+        padding-left: 33px;
+        background-size: 30px;
     }
 }
 
