@@ -2,7 +2,9 @@
 <?php if ( has_nav_menu( 'main_menu' ) ) : ?>
 
     <div class="row dmbs-top-menu">
-    
+        <a itemprop="url" href="<?php echo home_url(); ?>" title="Home" rel="home" id="logo">
+            <img itemprop="logo" src="<?php get_stylesheet_directory(); ?>/images/logo.png" alt="Home">
+        </a>
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
@@ -25,7 +27,13 @@
             );
             ?>
         </nav>
-	</div>
+        <form role="search" method="get" class="search-form topbar" action="<?php echo home_url( '/' ); ?>">
+            <label>
+                <input type="search" class="search-field" placeholder="Search site" value="" name="s" title="Search for:" />
+            </label>
+        </form>
+
+	</div><!-- div.row.dmbs-top-menu -->
 
 <?php endif; ?>
 
