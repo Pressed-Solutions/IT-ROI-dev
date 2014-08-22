@@ -636,11 +636,11 @@ h2.page-headerWebinar {
 
 /* Uncle Bear */
 @media screen and (min-width: 768px) and (max-width: 920px) {
-    .menu-item img {
+    .header-wrapper .menu-item img {
         width: 75%;
         height: 75%;
     }
-    .menu-item {
+    .header-wrapper .menu-item {
         max-width: 20%;
     }
 }
