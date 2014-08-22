@@ -93,8 +93,13 @@
     </div><!-- div.bottom -->
 
     <div class="copyright">
-        <?php wp_nav_menu( array( 'theme_location' => '','menu' =>'footer-2', 'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled') );?> <div class="itroi">&copy;<?php if ( date( 'Y') > 2014 ) { echo '2014&ndash;' . date( 'Y' ); } else { echo '2014'; } ?> IT-ROI Solutions</div>
-    </div>
+        <?php wp_nav_menu( array(
+            'theme_location' => '',
+            'menu' =>'footer-2',
+            'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled') );?>
+        <div class="itroi">&copy;<?php if ( date( 'Y') > 2014 ) { echo '2014&ndash;' . date( 'Y' ); } else { echo '2014'; } ?> IT-ROI Solutions</div>
+    </div><!-- div.copyright -->
+
 </div><!-- div.medium.container -->
 
 <div style="clear: both;"></div>

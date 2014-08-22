@@ -18,7 +18,7 @@ Text Domain: Pressed Soltutions
 @import url('//fonts.googleapis.com/css?family=Maven+Pro:400,700,500');
 
 body {
-    padding-bottom: 50px;
+    padding-bottom: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -523,7 +523,9 @@ h2.page-headerWebinar {
     background-image: url('img/footer/youtube_bot.png');
     background-color: rgb(225, 78, 66);
 }
-
+.it-new-content .medium {
+    padding: 0 15px 30px;
+}
 .left,
 .right {
     padding: 15px;
@@ -554,29 +556,47 @@ h2.page-headerWebinar {
     float: left;
 }
 
+.medium .bottom {
+    padding-top: 15px;
+}
+.bottom nav.navbar.navbar-inverse {
+    float: none;
+}
+.bottom .navbar-collapse {
+    float: left;
+}
+.small-logo {
+    height: auto;
+    float: left;
+}
+#menu-footer-1 > li > a {
+    color: #027ac6;
+}
+#menu-footer-1 > li > a:hover {
+    color: white;
+}
+
+.copyright {
+    clear: both;
+}
+.copyright .menu-footer-2-container a,
+.itroi {
+    color: #696969;
+}
+.copyright ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.copyright li,
+.itroi {
+    font-size: smaller;
+}
+
+/* Papa Bear  */
 @media screen and (min-width: 992px) {
     .social-links li {
         width: 25%;
-    }
-}
-
-@media screen and (max-width: 991px) and (min-width: 455px) {
-    .social-links li {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .social-links li {
-        width: 100%;
-    }
-    .youtube-links,
-    .youtube-player {
-        float: none;
-        width: 100%;
-    }
-    .youtube-player {
-        height: 100%;
     }
 }
 
@@ -597,12 +617,60 @@ h2.page-headerWebinar {
     .medium .bottom {
         clear: both;
     }
-
+    .bottom .navbar-collapse {
+        padding-right: 0;
+    }
+    .copyright .menu-footer-2-container,
+    .copyright .itroi {
+        float: right;
+    }
+    .copyright li,
+    .itroi {
+        display: inline-block;
+        padding: 0 15px;
+    }
 }
 
+/* Mama Bear */
+@media screen and (max-width: 991px) and (min-width: 455px) {
+    .social-links li {
+        width: 50%;
+    }
+}
+
+/* Mama and Baby Bear */
 @media screen and (max-width: 768px) {
     .medium .left,
-    .media .right {
+    .medium .right {
+        float: none;
+        width: 100%;
+    }
+    .youtube-player {
+        height: 100%;
+    }
+    .small-logo,
+    .small-logo img {
+        float: none;
+        margin: 15px auto;
+        display: block;
+    }
+    .bottom .navbar-inverse .navbar-toggle {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .copyright li, .copyright .itroi {
+        text-align: center;
+    }
+}
+
+/* Baby Bear */
+@media screen and (max-width: 480px) {
+    .social-links li {
+        width: 100%;
+    }
+    .youtube-links,
+    .youtube-player {
         float: none;
         width: 100%;
     }
