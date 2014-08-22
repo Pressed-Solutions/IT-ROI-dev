@@ -488,6 +488,7 @@ h2.page-headerWebinar {
 .social-links ul {
     padding: 0;
     width: 100%;
+    margin-bottom: 0;
 }
 .social-links li {
     display: inline-block;
@@ -521,6 +522,27 @@ h2.page-headerWebinar {
 .social-links .youtube {
     background-image: url('img/footer/youtube_bot.png');
     background-color: rgb(225, 78, 66);
+}
+
+.left,
+.right {
+    padding: 15px;
+}
+.right {
+    background-color: rgb(225, 78, 66);
+}
+.right a {
+    color: white;
+}
+.youtube-links {
+    width: 33%;
+    float: left;
+    font-size: small;
+    padding-right: 15px;
+}
+.youtube-player {
+    width: 66%;
+    float: left;
 }
 
 @media screen and (min-width: 992px) {
