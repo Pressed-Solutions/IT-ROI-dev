@@ -540,6 +540,15 @@ h2.page-headerWebinar {
     font-size: small;
     padding-right: 15px;
 }
+.youtube-links h2 {
+    font-size: 14px;
+    margin: 0;
+}
+.youtube-links ul {
+    list-style-position: outside;
+    padding-left: 15px;
+    font-size: smaller;
+}
 .youtube-player {
     width: 66%;
     float: left;
@@ -549,14 +558,6 @@ h2.page-headerWebinar {
     .social-links li {
         width: 25%;
     }
-    .youtube-links,
-    .youtube-player {
-        float: none;
-        width: 100%;
-    }
-    .youtube-player {
-        height: 100%;
-    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 455px) {
@@ -565,9 +566,17 @@ h2.page-headerWebinar {
     }
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 480px) {
     .social-links li {
         width: 100%;
+    }
+    .youtube-links,
+    .youtube-player {
+        float: none;
+        width: 100%;
+    }
+    .youtube-player {
+        height: 100%;
     }
 }
 
