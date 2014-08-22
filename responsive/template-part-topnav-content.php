@@ -3,7 +3,7 @@
 
     <div class="row dmbs-top-menu">
         <a itemprop="url" href="<?php echo home_url(); ?>" title="Home" rel="home" id="logo">
-            <img itemprop="logo" src="<?php get_stylesheet_directory(); ?>/images/logo.png" alt="Home">
+            <img itemprop="logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Home">
         </a>
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
