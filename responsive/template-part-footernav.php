@@ -63,6 +63,7 @@
         ?>
             <iframe width="100%" height="100%" name="iframe" src="<?php echo $content;?>"></iframe>
         </div>
+        <div style="clear: both;"></div>
     </div><!-- div.right -->
 
     <div class="bottom">
