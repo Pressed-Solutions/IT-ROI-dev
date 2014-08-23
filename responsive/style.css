@@ -416,6 +416,7 @@ h2.sharepoint {
     display: block;
     float: left;
     width: 90px;
+    height: 90px;
 }
 
 .ppm-links .rollover:hover {
