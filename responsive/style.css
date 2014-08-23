@@ -25,7 +25,6 @@ body {
 .dmbs-main {
     padding-top: 12px;
     background-image: url(http://itroisolutions.com/wp-content/themes/twentythirteen/images/background.jpg);
-    z-index: -1;
     border-right: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
 }
@@ -65,60 +64,6 @@ body {
     clear: both;
     margin-bottom: 0px;
     }
-}
-
-.page-template-page-responsive-php .page-header {
-    display: none;
-}
-
-/* headers */
-h1.sharepoint,
-h2.sharepoint {
-    text-align: center;
-    font-family: 'MavenProRegular';
-}
-
-h2.sharepoint {
-    color: #0e6dad;
-}
-
-.sharepoint-orange {
-    color: #ff6600;
-}
-
-/* CTA buttons */
-.cta-buttons {
-    margin: 24px 0;
-}
-.cta-buttons a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1.4em .5em;
-}
-
-.cta-buttons .tel {
-    padding: .7em;
-}
-
-.cta-buttons .background-purple {
-    background-color: #9900cc;
-}
-
-.cta-buttons .background-red {
-    background-color: #fe3b00;
-}
-
-.cta-buttons .background-green {
-    background-color: #47b800;
-}
-
-.cta-buttons .background-blue {
-    background-color: #0098da;
-}
-
-.cta-buttons .talk-now-number {
-    display: block;
 }
 
 /* MAIN NAVIGATION SETTINGS */
@@ -404,6 +349,93 @@ a.tel:hover {
 
 .dmbs-author-credits {
 
+}
+
+.page-template-page-responsive-php .page-header {
+    display: none;
+}
+
+/* ------------------ PPM pages -------------------- */
+
+/* headers */
+h1.sharepoint,
+h2.sharepoint {
+    text-align: center;
+    font-family: 'MavenProRegular';
+}
+
+h2.sharepoint {
+    color: #0e6dad;
+}
+
+.sharepoint-orange {
+    color: #ff6600;
+}
+
+/* CTA buttons */
+.cta-buttons {
+    margin: 24px 0;
+}
+.cta-buttons a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4em .5em;
+}
+
+.cta-buttons .tel {
+    padding: .7em;
+}
+
+.cta-buttons .background-purple {
+    background-color: #9900cc;
+}
+
+.cta-buttons .background-red {
+    background-color: #fe3b00;
+}
+
+.cta-buttons .background-green {
+    background-color: #47b800;
+}
+
+.cta-buttons .background-blue {
+    background-color: #0098da;
+}
+
+.cta-buttons .talk-now-number {
+    display: block;
+}
+
+/* PPM links */
+.ppm-links {
+    margin: 30px 0;
+}
+
+.ppm-links .rollover {
+    display: block;
+    float: left;
+    width: 90px;
+}
+
+.ppm-links .rollover:hover {
+    background-position: 0 -91px;
+}
+
+.ppm-links .rollover.docboss {
+    background-image: url(../images/ppm-rollovers/ppm-docboss.png);
+}
+
+.ppm-links .rollover.taskboss {
+    background-image: url(../images/ppm-rollovers/ppm-taskboss.png);
+}
+
+.ppm-links .rollover.timesheetboss {
+    background-image: url(../images/ppm-rollovers/ppm-timesheetboss.png);
+}
+
+.ppm-links p {
+    margin-left: 105px;
 }
 
 /* Events page */
