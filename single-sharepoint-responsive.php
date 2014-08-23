@@ -1,7 +1,11 @@
 <?php
-/*
-Template Name: Pressed-Responsive Sharepoint
-*/
+/**
+ * The Template for displaying single posts.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
+ */
 
 get_header( 'responsive' ); ?>
 
