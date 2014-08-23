@@ -372,6 +372,13 @@ function form_submit_button($button, $form){
 
 }
 
+// add title back to menu images for responsive pages
+function md_nmi_custom_content( $content, $item_id, $original_content ) {
+  $content = $content . '<span class="page-title">' . $original_content . '</span>';
+
+  return $content;
+}
+add_filter( 'nmi_menu_item_content', 'md_nmi_custom_content', 10, 3 );
 
 
 ?>

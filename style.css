@@ -1,6 +1,6 @@
 @import 'style-events.css';
 
-#autocomplete{border:1px solid;overflow:hidden;position:absolute;z-index:100;}#autocomplete ul{list-style:none;list-style-image:none;margin:0;padding:0;}#autocomplete li{background:#fff;color:#000;cursor:default;white-space:pre;zoom:1;}html.js input.form-autocomplete{background-position:100% 2px;background-repeat:no-repeat;}html.js input.throbbing{background-position:100% -18px;}html.js fieldset.collapsed{border-bottom-width:0;border-left-width:0;border-right-width:0;height:1em;}html.js fieldset.collapsed .fieldset-wrapper{display:none;}fieldset.collapsible{position:relative;}fieldset.collapsible .fieldset-legend{display:block;}.form-textarea-wrapper textarea{display:block;margin:0;width:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}.resizable-textarea .grippie{border:1px solid #ddd;border-top-width:0;cursor:s-resize;height:9px;overflow:hidden;}
+#autocomplete{border:1px solid;overflow:hidden;position:absolute;z-index:100;}#autocomplete ul{list-style:none;list-style-image:none;margin:0;padding:0;}#autocomplete li{background:#fff;color:#000;cursor:default;white-space:pre;zoom:1;}html.js input.form-autocomplete{background-position:100% 2px;background-repeat:no-repeat;}html.js input.throbbing{background-position:100% -18px;}html.js fieldset.collapsed{border-bottom-width:0;border-left-width:0;border-right-width:0;height:1em;}html.js fieldset.collapsed .fieldset-wrapper{display:none;}fieldset.collapsible{position:relative;}fieldset.collapsible .fieldset-legend{display:block;}.form-textarea-wrapper textarea{display:block;margin:0;width:100%;-moz-box-sizing:border-box;box-sizing:border-box;}.resizable-textarea .grippie{border:1px solid #ddd;border-top-width:0;cursor:s-resize;height:9px;overflow:hidden;}
 body.drag
 {
     cursor:move;
@@ -27,4 +27,9 @@ body div.tabledrag-changed-warning
 {
     margin-bottom:0.5em;
 }
-tr.selected td{background:#ffc;}td.checkbox,th.checkbox{text-align:center;}.progress{font-weight:bold;}.progress .bar{background:#ccc;border-color:#666;margin:0 0.2em;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+tr.selected td{background:#ffc;}td.checkbox,th.checkbox{text-align:center;}.progress{font-weight:bold;}.progress .bar{background:#ccc;border-color:#666;margin:0 0.2em;border-radius:3px;}
+
+/* hide page title in menu */
+.menu-menu-container .page-title {
+    display: none;
+}
