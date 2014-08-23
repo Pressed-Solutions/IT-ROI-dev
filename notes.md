@@ -9,6 +9,7 @@
 #"Do It Right" Upgrades
  - Footer social links: SVG icons, actual text
  - Main menu: SVG icons, actual text
+ - SVG, redesign main image
  
 #Move to production
  - mark the menu as used for **Main Menu**
