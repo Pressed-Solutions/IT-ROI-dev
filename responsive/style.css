@@ -22,7 +22,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.dmbs-container {
+.dmbs-main {
+    padding-top: 12px;
+    background-image: url(http://itroisolutions.com/wp-content/themes/twentythirteen/images/background.jpg);
+    z-index: -1;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
 }
 
 /* HEADER SETTINGS */
@@ -32,6 +37,7 @@ body {
     border-bottom: 1px solid #000;
     border-top: 1px solid #8c8c8c;
     box-shadow: 0px 0px 13px #000000;
+    margin-bottom: 0;
 }
 
 .dmbs-header {
@@ -61,10 +67,61 @@ body {
     }
 }
 
+.page-template-page-responsive-php .page-header {
+    display: none;
+}
 
+/* headers */
+h1.sharepoint,
+h2.sharepoint {
+    text-align: center;
+    font-family: 'MavenProRegular';
+}
+
+h2.sharepoint {
+    color: #0e6dad;
+}
+
+.sharepoint-orange {
+    color: #ff6600;
+}
+
+/* CTA buttons */
+.cta-buttons {
+    margin: 24px 0;
+}
+.cta-buttons a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4em .5em;
+}
+
+.cta-buttons .tel {
+    padding: .7em;
+}
+
+.cta-buttons .background-purple {
+    background-color: #9900cc;
+}
+
+.cta-buttons .background-red {
+    background-color: #fe3b00;
+}
+
+.cta-buttons .background-green {
+    background-color: #47b800;
+}
+
+.cta-buttons .background-blue {
+    background-color: #0098da;
+}
+
+.cta-buttons .talk-now-number {
+    display: block;
+}
 
 /* MAIN NAVIGATION SETTINGS */
-
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
@@ -181,6 +238,7 @@ body {
     padding: 12px 20px;
 }
 .header-wrapper .navbar-nav > li > a {
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 15px 10px 15px 52px;
     background-repeat: no-repeat;
@@ -311,6 +369,21 @@ form.search-form.topbar input {
 
 /* Content settings */
 
+a.tel,
+a.tel:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.page-template-page-responsive-php {
+    line-height: 1.5;
+}
+
+
 .page-notes { margin-top: 30px; }
 
 .dmbs-main {
@@ -411,9 +484,6 @@ h3.UPCOMING-EVENTS {
     color:#fff; /* Pagination text color */
     background: #126AA9; /* Pagination non-active background color */
     -webkit-transition: background .15s ease-in-out;
-    -moz-transition: background .15s ease-in-out;
-    -ms-transition: background .15s ease-in-out;
-    -o-transition: background .15s ease-in-out;
     transition: background .15s ease-in-out;
     font-weight: bold;
     font-size: 13px;
@@ -641,6 +711,7 @@ h2.page-headerWebinar {
         float: left;
         display: block;
         width: 50%;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
     .medium .left {
