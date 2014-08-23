@@ -190,8 +190,11 @@ body {
     background-position: left;
     background-size: 40px;
 }
+.page-template-page-responsive-php .menu-item img {
+    display: none;
+}
 /* specific dropdown icons and colors */
-.integrationmenu > a {
+.page-template-page-responsive-php .integrationmenu > a {
     background: url('../images/menu-icons/Integrations.png');
 }
 .integrationmenu .dropdown-menu {
@@ -200,7 +203,7 @@ body {
 .integrationmenu .dropdown-menu a:hover {
     background-color: #0c7fb0;
 }
-.sharepointmenu > a {
+.page-template-page-responsive-php .sharepointmenu > a {
     background: url('../images/menu-icons/Sharepoint.png');
 }
 .sharepointmenu .dropdown-menu {
@@ -209,13 +212,13 @@ body {
 .sharepointmenu .dropdown-menu a:hover {
     background-color: #ed5f01;
 }
-.mobilitymenu > a {
+.page-template-page-responsive-php .mobilitymenu > a {
     background: url('../images/menu-icons/Mobility.png');
 }
-.reportingmenu > a {
+.page-template-page-responsive-php .reportingmenu > a {
     background: url('../images/menu-icons/Reporting.png');
 }
-.servicesmenu > a {
+.page-template-page-responsive-php .servicesmenu > a {
     background: url('../images/menu-icons/Services.png');
 }
 .servicesmenu .dropdown-menu {
