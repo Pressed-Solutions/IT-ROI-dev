@@ -394,7 +394,7 @@ echo ' -->';
     $download_href = preg_match( '(?i)\b((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?«»“”‘’]))', $custom_fields['download_the_product_brief'][0], $download_href);
 
 echo '<!-- ';
-var_dump $download_href;
+var_dump($download_href);
 echo ' -->';
 //todo: remove previous 3 lines
 
