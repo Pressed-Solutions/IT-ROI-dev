@@ -389,6 +389,7 @@ function display_cta_buttons( $atts ) {
     $cta_string .= '<div class="col-md-3"><a class="background-blue">' . get_post_meta( get_the_ID(), 'request_a_demo ' ) . 'Request a demo</a></div>';
     $cta_string .= '<div class="col-md-3"><a class="background-green tel" href="tel:19545183330;ext=104">Talk now <span class="talk-now-number">945.518.330 x104</span></a></div>';
     $cta_string .= '</section>';
+$cta_string .= '<!-- ID: ' . get_the_ID . '-->'; // todo: remove this debugging line
 
     return $cta_string;
 }
