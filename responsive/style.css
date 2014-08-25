@@ -857,19 +857,15 @@ h2.page-headerWebinar {
         flex-direction: row;
         justify-content: space-between;
     }
+    .navbar-header {
+        display: none;
+    }
 }
 
 /* Mama Bear */
 @media screen and (max-width: 992px) and (min-width: 455px) {
       .social-links li {
         width: 50%;
-    }
-}
-
-/* Mama Bear only */
-@media screen and (min-width: 680px) and (max-width: 779px) {
-    .navbar-header {
-        display: none;
     }
 }
 
