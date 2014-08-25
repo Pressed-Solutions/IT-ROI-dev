@@ -860,11 +860,15 @@ h2.page-headerWebinar {
 
 /* Uncle Bear and down */
 @media screen and (max-width: 992px) {
-    #logo img, .col-sm-full {
+    #logo img, .topbar.search-form input {
         display: block;
         margin: 0 auto;
     }
-    .search-form .col-sm-12 label {
+    form.search-form.topbar input {
+        position: relative;
+        right: auto;
+    }
+    .search-form.col-sm-12 label {
         width: 100%;
     }
 }
@@ -878,10 +882,6 @@ h2.page-headerWebinar {
 
 /* Mama and Baby Bear */
 @media screen and (max-width: 767px) {
-    form.search-form.topbar input {
-        position: relative;
-        right: auto;
-    }
     .medium .left,
     .medium .right {
         float: none;

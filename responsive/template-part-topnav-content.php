@@ -27,7 +27,7 @@
             );
             ?>
         </nav><!-- .navbar .navbar-inverse .col-md-8 -->
-        <form role="search" method="get" class="search-form topbar col-md-2 col-sm-12" action="<?php echo home_url( '/' ); ?>">
+        <form role="search" method="get" class="search-form topbar col-md-2 col-sm-full" action="<?php echo home_url( '/' ); ?>">
             <label>
                 <input type="search" class="search-field" placeholder="Search site" value="" name="s" title="Search for:" />
             </label>
