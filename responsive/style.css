@@ -87,6 +87,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav > li > a {
+    line-height: 30px;
     font-size: 10px;
 }
 
@@ -170,10 +171,6 @@ body {
     text-decoration: none;
 }
 /* main menu */
-#logo {
-    float: left;
-    margin-right: -25px;
-}
 .header-wrapper .caret {
     display: none;
 }
@@ -194,6 +191,7 @@ body {
     padding: 15px 10px 15px 33px;
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 30px;
     font-size: 13px;
 }
 .page-template-page-responsive-php .menu-item img {
@@ -774,7 +772,7 @@ h2.page-headerWebinar {
     font-size: smaller;
 }
 
-/* Papa Bear  */
+/* Papa Bear and up */
 @media screen and (min-width: 1200px) {
     .header-wrapper .navbar-nav > li > a {
         padding-left: 52px;
@@ -789,7 +787,7 @@ h2.page-headerWebinar {
     }
 }
 
-/* Uncle Bear */
+/* Uncle Bear and up */
 @media screen and (min-width: 768px) {
     .medium .left,
     .medium .right {
@@ -822,11 +820,16 @@ h2.page-headerWebinar {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+/* Uncle Bear and down */
+@media screen and (max-width: 992px) {
+    #logo img, .col-sm-full {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /* Mama Bear */
-@media screen and (max-width: 991px) and (min-width: 455px) {
+@media screen and (max-width: 992px) and (min-width: 455px) {
     .social-links li {
         width: 50%;
     }
