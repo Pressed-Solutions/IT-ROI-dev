@@ -23,6 +23,43 @@ Text Domain: Pressed Soltutions
     }
 }
 
+/* add 5-column layout */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
 body {
     padding-bottom: 0;
     font-family: 'Open Sans', sans-serif;
@@ -72,6 +109,10 @@ body {
 }
 
 /* MAIN NAVIGATION SETTINGS */
+.navbar-nav {
+    float: none;
+    width: 100%;
+}
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
@@ -230,9 +271,6 @@ body {
 }
 .servicesmenu .dropdown-menu a:hover {
     background-color: #e4950f;
-}
-form.search-form.topbar {
-    float: right;
 }
 nav.navbar.navbar-inverse {
     float: left;
@@ -826,17 +864,24 @@ h2.page-headerWebinar {
         display: block;
         margin: 0 auto;
     }
+    .search-form .col-sm-12 label {
+        width: 100%;
+    }
 }
 
 /* Mama Bear */
 @media screen and (max-width: 992px) and (min-width: 455px) {
-    .social-links li {
+      .social-links li {
         width: 50%;
     }
 }
 
 /* Mama and Baby Bear */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    form.search-form.topbar input {
+        position: relative;
+        right: auto;
+    }
     .medium .left,
     .medium .right {
         float: none;
