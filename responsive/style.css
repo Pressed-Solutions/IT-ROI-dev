@@ -83,10 +83,11 @@ body {
 }
 
 .navbar-inverse .navbar-nav > li {
+    line-height: 30px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    line-height: 30px;
+    font-size: 10px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -190,10 +191,10 @@ body {
 .header-wrapper .navbar-nav > li > a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 15px 10px 15px 52px;
+    padding: 15px 10px 15px 33px;
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40px;
+    font-size: 13px;
 }
 .page-template-page-responsive-php .menu-item img {
     display: none;
@@ -774,17 +775,22 @@ h2.page-headerWebinar {
 }
 
 /* Papa Bear  */
+@media screen and (min-width: 1200px) {
+    .header-wrapper .navbar-nav > li > a {
+        padding-left: 52px;
+        background-size: 40px;
+        font-size: 15px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .social-links li {
         width: 25%;
     }
 }
 
+/* Uncle Bear */
 @media screen and (min-width: 768px) {
-    .header-wrapper .container {
-        width: 95%;
-        max-width: 1060px;
-    }
     .medium .left,
     .medium .right {
         float: left;
@@ -816,15 +822,7 @@ h2.page-headerWebinar {
     }
 }
 
-/* Uncle Bear */
 @media screen and (min-width: 768px) and (max-width: 900px) {
-    .header-wrapper .container {
-        width: 100%;
-    }
-    .header-wrapper .navbar-nav > li > a {
-        padding-left: 33px;
-        background-size: 30px;
-    }
 }
 
 /* Mama Bear */
