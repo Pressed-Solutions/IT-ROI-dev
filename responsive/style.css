@@ -60,7 +60,7 @@ Text Domain: Pressed Soltutions
     }
 }
 
-@media (max-width: 991px) and (min-width: 480px) {
+@media (max-width: 991px) and (min-width: 680px) {
     .navbar-collapse {
         width: 100% !important;
     }
@@ -68,8 +68,6 @@ Text Domain: Pressed Soltutions
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    .navbar > li {
     }
 }
 
@@ -162,7 +160,9 @@ body {
 }
 
 .navbar-toggle {
-    margin-right: 10px;
+    float: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -755,6 +755,10 @@ h2.page-headerWebinar {
 .it-new-content .itroi-info {
     padding-bottom: 30px;
 }
+.about {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .youtube-player-wrapper {
     background-color: rgb(225, 78, 66);
     padding: 15px;
@@ -774,29 +778,20 @@ h2.page-headerWebinar {
     border-image-width: 0;
     width: 100%;
 }
-
-.itroi-info .bottom-nav {
-    padding-top: 15px;
-}
-.bottom-nav nav.navbar.navbar-inverse {
-    float: none;
+.bottom-nav .small-logo {
+    padding-left: 0;
 }
 .bottom-nav .navbar-collapse {
-    float: left;
+    padding-right: 0;
 }
-.small-logo {
-    height: auto;
-    float: left;
+.bottom-nav .navbar-collapse {
+    width: 83.3333333333%;
 }
-#menu-footer-1 > li > a {
+.bottom-nav .navbar-nav > li > a {
     color: #027ac6;
 }
-#menu-footer-1 > li > a:hover {
+.bottom-nav .navbar-nav > li > a:hover {
     color: white;
-}
-
-.copyright {
-    clear: both;
 }
 .copyright .menu-footer-2-container a,
 .itroi {
@@ -837,32 +832,12 @@ h2.page-headerWebinar {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    .itroi-info .left {
-        padding-right: 15px;
-    }
-    .itroi-info .right {
-        padding-left: 15px;
-    }
-    .itroi-info .bottom-nav {
-        clear: both;
-    }
-    .bottom-nav .navbar-collapse {
-        padding-right: 0;
-    }
-    .copyright .menu-footer-2-container,
-    .copyright .itroi {
-        float: right;
-    }
-    .copyright li,
-    .itroi {
-        display: inline-block;
-        padding: 0 15px;
-    }
 }
 
 /* Uncle Bear and down */
 @media screen and (max-width: 992px) {
-    #logo img, .topbar.search-form input {
+    #logo img,
+    .topbar.search-form input {
         display: block;
         margin: 0 auto;
     }
@@ -875,10 +850,26 @@ h2.page-headerWebinar {
     }
 }
 
+/* Mama Bear and up */
+@media screen and (min-width: 680px) {
+    .bottom-nav .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 /* Mama Bear */
 @media screen and (max-width: 992px) and (min-width: 455px) {
       .social-links li {
         width: 50%;
+    }
+}
+
+/* Mama Bear only */
+@media screen and (min-width: 680px) and (max-width: 779px) {
+    .navbar-header {
+        display: none;
     }
 }
 
@@ -888,20 +879,6 @@ h2.page-headerWebinar {
     .itroi-info .right {
         float: none;
         width: 100%;
-    }
-    .small-logo,
-    .small-logo img {
-        float: none;
-        margin: 15px auto;
-        display: block;
-    }
-    .navbar-inverse .navbar-toggle {
-        display: block;
-        float: none;
-        margin: 0 auto;
-    }
-    .copyright li, .copyright .itroi {
-        text-align: center;
     }
 }
 

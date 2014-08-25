@@ -47,14 +47,14 @@
             </button>
         </div><!-- div.navbar-header -->
 
-        <a class="small-logo" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
+        <a class="small-logo col-md-2" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
 
     <?php wp_nav_menu( array(
             'theme_location' => '',
             'menu' => 'footer-1',
             'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled',
             'container' => 'div',
-            'container_class' => 'collapse navbar-collapse navbar-1-collapse',
+            'container_class' => 'collapse navbar-collapse navbar-1-collapse col-md-10',
             'menu_class' => 'nav navbar-nav',
             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
             'walker' => new wp_bootstrap_navwalker()) ); ?>
