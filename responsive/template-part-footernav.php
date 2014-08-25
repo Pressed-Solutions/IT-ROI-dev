@@ -20,39 +20,9 @@
                 echo "<div>".$footercontent."</div>";
             endforeach;
             ?>
-        <div class="youtube-links">
-            <h2 class="video-header">IT-ROI VIDEOS</h2>
-            <ul>
-                <?php $arg=array('numberposts'=>4 , 'post_type' => 'itroivideo','post_status' => 'publish','order' =>'DESC');
-                $posts=get_posts($arg);
-                foreach($posts as $post) : setup_postdata($post);
-                $cont=apply_filters('the_content',(substr($post->post_content,0,300)));
-                $content=$post->post_content
-                ?>
-                    <?php if($content!=""){ ?>
-                        <li><a href="<?php echo $content; ?>?autoplay=1" target="iframe"><?php echo $post->post_title;?></a></li>
-                    <?php } else {  ?>
-                        <li> <?php  echo $content; ?></li>
-                       <?php }
-                endforeach;
-                ?>
-            </ul>
-            <h2 class="video-header">POPULAR WEBINARS</h2>
-            <ul>
-                <?php $arg=array('numberposts'=>6 , 'post_type' => 'popularvideo','post_status' => 'publish','order' =>'ASC');
-                $posts=get_posts($arg);
-                foreach($posts as $post) : setup_postdata($post);
-                $cont=apply_filters('the_content',(substr($post->post_content,0,300)));
-                ?>
-                    <li><a href="<?php echo $post->post_content;?>?autoplay=1" target="iframe"><?php echo $post->post_title;?></a></li>
-                       <?php
-                endforeach;
-                ?>
-            </ul>
-        </div>
-
-        <div class="youtube-player" >
     </div><!-- .about -->
+    <div class="youtube-player-wrapper col-md-6 clearfix">
+        <div class="youtube-player">
         <?php   $arg=array('numberposts'=>1 , 'post_type' => 'itroivideo','post_status' => 'publish','order' =>'DESC');
                 $posts=get_posts($arg);
                 foreach($posts as $post) : setup_postdata($post);
@@ -60,10 +30,9 @@
                 $content=$post->post_content;
                 endforeach;
         ?>
-            <iframe width="100%" height="100%" name="iframe" src="<?php echo $content;?>"></iframe>
-        </div>
-        <div style="clear: both;"></div>
             <iframe width="100%" height="100%" name="iframe" class="youtube-iframe" src="<?php echo $content;?>"></iframe>
+        </div><!-- .youtube-player -->
+    </div><!-- .youtube-player-wrapper -->
 
     <div class="bottom row">
         <nav class="navbar navbar-inverse" role="navigation">

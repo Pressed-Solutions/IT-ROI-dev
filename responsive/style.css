@@ -757,24 +757,22 @@ h2.page-headerWebinar {
 }
 .youtube-player-wrapper {
     background-color: rgb(225, 78, 66);
-.youtube-links {
-    width: 33%;
-    float: left;
-    font-size: small;
-    padding-right: 15px;
-}
-.youtube-links h2 {
-    font-size: 14px;
-    margin: 0;
-}
-.youtube-links ul {
-    list-style-position: outside;
-    padding-left: 15px;
-    font-size: smaller;
+    padding: 15px;
+    position: relative;
 }
 .youtube-player {
-    width: 66%;
-    float: left;
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+.youtube-iframe {
+    position: absolute;
+    height: 100%;
+    border: none;
+    border-image-width: 0;
+    width: 100%;
 }
 
 .itroi-info .bottom {
@@ -891,9 +889,6 @@ h2.page-headerWebinar {
         float: none;
         width: 100%;
     }
-    .youtube-player {
-        height: 100%;
-    }
     .small-logo,
     .small-logo img {
         float: none;
@@ -914,14 +909,5 @@ h2.page-headerWebinar {
 @media screen and (max-width: 480px) {
     .social-links li {
         width: 100%;
-    }
-    .youtube-links,
-    .youtube-player {
-        float: none;
-        width: 100%;
-    }
-    .youtube-player {
-        height: 100%;
-        max-height: 320px;
     }
 }
