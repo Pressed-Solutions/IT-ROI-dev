@@ -4,10 +4,9 @@
 	<div class="container">
     <?php wp_nav_menu(array('theme_location' => 'primary', 'menu' => 'menu1', 'menu_class' => 'top_menu menu')); ?>
     </div>
-	</div>
+</div><!-- top_menu -->
 
 <!--custom wrapper for header elements-->
 <div class="header-wrapper">
-<!--header-wrapper start-->
 
 	<div class="container dmbs-container">

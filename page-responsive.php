@@ -32,5 +32,6 @@ get_header( 'responsive' ); ?>
 
 
 </div><!-- .row .dmbs-content -->
+<!-- end content container -->
 
 <?php get_footer( 'responsive' ); ?>

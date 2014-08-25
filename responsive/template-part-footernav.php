@@ -1,4 +1,3 @@
-</div><!-- .container .dmbs-container -->
 
 <footer class="it-new-content container dmbs-container">
     
@@ -104,4 +103,4 @@
 </div><!-- div.medium.container -->
 
 <div style="clear: both;"></div>
-</footer>
+</footer><!-- .it-new-content .container .dmbs-container -->

@@ -37,10 +37,8 @@
 
 <?php endif; ?>
 
-	</div>
-    <!--container dmbs-container end-->
+	</div><!--container dmbs-container end-->
 
-</div>
-<!--header-wrapper end-->
+</div><!-- .header-wrapper -->
 
 <div class="container dmbs-container">
