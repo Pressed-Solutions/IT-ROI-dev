@@ -1,8 +1,8 @@
 
-<footer class="it-new-content container dmbs-container">
+<footer class="it-new-content container dmbs-container clearfix">
     
 <?php $obj = get_queried_object(); $custom_post_type = $obj->post_type; ?>
-<div class="social-links container">
+<div class="social-links row">
     <ul>
         <li><a class="linkedin" href="<?php the_author_meta( 'linkedin', 1 ); ?>"><span class="hidden">LinkedIn</span></a></li>
         <li><a class="facebook" href="<?php the_author_meta( 'facebook', 1 ); ?>"><span class="hidden">Facebook</span></a></li>
@@ -11,8 +11,8 @@
     </ul>
 </div>
 
-<div class="medium container">
-    <div class="left">
+<div class="itroi-info row">
+    <div class="about col-md-6">
     <?php   $arg=array('numberposts'=>1 , 'post_type' => 'footercontant');
             $posts=get_posts($arg);
             foreach($posts as $post) : setup_postdata($post);
@@ -20,8 +20,6 @@
                 echo "<div>".$footercontent."</div>";
             endforeach;
             ?>
-    </div>
-    <div class="right">
         <div class="youtube-links">
             <h2 class="video-header">IT-ROI VIDEOS</h2>
             <ul>
@@ -54,6 +52,7 @@
         </div>
 
         <div class="youtube-player" >
+    </div><!-- .about -->
         <?php   $arg=array('numberposts'=>1 , 'post_type' => 'itroivideo','post_status' => 'publish','order' =>'DESC');
                 $posts=get_posts($arg);
                 foreach($posts as $post) : setup_postdata($post);
@@ -64,9 +63,9 @@
             <iframe width="100%" height="100%" name="iframe" src="<?php echo $content;?>"></iframe>
         </div>
         <div style="clear: both;"></div>
-    </div><!-- div.right -->
+            <iframe width="100%" height="100%" name="iframe" class="youtube-iframe" src="<?php echo $content;?>"></iframe>
 
-    <div class="bottom">
+    <div class="bottom row">
         <nav class="navbar navbar-inverse" role="navigation">
 
             <div class="navbar-header">
@@ -100,7 +99,6 @@
         <div class="itroi">&copy;<?php if ( date( 'Y') > 2014 ) { echo '2014&ndash;' . date( 'Y' ); } else { echo '2014'; } ?> IT-ROI Solutions</div>
     </div><!-- div.copyright -->
 
-</div><!-- div.medium.container -->
+</div><!-- .itroi-info -->
 
-<div style="clear: both;"></div>
 </footer><!-- .it-new-content .container .dmbs-container -->

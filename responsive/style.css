@@ -708,7 +708,7 @@ h2.page-headerWebinar {
     color: white;
 }
 .social-links,
-.it-new-content .medium {
+.it-new-content .itroi-info {
     padding: 0;
 }
 .social-links {
@@ -752,19 +752,11 @@ h2.page-headerWebinar {
     background-image: url('img/footer/youtube_bot.png');
     background-color: rgb(225, 78, 66);
 }
-.it-new-content .medium {
+.it-new-content .itroi-info {
     padding-bottom: 30px;
 }
-.left,
-.right {
-    padding: 15px;
-}
-.right {
+.youtube-player-wrapper {
     background-color: rgb(225, 78, 66);
-}
-.right a {
-    color: white;
-}
 .youtube-links {
     width: 33%;
     float: left;
@@ -785,7 +777,7 @@ h2.page-headerWebinar {
     float: left;
 }
 
-.medium .bottom {
+.itroi-info .bottom {
     padding-top: 15px;
 }
 .bottom nav.navbar.navbar-inverse {
@@ -839,21 +831,21 @@ h2.page-headerWebinar {
 
 /* Uncle Bear and up */
 @media screen and (min-width: 768px) {
-    .medium .left,
-    .medium .right {
+    .itroi-info .left,
+    .itroi-info .right {
         float: left;
         display: block;
         width: 50%;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    .medium .left {
+    .itroi-info .left {
         padding-right: 15px;
     }
-    .medium .right {
+    .itroi-info .right {
         padding-left: 15px;
     }
-    .medium .bottom {
+    .itroi-info .bottom {
         clear: both;
     }
     .bottom .navbar-collapse {
@@ -894,8 +886,8 @@ h2.page-headerWebinar {
 
 /* Mama and Baby Bear */
 @media screen and (max-width: 767px) {
-    .medium .left,
-    .medium .right {
+    .itroi-info .left,
+    .itroi-info .right {
         float: none;
         width: 100%;
     }
