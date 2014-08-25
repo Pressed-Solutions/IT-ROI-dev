@@ -1,5 +1,5 @@
 
-<footer class="it-new-content">
+<footer class="it-new-content container dmbs-container">
     
 <?php $obj = get_queried_object(); $custom_post_type = $obj->post_type; ?>
 <div class="social-links container">

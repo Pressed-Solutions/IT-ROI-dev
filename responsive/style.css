@@ -629,11 +629,16 @@ h2.page-headerWebinar {
 }
 
 /* Footer */
-.it-new-content {
-    width: 100%;
+.dmbs-footer {
     background-color: #2b2b2b;
+}
+.it-new-content {
     font-family: 'MavenProRegular';
     color: white;
+}
+.social-links,
+.it-new-content .medium {
+    padding: 0;
 }
 .social-links {
     display: block;
@@ -677,7 +682,7 @@ h2.page-headerWebinar {
     background-color: rgb(225, 78, 66);
 }
 .it-new-content .medium {
-    padding: 0 15px 30px;
+    padding-bottom: 30px;
 }
 .left,
 .right {
