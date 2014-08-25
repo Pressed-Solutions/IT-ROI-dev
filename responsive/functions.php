@@ -381,4 +381,16 @@ function md_nmi_custom_content( $content, $item_id, $original_content ) {
 add_filter( 'nmi_menu_item_content', 'md_nmi_custom_content', 10, 3 );
 
 
+// add shortcode to handle CTA buttons
+function display_cta_buttons( $atts ) {
+    $cta_string = '<section class="cta-buttons col-md-12">';
+    $cta_string .= '<div class="col-md-3"><a class="background-purple">' . get_field( 'download_the_product_brief ' ) . 'Download the product brief</a></div>';
+    $cta_string .= '<div class="col-md-3"><a class="background-red">' . get_field( 'replay_the_webinar ' ) . 'Replay the webinar</a></div>';
+    $cta_string .= '<div class="col-md-3"><a class="background-blue">' . get_field( 'request_a_demo ' ) . 'Request a demo</a></div>';
+    $cta_string .= '<div class="col-md-3"><a class="background-green tel" href="tel:19545183330;ext=104">Talk now <span class="talk-now-number">945.518.330 x104</span></a></div>';
+    $cta_string .= '</section>';
+
+    return $cta_string;
+}
+add_shortcode( 'cta_buttons', 'display_cta_buttons' );
 ?>
