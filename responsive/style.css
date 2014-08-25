@@ -60,6 +60,19 @@ Text Domain: Pressed Soltutions
     }
 }
 
+@media (max-width: 991px) and (min-width: 480px) {
+    .navbar-collapse {
+        width: 100% !important;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar > li {
+    }
+}
+
 body {
     padding-bottom: 0;
     font-family: 'Open Sans', sans-serif;
@@ -273,7 +286,6 @@ body {
     background-color: #e4950f;
 }
 nav.navbar.navbar-inverse {
-    float: left;
 }
 form.search-form.topbar input {
     background: #cccccc;
