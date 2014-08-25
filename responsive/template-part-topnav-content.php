@@ -2,10 +2,10 @@
 <?php if ( has_nav_menu( 'main_menu' ) ) : ?>
 
     <div class="row dmbs-top-menu">
-        <a itemprop="url" href="<?php echo home_url(); ?>" title="Home" rel="home" id="logo">
+        <a itemprop="url" href="<?php echo home_url(); ?>" title="Home" rel="home" id="logo" class="col-md-2">
             <img itemprop="logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Home">
         </a>
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar navbar-inverse col-md-8" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
                     <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
@@ -26,12 +26,12 @@
                     'walker'            => new wp_bootstrap_navwalker())
             );
             ?>
-        </nav>
-        <form role="search" method="get" class="search-form topbar" action="<?php echo home_url( '/' ); ?>">
+        </nav><!-- .navbar .navbar-inverse .col-md-8 -->
+        <form role="search" method="get" class="search-form topbar col-md-2" action="<?php echo home_url( '/' ); ?>">
             <label>
                 <input type="search" class="search-field" placeholder="Search site" value="" name="s" title="Search for:" />
             </label>
-        </form>
+        </form><!-- .search-form .topbar .col-md-2 -->
 
 	</div><!-- div.row.dmbs-top-menu -->
 
