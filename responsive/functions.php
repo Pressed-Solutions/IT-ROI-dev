@@ -393,13 +393,17 @@ echo ' -->';
     // get only the href from the custom fields
     $download_href = preg_match( '(?i)\b((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?«»“”‘’]))', $custom_fields['download_the_product_brief'][0], $download_href);
 
+echo '<!-- ';
+var_dump $download_href;
+echo ' -->';
+//todo: remove previous 3 lines
+
     $cta_string = '<section class="cta-buttons col-md-12">';
     $cta_string .= '<div class="col-md-3"><a class="background-purple" href="' . $download_href . '">Download the product brief</a></div>';
     $cta_string .= '<div class="col-md-3"><a class="background-red">' . get_post_meta( get_the_ID(), 'replay_the_webinar', true ) . 'Replay the webinar</a></div>';
     $cta_string .= '<div class="col-md-3"><a class="background-blue">' . get_post_meta( get_the_ID(), 'request_a_demo', true ) . 'Request a demo</a></div>';
     $cta_string .= '<div class="col-md-3"><a class="background-green tel" href="tel:19545183330;ext=104">Talk now <span class="talk-now-number">945.518.330 x104</span></a></div>';
     $cta_string .= '</section>';
-$cta_string .= '<!-- ID: ' . get_the_ID() . '-->'; // todo: remove this debugging line
 
     return $cta_string;
 }
