@@ -797,6 +797,9 @@ h2.page-headerWebinar {
 .itroi {
     color: #696969;
 }
+.copyright {
+    padding-bottom: 15px;
+}
 .copyright ul {
     list-style-type: none;
     padding: 0;
@@ -860,6 +863,15 @@ h2.page-headerWebinar {
     .navbar-header {
         display: none;
     }
+    .copyright .menu-footer-2-container,
+    .copyright .itroi {
+        float: right;
+    }
+    .copyright li,
+    .itroi {
+        display: inline-block;
+        padding: 0 15px;
+    }
 }
 
 /* Mama Bear */
@@ -870,11 +882,24 @@ h2.page-headerWebinar {
 }
 
 /* Mama and Baby Bear */
-@media screen and (max-width: 767px) {
-    .itroi-info .left,
-    .itroi-info .right {
-        float: none;
+@media screen and (max-width: 680px) {
+    .navbar-toggle {
+        display: block;
+        margin: 0 auto;
+        float: none !important;
+    }
+    .small-logo {
+        display: block;
         width: 100%;
+        margin: 15px 0;
+    }
+    .small-logo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .copyright li,
+    .copyright .itroi {
+        text-align: center;
     }
 }
 
