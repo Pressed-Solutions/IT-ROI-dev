@@ -404,17 +404,33 @@ h2.sharepoint {
 .cta-buttons .background-purple {
     background-color: #9900cc;
 }
+.cta-buttons .background-purple:hover,
+.cta-buttons .background-purple:active {
+    background-color: #7700aa;
+}
 
 .cta-buttons .background-red {
     background-color: #fe3b00;
+}
+.cta-buttons .background-red:hover,
+.cta-buttons .background-red:active {
+    background-color: #dc1000;
 }
 
 .cta-buttons .background-green {
     background-color: #47b800;
 }
+.cta-buttons .background-green:hover,
+.cta-buttons .background-green:active {
+    background-color: #259600;
+}
 
 .cta-buttons .background-blue {
     background-color: #0098da;
+}
+.cta-buttons .background-blue:hover,
+.cta-buttons .background-blue:active {
+    background-color: #0076b8;
 }
 
 .cta-buttons .talk-now-number {
