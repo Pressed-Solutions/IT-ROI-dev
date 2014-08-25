@@ -357,6 +357,12 @@ a.tel:hover {
     display: none;
 }
 
+.narrow {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
 /* ------------------ PPM pages -------------------- */
 
 /* headers */
@@ -366,8 +372,14 @@ h2.sharepoint {
     font-family: 'MavenProRegular';
 }
 
+h1.sharepoint {
+    font-size: 4em;
+    font-weight: bold;
+}
+
 h2.sharepoint {
     color: #0e6dad;
+    margin-top: 0;
 }
 
 .sharepoint-orange {
@@ -412,6 +424,10 @@ h2.sharepoint {
 /* PPM links */
 .ppm-links {
     margin: 30px 0;
+}
+
+.ppm-links section {
+    padding-bottom: 15px;
 }
 
 .ppm-links .rollover {
