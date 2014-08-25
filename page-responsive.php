@@ -9,7 +9,6 @@ get_header( 'responsive' ); ?>
 
 <?php get_template_part('responsive/template-part', 'topnav-content'); ?>
 
-<div class="container dmbs-container">
 <!-- start content container -->
 <div class="row dmbs-content">
 
@@ -32,7 +31,6 @@ get_header( 'responsive' ); ?>
     </div>
 
 
-</div>
-<!-- end content container -->
+</div><!-- .row .dmbs-content -->
 
 <?php get_footer( 'responsive' ); ?>

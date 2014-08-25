@@ -1,3 +1,4 @@
+</div><!-- .container .dmbs-container -->
 
 <footer class="it-new-content container dmbs-container">
     
