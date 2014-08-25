@@ -33,41 +33,41 @@
             <iframe width="100%" height="100%" name="iframe" class="youtube-iframe" src="<?php echo $content;?>"></iframe>
         </div><!-- .youtube-player -->
     </div><!-- .youtube-player-wrapper -->
-
-    <div class="bottom row">
-        <nav class="navbar navbar-inverse" role="navigation">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
-                    <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div><!-- div.navbar-header -->
-
-            <a class="small-logo" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
-
-        <?php wp_nav_menu( array(
-                'theme_location' => '',
-                'menu' => 'footer-1',
-                'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled',
-                'container' => 'div',
-                'container_class' => 'collapse navbar-collapse navbar-1-collapse',
-                'menu_class' => 'nav navbar-nav',
-                'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                'walker' => new wp_bootstrap_navwalker()) ); ?>
-        </nav><!-- nav.navbar.navbar-inverse -->
-    </div><!-- div.bottom -->
-
-    <div class="copyright">
-        <?php wp_nav_menu( array(
-            'theme_location' => '',
-            'menu' =>'footer-2',
-            'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled') );?>
-        <div class="itroi">&copy;<?php if ( date( 'Y') > 2014 ) { echo '2014&ndash;' . date( 'Y' ); } else { echo '2014'; } ?> IT-ROI Solutions</div>
-    </div><!-- div.copyright -->
-
 </div><!-- .itroi-info -->
+
+<div class="bottom-nav row">
+    <nav class="navbar navbar-inverse" role="navigation">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
+                <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div><!-- div.navbar-header -->
+
+        <a class="small-logo" href="<?php echo get_site_url(); ?>" title="Home" rel="home"  ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo1.png" ></a>
+
+    <?php wp_nav_menu( array(
+            'theme_location' => '',
+            'menu' => 'footer-1',
+            'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled',
+            'container' => 'div',
+            'container_class' => 'collapse navbar-collapse navbar-1-collapse',
+            'menu_class' => 'nav navbar-nav',
+            'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+            'walker' => new wp_bootstrap_navwalker()) ); ?>
+    </nav><!-- nav.navbar.navbar-inverse -->
+</div><!-- div.bottom -->
+
+<div class="copyright row">
+    <?php wp_nav_menu( array(
+        'theme_location' => '',
+        'menu' =>'footer-2',
+        'menu_class' => 'menu-item nice-menu-down nice-menus-processed sf-js-enabled') );?>
+    <div class="itroi">&copy;<?php if ( date( 'Y') > 2014 ) { echo '2014&ndash;' . date( 'Y' ); } else { echo '2014'; } ?> IT-ROI Solutions</div>
+</div><!-- div.copyright -->
+
 
 </footer><!-- .it-new-content .container .dmbs-container -->

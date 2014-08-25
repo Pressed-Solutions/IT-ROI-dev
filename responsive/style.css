@@ -775,13 +775,13 @@ h2.page-headerWebinar {
     width: 100%;
 }
 
-.itroi-info .bottom {
+.itroi-info .bottom-nav {
     padding-top: 15px;
 }
-.bottom nav.navbar.navbar-inverse {
+.bottom-nav nav.navbar.navbar-inverse {
     float: none;
 }
-.bottom .navbar-collapse {
+.bottom-nav .navbar-collapse {
     float: left;
 }
 .small-logo {
@@ -843,10 +843,10 @@ h2.page-headerWebinar {
     .itroi-info .right {
         padding-left: 15px;
     }
-    .itroi-info .bottom {
+    .itroi-info .bottom-nav {
         clear: both;
     }
-    .bottom .navbar-collapse {
+    .bottom-nav .navbar-collapse {
         padding-right: 0;
     }
     .copyright .menu-footer-2-container,
