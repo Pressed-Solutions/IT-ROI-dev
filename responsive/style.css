@@ -809,6 +809,10 @@ h2.page-headerWebinar {
 .itroi {
     font-size: smaller;
 }
+.copyright .itroi {
+    padding-top: 2px;
+    line-height: 21px;
+}
 
 /* Papa Bear and up */
 @media screen and (min-width: 1200px) {
