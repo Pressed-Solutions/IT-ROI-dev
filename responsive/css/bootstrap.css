@@ -3816,7 +3816,7 @@ select[multiple].input-group-sm > #searchform #s {
   top: auto;
   left: auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3834,7 +3834,7 @@ select[multiple].input-group-sm > #searchform #s {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -3881,7 +3881,7 @@ select[multiple].input-group-sm > #searchform #s {
   top: auto;
   left: auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3902,7 +3902,7 @@ select[multiple].input-group-sm > #searchform #s {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -3930,12 +3930,12 @@ select[multiple].input-group-sm > #searchform #s {
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-header {
     float: left;
   }
@@ -3951,7 +3951,7 @@ select[multiple].input-group-sm > #searchform #s {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3980,7 +3980,7 @@ select[multiple].input-group-sm > #searchform #s {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3993,7 +3993,7 @@ select[multiple].input-group-sm > #searchform #s {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -4005,7 +4005,7 @@ select[multiple].input-group-sm > #searchform #s {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -4031,7 +4031,7 @@ select[multiple].input-group-sm > #searchform #s {
 .navbar-brand:focus {
   text-decoration: none;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -4061,7 +4061,7 @@ select[multiple].input-group-sm > #searchform #s {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-toggle {
     display: none;
   }
@@ -4096,7 +4096,7 @@ select[multiple].input-group-sm > #searchform #s {
     background-image: none;
   }
 }
-@media only screen and (max-width: 990px) and (min-width: 480px) {
+@media only screen and (max-width: 990px) and (min-width: 680px) {
   .menu-item a.menu-image-title-after.menu-image-not-hovered img, .menu-item a.menu-image-hovered.menu-image-title-after .menu-image-hover-wrapper {
     max-width: 40px;
     height: auto;
@@ -4112,7 +4112,7 @@ font-size: 12px !important;
 margin-top: 10px !important;
 }
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -4128,7 +4128,7 @@ margin-top: 10px !important;
     margin-right: -15px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-left {
     float: left !important;
   }
@@ -4146,7 +4146,7 @@ margin-top: 10px !important;
   margin-top: 8px;
   margin-bottom: 8px;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -4193,7 +4193,7 @@ position: absolute;
 right: 0;
 }
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-form {
     width: auto;
     border: 0;
@@ -4234,7 +4234,7 @@ right: 0;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
