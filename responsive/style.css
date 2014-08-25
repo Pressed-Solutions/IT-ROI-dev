@@ -24,7 +24,6 @@ body {
 
 .dmbs-main {
     padding-top: 12px;
-    background-image: url(http://itroisolutions.com/wp-content/themes/twentythirteen/images/background.jpg);
     border-right: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
 }
@@ -335,7 +334,6 @@ a.tel:hover {
 .page-notes { margin-top: 30px; }
 
 .dmbs-main {
-    box-shadow: inset 0 13px 13px -13px #000000;
 
 }
 
