@@ -445,17 +445,19 @@ h2.sharepoint {
 .cta-buttons {
     margin: 24px 0;
 }
-.cta-buttons a {
+.cta-button {
+    position: relative;
+    padding: 1.5em .5em;
+    min-height: 4.5em;
+    color: white;
+    text-align: center;
+}
+.cta-buttons .tel {
+    padding: .7em .5em;
     display: block;
     color: white;
     text-align: center;
-    padding: 1.4em .5em;
 }
-
-.cta-buttons .tel {
-    padding: .7em;
-}
-
 .cta-buttons .background-purple {
     background-color: #9900cc;
 }
@@ -490,6 +492,25 @@ h2.sharepoint {
 
 .cta-buttons .talk-now-number {
     display: block;
+}
+
+.hs-cta-img {
+    display: none;
+}
+a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 {
+    position: absolute;
+    top: -1em;
+    left: 0;
+    right: 0;
+    bottom: -1em;
+    background: none !important;
+    border-radius: 0 !important;
+}
+a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover {
+    background: none !important;
+}
+a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 strong {
+    display: none;
 }
 
 /* PPM links */
