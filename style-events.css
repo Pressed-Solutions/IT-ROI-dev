@@ -3,6 +3,7 @@
     width: 768px;
     margin: 0 auto;
     padding: 0 15px;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -80,18 +81,6 @@
 .evt-time {
     display: inline-block;
     font-size: 14px;
-}
-
-.register-button a,
-.cta_button a,
-.hs-cta-wrapper .cta_button span {
-    background: #ff6600 !important;
-    padding: 7px 15px !important;
-    color: white !important;
-    text-transform: uppercase !important;
-    font-weight: 600 !important;
-    font-size: 12px !important;
-    border-radius: 0 !important;
 }
 
 .register-button a:active,
@@ -250,4 +239,18 @@ h2.page-headerWebinar {
 
 .mainevt .register-button a:hover {
     text-decoration: underline;
+}
+
+.register-button a,
+.cta_button a,
+.page-id-3238 .hs-cta-node #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5,
+.page-id-3238 .hs-cta-node #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover,
+.page-id-3238 #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span {
+    background: #ff6600 !important;
+    padding: 7px 15px !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    border-radius: 0 !important;
 }
