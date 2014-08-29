@@ -660,6 +660,7 @@ h2.page-headerWebinar {
 .upcoming-events .evt-content {
     border-left: 1px solid #e3e3e3;
     text-align: left !important;
+    min-height: 150px;
 }
 .upcoming-events .evt-title {
     color: #0779CB;
@@ -673,10 +674,9 @@ h2.page-headerWebinar {
     color: #5A5858;
 }
 .upcoming-events .evt-thumbnail {
-    padding-top: 40px;
 }
 /* generic */
-.page-id-3238 hr,
+.event-page hr,
 .single-event hr {
     margin: 20px 0;
     border: 0;
