@@ -1,23 +1,19 @@
 <?php
-/**
-* The Template for displaying all single posts.
-*
-* @package WordPress
-* @subpackage Twenty_Thirteen
-* @since Twenty Thirteen 1.0
-*/
+/*
+ * Template for displaying single events, based on page-responsive.php
+ */
 
-get_header(); ?>
+get_header( 'responsive' ); ?>
 
-<div class="dmbs-container">
+<?php get_template_part('responsive/template-part', 'head'); ?>
+
+<?php get_template_part('responsive/template-part', 'topnav-content'); ?>
+
 <!-- start content container -->
 <div class="row dmbs-content">
 <div class="col-md-12 dmbs-main event-page">
    
     <?php
-    // set flag to disable footer
-    $GLOBALS['no_footer'] = true;
-
     // the loop
     if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
@@ -26,19 +22,19 @@ get_header(); ?>
         <p>We are on a mission to make PPM simpler, and we're telling the world.<br>
         Connect and discover relevant, high-impact insight and innovations to help organizations maximize their IT-ROI for their universe</p>
         <div class="clear"></div>
-    </div>
+    </div><!-- .main-tt.maincon -->
 
     <div class="next-post">
         <div class="next-event">
         <?php next_post( '% ' , 'NEXT EVENT' , '' ); ?>
         </div>
-    </div>
+    </div><!-- .next-post -->
 
-</div>
-</div>
+</div><!-- .dmbs-main.event-page -->
+</div><!-- .row.dmbs-content -->
 
- </div>
-    <div class="dmbs-container">
+</div><!-- .dmbs-container -->
+<div class="dmbs-container">
     <div class="blue-bg"></div>
     <div class="container dmbs-container this-event">
         <div class="col-md-12 main-tt container">
@@ -65,68 +61,61 @@ get_header(); ?>
         </div>
         <div class="clear"></div>
 
-    </div>
-    </div>
+    </div><!-- .container.dmbs-container.this-event -->
+</div><!-- .dmbs-container -->
 
-    <div class="container dmbs-container">
-        <div class="col-md-8 main-tt">
-            <h3 class="UPCOMING-EVENTS">UPCOMING EVENTS</h3>
+<div class="container dmbs-container">
+    <div class="col-md-8 main-tt">
+        <h3 class="upcoming-events">UPCOMING EVENTS</h3>
 
-            <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
-            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-            <div class="evt-post" id="post-<?php the_ID(); ?>">
-                <div class="col-md-3 evt-thumbnail">
-                    <?php if ( has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('full'); ?>
-                    <?php endif; ?>
-                </div>
-                <div class="col-md-9 evt-content"><a href="<?php echo get_permalink(); ?>" ><div class="evt-title"><?php the_title(); ?></div></a>
-                    <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
-                    <div class="register-button"><a href="#" >Register Now</a></div><?php the_content(); ?>
-                </div>
-                <div class="clear"></div>
+        <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <div class="evt-post" id="post-<?php the_ID(); ?>">
+            <div class="col-md-3 evt-thumbnail">
+                <?php if ( has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('full'); ?>
+                <?php endif; ?>
             </div>
-            <?php endwhile; ?>
+            <div class="col-md-9 evt-content clearfix"><a href="<?php echo get_permalink(); ?>" ><div class="evt-title"><?php the_title(); ?></div></a>
+                <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
+                <div class="register-button"><a href="#" >Register Now</a></div><?php the_content(); ?>
+            </div><!-- .col-md-9.evt-content -->
+        </div><!-- .evt-post -->
+        <?php endwhile; ?>
 
 
 
 
 
-            <!--<div class="pagen">
-            <div class="navigation">
-            <?php
-            // Bring $wp_query into the scope of the function
-            global $wp_query;
+        <!--<div class="pagen">
+        <div class="navigation">
+        <?php
+        // Bring $wp_query into the scope of the function
+        global $wp_query;
 
-            // Backup the original property value
-            $backup_page_total = $wp_query->max_num_pages;
+        // Backup the original property value
+        $backup_page_total = $wp_query->max_num_pages;
 
-            // Copy the custom query property to the $wp_query object
-            $wp_query->max_num_pages = $loop->max_num_pages;
-            ?>
-            <?php if (function_exists("pagination")) {
-            pagination($custom_query->max_num_pages);
-            } ?>
+        // Copy the custom query property to the $wp_query object
+        $wp_query->max_num_pages = $loop->max_num_pages;
+        ?>
+        <?php if (function_exists("pagination")) {
+        pagination($custom_query->max_num_pages);
+        } ?>
 
-            <?php
-            // Finally restore the $wp_query property to it's original value
-            $wp_query->max_num_pages = $backup_page_total;
-            ?>
-            <div class="clear"></div>
-            </div>
-            </div>-->
-
+        <?php
+        // Finally restore the $wp_query property to it's original value
+        $wp_query->max_num_pages = $backup_page_total;
+        ?>
+        <div class="clear"></div>
         </div>
+        </div>-->
 
-    <?php endwhile; ?>
-    <?php else: ?>
+    </div><!-- .col-md-8.main-tt -->
 
-    <?php get_404_template(); ?>
+<?php endwhile; ?>
+<?php else: ?>
 
-    <?php endif; ?>
+<?php endif; ?>
 
-    </div>
-</div>
-</div>
-</div>
-<?php get_footer(); ?>
+<?php get_footer( 'responsive' ); ?>
