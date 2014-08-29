@@ -509,7 +509,7 @@ h1.sharepoint + h2.sharepoint {
 .hs-cta-img {
     display: none;
 }
-a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 {
+.cta-buttons a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 {
     position: absolute;
     top: -1em;
     left: 0;
@@ -518,10 +518,10 @@ a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 {
     background: none !important;
     border-radius: 0 !important;
 }
-a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover {
+.cta-buttons a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover {
     background: none !important;
 }
-a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 strong {
+.cta-buttons a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 strong {
     display: none;
 }
 
