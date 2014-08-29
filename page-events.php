@@ -84,7 +84,7 @@ get_header(); ?>
             </div>
             <div class="col-md-9 evt-content"><div class="evt-title"><?php the_title(); ?></div>
                 <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
-                <div class="register-button"><a href="#" >Register Now</a></div><?php the_content(); ?>
+                <div class="register-button"><?php the_field('register_now'); ?></div><?php the_content(); ?>
             </div>
             <div class="clear"></div>
         </div>
