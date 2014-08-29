@@ -653,6 +653,9 @@ h2.page-headerWebinar {
     border-radius: 0 !important;
 }
 /* upcoming events */
+.upcoming-events {
+    margin-bottom: 45px;
+}
 .upcoming-events .evt-post {
     min-height: 180px;
     margin-bottom: 75px;

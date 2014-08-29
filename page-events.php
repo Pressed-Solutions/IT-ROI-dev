@@ -24,12 +24,6 @@ get_header( 'responsive' ); ?>
         <div class="clear"></div>
     </div><!-- .main-tt.maincon -->
 
-    <div class="next-post">
-        <div class="next-event">
-        <?php next_post( '% ' , 'NEXT EVENT' , '' ); ?>
-        </div>
-    </div><!-- .next-post -->
-
 </div><!-- .dmbs-main.event-page -->
 </div><!-- .row.dmbs-content -->
 
