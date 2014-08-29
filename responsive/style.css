@@ -258,8 +258,9 @@ body {
     background-size: 30px;
     font-size: 13px;
 }
-.page-template-page-responsive-php .menu-item img {
+.header-wrapper .menu-item img {
     display: none;
+    /* TODO: remove images from the menu once entire site is responsive */
 }
 /* specific dropdown icons and colors */
 .page-template-page-responsive-php .integrationmenu > a {
