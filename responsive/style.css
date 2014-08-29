@@ -419,10 +419,6 @@ a.tel:hover {
 
 }
 
-.responsive .page-header {
-    display: none;
-}
-
 .narrow {
     width: 60%;
     margin: 0 auto;
