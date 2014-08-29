@@ -37,37 +37,35 @@ get_header( 'responsive' ); ?>
 <div class="dmbs-container">
     <div class="blue-bg"></div>
     <div class="container dmbs-container this-event">
-        <div class="col-md-12 main-tt container">
-            <div class="col-md-6 mainevt">
+        <div class="col-md-12 main-tt container clearfix">
+            <div class="col-sm-6 mainevt">
                 <div class="col-md-4 mainevt">
                     <?php if ( has_post_thumbnail() ) : ?>
                         <?php the_post_thumbnail(); ?>
                         <div class="clear"></div>
                     <?php endif; ?>
                 </div>
-                <div class="col-md-6 Webinar mainevt">
+                <div class="col-md-6 webinar mainevt">
                     <h1>Webinar</h1>
                 </div>
-            </div>
-            <div class="col-md-6 mainevt">
+            </div><!-- .col-sm-6.mainevt -->
+            <div class="col-sm-6 mainevt clearfix">
                 <h2 class="page-headerWebinar">
                     <?php the_title(); ?>
                 </h2>
                 <?php the_content(); ?>
                 <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
+            </div><!-- .col-sm-6.mainevt -->
+        </div><!-- .col-md-12.main-tt.container -->
 
     </div><!-- .container.dmbs-container.this-event -->
 </div><!-- .dmbs-container -->
 
 <div class="container dmbs-container">
-    <div class="col-md-8 main-tt">
-        <h3 class="upcoming-events">UPCOMING EVENTS</h3>
-
+    <div class="col-md-8 col-md-offset-2 main-tt upcoming-events">
+        <h3>Upcoming Events</h3>
+<!-- TODO: remove current/first post from query -->
         <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="evt-post" id="post-<?php the_ID(); ?>">
@@ -106,7 +104,7 @@ get_header( 'responsive' ); ?>
             </div><!-- .navigation -->
         </div><!-- .pagen -->
 
-    </div><!-- .col-md-8.main-tt -->
+    </div><!-- .col-md-12.main-tt -->
 
 <?php endwhile; ?>
 <?php else: ?>
