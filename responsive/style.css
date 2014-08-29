@@ -562,6 +562,11 @@ h1.sharepoint + h2.sharepoint {
 }
 
 /* Events page */
+.event-page {
+    border-left: none;
+    border-right: none;
+}
+
 .event-page .page-header {
     text-align: center;
     text-transform: uppercase;
@@ -577,7 +582,7 @@ h1.sharepoint + h2.sharepoint {
 .col-md-8.main-tt p {
     text-align: center;
 }
-h3.UPCOMING-EVENTS {
+h3.upcoming-events {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 80px;

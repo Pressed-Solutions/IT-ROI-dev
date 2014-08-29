@@ -83,33 +83,28 @@ get_header( 'responsive' ); ?>
         </div><!-- .evt-post -->
         <?php endwhile; ?>
 
+        <div class="pagen">
+            <div class="navigation clearfix">
+            <?php
+            // Bring $wp_query into the scope of the function
+            global $wp_query;
 
+            // Backup the original property value
+            $backup_page_total = $wp_query->max_num_pages;
 
+            // Copy the custom query property to the $wp_query object
+            $wp_query->max_num_pages = $loop->max_num_pages;
+            ?>
+            <?php if (function_exists("pagination")) {
+            pagination($custom_query->max_num_pages);
+            } ?>
 
-
-        <!--<div class="pagen">
-        <div class="navigation">
-        <?php
-        // Bring $wp_query into the scope of the function
-        global $wp_query;
-
-        // Backup the original property value
-        $backup_page_total = $wp_query->max_num_pages;
-
-        // Copy the custom query property to the $wp_query object
-        $wp_query->max_num_pages = $loop->max_num_pages;
-        ?>
-        <?php if (function_exists("pagination")) {
-        pagination($custom_query->max_num_pages);
-        } ?>
-
-        <?php
-        // Finally restore the $wp_query property to it's original value
-        $wp_query->max_num_pages = $backup_page_total;
-        ?>
-        <div class="clear"></div>
-        </div>
-        </div>-->
+            <?php
+            // Finally restore the $wp_query property to it's original value
+            $wp_query->max_num_pages = $backup_page_total;
+            ?>
+            </div><!-- .navigation -->
+        </div><!-- .pagen -->
 
     </div><!-- .col-md-8.main-tt -->
 
