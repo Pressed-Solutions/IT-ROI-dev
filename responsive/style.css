@@ -258,12 +258,12 @@ body {
     background-size: 30px;
     font-size: 13px;
 }
-.header-wrapper .menu-item img {
+.responsive .menu-item img {
     display: none;
     /* TODO: remove images from the menu once entire site is responsive */
 }
 /* specific dropdown icons and colors */
-.page-template-page-responsive-php .integrationmenu > a {
+.responsive .integrationmenu > a {
     background: url('../images/menu-icons/Integrations.png');
 }
 .integrationmenu .dropdown-menu {
@@ -272,7 +272,7 @@ body {
 .integrationmenu .dropdown-menu a:hover {
     background-color: #0c7fb0;
 }
-.page-template-page-responsive-php .sharepointmenu > a {
+.responsive .sharepointmenu > a {
     background: url('../images/menu-icons/Sharepoint.png');
 }
 .sharepointmenu .dropdown-menu {
@@ -281,13 +281,13 @@ body {
 .sharepointmenu .dropdown-menu a:hover {
     background-color: #ed5f01;
 }
-.page-template-page-responsive-php .mobilitymenu > a {
+.responsive .mobilitymenu > a {
     background: url('../images/menu-icons/Mobility.png');
 }
-.page-template-page-responsive-php .reportingmenu > a {
+.responsive .reportingmenu > a {
     background: url('../images/menu-icons/Reporting.png');
 }
-.page-template-page-responsive-php .servicesmenu > a {
+.responsive .servicesmenu > a {
     background: url('../images/menu-icons/Services.png');
 }
 .servicesmenu .dropdown-menu {
@@ -392,7 +392,7 @@ a.tel:hover {
     text-align: center;
 }
 
-.page-template-page-responsive-php {
+.responsive {
     line-height: 1.5;
 }
 
@@ -419,7 +419,7 @@ a.tel:hover {
 
 }
 
-.page-template-page-responsive-php .page-header {
+.responsive .page-header {
     display: none;
 }
 
