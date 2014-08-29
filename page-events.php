@@ -17,11 +17,9 @@ get_header( 'responsive' ); ?>
     // the loop
     if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <div class="col-md-8 main-tt maincon container">
+    <div class="col-md-8 main-tt maincon container clearfix">
         <h2 class="page-header">Events</h2>
-        <p>We are on a mission to make PPM simpler, and we're telling the world.<br>
-        Connect and discover relevant, high-impact insight and innovations to help organizations maximize their IT-ROI for their universe</p>
-        <div class="clear"></div>
+        <?php the_content(); ?>
     </div><!-- .main-tt.maincon -->
 
 </div><!-- .dmbs-main.event-page -->
