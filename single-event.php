@@ -55,7 +55,7 @@ get_header( 'responsive' ); ?>
                 </h2>
                 <?php the_content(); ?>
                 <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
-                <div class="register-button"><?php the_field('register_now'); ?></div>
+                <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
             </div>
             <div class="clear"></div>
         </div>
@@ -78,7 +78,7 @@ get_header( 'responsive' ); ?>
             </div>
             <div class="col-md-9 evt-content clearfix"><a href="<?php echo get_permalink(); ?>" ><div class="evt-title"><?php the_title(); ?></div></a>
                 <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
-                <div class="register-button"><?php the_field('register_now'); ?></div><?php the_content(); ?>
+                <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
             </div><!-- .col-md-9.evt-content -->
         </div><!-- .evt-post -->
         <?php endwhile; ?>

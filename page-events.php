@@ -42,7 +42,7 @@ get_header(); ?>
         <div class="dmbs-container">
             <div class="blue-bg"></div>
              <div class="container dmbs-container this-event">
-                <div class="col-md-12 main-tt container">
+                <div class="col-md-12 main-tt container clearfix">
                     <div class="col-md-6 mainevt">
                         <div class="col-md-4 mainevt">
                             <?php if ( has_post_thumbnail()) : ?>
@@ -53,24 +53,22 @@ get_header(); ?>
                         <div class="col-md-6 Webinar mainevt">
                             <h1>Webinar</h1>
                         </div>
-                    </div>
-                    <div class="col-md-6 mainevt maincont">
+                    </div><!-- .mainevt -->
+                    <div class="col-md-6 mainevt maincont clearfix">
                         <h2 class="page-headerWebinar">
                             <?php the_title(); ?>
                         </h2>
                         <?php the_content(); ?>
                         <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
-                        <div class="register-button"><?php the_field('register_now'); ?></div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
+                        <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
+                    </div><!-- .mainevt.maincont -->
+                </div><!-- .col-md-12.main-tt.container -->
 
             </div>
         </div>
         <div class="container dmbs-container">
             <div class="col-md-8 main-tt">
-                <h3 class="UPCOMING-EVENTS">UPCOMING EVENTS</h3>
+                <h3 class="upcoming-events">UPCOMING EVENTS</h3>
 
     <?php
         $counter = $counter + 1; // increment counter
@@ -84,7 +82,7 @@ get_header(); ?>
             </div>
             <div class="col-md-9 evt-content"><div class="evt-title"><?php the_title(); ?></div>
                 <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
-                <div class="register-button"><?php the_field('register_now'); ?></div><?php the_content(); ?>
+                <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
             </div>
             <div class="clear"></div>
         </div>
