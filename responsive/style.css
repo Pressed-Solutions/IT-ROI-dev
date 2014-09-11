@@ -261,75 +261,83 @@ body {
 .header-wrapper li.dropdown:hover ul {
     display: block;
 }
+.dropdown-menu > li {
+    padding: 0;
+}
+.dropdown-menu > li > a {
+    padding: 15px;
+}
 .dropdown-menu > li > a,
 .dropdown-menu > li > a:hover {
     color: white;
-    padding: 12px 20px;
 }
-.header-wrapper .navbar-nav > li > a {
+.header-wrapper .navbar-nav > li {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 15px 15px 15px 77px;
+    padding: 0;
     background-repeat: no-repeat;
     background-position: 10px;
     font-size: 13px;
+}
+.header-wrapper .navbar-nav > li > a {
+    padding: 15px 15px 15px 77px;
 }
 .responsive .menu-item img {
     display: none;
     /* TODO: remove images from the menu once entire site is responsive */
 }
 /* specific dropdown icons and colors */
-.responsive .integrationmenu > a {
+.responsive .integrationmenu {
     background: url('../images/menu-icons/Integrations.png');
 }
-.responsive .integrationmenu > a:hover {
+.responsive .integrationmenu:hover {
     background: url('../images/menu-icons/Integrations.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
 .integrationmenu .dropdown-menu {
     background-color: #0fa1e0;
 }
-.integrationmenu .dropdown-menu a:hover {
+.integrationmenu .dropdown-menu li a:hover {
     background-color: #0c7fb0;
 }
-.responsive .sharepointmenu > a {
+.responsive .sharepointmenu {
     background-image: url('../images/menu-icons/Sharepoint.png');
 }
-.responsive .sharepointmenu > a:hover {
+.responsive .sharepointmenu:hover {
     background: url('../images/menu-icons/Sharepoint.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
 .sharepointmenu .dropdown-menu {
     background-color: #ff6600;
 }
-.sharepointmenu .dropdown-menu a:hover {
+.sharepointmenu .dropdown-menu li a:hover {
     background-color: #ed5f01;
 }
-.responsive .mobilitymenu > a {
+.responsive .mobilitymenu {
     background-image: url('../images/menu-icons/Mobility.png');
 }
-.responsive .mobilitymenu > a:hover {
+.responsive .mobilitymenu:hover {
     background: url('../images/menu-icons/Mobility.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
-.responsive .reportingmenu > a {
+.responsive .reportingmenu {
     background-image: url('../images/menu-icons/Reporting.png');
 }
-.responsive .reportingmenu > a:hover {
+.responsive .reportingmenu:hover {
     background: url('../images/menu-icons/Reporting.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
-.responsive .servicesmenu > a {
+.responsive .servicesmenu {
     background-image: url('../images/menu-icons/Services.png');
 }
-.responsive .servicesmenu > a:hover {
+.responsive .servicesmenu:hover {
     background: url('../images/menu-icons/Services.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
 .servicesmenu .dropdown-menu {
     background-color: #ffac1f;
 }
-.servicesmenu .dropdown-menu a:hover {
+.servicesmenu .dropdown-menu:hover {
     background-color: #e4950f;
 }
 nav.navbar.navbar-inverse {
