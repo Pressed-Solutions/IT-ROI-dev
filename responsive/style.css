@@ -467,10 +467,13 @@ h1.sharepoint + h2.sharepoint {
     text-align: center;
 }
 .cta-buttons .tel {
-    padding: .7em .5em;
+    padding: .8em .5em;
     display: block;
     color: white;
     text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 .cta-buttons .background-purple {
     background-color: #9900cc;
@@ -506,25 +509,6 @@ h1.sharepoint + h2.sharepoint {
 
 .cta-buttons .talk-now-number {
     display: block;
-}
-
-.hs-cta-img {
-    display: none;
-}
-.cta-buttons a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 {
-    position: absolute;
-    top: -1em;
-    left: 0;
-    right: 0;
-    bottom: -1em;
-    background: none !important;
-    border-radius: 0 !important;
-}
-.cta-buttons a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover {
-    background: none !important;
-}
-.cta-buttons a#cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 strong {
-    display: none;
 }
 
 /* other PPM products links */
