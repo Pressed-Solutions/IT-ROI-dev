@@ -2,9 +2,9 @@
  - multiple featured images
 
 #Todo
- - Delete live assignmentBoss page to free up URL
- - Figure out how to list under /sharepoint/ URL
- - When finished converting entire site: remove images from menu and remove commit [944cef2](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from functions.php
+ - Delete live assignmentBoss page to free up URL?
+ - List under `/sharepoint/` URL?
+ - When finished converting entire site: remove images from menu and remove commit [944cef2](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
 
 #"Do It Right" Upgrades
  - Footer social links: SVG icons, actual text
