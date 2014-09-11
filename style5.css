@@ -653,14 +653,14 @@
 }
 .assignment_boss 
 {
-    background: url("images/assignment_boss.png") repeat scroll 0 0 transparent;
+    background: url("images/idea_boss.png") repeat scroll 0 0 transparent;
     float: left;
     height: 112px;
     width: 113px;
 }
 .assignment_boss:hover 
 {
-    background: url("images/assignment_boss.png") repeat scroll center top transparent;
+    background: url("images/idea_boss.png") repeat scroll center top transparent;
     height: 224px;
     margin-top: -112px;
     overflow: hidden;
