@@ -154,6 +154,13 @@ a {text-decoration:none; border:none;}
   padding-bottom: 31px;
   
 }
+.medium .left > div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .medium .right
 {
 	background-color:#E14E42;
