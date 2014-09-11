@@ -651,14 +651,14 @@
     position: absolute;
     top: 230px;
 }
-.assignment_boss 
+.idea_boss 
 {
     background: url("images/idea_boss.png") repeat scroll 0 0 transparent;
     float: left;
     height: 112px;
     width: 113px;
 }
-.assignment_boss:hover 
+.idea_boss:hover 
 {
     background: url("images/idea_boss.png") repeat scroll center top transparent;
     height: 224px;
