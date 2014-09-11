@@ -841,6 +841,10 @@ h2.page-headerWebinar {
 }
 .bottom-nav .navbar-nav > li > a {
     color: #027ac6;
+    padding: 5px 18%;
+}
+.bottom-nav .navbar-nav > li:last-child a {
+    padding-right: 0;
 }
 .bottom-nav .navbar-nav > li > a:hover {
     color: white;
@@ -920,10 +924,10 @@ h2.page-headerWebinar {
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
     }
     .navbar-header {
         display: none;
