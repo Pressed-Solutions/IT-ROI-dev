@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Pressed-Responsive-PPM
+Template Name Posts: Pressed-Responsive-PPM
 */
 
 get_header( 'responsive' ); ?>
