@@ -580,6 +580,8 @@ h1.sharepoint + p {
     float: left;
     width: 90px;
     height: 90px;
+    margin-right: 2em;
+    margin-bottom: 3em;
 }
 
 .ppm-links .rollover:hover {
