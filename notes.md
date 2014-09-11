@@ -13,6 +13,7 @@
  
 #Move to production
  - back up the `wp-content/themes/twentythirteen/` directory and delete it; `cd` into the `wp-content/themes/` directory and run `git clone git@github.com:macbookandrew/IT-ROI-dev.git twentythirteen` to pull in all the files
+     - subsequent deployments only require you to `cd wp-content/themes/twentythirteen/` and then run `git reset --hard HEAD && git fetch origin`
  - revert the change in commits [d5bc15a](https://github.com/macbookandrew/IT-ROI-dev/commit/d5bc15a) and [7847dbd](https://github.com/macbookandrew/IT-ROI-dev/commit/7847dbd)
  - copy the post content from the **text** section of the post editor (not the **visual** editor) and paste into the **text** section for these posts:
     - [ideaBoss](https://dev.itroisolutions.com/wp-admin/post.php?post=3149&action=edit) &rarr; new **page** on live site (not a sharepoint custom post type)
