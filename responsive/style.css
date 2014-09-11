@@ -427,6 +427,10 @@ a.tel:hover {
     display: block;
 }
 
+.extra-lineheight {
+    line-height: 2;
+}
+
 /* ------------------ PPM pages -------------------- */
 .separate {
     margin-top: 30px;
@@ -449,6 +453,10 @@ h2.sharepoint {
 
 h1.sharepoint + h2.sharepoint {
     margin-top: 0;
+}
+
+h1.sharepoint + p {
+    margin-top: 30px;
 }
 
 .sharepoint-orange {
