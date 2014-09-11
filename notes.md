@@ -16,7 +16,8 @@
      - subsequent deployments only require you to `cd wp-content/themes/twentythirteen/` and then run `git reset --hard HEAD && git fetch origin`
  - revert the change in commits [d5bc15a](https://github.com/macbookandrew/IT-ROI-dev/commit/d5bc15a) and [7847dbd](https://github.com/macbookandrew/IT-ROI-dev/commit/7847dbd)
  - copy the post content from the **text** section of the post editor (not the **visual** editor) and paste into the **text** section for these posts:
-    - [ideaBoss](https://dev.itroisolutions.com/wp-admin/post.php?post=3149&action=edit) &rarr; new **page** on live site (not a sharepoint custom post type)
+    - [ideaBoss](https://dev.itroisolutions.com/wp-admin/post.php?post=3149&action=edit) &rarr; new **page** on live site (not a sharepoint custom post type); make sure to choose the “Pressed-Responsive-PPM” template in the right sidebar
+    ![Template](https://www.evernote.com/shard/s26/sh/daeeba1b-1ca3-433f-8b9b-098be388c3f4/247eeacbe2aaa93f1c79e52428c49aa1/res/2e044d7c-1832-4119-9dcc-4d5161229ea1/skitch.png?resizeSmall&width=832)
         - change the URL in the PHP file in [commit a69c524](https://github.com/macbookandrew/IT-ROI-dev/commit/a69c524) to point to the new ideaBoss page (please let me know what the final URL is so I can update my copy of the file, preventing it from accidentally getting overwritten)
         - delete [the assignmentBoss post](https://itroisolutions.com/wp-admin/post.php?post=1145&action=edit)
     - [footer](https://dev.itroisolutions.com/wp-admin/post.php?post=113&action=edit) content &rarr; [footer](https://itroisolutions.com/wp-admin/post.php?post=113&action=edit) content
