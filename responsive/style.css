@@ -132,6 +132,19 @@ body {
 }
 
 /* MAIN NAVIGATION SETTINGS */
+@media (min-width: 1200px) {
+    .dmbs-top-menu .col-md-2 {
+        width: 145px;
+    }
+    #logo {
+        padding: 0;
+    }
+    .dmbs-top-menu .col-md-8 {
+        padding-left: 30px;
+        width: 900px;
+    }
+}
+
 .navbar-nav {
     float: none;
     width: 100%;
@@ -164,7 +177,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #0cf;
+    background-color: linear-gradient(to bottom,#26262c 0,#070707 100%) repeat scroll 0 0 transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -254,9 +267,9 @@ body {
 .header-wrapper .navbar-nav > li > a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 15px 10px 15px 33px;
+    padding: 15px 40px 15px 53px;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 10px;
     background-size: 30px;
     font-size: 13px;
 }
@@ -266,7 +279,7 @@ body {
 }
 /* specific dropdown icons and colors */
 .responsive .integrationmenu > a {
-    background: url('../images/menu-icons/Integrations.png');
+    background-image: url('../images/menu-icons/Integrations.png');
 }
 .integrationmenu .dropdown-menu {
     background-color: #0fa1e0;
@@ -275,7 +288,7 @@ body {
     background-color: #0c7fb0;
 }
 .responsive .sharepointmenu > a {
-    background: url('../images/menu-icons/Sharepoint.png');
+    background-image: url('../images/menu-icons/Sharepoint.png');
 }
 .sharepointmenu .dropdown-menu {
     background-color: #ff6600;
@@ -284,13 +297,13 @@ body {
     background-color: #ed5f01;
 }
 .responsive .mobilitymenu > a {
-    background: url('../images/menu-icons/Mobility.png');
+    background-image: url('../images/menu-icons/Mobility.png');
 }
 .responsive .reportingmenu > a {
-    background: url('../images/menu-icons/Reporting.png');
+    background-image: url('../images/menu-icons/Reporting.png');
 }
 .responsive .servicesmenu > a {
-    background: url('../images/menu-icons/Services.png');
+    background-image: url('../images/menu-icons/Services.png');
 }
 .servicesmenu .dropdown-menu {
     background-color: #ffac1f;
@@ -827,7 +840,6 @@ h2.page-headerWebinar {
 /* Papa Bear and up */
 @media screen and (min-width: 1200px) {
     .header-wrapper .navbar-nav > li > a {
-        padding-left: 52px;
         background-size: 40px;
         font-size: 15px;
     }
