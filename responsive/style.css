@@ -291,6 +291,7 @@ body {
     background: url('../images/menu-icons/Integrations.png');
 }
 .responsive .integrationmenu:hover {
+    background: url('../images/menu-icons/Integrations.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url('../images/menu-icons/Integrations.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
@@ -304,6 +305,7 @@ body {
     background-image: url('../images/menu-icons/Sharepoint.png');
 }
 .responsive .sharepointmenu:hover {
+    background: url('../images/menu-icons/Sharepoint.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url('../images/menu-icons/Sharepoint.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
@@ -317,6 +319,7 @@ body {
     background-image: url('../images/menu-icons/Mobility.png');
 }
 .responsive .mobilitymenu:hover {
+    background: url('../images/menu-icons/Mobility.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url('../images/menu-icons/Mobility.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
@@ -324,6 +327,7 @@ body {
     background-image: url('../images/menu-icons/Reporting.png');
 }
 .responsive .reportingmenu:hover {
+    background: url('../images/menu-icons/Reporting.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url('../images/menu-icons/Reporting.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
@@ -331,6 +335,7 @@ body {
     background-image: url('../images/menu-icons/Services.png');
 }
 .responsive .servicesmenu:hover {
+    background: url('../images/menu-icons/Services.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url('../images/menu-icons/Services.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
