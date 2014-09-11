@@ -241,7 +241,7 @@ jQuery( "#video_new" ).focus();
         <a href="<?php echo get_site_url(); ?>/sharepoint/bi-directional-task-and-scrum-clarity-integration//" class="scrum_boss"></a>
         </div>
         <div class="an5">
-        <a  href="<?php echo get_site_url(); ?>/sharepoint/assignments-multi-project-resource-planning/" class="assignment_boss"></a>
+        <a  href="<?php echo get_site_url(); ?>/ideaBoss/" class="idea_boss"></a>
         </div>
         <div class="an6">
         <a href="<?php echo get_site_url(); ?>/sharepoint/bi-directional-timesheet-integration/" class="timesheet_boss"></a>
