@@ -182,10 +182,6 @@ body {
     font-weight: 600;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    background-color: linear-gradient(to bottom,#26262c 0,#070707 100%) repeat scroll 0 0 transparent;
-}
-
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background: none;
 }
@@ -273,10 +269,9 @@ body {
 .header-wrapper .navbar-nav > li > a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 15px 44px 15px 53px;
+    padding: 15px 15px 15px 77px;
     background-repeat: no-repeat;
     background-position: 10px;
-    background-size: 30px;
     font-size: 13px;
 }
 .responsive .menu-item img {
@@ -285,7 +280,11 @@ body {
 }
 /* specific dropdown icons and colors */
 .responsive .integrationmenu > a {
-    background-image: url('../images/menu-icons/Integrations.png');
+    background: url('../images/menu-icons/Integrations.png');
+}
+.responsive .integrationmenu > a:hover {
+    background: url('../images/menu-icons/Integrations.png') no-repeat 10px,
+                linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
 .integrationmenu .dropdown-menu {
     background-color: #0fa1e0;
@@ -296,6 +295,10 @@ body {
 .responsive .sharepointmenu > a {
     background-image: url('../images/menu-icons/Sharepoint.png');
 }
+.responsive .sharepointmenu > a:hover {
+    background: url('../images/menu-icons/Sharepoint.png') no-repeat 10px,
+                linear-gradient(to bottom, #26262c 0%,#070707 100%);
+}
 .sharepointmenu .dropdown-menu {
     background-color: #ff6600;
 }
@@ -305,11 +308,23 @@ body {
 .responsive .mobilitymenu > a {
     background-image: url('../images/menu-icons/Mobility.png');
 }
+.responsive .mobilitymenu > a:hover {
+    background: url('../images/menu-icons/Mobility.png') no-repeat 10px,
+                linear-gradient(to bottom, #26262c 0%,#070707 100%);
+}
 .responsive .reportingmenu > a {
     background-image: url('../images/menu-icons/Reporting.png');
 }
+.responsive .reportingmenu > a:hover {
+    background: url('../images/menu-icons/Reporting.png') no-repeat 10px,
+                linear-gradient(to bottom, #26262c 0%,#070707 100%);
+}
 .responsive .servicesmenu > a {
     background-image: url('../images/menu-icons/Services.png');
+}
+.responsive .servicesmenu > a:hover {
+    background: url('../images/menu-icons/Services.png') no-repeat 10px,
+                linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
 .servicesmenu .dropdown-menu {
     background-color: #ffac1f;
@@ -846,7 +861,6 @@ h2.page-headerWebinar {
 /* Papa Bear and up */
 @media screen and (min-width: 1200px) {
     .header-wrapper .navbar-nav > li > a {
-        background-size: 40px;
         font-size: 15px;
     }
 }
