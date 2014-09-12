@@ -280,6 +280,9 @@ body {
 .responsive .dropdown-menu > .active > a {
     background-color: inherit;
 }
+.responsive .navbar-nav > li {
+    background-position: 10px center;
+}
 .responsive .header-wrapper .navbar-nav > li {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
