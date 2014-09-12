@@ -844,9 +844,13 @@ h2.page-headerWebinar {
     padding-bottom: 15px;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
+    -ms-transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+    transform: translateY(25%);
+    font-size: larger;
+}
+.about ol {
+    margin-top: 1em;
 }
 .youtube-player-wrapper {
     background-color: rgb(225, 78, 66);
