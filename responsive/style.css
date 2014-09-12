@@ -487,6 +487,11 @@ a.tel:hover {
     margin-top: 30px;
 }
 /* headers */
+.single-sharepoint h1,
+.single-sharepoint h2 {
+    color: black;
+}
+
 h1.sharepoint,
 h2.sharepoint {
     text-align: center;
@@ -496,10 +501,6 @@ h2.sharepoint {
 h1.sharepoint {
     font-size: 4em;
     font-weight: bold;
-}
-
-h2.sharepoint {
-    color: #0e6dad;
 }
 
 h1.sharepoint + h2.sharepoint {
