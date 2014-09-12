@@ -39,7 +39,7 @@ get_header(); ?>
         <a href="<?php echo get_site_url(); ?>/sharepoint/bi-directional-task-and-scrum-clarity-integration//" class="scrum_boss"></a>
         </div>
         <div class="an5">
-        <a  href="<?php echo get_site_url(); ?>/ideaBoss/" class="idea_boss"></a>
+        <a  href="<?php echo get_site_url(); ?>/sharepoint/ideation-integrated-solution-for-clarity-ppm/" class="idea_boss"></a>
         </div>
         <div class="an6">
         <a href="<?php echo get_site_url(); ?>/sharepoint/bi-directional-timesheet-integration/" class="timesheet_boss"></a>
