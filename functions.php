@@ -2022,6 +2022,8 @@ function pagination($pages = '', $range = 2)
      }
 }
 
-require_once('responsive/functions.php');
+if ( strpos( 'responsive', get_page_template() ) !== 0 ) {
+    require_once('responsive/functions.php');
+}
 
 ?>
