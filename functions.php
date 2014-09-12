@@ -2022,7 +2022,7 @@ function pagination($pages = '', $range = 2)
      }
 }
 
-if ( strpos( 'responsive', get_page_template() ) !== 0 ) {
+if ( strpos( get_page_template(), 'responsive' ) !== 0 ) {
     require_once('responsive/functions.php');
 }
 
