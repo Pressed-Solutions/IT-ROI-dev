@@ -31,3 +31,8 @@ tr.selected td{background:#ffc;}td.checkbox,th.checkbox{text-align:center;}.prog
 .menu-menu-container .page-title {
     display: none;
 }
+
+/* hide CTA buttons on one specific page */
+postid-1317 .menu_inferior {
+    display: none;
+}
