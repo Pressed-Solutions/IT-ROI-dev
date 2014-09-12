@@ -276,6 +276,9 @@ body {
 .dropdown-menu > li > a:hover {
     color: white;
 }
+.dropdown-menu > .active > a {
+    background-color: inherit;
+}
 .header-wrapper .navbar-nav > li {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -347,7 +350,7 @@ body {
 .servicesmenu .dropdown-menu {
     background-color: #ffac1f;
 }
-.servicesmenu .dropdown-menu:hover {
+.servicesmenu .dropdown-menu li a:hover {
     background-color: #e4950f;
 }
 nav.navbar.navbar-inverse {
