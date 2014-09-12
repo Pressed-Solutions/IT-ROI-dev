@@ -1,6 +1,6 @@
 #Deployment Notes
- **Initial deployment:** back up the `wp-content/themes/twentythirteen/` directory and delete or rename it; `cd` into the `wp-content/themes/` directory and run `git clone git@github.com:macbookandrew/IT-ROI-dev.git twentythirteen` to pull in all the files
- 
+ **Initial deployment:** back up the `wp-content/themes/twentythirteen/` directory and delete or rename it; `cd` into the `wp-content/themes/` directory and run `git clone git://github.com/macbookandrew/IT-ROI-dev.git twentythirteen` to pull in all the files
+
 **Subsequent deployments:** all you need to do is `cd wp-content/themes/twentythirteen/` and then run `git reset --hard HEAD && git pull origin` to pull in all the changes since the last deployment
 
 **Other notes**
