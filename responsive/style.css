@@ -846,11 +846,6 @@ h2.page-headerWebinar {
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
-    top: 50%;
-    -ms-transform: translateY(25%);
-    -webkit-transform: translateY(25%);
-    transform: translateY(25%);
-    font-size: larger;
 }
 .responsive .about ol {
     margin-top: 1em;
@@ -919,6 +914,13 @@ h2.page-headerWebinar {
 @media screen and (min-width: 1200px) {
     .responsive .header-wrapper .navbar-nav > li > a {
         font-size: 15px;
+    }
+    .responsive .about {
+        top: 50%;
+        -ms-transform: translateY(25%);
+        -webkit-transform: translateY(25%);
+        transform: translateY(25%);
+        font-size: larger;
     }
 }
 
