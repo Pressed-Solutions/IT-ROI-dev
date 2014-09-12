@@ -90,8 +90,12 @@ body {
 
 .dmbs-main {
     padding-top: 12px;
-    border-right: 1px solid #cccccc;
+}
+
+.dmbs-main,
+.ppm-suite {
     border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
 }
 
 /* HEADER SETTINGS */
@@ -567,6 +571,10 @@ h1.sharepoint + p {
 }
 
 /* other PPM products links */
+.ppm-suite {
+    padding-top: 30p;
+}
+
 .ppm-links {
     margin: 30px 0;
 }
@@ -588,15 +596,19 @@ h1.sharepoint + p {
     background-position: 0 -91px;
 }
 
-.ppm-links .rollover.docboss {
+.ppm-links .ideaboss .rollover {
+    background-image: url(../images/ppm-rollovers/ppm-ideaboss.png);
+}
+
+.ppm-links .docboss .rollover {
     background-image: url(../images/ppm-rollovers/ppm-docboss.png);
 }
 
-.ppm-links .rollover.taskboss {
+.ppm-links .taskboss .rollover {
     background-image: url(../images/ppm-rollovers/ppm-taskboss.png);
 }
 
-.ppm-links .rollover.timesheetboss {
+.ppm-links .timesheetboss .rollover {
     background-image: url(../images/ppm-rollovers/ppm-timesheetboss.png);
 }
 
