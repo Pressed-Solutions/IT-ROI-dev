@@ -13,6 +13,7 @@
     - delete the old [assignmentBoss post](https://itroisolutions.com/wp-admin/post.php?post=1145&action=edit)
     - add the new ideaBoss sharepoint post to the [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and save the menu
     - copy the HTML code from [footer](https://dev.itroisolutions.com/wp-admin/post.php?post=113&action=edit) content &rarr; replace the existing [footer](https://itroisolutions.com/wp-admin/post.php?post=113&action=edit) content
+    - upload new PDF files to other PPM products
     
 #Todo
  - When finished converting entire site: remove images from menu and remove commit [944cef2](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
