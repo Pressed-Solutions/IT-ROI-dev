@@ -46,7 +46,7 @@ get_header( 'responsive' ); ?>
 
         $ppm_loop = new WP_Query( $args );
 
-        while ( $loop->have_posts() ) : $loop->the_post();
+        while ( $ppm_loop->have_posts() ) : $ppm_loop->the_post();
             $showfooter = get_field( "add_in_footer_module" );
             if ( $showfooter == "yes" ) {
                 $this_product = get_field('this_products_name'); ?>
