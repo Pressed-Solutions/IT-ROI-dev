@@ -50,7 +50,7 @@
 
         wp_enqueue_style( 'bootstrap.css');
 
-        wp_enqueue_style( 'stylesheet', 'http://dev.itroisolutions.com/wp-content/themes/twentythirteen/responsive/style.css', array(), '1', 'all' );
+        wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/responsive/style.css', array(), '1', 'all' );
 
     }
 
