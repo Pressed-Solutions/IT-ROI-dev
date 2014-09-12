@@ -445,6 +445,14 @@ a.tel:hover {
     text-align: center;
 }
 
+ul.center li {
+    display: inline-block;
+}
+
+ul.center li:before {
+    content: '\2022  ';
+}
+
 .responsive {
     line-height: 1.5;
 }
