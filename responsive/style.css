@@ -282,6 +282,10 @@ body {
 }
 .responsive .navbar-nav > li {
     background-position: 10px center;
+    background-size: 45px;
+}
+.responsive .navbar-nav > li:hover {
+    background-size: 45px, auto;
 }
 .responsive .header-wrapper .navbar-nav > li {
     -moz-box-sizing: border-box;
