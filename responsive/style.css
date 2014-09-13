@@ -23,6 +23,9 @@ Text Domain: Pressed Soltutions
         padding-right: 0;
         padding-left: 0;
     }
+    .top_menu .container {
+        width: 1230px;
+    }
 }
 
 /* add 5-column layout */
@@ -216,13 +219,12 @@ body {
 }
 .responsive .top_menu {
     background: #000000;
-    padding: 0px 10px !important;
 }
 .responsive .top_menu .menu li a {
     color: #ffffff;
 }
 .responsive .top_menu .menu {
-    padding: 15px 15px;
+    /* padding: 15px 15px; */
 }
 .responsive .top_menu ul.sub-menu {
     display: none;
