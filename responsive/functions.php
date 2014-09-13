@@ -387,9 +387,8 @@ function display_cta_buttons( $atts ) {
     $cta_string .= '<div class="col-md-3"><div class="cta-button background-purple">' . get_post_meta( get_the_ID(), 'cta_download_the_product_brief', true ) . '</div></div>';
     $cta_string .= '<div class="col-md-3"><div class="cta-button background-red">' . get_post_meta( get_the_ID(), 'cta_replay_the_webinar', true ) . '</div></div>';
     $cta_string .= '<div class="col-md-3"><div class="cta-button background-blue">' . get_post_meta( get_the_ID(), 'cta_request_a_demo', true ) . '</div></div>';
-    $cta_string .= '<div class="col-md-3"><a class="background-green tel" href="tel:19545183330;ext=104">Talk now <span class="talk-now-number">945.518.330 x104</span></a></div>';
+    $cta_string .= '<div class="col-md-3"><div class="cta-button background-green">' . get_post_meta( get_the_ID(), 'cta_talk_now', true ) . '</div></div>';
     $cta_string .= '</section>';
-$cta_string .= '<!-- ID: ' . get_the_ID() . '-->'; // todo: remove this debugging line
 
     return $cta_string;
 }
