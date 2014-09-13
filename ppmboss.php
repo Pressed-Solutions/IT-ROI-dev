@@ -62,25 +62,7 @@ get_header(); ?>
         
         <?php the_content(); ?>
         </div>
-        <!-- ********************************* 
-              Start  Mid Menu Bar links 
-            ********************************* -->
-        <div class="menu_inferior" style="">
-        <div class="headmenu" style="">
-        <div class="menu-ppm-boss-menu-container"><ul id="menu-ppm-boss-menu-1" class="menu">
-                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1081"><a href="javascript::void(0);" onclick="web_down();" id="webinar_down"><img  src="<?php bloginfo("stylesheet_directory");?>/images/RB_3.2_a.png" class="rollover_effect" alt="See the Video" title="See the Video" /></a></li> 
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1079"><a href="<?php  if($pdf_href!=""){ echo $pdf_href;}else{ echo "#";}  ?>"  <?php if($pdf_href!=""){ echo 'target="_blank"';} ?>><img  src="<?php bloginfo("stylesheet_directory");?>/images/RB_3.2_b.png" class="rollover_effect" alt="Download the brief" title="Download the brief" /></a></li>
-                
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1082" ><a href="<?php echo get_site_url(); ?>/<?php echo $demo_href; ?>" title="<?php echo $demo_post_title;  ?>"><img  src="<?php bloginfo("stylesheet_directory");?>/images/RB_3.2_c.png" class="rollover_effect" alt="Schedule a demo" title="Schedule a demo" /></a></li>
-            </ul></div>        
-            <div><img src="<?php bloginfo('stylesheet_directory');?>/images/RB_3.2_d.png"><a href="mailto:<?php echo $mailto_email_id; ?>?subject=<?php echo $mailto_subject; ?>"  alt="Send us an email" title="Send us an email"><img  style="margin-left:9px;"src="<?php bloginfo('stylesheet_directory');?>/images/RB_3.2_e.png" class="rollover_effect"/></a></div>
-       </div>
-         </div>
-        <div style="clear:both"></div>
-       <!-- ********************************* 
-              End  Mid Menu Bar links 
-            ********************************* -->
-     
+
         <!-- ********************************* 
                 Start Product Box view list
             *********************************   -->
