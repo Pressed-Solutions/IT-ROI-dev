@@ -4,10 +4,10 @@
 <?php $obj = get_queried_object(); $custom_post_type = $obj->post_type; ?>
 <div class="social-links row">
     <ul>
-        <li><a class="linkedin" href="<?php the_author_meta( 'linkedin', 1 ); ?>"><span class="hidden">LinkedIn</span></a></li>
-        <li><a class="facebook" href="<?php the_author_meta( 'facebook', 1 ); ?>"><span class="hidden">Facebook</span></a></li>
-        <li><a class="twitter" href="<?php the_author_meta( 'twitter', 1 ); ?>"><span class="hidden">Twitter</span></a></li>
-        <li><a class="youtube" href="<?php the_author_meta( 'youtube', 1 ); ?>"><span class="hidden">YouTube</span></a></li>
+        <li><a target="_blank" class="linkedin" href="<?php the_author_meta( 'linkedin', 1 ); ?>"><span class="hidden">LinkedIn</span></a></li>
+        <li><a target="_blank" class="facebook" href="<?php the_author_meta( 'facebook', 1 ); ?>"><span class="hidden">Facebook</span></a></li>
+        <li><a target="_blank" class="twitter" href="<?php the_author_meta( 'twitter', 1 ); ?>"><span class="hidden">Twitter</span></a></li>
+        <li><a target="_blank" class="youtube" href="<?php the_author_meta( 'youtube', 1 ); ?>"><span class="hidden">YouTube</span></a></li>
     </ul>
 </div>
 
