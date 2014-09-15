@@ -812,10 +812,9 @@ h2.page-headerWebinar {
     margin-bottom: 0;
 }
 .responsive .social-links li {
-    display: inline-block;
-    margin-right: -5px;
-    margin-bottom: -5px;
+    display: block;
     min-width: 215px;
+    float: left;
 }
 .responsive .social-links li a {
     display: block;
