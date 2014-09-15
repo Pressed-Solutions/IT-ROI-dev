@@ -129,7 +129,6 @@ body {
 
 .responsive .dmbs-content {
     clear: both;
-    margin-bottom: 25px;
 }
 
 @media (min-width: 992px) {
