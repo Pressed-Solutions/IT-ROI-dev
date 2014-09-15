@@ -33,6 +33,6 @@ tr.selected td{background:#ffc;}td.checkbox,th.checkbox{text-align:center;}.prog
 }
 
 /* hide CTA buttons on one specific page */
-postid-1317 .menu_inferior {
+.postid-1317 .menu_inferior {
     display: none;
 }

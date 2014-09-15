@@ -92,7 +92,7 @@ get_header(); ?>
             if($showfooter=="yes")
             {
             ?>
-                <div class="assignmet_boss" style=" padding-top: 20px;min-height: 260px;   <?php  if($blockcount==2 || $blockcount==1){  echo " border-bottom: 1px solid rgb(204, 204, 204);";}  if($blockcount%2==1){ echo $border_right;}else{ echo " padding-left: 20px;";} ?>">
+                <div class="assignmet_boss">
                     <div class="an4_inferior_assignment">
                         <a href="<?php the_permalink(); ?>" class="assignment_boss_rollover_inferior"><?php 
                         if ( has_post_thumbnail() ) 
