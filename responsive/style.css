@@ -282,10 +282,13 @@ body {
 }
 .responsive .navbar-nav > li {
     background-position: 10px center;
-    background-size: 45px;
+    background-size: 35px;
+}
+.responsive .navbar-nav > li {
+    background-size: 30px;
 }
 .responsive .navbar-nav > li:hover {
-    background-size: 45px, auto;
+    background-size: 30px, auto;
 }
 .responsive .header-wrapper .navbar-nav > li {
     -moz-box-sizing: border-box;
@@ -295,7 +298,7 @@ body {
     font-size: 13px;
 }
 .responsive .header-wrapper .navbar-nav > li > a {
-    padding: 15px 15px 15px 65px;
+    padding: 15px 15px 15px 45px;
 }
 .responsive .menu-item img {
     display: none;
@@ -945,6 +948,15 @@ h2.page-headerWebinar {
 }
 
 @media screen and (min-width: 992px) {
+    .responsive .header-wrapper .navbar-nav > li > a {
+        padding-left: 77px;
+    }
+    .responsive .navbar-nav > li {
+        background-size: 45px;
+    }
+    .responsive .navbar-nav > li:hover {
+        background-size: 45px, auto;
+    }
     .responsive .social-links li {
         width: 25%;
     }
@@ -953,9 +965,14 @@ h2.page-headerWebinar {
 /* Uncle Bear and up */
 @media screen and (min-width: 768px) {
     .responsive .header-wrapper .navbar-nav > li > a {
-        padding-left: 77px;
+        padding-left: 65px;
     }
-
+    .responsive .navbar-nav > li {
+        background-size: 40px;
+    }
+    .responsive .navbar-nav > li:hover {
+        background-size: 40px, auto;
+    }
     .responsive .itroi-info .left,
     .responsive .itroi-info .right {
         float: left;
