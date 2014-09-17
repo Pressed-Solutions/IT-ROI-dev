@@ -302,6 +302,16 @@ body {
     display: none;
     /* TODO: remove images from the menu once entire site is responsive */
 }
+/* third-level menu */
+.responsive .header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
+    display: none;
+}
+
+.responsive .header-wrapper .dropdown-menu li.dropdown:hover > .dropdown-menu,
+.responsive .header-wrapper .dropdown-menu li.dropdown:active > .dropdown-menu {
+    display: block;
+}
+
 /* specific dropdown icons and colors */
 .responsive .integrationmenu {
     background: url('../images/menu-icons/Integrations.png');
@@ -314,7 +324,7 @@ body {
 .responsive .integrationmenu .dropdown-menu {
     background-color: #0fa1e0;
 }
-.responsive .integrationmenu .dropdown-menu li a:hover {
+.responsive .integrationmenu .dropdown-menu li:hover > a {
     background-color: #0c7fb0;
 }
 .responsive .sharepointmenu {
@@ -328,7 +338,7 @@ body {
 .responsive .sharepointmenu .dropdown-menu {
     background-color: #ff6600;
 }
-.responsive .sharepointmenu .dropdown-menu li a:hover {
+.responsive .sharepointmenu .dropdown-menu li:hover > a {
     background-color: #ed5f01;
 }
 .responsive .mobilitymenu {
@@ -358,7 +368,7 @@ body {
 .responsive .servicesmenu .dropdown-menu {
     background-color: #ffac1f;
 }
-.responsive .servicesmenu .dropdown-menu li a:hover {
+.responsive .servicesmenu .dropdown-menu li:hover > a {
     background-color: #e4950f;
 }
 nav.navbar.navbar-inverse {
@@ -965,6 +975,11 @@ h2.page-headerWebinar {
 
 /* Mama Bear and up */
 @media screen and (min-width: 680px) {
+    .responsive .header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
+        position: absolute;
+        top: -8px;
+        left: 222px;
+    }
     .responsive .bottom-nav .nav {
         display: -webkit-box;
         display: -webkit-flex;
