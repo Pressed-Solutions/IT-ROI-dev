@@ -305,10 +305,17 @@ body {
 .responsive .header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
     display: none;
 }
-
 .responsive .header-wrapper .dropdown-menu li.dropdown:hover > .dropdown-menu,
 .responsive .header-wrapper .dropdown-menu li.dropdown:active > .dropdown-menu {
     display: block;
+}
+.header-wrapper .dropdown-menu .dropdown::after {
+    content: "\00a0\bb";
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 18px;
+    color: white;
 }
 
 /* specific dropdown icons and colors */
