@@ -46,7 +46,7 @@ get_header( 'responsive' ); ?>
 
     $integration_loop = new WP_Query( $args );
 
-    if ( $ppm_lookp->have_posts() ) {
+    if ( $integration_loop->have_posts() ) {
         echo '<ul class="integration-products">';
 
         while ( $integration_loop->have_posts() ) : $integration_loop->the_post(); ?>
