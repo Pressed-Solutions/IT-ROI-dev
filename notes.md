@@ -8,6 +8,7 @@
  - revert the change in commit [5bc4c4](https://github.com/macbookandrew/IT-ROI-dev/commit/5bc4c4a9f5f642d0c9181fa8c709294f437a6f89)
 
 #Todo
+ - Change template for [ideaBoss page](https://itroisolutions.com/wp-admin/post.php?post=3396&action=edit)
  - When finished converting entire site
     - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
     - Revert changes in commit [fe7e67](http://github.com/macbookandrew/IT-ROI-dev/commit/fe7e6787b312038ded629c46b0c8075073c00d4d) to `bootstrap.css` if possible
