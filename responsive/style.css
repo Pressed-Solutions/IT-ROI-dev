@@ -552,6 +552,16 @@ ul.center li:before {
     background-size: cover;
 }
 
+.single-integration h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.single-integration h2 + h1 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
 /* ------------------ Sharepoint pages -------------------- */
 .responsive .separate {
     margin-top: 30px;

@@ -12,6 +12,7 @@
  - When finished converting entire site
     - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
     - Revert changes in commit [fe7e67](http://github.com/macbookandrew/IT-ROI-dev/commit/fe7e6787b312038ded629c46b0c8075073c00d4d) to `bootstrap.css` if possible
+    - Update links to images directory such as [this commit](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/3bfd09dc040f4f8046081360e2771929ac1c7aaf)
     - Remove unnecessary custom field groups from Sharepoint and Integration post types
 
 #“Do It Right” Upgrades
