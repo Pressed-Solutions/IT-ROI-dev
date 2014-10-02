@@ -402,11 +402,7 @@ add_shortcode( 'cta_buttons', 'display_cta_buttons' );
 $subdomain = 'dev';
 
 // test whether or not this is a dev site
-if ( strpos( get_site_url(), $subdomain . '.' ) !== 0 ) {
-    do_action('init', 'update_rel_canonical');
-}
-// unregister the default action and register our own
-function update_rel_canonical() {
+if ( strpos( get_site_url(), $subdomain . '.' ) !== false ) {
     remove_action( 'wp_head', 'rel_canonical' );
     add_action( 'wp_head', 'my_rel_canonical' );
 }
@@ -414,6 +410,8 @@ function update_rel_canonical() {
 // rebuild canonical link
 // slightly modified from the original rel_canonical function in /wp-includes/link-template.php
 function my_rel_canonical() {
+    global $subdomain;
+
     // original code
     if ( ! is_singular() ) {
         return;
@@ -424,7 +422,7 @@ function my_rel_canonical() {
     }
 
     // new code get current URL and strip dev subdomain
-    $URL = str_replace( $subdomain . '.', '', get_permalink( $id ), 1 );
+    $URL = str_replace( $subdomain . '.', '', get_permalink( $id ) );
     if( $URL ) {
         echo '<link rel="canonical" href="' . $URL . '" />';
         return;
