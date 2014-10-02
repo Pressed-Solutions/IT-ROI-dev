@@ -1051,6 +1051,7 @@ h2.page-headerWebinar {
     }
     .single-integration ol.larger {
         font-size: 1.5em;
+        margin-top: 1em;
     }
     .integration-product {
         display: inline-block;
