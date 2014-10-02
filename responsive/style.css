@@ -1103,7 +1103,7 @@ h2.page-headerWebinar {
 @media screen and (max-width: 680px) {
     .integration-footer h3,
     .integration-product {
-        padding-right: none;
+        padding-right: 0;
         text-align: center;
     }
     .responsive .navbar-toggle {
