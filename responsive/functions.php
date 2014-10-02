@@ -393,4 +393,47 @@ function display_cta_buttons( $atts ) {
     return $cta_string;
 }
 add_shortcode( 'cta_buttons', 'display_cta_buttons' );
-?>
+
+/*
+ * Dev site: point search engines at live site
+ */
+
+// set subdomain
+$subdomain = 'dev';
+
+// test whether or not this is a dev site
+if ( strpos( get_site_url(), $subdomain . '.' ) !== 0 ) {
+    do_action('init', 'update_rel_canonical');
+}
+// unregister the default action and register our own
+function update_rel_canonical() {
+    remove_action( 'wp_head', 'rel_canonical' );
+    add_action( 'wp_head', 'my_rel_canonical' );
+}
+
+// rebuild canonical link
+// slightly modified from the original rel_canonical function in /wp-includes/link-template.php
+function my_rel_canonical() {
+    // original code
+    if ( ! is_singular() ) {
+        return;
+    }
+    global $wp_the_query;
+    if ( ! $id = $wp_the_query->get_queried_object_id() ) {
+        return;
+    }
+
+    // new code get current URL and strip dev subdomain
+    $URL = str_replace( $subdomain . '.', '', get_permalink( $id ), 1 );
+    if( $URL ) {
+        echo '<link rel="canonical" href="' . $URL . '" />';
+        return;
+    }
+
+    // original code
+    $link = get_permalink( $id );
+    if ( $page = get_query_var( 'cpage' ) ) {
+        $link = get_comments_pagenum_link( $page );
+        echo '<link rel="canonical" href="' . $link . '" />';
+    }
+}
