@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name Posts: Pressed-Responsive-PPM
+Template Name Posts: Pressed-Responsive-Sharepoint
 */
 
 get_header( 'responsive' ); ?>
