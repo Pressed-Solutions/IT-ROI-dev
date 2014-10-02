@@ -92,10 +92,11 @@ body {
 }
 
 .responsive .dmbs-main {
-    padding-top: 12px;
+    padding-top: 40px;
 }
 
 .responsive .dmbs-main,
+.responsive .integration-header,
 .responsive .ppm-suite {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
@@ -541,7 +542,17 @@ ul.center li:before {
     line-height: 2;
 }
 
-/* ------------------ PPM pages -------------------- */
+/* ------------------ Integrations pages -------------------- */
+.integration-header {
+    display: block;
+    height: 75px;
+    margin-top: 2em;
+    background: url('../images/integration-ppm-excel-interface-header.png') no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+/* ------------------ Sharepoint pages -------------------- */
 .responsive .separate {
     margin-top: 30px;
 }
