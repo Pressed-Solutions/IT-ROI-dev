@@ -35,28 +35,30 @@ get_header( 'responsive' ); ?>
 <!-- end content container -->
 
 <div class="row integration-footer">
-    <h3>Integration tools:</h2>
-    <?php
-    $id=$post->ID;
-    $args =  array(
-        'post_status' => 'publish',
-        'post_type' =>'integration',
-        'post__not_in'   => array($id)
-    );
+    <div class="col-md-10 col-md-offset-1">
+        <h3>Integration tools:</h2>
+        <?php
+        $id=$post->ID;
+        $args =  array(
+            'post_status' => 'publish',
+            'post_type' =>'integration',
+            'post__not_in'   => array($id)
+        );
 
-    $integration_loop = new WP_Query( $args );
+        $integration_loop = new WP_Query( $args );
 
-    if ( $integration_loop->have_posts() ) {
-        echo '<ul class="integration-products">';
+        if ( $integration_loop->have_posts() ) {
+            echo '<ul class="integration-products">';
 
-        while ( $integration_loop->have_posts() ) : $integration_loop->the_post(); ?>
-            <li class="integration-product">
-                <a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
-            </li><!-- .integration-product -->
-        <?php endwhile;
+            while ( $integration_loop->have_posts() ) : $integration_loop->the_post(); ?>
+                <li class="integration-product">
+                    <a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                </li><!-- .integration-product -->
+            <?php endwhile;
 
-        echo '</ul><!-- .integration-products -->';
-    } ?>
+            echo '</ul><!-- .integration-products -->';
+        } ?>
+    </div>
 </div><!-- .integration-footer -->
 
 <?php get_footer( 'responsive' ); ?>
