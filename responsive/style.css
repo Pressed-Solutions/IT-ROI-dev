@@ -547,7 +547,7 @@ ul.center li:before {
 .integration-header {
     display: block;
     height: 75px;
-    margin-top: 2em;
+    margin-bottom: 2em;
     background: url('../images/integration-ppm-excel-interface-header.png') no-repeat;
     background-position: top right;
     background-size: cover;
