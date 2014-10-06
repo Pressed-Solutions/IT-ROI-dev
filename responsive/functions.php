@@ -450,7 +450,7 @@ function register_event_type() {
 	);
 	$tax_args = array(
 		'labels'                     => $tax_labels,
-		'hierarchical'               => false,
+		'hierarchical'               => true,
 		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
