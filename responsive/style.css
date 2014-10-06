@@ -122,6 +122,10 @@ body {
     margin-top: 30px;
 }
 
+.col-md-10 h2.smaller {
+    font-size: 28px;
+}
+
 /* SITE HEADER SETTINGS */
 
 .responsive .header-wrapper {
@@ -508,28 +512,17 @@ ul.center li:before {
     line-height: 1.5;
 }
 
-
 .responsive .page-notes { margin-top: 30px; }
 
-.responsive .dmbs-main {
+.responsive .dmbs-main {}
 
-}
+.responsive .dmbs-left {}
 
-.responsive .dmbs-left {
+.responsive .dmbs-right {}
 
-}
+.responsive .dmbs-footer-menu {}
 
-.responsive .dmbs-right {
-
-}
-
-.responsive .dmbs-footer-menu {
-
-}
-
-.responsive .dmbs-author-credits {
-
-}
+.responsive .dmbs-author-credits {}
 
 .responsive .narrow {
     width: 60%;
@@ -539,6 +532,10 @@ ul.center li:before {
 
 .responsive .extra-lineheight {
     line-height: 2;
+}
+
+.responsive .col-md-offset-2-5 {
+    margin-left: 20%;
 }
 
 /* ------------------ Integrations pages -------------------- */
@@ -563,6 +560,10 @@ ul.center li:before {
 
 .integration-footer {
     border-top: 9px solid #125f9f;
+}
+
+.integration-footer h3 {
+    margin-bottom: 20px;
 }
 
 .integration-products li:last-child {
