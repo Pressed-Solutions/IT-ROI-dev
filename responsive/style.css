@@ -712,6 +712,10 @@ ul.center li:before {
     box-shadow: 0 0 8px #c0bbbb;
     padding: 20px;
 }
+.category-image {
+    max-width: 100px;
+}
+
 /* headers */
 .responsive .event-page .page-header {
     text-align: center;
@@ -745,6 +749,9 @@ h2.page-header-event-type {
     margin-bottom: 80px;
 }
 /* main event */
+.main-event .category-image {
+    max-width: 150px;
+}
 .responsive .main-event p {
     margin-bottom: 10px;
 }
