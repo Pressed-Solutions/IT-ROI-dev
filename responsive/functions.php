@@ -434,7 +434,7 @@ function register_event_type() {
 	$tax_labels = array(
 		'name'                       => 'Event Types',
 		'singular_name'              => 'Event Type',
-		'menu_name'                  => 'Taxonomy',
+		'menu_name'                  => 'Event Types',
 		'all_items'                  => 'All Event Types',
 		'parent_item'                => 'Parent Event Type',
 		'parent_item_colon'          => 'Parent Event Type:',
@@ -442,10 +442,10 @@ function register_event_type() {
 		'add_new_item'               => 'Add New Event Type',
 		'edit_item'                  => 'Edit Event Type',
 		'update_item'                => 'Update Event Type',
-		'separate_items_with_commas' => 'Separate items with commas',
+		'separate_items_with_commas' => 'Separate event types with commas',
 		'search_items'               => 'Search Event Types',
-		'add_or_remove_items'        => 'Add or remove items',
-		'choose_from_most_used'      => 'Choose from the most used items',
+		'add_or_remove_items'        => 'Add or remove event types',
+		'choose_from_most_used'      => 'Choose from the most used event types',
 		'not_found'                  => 'Not Found',
 	);
 	$tax_args = array(
