@@ -706,7 +706,7 @@ ul.center li:before {
     font-size: 18px;
     line-height: 30px;
 }
-.responsive .this-event .main-tt {
+.responsive .main-event .main-tt {
     background-color: white;
     border: 1px solid #a9a6a6;
     box-shadow: 0 0 8px #c0bbbb;
@@ -727,13 +727,13 @@ ul.center li:before {
 .responsive .single-event h3 {
     font-size: 24px;
 }
-.responsive .col-md-6.webinar {
+.responsive .col-md-6.event-type {
     padding-left: 0;
 }
-.responsive .webinar h1 {
+.responsive .event-type h1 {
     font-size: 60px;
 }
-h2.page-headerWebinar {
+h2.page-header-event-type {
     font-size: 22px;
     font-weight: 400;
     margin: 70px 0 10px;
@@ -745,7 +745,7 @@ h2.page-headerWebinar {
     margin-bottom: 80px;
 }
 /* main event */
-.responsive .mainevt p {
+.responsive .main-event p {
     margin-bottom: 10px;
 }
 .responsive .evt-date {
