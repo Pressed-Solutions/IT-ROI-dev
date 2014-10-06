@@ -26,7 +26,13 @@ get_header( 'responsive' ); ?>
 </div><!-- .row.dmbs-content -->
 </div><!-- .dmbs-container -->
 
-<?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 5, 'paged' => get_query_var( 'paged' ) ) ); ?>
+<?php $loop = new WP_Query( array(
+        'post_type' => 'event',
+        'posts_per_page' => 5,
+        'paged' => get_query_var( 'paged' ),
+        'orderby' => 'meta_value_num',
+        'meta_key' => 'date'
+    ) ); ?>
 <?php $counter = 1; ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <?php if ($counter == 1) { // first item ?>
