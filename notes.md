@@ -9,6 +9,7 @@
 
 #To do
  - Change template for [ideaBoss page](https://itroisolutions.com/wp-admin/post.php?post=3396&action=edit)
+ - Add [PPM Excel logo](http://dev.itroisolutions.com/wp-content/uploads/2014/01/ppm-excel-interface-logo.png) to live site, update link in post
  - Update date formats, categorize [events](https://itroisolutions.com/wp-admin/edit-tags.php?taxonomy=event_type&post_type=event)
  - Add event taxonomy icons [here](https://itroisolutions.com/wp-admin/edit-tags.php?taxonomy=event_type&post_type=event)
 
