@@ -36,12 +36,12 @@ get_header( 'responsive' ); ?>
 $counter = 1;
 while ( $loop->have_posts() ) : $loop->the_post();
 
-    $begin_date_raw = strtotime( get_the_field( 'begin_date' ) );
+    $begin_date_raw = strtotime( get_field( 'begin_date' ) );
     $begin_date_month = date( 'F', $begin_date_raw );
     $begin_date_day = date( 'j', $begin_date_raw );
     $begin_date_year = date( 'Y', $begin_date_raw );
 
-    $end_date_raw = strtotime( get_the_field( 'end_date' ) );
+    $end_date_raw = strtotime( get_field( 'end_date' ) );
     $end_date_month = date( 'F', $end_date_raw );
     $end_date_day = date( 'j', $end_date_raw );
     $end_date_year = date( 'Y', $end_date_raw );
