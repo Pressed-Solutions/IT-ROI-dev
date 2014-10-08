@@ -59,7 +59,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
     if ($counter == 1) { // first item
 ?>
     <div class="dmbs-container">
-        <div class="blue-bg"></div>
+        <div class="event-blue-bg"></div>
         <div class="container dmbs-container main-event">
             <div class="col-md-12 main-tt container clearfix">
                 <div class="col-sm-6">

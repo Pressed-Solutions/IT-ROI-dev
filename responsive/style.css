@@ -699,8 +699,8 @@ ul.center li:before {
     border-left: none;
     border-right: none;
 }
-.responsive .event-page .blue-bg,
-.responsive .single-event .blue-bg {
+.responsive .event-blue-bg,
+.responsive .single-event .event-blue-bg {
     background: #0e598f;
     width: 100%;
     margin-top: 6.5%;
