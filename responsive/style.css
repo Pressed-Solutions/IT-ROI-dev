@@ -711,6 +711,7 @@ ul.center li:before {
     border: 1px solid #a9a6a6;
     box-shadow: 0 0 8px #c0bbbb;
     padding: 20px;
+    margin-top: 30px;
 }
 .category-image {
     max-width: 100px;
