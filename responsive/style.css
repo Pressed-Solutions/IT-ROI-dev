@@ -308,10 +308,10 @@ body {
     background-position: 10px center;
     background-size: 35px;
 }
-.responsive .navbar-nav > li {
+.responsive .navbar .navbar-nav > li {
     background-size: 30px;
 }
-.responsive .navbar-nav > li:hover {
+.responsive .navbar .navbar-nav > li:hover {
     background-size: 30px, auto;
 }
 .responsive .header-wrapper .navbar-nav > li {
@@ -343,6 +343,13 @@ body {
     right: 10px;
     font-size: 18px;
     color: white;
+}
+
+/* remove background from a:hover */
+.responsive .navbar-inverse .navbar-nav > .active > a,
+.responsive .navbar-inverse .navbar-nav > .active > a:hover,
+.responsive .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent;
 }
 
 /* specific dropdown icons and colors */
@@ -981,6 +988,10 @@ h2.page-header-event-type {
 
 /* Papa Bear and up */
 @media screen and (min-width: 1200px) {
+    .responsive .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+    }
     .responsive .header-wrapper .navbar-nav > li > a {
         font-size: 15px;
     }
@@ -1001,10 +1012,10 @@ h2.page-header-event-type {
     .responsive .header-wrapper .navbar-nav > li > a {
         padding-left: 77px;
     }
-    .responsive .navbar-nav > li {
+    .responsive .navbar .navbar-nav > li {
         background-size: 45px;
     }
-    .responsive .navbar-nav > li:hover {
+    .responsive .navbar .navbar-nav > li:hover {
         background-size: 45px, auto;
     }
     .responsive .social-links li {
@@ -1017,10 +1028,10 @@ h2.page-header-event-type {
     .responsive .header-wrapper .navbar-nav > li > a {
         padding-left: 65px;
     }
-    .responsive .navbar-nav > li {
+    .responsive .navbar .navbar-nav > li {
         background-size: 40px;
     }
-    .responsive .navbar-nav > li:hover {
+    .responsive .navbar .navbar-nav > li:hover {
         background-size: 40px, auto;
     }
     .responsive .itroi-info .left,
@@ -1040,7 +1051,7 @@ h2.page-header-event-type {
         display: block;
         margin: 0 auto;
     }
-    form.search-form.topbar input {
+    .responsive form.search-form.topbar input {
         position: relative;
         right: auto;
     }
