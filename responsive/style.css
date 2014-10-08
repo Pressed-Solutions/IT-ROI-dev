@@ -742,7 +742,7 @@ h2.page-header-event-type {
     font-weight: 400;
     margin: 70px 0 10px;
 }
-.responsive .upcoming-events h3 {
+.responsive .events-list h3 {
     text-transform: uppercase;
     text-align: center;
     margin-top: 40px;
@@ -783,30 +783,30 @@ h2.page-header-event-type {
     border-radius: 0 !important;
 }
 /* upcoming events */
-.responsive .upcoming-events {
+.responsive .events-list {
     margin-bottom: 45px;
 }
-.responsive .upcoming-events .evt-post {
+.responsive .events-list .evt-post {
     min-height: 180px;
     margin-bottom: 75px;
 }
-.responsive .upcoming-events .evt-content {
+.responsive .events-list .evt-content {
     border-left: 1px solid #e3e3e3;
     text-align: left !important;
     min-height: 150px;
 }
-.responsive .upcoming-events .evt-title {
+.responsive .events-list .evt-title {
     color: #0779CB;
     font-size: 18px;
     font-weight: 600;
     margin-top: 10px;
 }
-.responsive .upcoming-events .evt-content p {
+.responsive .events-list .evt-content p {
     text-align: left;
     font-size: 14px;
     color: #5A5858;
 }
-.responsive .upcoming-events .evt-thumbnail {
+.responsive .events-list .evt-thumbnail {
 }
 /* generic */
 .responsive .event-page hr,

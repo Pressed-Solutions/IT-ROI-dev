@@ -26,7 +26,8 @@ get_header( 'responsive' ); ?>
 </div><!-- .row.dmbs-content -->
 </div><!-- .dmbs-container -->
 
-<?php $loop = new WP_Query( array(
+<?php
+$loop = new WP_Query( array(
         'post_type'      => 'event',
         'posts_per_page' => 5,
         'paged'          => get_query_var( 'paged' ),
@@ -38,32 +39,24 @@ $counter = 1;
 while ( $loop->have_posts() ) : $loop->the_post();
 
     $begin_date_raw = strtotime( get_field( 'begin_date' ) );
-    $begin_date_month = date( 'F', $begin_date_raw );
-    $begin_date_day = date( 'j', $begin_date_raw );
-    $begin_date_year = date( 'Y', $begin_date_raw );
-
     $end_date_raw = strtotime( get_field( 'end_date' ) );
-    $end_date_month = date( 'F', $end_date_raw );
-    $end_date_day = date( 'j', $end_date_raw );
-    $end_date_year = date( 'Y', $end_date_raw );
 
-    $full_date = $begin_date_month . ' ' . $begin_date_day;
-    if ( ! empty( $end_date_raw ) ) {
-        if ( $begin_date_year != $end_date_year ) { $full_date .= ', ' . $begin_date_year; }
-        $full_date .= '&ndash;';
-        if ( $begin_date_month != $end_date_month ) { $full_date .= $end_date_month . ' '; }
-        $full_date .= $end_date_day;
+    // check whether this is past or future event; skip to next item if this is a past event
+    if ( ( empty( $end_date_raw ) AND ( date( 'Y-m-d', $begin_date_raw ) <= date( 'Y-m-d' ) ) ) OR ( ! empty( $end_date_raw ) AND ( date( 'Y-m-d', $end_date_raw ) <= date( 'Y-m-d' ) ) ) ) {
+        continue;
     }
-    $full_date .= ', ';
-    if ( ! empty( $end_date_raw ) ) { $full_date .= $end_date_year; } else { $full_date .= $begin_date_year; }
+
+    // format date as a nice range
+    $full_date = format_event_date($begin_date_raw, $end_date_raw);
+
+    // get custom taxonomy name and image
+    $category_array = get_the_terms( $loop->ID, 'event_type' );
+    foreach ($category_array as $this_category) {
+        $category_name = $this_category->name;
+        $category_thumb = z_taxonomy_image_url( $this_category->term_id );
+    }
 
     if ($counter == 1) { // first item
-        // get custom taxonomy name and image
-        $category_array = get_the_terms( $loop->ID, 'event_type' );
-        foreach ($category_array as $this_category) {
-            $category_name = $this_category->name;
-            $category_thumb = z_taxonomy_image_url( $this_category->term_id );
-        }
 ?>
     <div class="dmbs-container">
         <div class="blue-bg"></div>
@@ -91,17 +84,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
     </div><!-- .dmbs-container -->
 
     <div class="container dmbs-container">
-        <div class="col-md-8 col-md-offset-2 main-tt upcoming-events">
+        <div class="col-md-8 col-md-offset-2 main-tt events-list upcoming-events">
             <h3>Upcoming Events</h3>
     <?php
         $counter = $counter + 1; // increment counter
     } // end first item
     else { // all other items
-        $category_array = get_the_terms( $loop->ID, 'event_type' );
-        foreach ($category_array as $this_category) {
-            $category_name = $this_category->name;
-            $category_thumb = z_taxonomy_image_url( $this_category->term_id );
-        }
         ?>
         <div class="evt-post" id="post-<?php the_ID(); ?>">
             <div class="col-md-3 evt-thumbnail">
@@ -142,11 +130,56 @@ while ( $loop->have_posts() ) : $loop->the_post();
             </div><!-- .navigation -->
         </div><!-- .pagen -->
 
-    </div><!-- .col-md-12.main-tt.upcoming-events -->
+    </div><!-- .upcoming-events -->
+</div><!-- .container.dmbs-container -->
 
-<?php endwhile; ?>
-<?php else: ?>
+<?php
+endwhile; // end $loop for upcoming events ?>
 
-<?php endif; ?>
+<div class="container dmbs-container">
+    <div class="col-md-8 col-md-offset-2 main-tt events-list past-events">
+        <h3>Past Events</h3>
+
+<?php // rewind the loop to get past events
+rewind_posts();
+
+while ( $loop->have_posts() ) : $loop->the_post();
+
+    $begin_date_raw = strtotime( get_field( 'begin_date' ) );
+    $end_date_raw = strtotime( get_field( 'end_date' ) );
+
+    // check whether this is past or future event; skip to next item if this is a past event
+    if ( ( empty( $end_date_raw ) AND ( date( 'Y-m-d', $begin_date_raw ) > date( 'Y-m-d' ) ) ) OR ( ! empty( $end_date_raw ) AND ( date( 'Y-m-d', $end_date_raw ) > date( 'Y-m-d' ) ) ) ) {
+        continue;
+    }
+
+    // format date as a nice range
+    $full_date = format_event_date($begin_date_raw, $end_date_raw);
+
+    // get custom taxonomy name and image
+    $category_array = get_the_terms( $loop->ID, 'event_type' );
+    foreach ($category_array as $this_category) {
+        $category_name = $this_category->name;
+        $category_thumb = z_taxonomy_image_url( $this_category->term_id );
+    }
+?>
+        <div class="evt-post" id="post-<?php the_ID(); ?>">
+            <div class="col-md-3 evt-thumbnail">
+                <img src="<?php echo $category_thumb; ?>" class="category-image" />
+            </div>
+            <div class="col-md-9 evt-content clearfix">
+                <div class="evt-title"><?php the_title(); ?></div>
+                <div class="evt-date"><?php echo $full_date; ?> <?php the_field('time'); ?></div>
+                <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
+                <p><?php the_content(); ?></p>
+            </div><!-- .col-md-9.evt-content -->
+        </div><!-- .evt-post -->
+
+    </div><!-- .past-events -->
+
+<?php endwhile; // end $loop for past events ?>
+<?php else: // if check for original page content ?>
+
+<?php endif; // end original loop for page content ?>
 
 <?php get_footer( 'responsive' ); ?>

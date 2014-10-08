@@ -544,3 +544,35 @@ function my_rel_canonical() {
         echo '<link rel="canonical" href="' . $link . '" />';
     }
 }
+
+function format_event_date( $begin_date_raw, $end_date_raw ) {
+    /*
+     * Parameters:
+     * $begin_date_raw = Unix timestamp
+     * $end_date_raw = Unix timestamp
+     *
+     * Output:
+     * $full_date: nicely-formatted, human-readable date or date range
+     * Examples: October 8, 2014, November 30–December 2, 2014, or December 30, 2014–January 3, 2015
+     */
+    $begin_date_month = date( 'F', $begin_date_raw );
+    $begin_date_day = date( 'j', $begin_date_raw );
+    $begin_date_year = date( 'Y', $begin_date_raw );
+
+    $end_date_month = date( 'F', $end_date_raw );
+    $end_date_day = date( 'j', $end_date_raw );
+    $end_date_year = date( 'Y', $end_date_raw );
+
+    $full_date = $begin_date_month . ' ' . $begin_date_day;
+    if ( ! empty( $end_date_raw ) ) {
+        if ( $begin_date_year != $end_date_year ) { $full_date .= ', ' . $begin_date_year; }
+        $full_date .= '&ndash;';
+        if ( $begin_date_month != $end_date_month ) { $full_date .= $end_date_month . ' '; }
+        $full_date .= $end_date_day;
+    }
+    $full_date .= ', ';
+    if ( ! empty( $end_date_raw ) ) { $full_date .= $end_date_year; } else { $full_date .= $begin_date_year; }
+
+    return $full_date;
+
+}
