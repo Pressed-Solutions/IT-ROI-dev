@@ -27,11 +27,12 @@ get_header( 'responsive' ); ?>
 </div><!-- .dmbs-container -->
 
 <?php $loop = new WP_Query( array(
-        'post_type' => 'event',
+        'post_type'      => 'event',
         'posts_per_page' => 5,
-        'paged' => get_query_var( 'paged' ),
-        'orderby' => 'meta_value',
-        'meta_key' => 'begin_date'
+        'paged'          => get_query_var( 'paged' ),
+        'order'          => 'ASC',
+        'orderby'        => 'meta_value',
+        'meta_key'       => 'begin_date',
     ) );
 $counter = 1;
 while ( $loop->have_posts() ) : $loop->the_post();
@@ -47,14 +48,14 @@ while ( $loop->have_posts() ) : $loop->the_post();
     $end_date_year = date( 'Y', $end_date_raw );
 
     $full_date = $begin_date_month . ' ' . $begin_date_day;
-    if ( ! is_null( $end_date_raw ) ) {
+    if ( ! empty( $end_date_raw ) ) {
         if ( $begin_date_year != $end_date_year ) { $full_date .= ', ' . $begin_date_year; }
         $full_date .= '&ndash;';
         if ( $begin_date_month != $end_date_month ) { $full_date .= $end_date_month . ' '; }
         $full_date .= $end_date_day;
     }
     $full_date .= ', ';
-    if ( ! is_null( $end_date_raw ) ) { $full_date .= $end_date_year; } else { $full_date .= $begin_date_year; }
+    if ( ! empty( $end_date_raw ) ) { $full_date .= $end_date_year; } else { $full_date .= $begin_date_year; }
 
     if ($counter == 1) { // first item
         // get custom taxonomy name and image
@@ -108,7 +109,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
             </div>
             <div class="col-md-9 evt-content clearfix">
                 <div class="evt-title"><?php the_title(); ?></div>
-                <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
+                <div class="evt-date"><?php echo $full_date; ?> <?php the_field('time'); ?></div>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
                 <p><?php the_content(); ?></p>
             </div><!-- .col-md-9.evt-content -->
