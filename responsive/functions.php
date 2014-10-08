@@ -447,6 +447,7 @@ function register_event_type() {
 		'add_or_remove_items'        => 'Add or remove event types',
 		'choose_from_most_used'      => 'Choose from the most used event types',
 		'not_found'                  => 'Not Found',
+        'menu_icon'                  => 'dashicons-calendar'
 	);
 	$tax_args = array(
 		'labels'                     => $tax_labels,
