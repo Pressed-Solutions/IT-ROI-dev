@@ -374,12 +374,20 @@ body {
 .responsive .sharepointmenu .dropdown-menu li:hover > a {
     background-color: #ed5f01;
 }
-.responsive .mobilitymenu {
-    background-image: url('../images/menu-icons/Mobility.png');
+.responsive .svg .eventsmenu {
+    background-image: url('../images/menu-icons/Events.svg');
 }
-.responsive .mobilitymenu:hover {
-    background: url('../images/menu-icons/Mobility.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
-    background: url('../images/menu-icons/Mobility.png') no-repeat 10px,
+.responsive .svg .eventsmenu:hover {
+    background: url('../images/menu-icons/Events.svg') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
+    background: url('../images/menu-icons/Events.svg') no-repeat 10px,
+                linear-gradient(to bottom, #26262c 0%,#070707 100%);
+}
+.responsive .no-svg .eventsmenu {
+    background-image: url('../images/menu-icons/Events.png');
+}
+.responsive .no-svg .eventsmenu:hover {
+    background: url('../images/menu-icons/Events.png') no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
+    background: url('../images/menu-icons/Events.png') no-repeat 10px,
                 linear-gradient(to bottom, #26262c 0%,#070707 100%);
 }
 .responsive .reportingmenu {
