@@ -31,16 +31,38 @@ get_header( 'responsive' ); ?>
         'posts_per_page' => 5,
         'paged' => get_query_var( 'paged' ),
         'orderby' => 'meta_value',
-        'meta_key' => 'date'
+        'meta_key' => 'begin_date'
     ) );
 $counter = 1;
 while ( $loop->have_posts() ) : $loop->the_post();
-    if ($counter == 1) { // first item
-    $category_array = get_the_terms( $loop->ID, 'event_type' );
-    foreach ($category_array as $this_category) {
-        $category_name = $this_category->name;
-        $category_thumb = z_taxonomy_image_url( $this_category->term_id );
+
+    $begin_date_raw = strtotime( get_the_field( 'begin_date' ) );
+    $begin_date_month = date( 'F', $begin_date_raw );
+    $begin_date_day = date( 'j', $begin_date_raw );
+    $begin_date_year = date( 'Y', $begin_date_raw );
+
+    $end_date_raw = strtotime( get_the_field( 'end_date' ) );
+    $end_date_month = date( 'F', $end_date_raw );
+    $end_date_day = date( 'j', $end_date_raw );
+    $end_date_year = date( 'Y', $end_date_raw );
+
+    $full_date = $begin_date_month . ' ' . $begin_date_day;
+    if ( ! is_null( $end_date_raw ) ) {
+        if ( $begin_date_year != $end_date_year ) { $full_date .= ', ' . $begin_date_year; }
+        $full_date .= '&ndash;';
+        if ( $begin_date_month != $end_date_month ) { $full_date .= $end_date_month . ' '; }
+        $full_date .= $end_date_day;
     }
+    $full_date .= ', ';
+    if ( ! is_null( $end_date_raw ) ) { $full_date .= $end_date_year; } else { $full_date .= $begin_date_year; }
+
+    if ($counter == 1) { // first item
+        // get custom taxonomy name and image
+        $category_array = get_the_terms( $loop->ID, 'event_type' );
+        foreach ($category_array as $this_category) {
+            $category_name = $this_category->name;
+            $category_thumb = z_taxonomy_image_url( $this_category->term_id );
+        }
 ?>
     <div class="dmbs-container">
         <div class="blue-bg"></div>
@@ -59,7 +81,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                         <?php the_title(); ?>
                     </h2>
                     <?php the_content(); ?>
-                    <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
+                    <div class="evt-date"><?php echo $full_date; ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
                     <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
                 </div><!-- .col-sm-6 -->
             </div><!-- .col-md-12.main-tt.container -->
