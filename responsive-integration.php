@@ -31,7 +31,7 @@ get_header( 'responsive' ); ?>
 
         <div class="row integration-footer">
             <div class="col-md-10 col-md-offset-1">
-                <h3>Integration tools:</h2>
+                <h3>Integration tools:</h3>
                 <?php
                 $id=$post->ID;
                 $args =  array(
