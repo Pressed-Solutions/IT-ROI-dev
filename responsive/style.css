@@ -563,6 +563,11 @@ ul.center li:before {
     background-size: cover;
 }
 
+.integration-header.integration-bridge {
+    height: 154px;
+    background-image: url('../images/IB3_1.png');
+}
+
 .single-integration h1 {
     font-size: 48px;
     font-weight: bold;
