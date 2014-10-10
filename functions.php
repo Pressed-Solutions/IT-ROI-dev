@@ -1952,6 +1952,16 @@ return $result;
 add_filter( 'wpcf7_validate_text', 'is_number', 10, 2 );
 add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );
 
-require_once('responsive/functions.php');
+// test URL against whitelist to determine whether to load responsive functions and styles or not
+// TODO: remove this test when site conversion is complete
+$uri_whitelist = array(
+    '/integration/integration-bridge/',
+    '/integration/ppm-excel-interface/',
+    '/sharepoint/ideation-integrated-solution-for-clarity-ppm/'
+);
 
-?>
+$requested_uri = $_SERVER["REQUEST_URI"];
+
+if ( in_array( $requested_uri, $uri_whitelist ) ) {
+    require_once('responsive/functions.php');
+}
