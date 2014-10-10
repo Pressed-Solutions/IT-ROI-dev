@@ -587,6 +587,7 @@ ul.center li:before {
 
 .integration-footer {
     border-top: 9px solid #125f9f;
+    margin-top: 1em;
 }
 
 .integration-footer h3 {
