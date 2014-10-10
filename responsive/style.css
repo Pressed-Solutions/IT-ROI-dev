@@ -646,6 +646,10 @@ ul.center li:before {
     padding-top: 30px;
 }
 
+.ppm-suite h2 {
+    text-align: center;
+}
+
 .responsive .ppm-links {
     margin: 30px 0;
 }
