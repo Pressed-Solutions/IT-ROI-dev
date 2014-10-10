@@ -14,8 +14,6 @@ get_header( 'responsive' ); ?>
 
     <div class="col-md-12 dmbs-main">
 
-        <div class="row integration-header clearfix"></div>
-
         <?php // theloop
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

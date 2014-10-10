@@ -556,13 +556,10 @@ ul.center li:before {
 }
 
 /* ------------------ Integrations pages -------------------- */
-.integration-header {
-    display: block;
-    height: 75px;
-    margin-bottom: 2em;
-    background: url('../images/integration-ppm-excel-interface-header.png') no-repeat;
-    background-position: top right;
-    background-size: cover;
+.integration-header-image {
+    width: 1229px;
+    max-width: 1229px !important;
+    margin: 2em -15px;
 }
 
 .single-integration h1 {
