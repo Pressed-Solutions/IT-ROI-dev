@@ -126,7 +126,13 @@ body {
     margin-top: 2em;
 }
 
-.col-md-10 h2.smaller {
+.dmbs-main p + h1,
+.dmbs-main p + h2,
+.dmbs-main p + h3 {
+    margin-top: 1.5em;
+}
+
+.dmbs-main h2.smaller {
     font-size: 28px;
 }
 
