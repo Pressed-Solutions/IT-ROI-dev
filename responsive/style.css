@@ -961,7 +961,7 @@ h2.page-header-event-type {
 }
 .responsive .bottom-nav .navbar-nav > li > a {
     color: #027ac6;
-    padding: 5px 18%;
+    padding: 5px 24%;
 }
 .responsive .bottom-nav .navbar-nav > li:last-child a {
     padding-right: 0;
@@ -1001,7 +1001,7 @@ h2.page-header-event-type {
     }
     .integration-footer h3,
     .integration-products li {
-        padding-right: 8%;
+        padding-right: 6%;
     }
     .responsive .about {
         top: 50%;
