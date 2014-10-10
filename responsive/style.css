@@ -591,6 +591,11 @@ ul.center li:before {
     margin-bottom: 20px;
 }
 
+.integration-footer h3,
+.integration-product {
+    padding-right: 1em;
+}
+
 .integration-products li:last-child {
     padding-right: 0;
 }
@@ -1068,10 +1073,6 @@ h2.page-header-event-type {
     .responsive .search-form.col-sm-12 label {
         width: 100%;
         margin-bottom: 30px;
-    }
-    .integration-footer h3,
-    .integration-product {
-        padding-right: 1em;
     }
 }
 
