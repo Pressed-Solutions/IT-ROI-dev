@@ -120,8 +120,10 @@ body {
     margin-top: 0;
 }
 
-.dmbs-main h1 + p {
-    margin-top: 30px;
+.dmbs-main h1 + p,
+.dmbs-main h2 + p,
+.dmbs-main h3 + p {
+    margin-top: 2em;
 }
 
 .col-md-10 h2.smaller {
