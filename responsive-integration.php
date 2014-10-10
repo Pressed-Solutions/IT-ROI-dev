@@ -14,7 +14,7 @@ get_header( 'responsive' ); ?>
 
     <div class="col-md-12 dmbs-main">
 
-        <div class="row integration-header clearfix<?php if ( is_page( array( 'Integration Bridge', 'integration-bridge' ) ) ) { echo ' integration-bridge'; } ?>"></div>
+        <div class="row integration-header clearfix<?php if ( is_single( 'integration-bridge' ) ) { echo ' integration-bridge'; } ?>"></div>
 
         <?php // theloop
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

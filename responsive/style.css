@@ -568,8 +568,15 @@ ul.center li:before {
 .integration-header.integration-bridge {
     height: 154px;
     background-image: url('../images/IB3_1.png');
+    background-position: top left;
 }
 
+@media (max-width: 575px) {
+    .integration-header.integration-bridge {
+        background-size: auto 100px;
+        height: 100px;
+    }
+}
 .single-integration h1 {
     font-size: 48px;
     font-weight: bold;
