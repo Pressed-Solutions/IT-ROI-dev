@@ -4,3 +4,5 @@
 .git-ftp.log
 /.todo
 /.DS_Store
+*.scssc
+*.css.map
