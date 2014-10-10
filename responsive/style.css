@@ -556,7 +556,7 @@ ul.center li:before {
 }
 
 /* ------------------ Integrations pages -------------------- */
-.integration-header-image {
+.responsive .integration-header-image {
     width: 1229px;
     max-width: 1229px !important;
     margin: 2em -15px;
