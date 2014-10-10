@@ -9,4 +9,9 @@
      <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" type="image/x-icon" />
     <?php wp_head(); ?>
 </head>
-<body <?php body_class( 'responsive' ); ?>>
+<?php
+// get slug name to use in body class
+global $post;
+$slug = get_post( $post )->post_name;
+?>
+<body <?php body_class( 'responsive slug-' . $slug ); ?>>
