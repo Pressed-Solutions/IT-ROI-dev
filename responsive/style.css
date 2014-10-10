@@ -85,6 +85,16 @@ Text Domain: Pressed Soltutions
     }
 }
 
+/* add some in-between layout sizes */
+.responsive .col-md-offset-0-5 {
+    margin-left: 4.1666666667%;
+}
+
+.responsive .col-md-offset-2-5 {
+    margin-left: 20.833333333%;
+}
+
+
 body {
     padding-bottom: 0;
     font-family: 'Open Sans', sans-serif;
@@ -549,10 +559,6 @@ ul.center li:before {
 
 .responsive .extra-lineheight {
     line-height: 2;
-}
-
-.responsive .col-md-offset-2-5 {
-    margin-left: 20%;
 }
 
 /* ------------------ Integrations pages -------------------- */
