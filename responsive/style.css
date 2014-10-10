@@ -103,10 +103,12 @@ body {
 
 /* TEXT STYLES */
 .dmbs-main h1,
-.dmbs-main h2 {
+.dmbs-main h2,
+.dmbs-main h3 {
     color: black;
     text-align: center;
     font-family: 'MavenProRegular';
+    font-weight: 700;
 }
 
 .dmbs-main h1 {
@@ -571,6 +573,11 @@ ul.center li:before {
 .single-integration h2 + h1 {
     margin-top: 0;
     margin-bottom: 1em;
+}
+
+.single-integration .dmbs-content img,
+.single-integration .dmbs-content iframe {
+    margin-top: 2em;
 }
 
 .integration-footer {
