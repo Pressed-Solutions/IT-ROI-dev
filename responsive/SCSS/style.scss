@@ -354,18 +354,6 @@ ul.center li {
     &:hover { background-size: 30px, auto; }
     > a { padding-left: 45px; }
 
-    @media (min-width: 768px) {
-        background-size: 40px;
-        &:hover { background-size: 40px, auto; }
-        > a { padding-left: 65px; }
-    }
-
-    @media (min-width: 992px) {
-        background-size: 45px;
-        &:hover { background-size: 45px, auto; }
-        > a { padding-left: 77px; }
-    }
-
     .header-wrapper & {
         box-sizing: border-box;
         padding: 0;
@@ -373,7 +361,22 @@ ul.center li {
         background-position: 10px center, 0 0;
         font-size: 13px;
 
-        > a { padding: 15px; }
+        > a {
+            padding-left: 45px;
+
+            @media (min-width: 768px) { padding: 15px 15px 15px 45px; }
+        }
+
+        @media (min-width: 768px) {
+            background-size: 40px;
+            &:hover { background-size: 40px, auto; }
+            > a { padding-left: 65px; }
+        }
+
+        @media (min-width: 992px) {
+            background-size: 45px;
+            &:hover { background-size: 45px, auto; }
+        }
     }
 }
 
@@ -984,10 +987,6 @@ h2.page-header-event-type {
 
 /* 8.2 - Papa Bear on a diet */
 @media screen and (min-width: 992px) {
-    .header-wrapper .navbar-nav > li > a {
-        padding-left: 77px;
-    }
-    
     .social-links li {
         width: 25%;
     }
@@ -995,10 +994,6 @@ h2.page-header-event-type {
 
 /* 8.3 - Uncle Bear and up */
 @media screen and (min-width: 768px) {
-    .header-wrapper .navbar-nav > li > a {
-        padding-left: 65px;
-    }
-    
     .itroi-info .left,
     .itroi-info .right {
         float: left;
@@ -1011,6 +1006,7 @@ h2.page-header-event-type {
 
 /* 8.4 - Uncle Bear and down */
 @media screen and (max-width: 992px) {
+    #logo,
     #logo img,
     .topbar.search-form input {
         display: block;
