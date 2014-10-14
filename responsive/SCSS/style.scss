@@ -816,7 +816,10 @@ h2.page-header-event-type {
 
     span, a {
         &:first-child { padding-left: 20px;}
-        &:last-child { padding-right: 20px;}
+        &:last-child {
+            padding-right: 20px;
+            text-transform: uppercase;
+        }
     }
 }
 
