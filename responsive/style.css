@@ -220,6 +220,8 @@ ul.center li {
     position: relative; }
     .top_menu .menu li a {
       color: #ffffff; }
+  .top_menu .menu-item:hover .sub-menu {
+    display: block; }
   .top_menu .sub-menu {
     display: none;
     float: left;
@@ -229,8 +231,6 @@ ul.center li {
     background-color: black;
     padding: 0;
     z-index: 1000; }
-    .menu-item:hover .top_menu .sub-menu {
-      display: block; }
     .top_menu .sub-menu li {
       display: block;
       float: none;

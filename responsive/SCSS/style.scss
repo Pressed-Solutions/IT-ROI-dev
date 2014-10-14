@@ -286,6 +286,8 @@ ul.center li {
         a { color: #ffffff; }
     }
 
+    .menu-item:hover .sub-menu { display: block; }
+
     .sub-menu {
         display: none;
         float: left;
@@ -295,9 +297,7 @@ ul.center li {
         background-color: black;
         padding: 0;
         z-index: 1000;
-        
-        .menu-item:hover & { display: block; }
-        
+
         li {
             display: block;
             float: none;
