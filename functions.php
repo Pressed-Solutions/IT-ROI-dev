@@ -1957,7 +1957,8 @@ add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );
 $uri_whitelist = array(
     '/integration/integration-bridge/',
     '/integration/ppm-excel-interface/',
-    '/sharepoint/ideation-integrated-solution-for-clarity-ppm/'
+    '/sharepoint/ideation-integrated-solution-for-clarity-ppm/',
+    '/events/'
 );
 
 $requested_uri = $_SERVER["REQUEST_URI"];
