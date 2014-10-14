@@ -600,6 +600,12 @@ h2.page-header-event-type {
   font-weight: 400;
   margin: 70px 0 10px; }
 
+h3.event-list-header {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0; }
+
 .evt-date {
   margin-bottom: 15px; }
 
@@ -610,27 +616,28 @@ h2.page-header-event-type {
 /* upcoming events */
 .events-list {
   margin-bottom: 45px; }
-  .events-list h3 {
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px; }
-  .events-list .evt-post {
-    min-height: 180px;
-    margin-bottom: 75px; }
-  .events-list .evt-content {
-    border-left: 1px solid #e3e3e3;
-    text-align: left !important;
-    min-height: 150px; }
-  .events-list .evt-title {
-    color: #0779CB;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 10px; }
-  .events-list .evt-content p {
-    text-align: left;
-    font-size: 14px;
-    color: #5A5858; }
+
+.evt-post {
+  min-height: 225px;
+  margin-bottom: 75px; }
+  .evt-post:first-of-type {
+    margin-top: 80px; }
+
+.evt-content {
+  border-left: 1px solid #e3e3e3;
+  text-align: left !important;
+  min-height: 150px; }
+
+.evt-title {
+  color: #0779CB;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px; }
+
+.evt-content p {
+  text-align: left;
+  font-size: 14px;
+  color: #5A5858; }
 
 /* pagination */
 .pagen {

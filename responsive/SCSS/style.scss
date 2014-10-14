@@ -760,6 +760,13 @@ h2.page-header-event-type {
     margin: 70px 0 10px;
 }
 
+h3.event-list-header {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0;
+}
+
 .evt-date {
     margin-bottom: 15px;
 }
@@ -772,40 +779,37 @@ h2.page-header-event-type {
 /* upcoming events */
 .events-list {
     margin-bottom: 45px;
+}
 
-    h3 {
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 80px;
-    }
+.evt-post {
+    min-height: 225px;
+    margin-bottom: 75px;
 
-    .evt-post {
-        min-height: 180px;
-        margin-bottom: 75px;
+    &:first-of-type {
+        margin-top: 80px;
     }
+}
 
-    .evt-content {
-        border-left: 1px solid #e3e3e3;
-        text-align: left !important;
-        min-height: 150px;
-    }
+.evt-content {
+    border-left: 1px solid #e3e3e3;
+    text-align: left !important;
+    min-height: 150px;
+}
 
-    .evt-title {
-        color: #0779CB;
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 10px;
-    }
+.evt-title {
+    color: #0779CB;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
-    .evt-content p {
-        text-align: left;
-        font-size: 14px;
-        color: #5A5858;
-    }
+.evt-content p {
+    text-align: left;
+    font-size: 14px;
+    color: #5A5858;
+}
 
-    .evt-thumbnail {
-    }
+.evt-thumbnail {
 }
 
 /* pagination */

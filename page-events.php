@@ -26,6 +26,7 @@ get_header( 'responsive' ); ?>
 </div><!-- .row.dmbs-content -->
 </div><!-- .dmbs-container -->
 
+<h3 class="event-list-header">Next Event</h3>
 <?php
 $loop = new WP_Query( array(
         'post_type'      => 'event',
@@ -85,7 +86,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
     <div class="container dmbs-container">
         <div class="col-md-8 col-md-offset-2 main-tt events-list upcoming-events">
-            <h3>Upcoming Events</h3>
+            <h3 class="event-list-header">Upcoming Events</h3>
     <?php
         $counter = $counter + 1; // increment counter
     } // end first item
@@ -138,7 +139,7 @@ endwhile; // end $loop for upcoming events ?>
 
 <div class="container dmbs-container">
     <div class="col-md-8 col-md-offset-2 main-tt events-list past-events">
-        <h3>Past Events</h3>
+        <h3 class="event-list-header">Past Events</h3>
 
 <?php // rewind the loop to get past events
 rewind_posts();
