@@ -204,11 +204,6 @@ ul.center li {
 .navbar-fixed-bottom {
   position: relative; }
 
-/* 5.1 - Main navigation */
-.menu-menu1-container {
-  display: block;
-  float: right; }
-
 .top_menu {
   background: #000000; }
   .top_menu .menu li {
@@ -247,7 +242,11 @@ ul.center li {
         .top_menu .sub-menu li a:hover {
           text-decoration: none; }
 
-/* main menu */
+/* 5.1 - Main navigation */
+.menu-menu1-container {
+  display: block;
+  float: right; }
+
 .header-wrapper .caret {
   display: none; }
 .header-wrapper .dropdown ul {
@@ -279,35 +278,19 @@ ul.center li {
       background-size: 45px; }
       .navbar .navbar-nav > li:hover {
         background-size: 45px, auto; } }
-
-.header-wrapper .navbar-nav > li {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  background-repeat: no-repeat;
-  font-size: 13px; }
-  .header-wrapper .navbar-nav > li > a {
-    padding: 15px 15px 15px 45px; }
+  .header-wrapper .navbar .navbar-nav > li {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: 10px center, 0 0;
+    font-size: 13px; }
+    .header-wrapper .navbar .navbar-nav > li > a {
+      padding: 15px 15px 15px 45px; }
 
 .menu-item img {
   display: none;
   /* TODO: remove images from the menu once entire site is responsive */ }
-
-/* tertiary menu */
-.header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
-  display: none; }
-
-.header-wrapper .dropdown-menu li.dropdown:hover > .dropdown-menu,
-.header-wrapper .dropdown-menu li.dropdown:active > .dropdown-menu {
-  display: block; }
-
-.header-wrapper .dropdown-menu .dropdown::after {
-  content: "\00a0\bb";
-  position: absolute;
-  top: 7px;
-  right: 10px;
-  font-size: 18px;
-  color: white; }
 
 /* remove background from a:hover */
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -361,6 +344,20 @@ ul.center li {
   background-color: #ffac1f; }
   .servicesmenu .dropdown-menu li:hover > a {
     background-color: #e4950f; }
+
+/* tertiary menu */
+.header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
+  display: none; }
+.header-wrapper .dropdown-menu li.dropdown:hover > .dropdown-menu, .header-wrapper .dropdown-menu li.dropdown:active > .dropdown-menu {
+  display: block; }
+
+.header-wrapper .dropdown-menu .dropdown::after {
+  content: "\00a0\bb";
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-size: 18px;
+  color: white; }
 
 form.search-form.topbar input {
   background: #cccccc;
