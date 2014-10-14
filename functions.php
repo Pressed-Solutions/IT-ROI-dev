@@ -1958,7 +1958,10 @@ $uri_whitelist = array(
     '/integration/integration-bridge/',
     '/integration/ppm-excel-interface/',
     '/sharepoint/ideation-integrated-solution-for-clarity-ppm/',
-    '/events/'
+    '/events/',
+    '/events/page/1/',
+    '/events/page/2/',
+    '/events/page/3/'
 );
 
 $requested_uri = $_SERVER["REQUEST_URI"];
