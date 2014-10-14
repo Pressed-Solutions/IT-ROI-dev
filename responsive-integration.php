@@ -14,8 +14,11 @@ get_header( 'responsive' ); ?>
 
     <div class="col-md-12 dmbs-main">
 
-        <?php // theloop
+        <?php // the loop
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <div class="integration-header-gradient"></div>
+            <div class="integration-header-image clearfix"><img src="<?php echo get_stylesheet_directory_uri() . '/images/integrations/' . basename(get_permalink()); ?>.svg" #TODO: png fallback? /></div>
 
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>

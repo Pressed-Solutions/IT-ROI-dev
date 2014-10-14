@@ -10,7 +10,8 @@
 #Deployment Notes
  - PPM Excel Integration
      - Change template for [ideaBoss page](https://itroisolutions.com/wp-admin/post.php?post=3396&action=edit)
-     - Add [PPM Excel logo](http://dev.itroisolutions.com/wp-content/uploads/2014/01/ppm-excel-interface-logo.png) to live site, update URL in post
+     - Install [WP Retina 2x](https://downloads.wordpress.org/plugin/wp-retina-2x.2.0.4.zip)
+     - Add [PPM Excel logo](http://dev.itroisolutions.com/wp-content/uploads/2014/01/PPM-Excel-logo.png) to live site, update IB3 URL in post
  - Events
      - Install [Modernizr plugin](https://downloads.wordpress.org/plugin/modernizr.2.8.3.zip)
      - Add events [icon](https://github.com/Pressed-Solutions/IT-ROI-dev/blob/8c0228ce55cf3ad290546de78418c503d3645bde/images/menu-icons-embedded/Events.png) to main [menu](https://itroisolutions.com/wp-admin/nav-menus.php), switch menu order to put Events on far right, open in same tab

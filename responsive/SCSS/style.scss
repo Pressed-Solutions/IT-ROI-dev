@@ -583,10 +583,22 @@ form.search-form.topbar input {
 }
 
 /* 6.3 - Integrations pages */
+.integration-header-gradient {
+    height: 2em;
+    margin: 0 -15px;
+    background: linear-gradient(to right, #22476D 0%, #125F9F 100%);
+}
+
 .integration-header-image {
-    width: 110%;
-    max-width: 1229px !important;
-    margin: 2em -15px;
+    margin: 0 -15px 2em;
+    padding: 0 1em 1em;
+    background-color: #125f9f;
+}
+
+.integration-header-image img {
+    .single-integration .dmbs-content & { margin: 0; }
+
+    .slug-ppm-excel-interface & { float: right; }
 }
 
 .single-integration {
