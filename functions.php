@@ -1963,6 +1963,6 @@ $uri_whitelist = array(
 
 $requested_uri = $_SERVER["REQUEST_URI"];
 
-if ( in_array( $requested_uri, $uri_whitelist ) ) {
+if ( in_array( $requested_uri, $uri_whitelist ) || is_admin() ) {
     require_once('responsive/functions.php');
 }
