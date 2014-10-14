@@ -268,16 +268,22 @@ ul.center li {
   background-size: 30px; }
   .navbar .navbar-nav > li:hover {
     background-size: 30px, auto; }
+  .navbar .navbar-nav > li > a {
+    padding-left: 45px; }
   @media (min-width: 768px) {
     .navbar .navbar-nav > li {
       background-size: 40px; }
       .navbar .navbar-nav > li:hover {
-        background-size: 40px, auto; } }
+        background-size: 40px, auto; }
+      .navbar .navbar-nav > li > a {
+        padding-left: 65px; } }
   @media (min-width: 992px) {
     .navbar .navbar-nav > li {
       background-size: 45px; }
       .navbar .navbar-nav > li:hover {
-        background-size: 45px, auto; } }
+        background-size: 45px, auto; }
+      .navbar .navbar-nav > li > a {
+        padding-left: 77px; } }
   .header-wrapper .navbar .navbar-nav > li {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
@@ -286,7 +292,7 @@ ul.center li {
     background-position: 10px center, 0 0;
     font-size: 13px; }
     .header-wrapper .navbar .navbar-nav > li > a {
-      padding: 15px 15px 15px 45px; }
+      padding: 15px; }
 
 .menu-item img {
   display: none;

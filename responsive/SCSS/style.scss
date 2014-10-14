@@ -352,15 +352,18 @@ ul.center li {
 .navbar .navbar-nav > li {
     background-size: 30px;
     &:hover { background-size: 30px, auto; }
-    
+    > a { padding-left: 45px; }
+
     @media (min-width: 768px) {
         background-size: 40px;
         &:hover { background-size: 40px, auto; }
+        > a { padding-left: 65px; }
     }
 
     @media (min-width: 992px) {
         background-size: 45px;
         &:hover { background-size: 45px, auto; }
+        > a { padding-left: 77px; }
     }
 
     .header-wrapper & {
@@ -370,7 +373,7 @@ ul.center li {
         background-position: 10px center, 0 0;
         font-size: 13px;
 
-        > a { padding: 15px 15px 15px 45px; }
+        > a { padding: 15px; }
     }
 }
 
