@@ -618,8 +618,9 @@ h3.event-list-header {
   margin-bottom: 45px; }
 
 .evt-post {
-  min-height: 225px;
-  margin-bottom: 75px; }
+  min-height: 180px;
+  margin-bottom: 75px;
+  overflow: auto; }
   .evt-post:first-of-type {
     margin-top: 80px; }
 
