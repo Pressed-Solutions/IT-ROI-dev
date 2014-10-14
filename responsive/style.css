@@ -631,7 +631,8 @@ h2.page-header-event-type {
   .pagination span:first-child, .pagination a:first-child {
     padding-left: 20px; }
   .pagination span:last-child, .pagination a:last-child {
-    padding-right: 20px; }
+    padding-right: 20px;
+    text-transform: uppercase; }
 
 /* 7.0 - Footer */
 .dmbs-footer {
