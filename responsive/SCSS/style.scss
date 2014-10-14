@@ -656,6 +656,12 @@ form.search-form.topbar input {
 }
 
 /* 6.5 - Events */
+.maincon {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .event-page {
     border-left: none;
     border-right: none;
@@ -674,16 +680,6 @@ form.search-form.topbar input {
 }
 
 .event-page, .single-event {
-    .event-blue-bg {
-        background: #0e598f;
-        width: 100%;
-        margin-top: 6.5%;
-        height: 120px;
-        left: 0;
-        right: 0;
-        position: absolute;
-    }
-    
     h3 { font-size: 24px; }
     
     .register-button a { font-size: 17px; }
@@ -707,10 +703,14 @@ form.search-form.topbar input {
     }
 }
 
-.maincon {
-    text-align: center;
-    font-size: 18px;
-    line-height: 30px;
+.event-blue-bg {
+    background: #0e598f;
+    width: 100%;
+    margin-top: 6.5%;
+    height: 120px;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
 
 .main-event {
