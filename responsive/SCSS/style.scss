@@ -95,12 +95,15 @@ Text Domain: Pressed Solutions
 }
 
 /* add some in-between 12-column-based layout sizes */
-.col-md-offset-0-5 {
-    margin-left: 4.1666666667%;
+
+@media (min-width: 992px) {
+    .col-md-offset-0-5 { margin-left: 4.1666666667%; }
+    .col-md-offset-2-5 { margin-left: 20.833333333%; }
 }
 
-.col-md-offset-2-5 {
-    margin-left: 20.833333333%;
+@media (min-width: 1200px) {
+    .col-lg-offset-0-5 { margin-left: 4.1666666667%; }
+    .col-lg-offset-2-5 { margin-left: 20.833333333%; }
 }
 
 /* 3.0 - General styles */
