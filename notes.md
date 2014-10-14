@@ -13,10 +13,12 @@
      - Add [PPM Excel logo](http://dev.itroisolutions.com/wp-content/uploads/2014/01/ppm-excel-interface-logo.png) to live site, update URL in post
  - Events
      - Install [Modernizr plugin](https://downloads.wordpress.org/plugin/modernizr.2.8.3.zip)
-     - Add events [icon](https://github.com/Pressed-Solutions/IT-ROI-dev/blob/8c0228ce55cf3ad290546de78418c503d3645bde/images/menu-icons-embedded/Events.png) to [menu](https://itroisolutions.com/wp-admin/nav-menus.php), switch menu order to put Events on far right, open in same tab
+     - Add events [icon](https://github.com/Pressed-Solutions/IT-ROI-dev/blob/8c0228ce55cf3ad290546de78418c503d3645bde/images/menu-icons-embedded/Events.png) to main [menu](https://itroisolutions.com/wp-admin/nav-menus.php), switch menu order to put Events on far right, open in same tab
+     - Replace mobility with events in [footer menu](https://itroisolutions.com/wp-admin/nav-menus.php?action=edit&menu=16)
      - Categorize [event posts](https://itroisolutions.com/wp-admin/edit.php?post_type=event)
      - Add event taxonomy icons [here](https://itroisolutions.com/wp-admin/edit-tags.php?taxonomy=event_type&post_type=event)
      - Remove [unnecessary field](https://itroisolutions.com/wp-admin/post.php?post=3230)
+ - Update [top menu](https://itroisolutions.com/wp-admin/nav-menus.php?action=exit&menu=14) “About” link
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
