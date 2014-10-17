@@ -1098,6 +1098,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/event-types\/tradeshow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3767,
+		"inputAbbreviatedPath": "\/images\/event-types\/tradeshow.png",
+		"outputAbbreviatedPath": "\/images\/event-types\/tradeshow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/event-types\/webinar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2033,
+		"inputAbbreviatedPath": "\/images\/event-types\/webinar.png",
+		"outputAbbreviatedPath": "\/images\/event-types\/webinar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/facebook.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4206,6 +4228,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/responsive\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/responsive\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/responsive\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4391,6 +4422,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/responsive\/js\/bootstrap.min.js",
 		"outputAbbreviatedPath": "\/responsive\/js\/min\/bootstrap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/responsive\/js\/modernizr-flexbox-svg.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/responsive\/js\/modernizr-flexbox-svg.min.js",
+		"outputAbbreviatedPath": "\/responsive\/js\/min\/modernizr-flexbox-svg.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -5482,7 +5524,7 @@
 		"processed": 0
 		},
 	"\/responsive\/SCSS\/style.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -5491,9 +5533,9 @@
 		"inputAbbreviatedPath": "\/responsive\/SCSS\/style.scss",
 		"outputAbbreviatedPath": "\/responsive\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -6638,7 +6680,7 @@
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
-	"sassAutoOutputPathRelativePath": "..\/css",
+	"sassAutoOutputPathRelativePath": "..\/",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
