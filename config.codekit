@@ -1098,28 +1098,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/event-types\/tradeshow.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3767,
-		"inputAbbreviatedPath": "\/images\/event-types\/tradeshow.png",
-		"outputAbbreviatedPath": "\/images\/event-types\/tradeshow.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/event-types\/webinar.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1056,
-		"inputAbbreviatedPath": "\/images\/event-types\/webinar.png",
-		"outputAbbreviatedPath": "\/images\/event-types\/webinar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/facebook.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3864,15 +3842,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/notes.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/notes.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/notes.md": {
 		"enableFootnoteSupport": 0,
