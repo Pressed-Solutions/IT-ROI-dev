@@ -33,4 +33,9 @@
 #“Do It Right” Upgrades
  - Footer social links: SVG icons, actual text
  - Main menu: replace with SVG icons, fallback to PNG (Modernizr)
- - PPM main images: convert to SVG, redesign for responsiveness
+ - PPM main images: convert to SVG, redesign for responsiveness\
+ - Optimization
+     - Defer scripts
+     - mod_pagespeed?
+     - nginx proxy to apache/varnish cache?
+     - Google PageSpeed widget?
