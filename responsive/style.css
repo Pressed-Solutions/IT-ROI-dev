@@ -748,6 +748,9 @@ h3.event-list-header {
   .bottom-nav .navbar-nav > li > a > a:hover {
     color: white; }
 
+.it-new-content .copyright {
+  font-size: inherit; }
+
 .copyright {
   padding-bottom: 15px; }
   .copyright .menu-footer-2-container a {
