@@ -588,6 +588,6 @@ function format_event_date( $begin_date_raw, $end_date_raw ) {
 
 function include_modernizr() {
     wp_deregister_script( 'modernizr' );
-    wp_enqueue_script( 'wp_enqueue_scripts', get_stylesheet_directory . '/js/modernizr-flexbox-flexboxlegacy-svg.min.js', false, '2.8.3', false );
+    wp_enqueue_script( 'wp_enqueue_scripts', get_stylesheet_directory_uri . '/js/modernizr-flexbox-flexboxlegacy-svg.min.js', false, '2.8.3', false );
 }
 add_action( 'wp_enqueue_scripts', 'include_modernizr' );
