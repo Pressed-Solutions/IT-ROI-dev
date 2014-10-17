@@ -3472,50 +3472,48 @@ ul {
     font-size: 13px;
 }
 
-#extended-categories-3 ul li {
-    background: url("images/background_categories.jpg") repeat-x scroll center bottom transparent;
+/* Knowledge and Insight widget (home page) */
+#extended-categories-3 .cat-item {
     border-bottom: 1px solid #bebebe;
     list-style: none outside none;
     margin: 0;
-    padding: 11px 8px 8px 3px;
-    -webkit-font-smoothing: antialiased;
-    font-family: MavenProRegular;
 }
 
-#extended-categories-3 ul li:hover {
-    background: none;
-}
-
-#extended-categories-3 ul li a {
+#extended-categories-3 .avhec-widget-line {
     display: block;
-    pasition: relative;
-    background: url("images/category_img.png") no-repeat scroll 0 0 transparent;
-    padding-left: 19px;
-    background-position: left;
-    font-weight: 10px;
-    padding-right: 4px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.54) 60%, rgba(241,241,241,1) 100%);
+}
+
+#extended-categories-3 .avhec-widget-line:hover {
+    background-image: none;
+}
+
+#extended-categories-3 .avhec-widget-line a {
+    display: block;
     font-size: 13px;
+    font-weight: normal;
+    padding: 11px 8px 8px 23px;
+    background: scroll url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjEzIiB2aWV3Qm94PSIwIDAgMTQgMTMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0IDEzLjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGltYWdlIGRpc3BsYXk9Im5vbmUiIG92ZXJmbG93PSJ2aXNpYmxlIiB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIDEgMTYuMjA4NSAwKSIvPjxyZWN0IHdpZHRoPSIzLjciIGhlaWdodD0iMy40Ii8+PHJlY3QgeD0iNS4zIiB3aWR0aD0iOC43IiBoZWlnaHQ9IjMuNCIvPjxyZWN0IHk9IjUiIHdpZHRoPSIzLjciIGhlaWdodD0iMy4xIi8+PHJlY3QgeD0iNS4zIiB5PSI1IiB3aWR0aD0iOC43IiBoZWlnaHQ9IjMuMSIvPjxyZWN0IHk9IjkuNiIgd2lkdGg9IjMuNyIgaGVpZ2h0PSIzLjQiLz48cmVjdCB4PSI1LjMiIHk9IjkuNiIgd2lkdGg9IjguNyIgaGVpZ2h0PSIzLjQiLz48L3N2Zz4=) 4px 55% no-repeat transparent;
 }
 
-#extended-categories-3 ul li a:hover {
-    color: orange;
-}
-
-#extended-categories-3 ul li span {
-    background: none repeat scroll 0 0 #b1b1b1;
-    border-radius: 20px 20px 20px 20px;
-    color: #fff;
+#extended-categories-3 .avhec-widget-count {
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 13px;
+    margin: 5px 0;
+    padding: 0 4px;
+    border-radius: 20px;
+    background-color: #b1b1b1;
+    color: white;
     font-size: 11px;
     font-weight: bold;
     line-height: 17px;
-    padding: 0 6px;
-    position: absolute;
-    right: -2px;
-    margin: 5px 0 5px;
 }
 
-#extended-categories-3 ul li a:hover span {
-    background: none repeat scroll 0 0 orange;
+#extended-categories-3 .avhec-widget-line:hover .avhec-widget-count {
+    background-color: orange;
 }
 
 .search-form label span {
