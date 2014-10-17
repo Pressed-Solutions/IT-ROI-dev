@@ -108,12 +108,14 @@ body {
   .dmbs-main h1 {
     font-size: 4.7em;
     font-weight: 100; }
-  .dmbs-main h1 + h2 {
-    margin-top: 0; }
-  .dmbs-main h1 + p {
-    margin-top: 30px; }
+    .dmbs-main h1 + h2 {
+      margin-top: 0; }
+    .dmbs-main h1 + p {
+      margin-top: 30px; }
   .dmbs-main h2.smaller {
     font-size: 28px; }
+  .dmbs-main h2.text-left {
+    text-align: left; }
 
 .separate {
   margin-top: 30px; }
