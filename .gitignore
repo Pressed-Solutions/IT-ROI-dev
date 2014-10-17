@@ -3,4 +3,5 @@
 # Example .gitignore files: https://github.com/github/gitignore
 .git-ftp.log
 /.todo
+/.DS_Store
 *.scssc

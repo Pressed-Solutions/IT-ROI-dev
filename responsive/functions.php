@@ -395,6 +395,115 @@ function display_cta_buttons( $atts ) {
 add_shortcode( 'cta_buttons', 'display_cta_buttons' );
 
 /*
+ * Add Events custom post type and taxonomy
+ */
+
+add_action('init', 'register_event_type');
+function register_event_type() {
+    register_post_type('event', array(
+    'label' => 'Events',
+    'description' => '',
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'capability_type' => 'post',
+    'map_meta_cap' => true,
+    'hierarchical' => false,
+    'rewrite' => array('slug' => 'event', 'with_front' => true),
+    'query_var' => true,
+    'taxonomies' => array( 'country' ),
+    'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+    'labels' => array (
+        'name' => 'Events',
+        'singular_name' => 'Event',
+        'menu_name' => 'Events',
+        'add_new' => 'Add Event',
+        'add_new_item' => 'Add New Event',
+        'edit' => 'Edit',
+        'edit_item' => 'Edit Event',
+        'new_item' => 'New Event',
+        'view' => 'View Event',
+        'view_item' => 'View Event',
+        'search_items' => 'Search Events',
+        'not_found' => 'No Events Found',
+        'not_found_in_trash' => 'No Events Found in Trash',
+        'parent' => 'Parent Event',
+    )
+    ) );
+
+	$tax_labels = array(
+		'name'                       => 'Event Types',
+		'singular_name'              => 'Event Type',
+		'menu_name'                  => 'Event Types',
+		'all_items'                  => 'All Event Types',
+		'parent_item'                => 'Parent Event Type',
+		'parent_item_colon'          => 'Parent Event Type:',
+		'new_item_name'              => 'New Event Type Name',
+		'add_new_item'               => 'Add New Event Type',
+		'edit_item'                  => 'Edit Event Type',
+		'update_item'                => 'Update Event Type',
+		'separate_items_with_commas' => 'Separate event types with commas',
+		'search_items'               => 'Search Event Types',
+		'add_or_remove_items'        => 'Add or remove event types',
+		'choose_from_most_used'      => 'Choose from the most used event types',
+		'not_found'                  => 'Not Found',
+        'menu_icon'                  => 'dashicons-calendar'
+	);
+	$tax_args = array(
+		'labels'                     => $tax_labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'event_type', array( 'event' ), $tax_args );
+}
+
+/*
+ * Pagination (events page)
+ */
+
+function pagination($pages = '', $range = 2)
+{
+     $showitems = ($range * 2)+1;
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }
+
+     if(1 != $pages)
+     {
+         echo "<div class='pagination'>";
+         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+
+         for ($i=1; $i <= $pages; $i++)
+         {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             {
+                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+             }
+         }
+
+         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
+         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+         echo "</div>\n";
+     }
+}
+
+
+/*
  * Dev site: point search engines at live site
  */
 
@@ -435,3 +544,50 @@ function my_rel_canonical() {
         echo '<link rel="canonical" href="' . $link . '" />';
     }
 }
+
+
+/*
+ * Format beginning and ending dates nicely (events page)
+ */
+
+function format_event_date( $begin_date_raw, $end_date_raw ) {
+    /*
+     * Parameters:
+     * $begin_date_raw = Unix timestamp
+     * $end_date_raw = Unix timestamp
+     *
+     * Output:
+     * $full_date: nicely-formatted, human-readable date or date range
+     * Examples: October 8, 2014, November 30–December 2, 2014, or December 30, 2014–January 3, 2015
+     */
+    $begin_date_month = date( 'F', $begin_date_raw );
+    $begin_date_day = date( 'j', $begin_date_raw );
+    $begin_date_year = date( 'Y', $begin_date_raw );
+
+    $end_date_month = date( 'F', $end_date_raw );
+    $end_date_day = date( 'j', $end_date_raw );
+    $end_date_year = date( 'Y', $end_date_raw );
+
+    $full_date = $begin_date_month . ' ' . $begin_date_day;
+    if ( ! empty( $end_date_raw ) ) {
+        if ( $begin_date_year != $end_date_year ) { $full_date .= ', ' . $begin_date_year; }
+        $full_date .= '&ndash;';
+        if ( $begin_date_month != $end_date_month ) { $full_date .= $end_date_month . ' '; }
+        $full_date .= $end_date_day;
+    }
+    $full_date .= ', ';
+    if ( ! empty( $end_date_raw ) ) { $full_date .= $end_date_year; } else { $full_date .= $begin_date_year; }
+
+    return $full_date;
+
+}
+
+/*
+ * Include Modernizr custom build
+ */
+
+function include_modernizr() {
+    wp_deregister_script( 'modernizr' );
+    wp_enqueue_script( 'wp_enqueue_scripts', get_stylesheet_directory . '/js/modernizr-flexbox-flexboxlegacy-svg.min.js', false, '2.8.3', false );
+}
+add_action( 'wp_enqueue_scripts', 'include_modernizr' );

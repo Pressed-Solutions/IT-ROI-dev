@@ -1952,76 +1952,20 @@ return $result;
 add_filter( 'wpcf7_validate_text', 'is_number', 10, 2 );
 add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );
 
-// events
-add_action('init', 'register_event_type');
-function register_event_type() {
-register_post_type('event', array(
-'label' => 'Events',
-'description' => '',
-'public' => true,
-'show_ui' => true,
-'show_in_menu' => true,
-'capability_type' => 'post',
-'map_meta_cap' => true,
-'hierarchical' => false,
-'rewrite' => array('slug' => 'event', 'with_front' => true),
-'query_var' => true,
-'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
-'labels' => array (
-  'name' => 'Events',
-  'singular_name' => 'Event',
-  'menu_name' => 'Events',
-  'add_new' => 'Add Event',
-  'add_new_item' => 'Add New Event',
-  'edit' => 'Edit',
-  'edit_item' => 'Edit Event',
-  'new_item' => 'New Event',
-  'view' => 'View Event',
-  'view_item' => 'View Event',
-  'search_items' => 'Search Events',
-  'not_found' => 'No Events Found',
-  'not_found_in_trash' => 'No Events Found in Trash',
-  'parent' => 'Parent Event',
-)
-) ); }
+// test URL against whitelist to determine whether to load responsive functions and styles or not
+// TODO: remove this test when site conversion is complete
+$uri_whitelist = array(
+    '/integration/integration-bridge/',
+    '/integration/ppm-excel-interface/',
+    '/sharepoint/ideation-integrated-solution-for-clarity-ppm/',
+    '/events/',
+    '/events/page/1/',
+    '/events/page/2/',
+    '/events/page/3/'
+);
 
-function pagination($pages = '', $range = 2)
-{  
-     $showitems = ($range * 2)+1;  
+$requested_uri = $_SERVER["REQUEST_URI"];
 
-     global $paged;
-     if(empty($paged)) $paged = 1;
-
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }   
-
-     if(1 != $pages)
-     {
-         echo "<div class='pagination'>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
-
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-             }
-         }
-
-         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";  
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-         echo "</div>\n";
-     }
+if ( in_array( $requested_uri, $uri_whitelist ) || is_admin() ) {
+    require_once('responsive/functions.php');
 }
-
-require_once('responsive/functions.php');
-
-?>

@@ -25,55 +25,76 @@ get_header( 'responsive' ); ?>
 
 </div><!-- .dmbs-main.event-page -->
 </div><!-- .row.dmbs-content -->
-
 </div><!-- .dmbs-container -->
-<div class="dmbs-container">
-    <div class="blue-bg"></div>
-    <div class="container dmbs-container this-event">
-        <div class="col-md-12 main-tt container clearfix">
-            <div class="col-sm-6 mainevt">
-                <div class="col-md-4 mainevt">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail(); ?>
-                        <div class="clear"></div>
-                    <?php endif; ?>
-                </div>
-                <div class="col-md-6 webinar mainevt">
-                    <h1>Webinar</h1>
-                </div>
-            </div><!-- .col-sm-6.mainevt -->
-            <div class="col-sm-6 mainevt clearfix">
-                <h2 class="page-headerWebinar">
-                    <?php the_title(); ?>
-                </h2>
-                <?php the_content(); ?>
-                <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
-                <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
-            </div><!-- .col-sm-6.mainevt -->
-        </div><!-- .col-md-12.main-tt.container -->
+<?php $loop = new WP_Query( array(
+        'post_type' => 'event',
+        'posts_per_page' => 5,
+        'paged' => get_query_var( 'paged' ),
+        'orderby' => 'meta_value',
+        'meta_key' => 'date'
+    ) );
+$counter = 1;
+while ( $loop->have_posts() ) : $loop->the_post();
+    if ($counter == 1) { // first item
+    $category_array = get_the_terms( $loop->ID, 'event_type' );
+    foreach ($category_array as $this_category) {
+        $category_name = $this_category->name;
+        $category_thumb = z_taxonomy_image_url( $this_category->term_id );
+    }
+?>
+    <div class="dmbs-container">
+        <div class="event-blue-bg"></div>
+        <div class="container dmbs-container main-event">
+            <div class="col-md-12 main-tt container clearfix">
+                <div class="col-sm-6">
+                    <div class="col-md-4 clearfix">
+                        <img src="<?php echo $category_thumb; ?>" class="category-image" />
+                    </div>
+                    <div class="col-md-6 event-type">
+                        <h1><?php echo $category_name; ?></h1>
+                    </div>
+                </div><!-- .col-sm-6 -->
+                <div class="col-sm-6 clearfix">
+                    <h2 class="page-header-event-type">
+                        <?php the_title(); ?>
+                    </h2>
+                    <?php the_content(); ?>
+                    <div class="evt-date"><?php the_field('date'); ?> <div class="evt-time"><?php the_field('time'); ?></div></div>
+                    <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
+                </div><!-- .col-sm-6 -->
+            </div><!-- .col-md-12.main-tt.container -->
 
-    </div><!-- .container.dmbs-container.this-event -->
-</div><!-- .dmbs-container -->
+        </div><!-- .container.dmbs-container.main-event -->
+    </div><!-- .dmbs-container -->
 
-<div class="container dmbs-container">
-    <div class="col-md-8 col-md-offset-2 main-tt upcoming-events">
-        <h3>Upcoming Events</h3>
-<!-- TODO: remove current/first post from query -->
-        <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ) ) ); ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <div class="container dmbs-container">
+        <div class="col-md-8 col-md-offset-2 main-tt upcoming-events">
+            <h3>Upcoming Events</h3>
+    <?php
+        $counter = $counter + 1; // increment counter
+    } // end first item
+    else { // all other items
+        $category_array = get_the_terms( $loop->ID, 'event_type' );
+        foreach ($category_array as $this_category) {
+            $category_name = $this_category->name;
+            $category_thumb = z_taxonomy_image_url( $this_category->term_id );
+        }
+        ?>
         <div class="evt-post" id="post-<?php the_ID(); ?>">
             <div class="col-md-3 evt-thumbnail">
-                <?php if ( has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('full'); ?>
-                <?php endif; ?>
+                <img src="<?php echo $category_thumb; ?>" class="category-image" />
             </div>
-            <div class="col-md-9 evt-content clearfix"><a href="<?php echo get_permalink(); ?>" ><div class="evt-title"><?php the_title(); ?></div></a>
+            <div class="col-md-9 evt-content clearfix">
+                <div class="evt-title"><?php the_title(); ?></div>
                 <div class="evt-date"><?php the_field('date'); ?> <?php the_field('time'); ?></div>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
                 <p><?php the_content(); ?></p>
             </div><!-- .col-md-9.evt-content -->
         </div><!-- .evt-post -->
-        <?php endwhile; ?>
+    <?php
+          $counter = $counter + 1; // increment counter
+    }; // end list of other items
+    endwhile; ?>
 
         <div class="pagen">
             <div class="navigation clearfix">

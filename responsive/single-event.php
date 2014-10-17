@@ -55,12 +55,12 @@ Connect and discover relevant, high-impact insight and innovations to help organ
                                     <div class="clear"></div>
                     <?php endif; ?>
                     </div>
-                    <div class="col-md-6 Webinar mainevt">
+                    <div class="col-md-6 event-type mainevt">
                     <h1>Webinar</h1>
                     </div>
                 </div>
                 <div class="col-md-6 mainevt">
-                	<h2 class="page-headerWebinar">
+                	<h2 class="page-header-event-type">
                                 <?php the_title(); ?>
                     </h2>
                     <?php the_content(); ?>
