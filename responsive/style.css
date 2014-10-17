@@ -279,7 +279,8 @@ ul.center li {
   .navbar .navbar-nav > li > a {
     padding-left: 45px; }
   .header-wrapper .navbar .navbar-nav > li {
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     padding: 0;
     background-repeat: no-repeat;
     background-position: 10px center, 0 0;
@@ -314,6 +315,7 @@ ul.center li {
 .integrationmenu {
   background: url("../images/menu-icons/Integrations.png"); }
   .integrationmenu:hover {
+    background: url("../images/menu-icons/Integrations.png") no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url("../images/menu-icons/Integrations.png") no-repeat 10px, linear-gradient(to bottom, #26262c 0%, #070707 100%); }
   .integrationmenu .dropdown-menu {
     background-color: #0fa1e0; }
@@ -323,6 +325,7 @@ ul.center li {
 .sharepointmenu {
   background-image: url("../images/menu-icons/Sharepoint.png"); }
   .sharepointmenu:hover {
+    background: url("../images/menu-icons/Sharepoint.png") no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url("../images/menu-icons/Sharepoint.png") no-repeat 10px, linear-gradient(to bottom, #26262c 0%, #070707 100%); }
   .sharepointmenu .dropdown-menu {
     background-color: #ff6600; }
@@ -332,20 +335,24 @@ ul.center li {
 .svg .eventsmenu {
   background-image: url("../images/menu-icons/Events.svg"); }
   .svg .eventsmenu:hover {
+    background: url("../images/menu-icons/Events.svg") no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url("../images/menu-icons/Events.svg") no-repeat 10px, linear-gradient(to bottom, #26262c 0%, #070707 100%); }
 .no-svg .eventsmenu {
   background-image: url("../images/menu-icons/Events.png"); }
   .no-svg .eventsmenu:hover {
+    background: url("../images/menu-icons/Events.png") no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url("../images/menu-icons/Events.png") no-repeat 10px, linear-gradient(to bottom, #26262c 0%, #070707 100%); }
 
 .reportingmenu {
   background-image: url("../images/menu-icons/Reporting.png"); }
   .reportingmenu:hover {
+    background: url("../images/menu-icons/Reporting.png") no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url("../images/menu-icons/Reporting.png") no-repeat 10px, linear-gradient(to bottom, #26262c 0%, #070707 100%); }
 
 .servicesmenu {
   background-image: url("../images/menu-icons/Services.png"); }
   .servicesmenu:hover {
+    background: url("../images/menu-icons/Services.png") no-repeat 10px, -webkit-linear-gradient(top, #26262c 0%, #070707 100%);
     background: url("../images/menu-icons/Services.png") no-repeat 10px, linear-gradient(to bottom, #26262c 0%, #070707 100%); }
 
 .servicesmenu .dropdown-menu {
@@ -457,6 +464,7 @@ form.search-form.topbar input {
 .integration-header-gradient {
   height: 2em;
   margin: 0 -15px;
+  background: -webkit-linear-gradient(left, #22476D 0%, #125F9F 100%);
   background: linear-gradient(to right, #22476D 0%, #125F9F 100%); }
 
 .integration-header-image {
@@ -530,10 +538,10 @@ form.search-form.topbar input {
   font-size: 18px;
   line-height: 30px; }
 
-.event-page {
+.slug-events {
   border-left: none;
   border-right: none; }
-  .event-page .page-header {
+  .slug-events .page-header {
     text-align: center;
     text-transform: uppercase;
     font-family: 'MavenProBold', sans-serif;
@@ -543,13 +551,13 @@ form.search-form.topbar input {
     padding-bottom: 9px;
     border-bottom: 1px solid #FFFFFF; }
 
-.event-page h3, .single-event h3 {
+.slug-events h3, .single-event h3 {
   font-size: 24px; }
-.event-page .register-button, .single-event .register-button {
+.slug-events .register-button, .single-event .register-button {
   margin-top: 15px; }
-  .event-page .register-button a, .single-event .register-button a {
+  .slug-events .register-button a, .single-event .register-button a {
     font-size: 17px; }
-.event-page .register-button a, .event-page .register-button a:hover, .event-page .register-button a span, .event-page #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .event-page #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .event-page #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span, .single-event .register-button a, .single-event .register-button a:hover, .single-event .register-button a span, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span {
+.slug-events .register-button a, .slug-events .register-button a:hover, .slug-events .register-button a span, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span, .single-event .register-button a, .single-event .register-button a:hover, .single-event .register-button a span, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span {
   background: #ff6600 !important;
   padding: 7px 15px !important;
   color: white !important;
@@ -557,7 +565,7 @@ form.search-form.topbar input {
   font-weight: 600 !important;
   font-size: 12px !important;
   border-radius: 0 !important; }
-.event-page hr, .single-event hr {
+.slug-events hr, .single-event hr {
   margin: 20px 0;
   border: 0;
   border-top: 1px solid #eee; }
@@ -760,8 +768,12 @@ h3.event-list-header {
 /* 8.1 - Papa Bear and up */
 @media screen and (min-width: 1200px) {
   .navbar-nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
   .header-wrapper .navbar-nav > li > a {
     font-size: 15px; }
@@ -772,7 +784,9 @@ h3.event-list-header {
 
   .about {
     top: 50%;
-    transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+        -ms-transform: translateY(25%);
+            transform: translateY(25%);
     font-size: larger; } }
 /* 8.2 - Papa Bear on a diet */
 @media screen and (min-width: 992px) {
@@ -824,9 +838,15 @@ h3.event-list-header {
     margin-top: 24px; }
 
   .bottom-nav .nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
   .navbar-header {
     display: none; }
@@ -852,9 +872,15 @@ h3.event-list-header {
     width: 100% !important; }
 
   .navbar-nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; } }
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 /* 8.7 - Mama and Baby Bear */
 @media screen and (max-width: 680px) {
   .integration-footer h3,
