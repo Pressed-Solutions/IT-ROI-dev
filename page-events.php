@@ -109,7 +109,14 @@ while ( $loop->have_posts() ) : $loop->the_post();
             </div>
             <div class="col-md-9 evt-content clearfix">
                 <div class="evt-title"><?php the_title(); ?></div>
-                <div class="evt-date"><?php echo $full_date; ?> <?php the_field('time'); ?></div>
+                <time class="evt-date" datetime="<?php echo $datetime ?>"><?php echo $full_date; ?>
+                    <?php if ( get_field( 'time' ) ) { ?>
+                    <span class="evt-time"><?php the_field( 'time' ); ?></span>
+                    <?php } ?>
+                </time>
+                <?php if ( get_field( 'location' ) ) { ?>
+                    <div class="evt-location"><?php echo the_field( 'location'); ?></div>
+                <?php } ?>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
                 <p><?php the_content(); ?></p>
             </div><!-- .col-md-9.evt-content -->
@@ -182,7 +189,14 @@ while ( $loop->have_posts() ) : $loop->the_post();
             </div>
             <div class="col-md-9 evt-content clearfix">
                 <div class="evt-title"><?php the_title(); ?></div>
-                <div class="evt-date"><?php echo $full_date; ?> <?php the_field('time'); ?></div>
+                <time class="evt-date" datetime="<?php echo $datetime ?>"><?php echo $full_date; ?>
+                    <?php if ( get_field( 'time' ) ) { ?>
+                    <span class="evt-time"><?php the_field( 'time' ); ?></span>
+                    <?php } ?>
+                </time>
+                <?php if ( get_field( 'location' ) ) { ?>
+                    <div class="evt-location"><?php echo the_field( 'location'); ?></div>
+                <?php } ?>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
                 <p><?php the_content(); ?></p>
             </div><!-- .col-md-9.evt-content -->

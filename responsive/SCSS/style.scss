@@ -696,7 +696,11 @@ form.search-form.topbar input {
 .event-page, .single-event {
     h3 { font-size: 24px; }
     
-    .register-button a { font-size: 17px; }
+    .register-button {
+        margin-top: 15px;
+
+        a { font-size: 17px; }
+    }
     
     .register-button a, #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 {
         &, &:hover, & span {
@@ -767,7 +771,6 @@ h3.event-list-header {
 }
 
 .evt-date {
-    margin-bottom: 15px;
 }
 
 .evt-time {
