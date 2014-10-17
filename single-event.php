@@ -88,7 +88,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                     </time>
                     <?php if ( get_field( 'location' ) ) { ?>
                         <div class="evt-location"><?php echo the_field( 'location'); ?></div>
-                    <?php } />
+                    <?php } ?>
                     <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
                 </div><!-- .col-sm-6 -->
             </div><!-- .col-md-12.main-tt.container -->
