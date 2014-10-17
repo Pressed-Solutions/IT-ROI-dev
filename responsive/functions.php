@@ -462,7 +462,7 @@ function register_event_type() {
 }
 
 /*
- * Pagination
+ * Pagination (events page)
  */
 
 function pagination($pages = '', $range = 2)
@@ -544,6 +544,11 @@ function my_rel_canonical() {
         echo '<link rel="canonical" href="' . $link . '" />';
     }
 }
+
+
+/*
+ * Format beginning and ending dates nicely (events page)
+ */
 
 function format_event_date( $begin_date_raw, $end_date_raw ) {
     /*
