@@ -19,10 +19,10 @@
      - Remove [unnecessary field](https://itroisolutions.com/wp-admin/post.php?post=3230)
 
 #Plugin Update Notes
- - [AddThis Social Bookmarking Widget](https://downloads.wordpress.org/plugin/addthis.3.5.10.zip): no visible issues
- - [Advanced Custom Fields](https://downloads.wordpress.org/plugin/advanced-custom-fields.zip): no visible issues
+ - [AddThis Social Bookmarking Widget](https://downloads.wordpress.org/plugin/addthis.3.5.10.zip): no hacks and no visible issues after upgrade
+ - [Advanced Custom Fields](https://downloads.wordpress.org/plugin/advanced-custom-fields.zip): no hacks and no visible issues after upgrade
  - [Author Avatars List](https://downloads.wordpress.org/plugin/author-avatars.zip): modified `css/widget.css` and `lib/UserList.class.php`
- - 
+ - [AVH Extended Categories Widgets](https://downloads.wordpress.org/plugin/extended-categories-widget.3.9.3.zip): modified HTML output requiring [CSS changes](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/c3ec8f997fcc13e57b976d2e5d4339b8751ffa6a#diff-1)
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
