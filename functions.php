@@ -1956,6 +1956,7 @@ add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );
 // TODO: remove this test when site conversion is complete
 $uri_whitelist = array(
     '/integration/integration-bridge/',
+    '/integration/migration-bridge/',
     '/integration/ppm-excel-interface/',
     '/sharepoint/ideation-integrated-solution-for-clarity-ppm/',
     '/events/',
