@@ -559,28 +559,32 @@ form.search-form.topbar input {
         -webkit-font-smoothing: antialiased;
     }
 
-    .background-purple {
+    .cta-button {
+        transition: background-color 0.3s ease;
+    }
+
+    .cta_download_product_brief {
         background-color: #9900cc;
         
         &:hover, &:active { background-color: #7700aa; }
     }
 
-    .background-red {
+    .cta_replay_webinar {
         background-color: #fe3b00;
         
         &:hover, &:active { background-color: #dc1000; }
     }
 
-    .background-green {
-        background-color: #47b800;
-        
-        &:hover, &:active { background-color: #259600; }
-    }
-
-    .background-blue {
+    .cta_request_demo {
         background-color: #0098da;
         
         &:hover, &:active { background-color: #0076b8; }
+    }
+
+    .cta_talk_now {
+        background-color: #47b800;
+        
+        &:hover, &:active { background-color: #259600; }
     }
 
     .talk-now-number {

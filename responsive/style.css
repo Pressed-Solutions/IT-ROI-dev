@@ -453,22 +453,25 @@ form.search-form.topbar input {
     font-size: 18px;
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased; }
-  .cta-buttons .background-purple {
+  .cta-buttons .cta-button {
+    -webkit-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease; }
+  .cta-buttons .cta_download_product_brief {
     background-color: #9900cc; }
-    .cta-buttons .background-purple:hover, .cta-buttons .background-purple:active {
+    .cta-buttons .cta_download_product_brief:hover, .cta-buttons .cta_download_product_brief:active {
       background-color: #7700aa; }
-  .cta-buttons .background-red {
+  .cta-buttons .cta_replay_webinar {
     background-color: #fe3b00; }
-    .cta-buttons .background-red:hover, .cta-buttons .background-red:active {
+    .cta-buttons .cta_replay_webinar:hover, .cta-buttons .cta_replay_webinar:active {
       background-color: #dc1000; }
-  .cta-buttons .background-green {
-    background-color: #47b800; }
-    .cta-buttons .background-green:hover, .cta-buttons .background-green:active {
-      background-color: #259600; }
-  .cta-buttons .background-blue {
+  .cta-buttons .cta_request_demo {
     background-color: #0098da; }
-    .cta-buttons .background-blue:hover, .cta-buttons .background-blue:active {
+    .cta-buttons .cta_request_demo:hover, .cta-buttons .cta_request_demo:active {
       background-color: #0076b8; }
+  .cta-buttons .cta_talk_now {
+    background-color: #47b800; }
+    .cta-buttons .cta_talk_now:hover, .cta-buttons .cta_talk_now:active {
+      background-color: #259600; }
   .cta-buttons .talk-now-number {
     display: block; }
 

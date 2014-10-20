@@ -383,11 +383,20 @@ add_filter( 'nmi_menu_item_content', 'md_nmi_custom_content', 10, 3 );
 
 // add shortcode to handle CTA buttons
 function display_cta_buttons( $atts ) {
-    $cta_string = '<section class="cta-buttons col-md-12">';
-    $cta_string .= '<div class="col-md-3"><div class="cta-button background-purple">' . get_post_meta( get_the_ID(), 'cta_download_the_product_brief', true ) . '</div></div>';
-    $cta_string .= '<div class="col-md-3"><div class="cta-button background-red">' . get_post_meta( get_the_ID(), 'cta_replay_the_webinar', true ) . '</div></div>';
-    $cta_string .= '<div class="col-md-3"><div class="cta-button background-blue">' . get_post_meta( get_the_ID(), 'cta_request_a_demo', true ) . '</div></div>';
-    $cta_string .= '<div class="col-md-3"><div class="cta-button background-green">' . get_post_meta( get_the_ID(), 'cta_talk_now', true ) . '</div></div>';
+    // get CTA values
+    $CTA_array = array();
+    $CTA_array['cta_download_product_brief'] = get_post_meta( get_the_ID(), 'cta_download_the_product_brief',  true );
+    $CTA_array['cta_replay_webinar']         = get_post_meta( get_the_ID(), 'cta_replay_the_webinar',          true );
+    $CTA_array['cta_request_demo']           = get_post_meta( get_the_ID(), 'cta_request_a_demo',              true );
+    $CTA_array['cta_talk_now']               = get_post_meta( get_the_ID(), 'cta_talk_now',                    true );
+
+    // count number of available CTAs
+    $CTA_count = ( 12 / count( array_filter( $CTA_array ) ) );
+
+    $cta_string = '<section class="cta-buttons col-md-12 clearfix">';
+    foreach ( $CTA_array as $CTA_key => $CTA ) {
+        if ( ! empty( $CTA ) ) { $cta_string .= '<div class="col-md-' . $CTA_count . '"><div class="cta-button ' . $CTA_key . '">' . $CTA . '</div></div>'; }
+    }
     $cta_string .= '</section>';
 
     return $cta_string;
