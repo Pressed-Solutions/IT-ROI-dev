@@ -86,7 +86,10 @@ Text Domain: Pressed Solutions
     margin-left: 20.833333333%; }
 
   .col-md-offset-3-5 {
-    margin-left: 29.166666667%; } }
+    margin-left: 29.166666667%; }
+
+  .col-md-offset-4-5 {
+    margin-left: 37.5%; } }
 @media (min-width: 1200px) {
   .col-lg-offset-0-5 {
     margin-left: 4.1666666667%; }
@@ -98,7 +101,10 @@ Text Domain: Pressed Solutions
     margin-left: 20.833333333%; }
 
   .col-lg-offset-3-5 {
-    margin-left: 29.166666667%; } }
+    margin-left: 29.166666667%; }
+
+  .col-lg-offset-4-5 {
+    margin-left: 37.5%; } }
 /* 3.0 - General styles */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -438,7 +444,8 @@ form.search-form.topbar input {
 
 /* 6.2 - CTA buttons */
 .cta-buttons {
-  margin: 24px 0; }
+  margin-top: 24px;
+  margin-bottom: 24px; }
   .cta-buttons .cta-button {
     position: relative;
     padding: 1.5em .5em;

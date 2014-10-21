@@ -391,11 +391,17 @@ function display_cta_buttons( $atts ) {
     $CTA_array['cta_talk_now']               = get_post_meta( get_the_ID(), 'cta_talk_now',                    true );
 
     // count number of available CTAs
-    $CTA_count = ( 12 / count( array_filter( $CTA_array ) ) );
+    $CTA_count = count( array_filter( $CTA_array ) );
+    if ( $CTA_count == 4 ) { $CTA_section_width = 'col-md-12'; }
+    elseif ( $CTA_count == 3 ) { $CTA_section_width = 'col-md-9 col-md-offset-1-5'; }
+    elseif ( $CTA_count == 2 ) { $CTA_section_width = 'col-md-6 col-md-offset-3'; }
+    elseif ( $CTA_count == 1 ) { $CTA_section_width = 'col-md-3 col-md-offset-4-5'; }
 
-    $cta_string = '<section class="cta-buttons col-md-12 clearfix">';
+    $CTA_width = 'col-md-' . ( 12 / $CTA_count );
+
+    $cta_string = '<section class="cta-buttons ' . $CTA_section_width . ' clearfix">';
     foreach ( $CTA_array as $CTA_key => $CTA ) {
-        if ( ! empty( $CTA ) ) { $cta_string .= '<div class="col-md-' . $CTA_count . '"><div class="cta-button ' . $CTA_key . '">' . $CTA . '</div></div>'; }
+        if ( ! empty( $CTA ) ) { $cta_string .= '<div class="' . $CTA_width . '"><div class="cta-button ' . $CTA_key . '">' . $CTA . '</div></div>'; }
     }
     $cta_string .= '</section>';
 
