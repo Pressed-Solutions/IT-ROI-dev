@@ -115,7 +115,10 @@ body {
 .dmbs-main {
   margin-top: 40px;
   border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc; }
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc; }
+  .single-integration .dmbs-main {
+    border-top: none; }
   .dmbs-main h1,
   .dmbs-main h2,
   .dmbs-main h3 {

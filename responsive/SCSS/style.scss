@@ -125,6 +125,9 @@ body {
     margin-top: 40px;
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+
+    .single-integration & { border-top: none; }
 
     h1,
     h2,
