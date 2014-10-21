@@ -496,6 +496,8 @@ form.search-form.topbar input {
   margin: 0 -15px 2em;
   padding: 0 1em 1em;
   background-color: #125f9f; }
+  .integration-header-image img {
+    max-width: 100%; }
 
 .single-integration .dmbs-content .integration-header-image img {
   margin: 0; }
