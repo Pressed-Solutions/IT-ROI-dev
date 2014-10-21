@@ -113,7 +113,7 @@ body {
   padding-bottom: 0; }
 
 .dmbs-main {
-  padding-top: 40px;
+  margin-top: 40px;
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc; }
   .dmbs-main h1,
