@@ -740,6 +740,8 @@ h2.page-header-event-type {
     font-size: smaller; }
 
 /* 8.0 - Widgets */
+.widget_author_avatars .user + .user {
+  border-top: 1px solid #dfdbce; }
 .widget_author_avatars .author-list .with-biography .name {
   font-size: 15px; }
   .widget_author_avatars .author-list .with-biography .name strong {

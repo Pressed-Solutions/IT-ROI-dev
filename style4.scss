@@ -3767,19 +3767,23 @@ div.node.node-article.view-mode-teaser .field-name-title h2 {
     text-align: left;
 }
 
-.widget_author_avatars .author-list .with-biography {
-    .name {
-        font-size: 15px;
-        strong { font-weight: normal; }
-    }
+.widget_author_avatars {
+    .user + .user { border-top: 1px solid #dfdbce; }
 
-    .post-count {
-        float: right;
-        color: #666;
-    }
+    .author-list .with-biography {
+        .name {
+            font-size: 15px;
+            strong { font-weight: normal; }
+        }
 
-    .biography {
-        font-size: 13px;
-        line-height: 20px;
+        .post-count {
+            float: right;
+            color: #666;
+        }
+
+        .biography {
+            font-size: 13px;
+            line-height: 20px;
+        }
     }
 }

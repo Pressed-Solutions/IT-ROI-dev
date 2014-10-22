@@ -967,20 +967,24 @@ h2.page-header-event-type {
 }
 
 /* 8.0 - Widgets */
-.widget_author_avatars .author-list .with-biography {
-    .name {
-        font-size: 15px;
-        strong { font-weight: normal; }
-    }
+.widget_author_avatars {
+    .user + .user { border-top: 1px solid #dfdbce; }
 
-    .post-count {
-        float: right;
-        color: #666;
-    }
+    .author-list .with-biography {
+        .name {
+            font-size: 15px;
+            strong { font-weight: normal; }
+        }
 
-    .biography {
-        font-size: 13px;
-        line-height: 20px;
+        .post-count {
+            float: right;
+            color: #666;
+        }
+
+        .biography {
+            font-size: 13px;
+            line-height: 20px;
+        }
     }
 }
 
