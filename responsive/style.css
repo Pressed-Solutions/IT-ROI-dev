@@ -740,45 +740,16 @@ h2.page-header-event-type {
     font-size: smaller; }
 
 /* 8.0 - Widgets */
-.widget_author_avatars .author-list .user {
-  padding: 0; }
-  .widget_author_avatars .author-list .user .name {
-    float: left;
-    padding-left: 10px;
-    width: 85%;
-    color: #275279;
-    font-size: 13px;
-    line-height: 20px; }
-.widget_author_avatars .author-list .with-name {
-  min-height: 75px;
-  border-bottom: 1px solid #DFDBCE;
-  list-style: none outside none;
-  overflow: hidden;
-  padding-bottom: 9px;
-  padding-top: 10px; }
-  .widget_author_avatars .author-list .with-name:last-child {
-    border-bottom: none;
-    padding-bottom: 0; }
-  .widget_author_avatars .author-list .with-name .bio-link,
-  .widget_author_avatars .author-list .with-name .position {
-    display: block;
-    width: 100%;
-    clear: right;
-    padding-left: 60px;
-    font-size: 13px;
-    line-height: 20px;
-    text-align: left; }
-  .widget_author_avatars .author-list .with-name .position {
-    color: #666666; }
-  .widget_author_avatars .author-list .with-name .bio-link {
-    text-decoration: underline; }
-.widget_author_avatars .author-list .avatar img {
-  float: left !important;
-  margin-bottom: 10px; }
-.widget_author_avatars .alignleft {
-  padding-left: 10px; }
-.widget_author_avatars .alignright {
-  color: #666666; }
+.widget_author_avatars .author-list .with-biography .name {
+  font-size: 15px; }
+  .widget_author_avatars .author-list .with-biography .name strong {
+    font-weight: normal; }
+.widget_author_avatars .author-list .with-biography .post-count {
+  float: right;
+  color: #666; }
+.widget_author_avatars .author-list .with-biography .biography {
+  font-size: 13px;
+  line-height: 20px; }
 
 /* 9.0 - Media queries */
 /* 9.1 - Papa Bear and up */

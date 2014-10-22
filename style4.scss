@@ -3767,63 +3767,19 @@ div.node.node-article.view-mode-teaser .field-name-title h2 {
     text-align: left;
 }
 
-.widget_author_avatars {
-    .author-list {
-        .user {
-            padding: 0;
-
-            .name {
-                float: left;
-                padding-left: 10px;
-                width: 85%;
-                color: #275279;
-                font-size:13px;
-                line-height:20px;
-            }
-        }
-
-        .with-name {
-            min-height: 75px;
-            border-bottom: 1px solid #DFDBCE;
-            list-style: none outside none;
-            overflow: hidden;
-            padding-bottom: 9px;
-            padding-top: 10px;
-
-            &:last-child {
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-            
-            .bio-link,
-            .position {
-                display: block;
-                width: 100%;
-                clear: right;
-                padding-left: 60px;
-                font-size: 13px;
-                line-height: 20px;
-                text-align: left;
-            }
-            
-            .position { color: #666666; }
-            .bio-link { text-decoration: underline; }
-        }
-
-        .avatar img {
-            float: left !important;
-            margin-bottom: 10px;
-        }
+.widget_author_avatars .author-list .with-biography {
+    .name {
+        font-size: 15px;
+        strong { font-weight: normal; }
     }
 
-    .alignleft { padding-left: 10px; }
-    .alignright { color: #666666; }
-}
+    .post-count {
+        float: right;
+        color: #666;
+    }
 
-.alignright {
-    float: right;
-}
-
-.alignleft {
-    float: left;
+    .biography {
+        font-size: 13px;
+        line-height: 20px;
+    }
 }

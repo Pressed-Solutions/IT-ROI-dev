@@ -17,6 +17,10 @@
  - [Advanced Custom Fields](https://downloads.wordpress.org/plugin/advanced-custom-fields.zip) 4.3.9: no hacks and no visible issues after upgrade
  - Attach Files Widget 2.3: up-to-date; no hacks
  - [Author Avatars List](https://downloads.wordpress.org/plugin/author-avatars.zip): modified `css/widget.css` requiring [CSS changes](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/75ede7bb6b82c48bbaaf9a27b7e7ab8a9ce3660b#diff-86ed41681bbb27c77962aa2fc5e26a72R962) and `lib/UserList.class.php`
+    - In [widget settings](https://itroisolutions.com/wp-admin/widgets.php), turn on “Show biography”
+    - Edit users:
+        - Add link to **website** field
+        - Add position to **biography** field
  - [AVH Extended Categories Widgets](https://downloads.wordpress.org/plugin/extended-categories-widget.3.9.3.zip) 3.9.3: modified HTML output requiring [CSS changes](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/c3ec8f997fcc13e57b976d2e5d4339b8751ffa6a#diff-1)
 
 #To do when theme conversion is finished
