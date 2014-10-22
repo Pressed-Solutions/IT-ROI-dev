@@ -12,37 +12,6 @@
 session_start();
 checkuserrole();
 
-
-
-$iphone = preg_match("/iPhone/i", $_SERVER['HTTP_USER_AGENT']);
-$android = preg_match("/Android/i", $_SERVER['HTTP_USER_AGENT']);
-$palmpre = preg_match("/webOS/i", $_SERVER['HTTP_USER_AGENT']);
-$berry = preg_match("/BlackBerry/i", $_SERVER['HTTP_USER_AGENT']);
-
-$iphone_a = preg_match("/iphone/i", $_SERVER['HTTP_USER_AGENT']);
-$android_a = preg_match("/android/i", $_SERVER['HTTP_USER_AGENT']);
-$palmpre_a = preg_match("/webos/i", $_SERVER['HTTP_USER_AGENT']);
-$berry_a = preg_match("/blackberry/i", $_SERVER['HTTP_USER_AGENT']);
-
-$ipod = preg_match("/iPod/i", $_SERVER['HTTP_USER_AGENT']);
-$ipad = preg_match("/iPad/i", $_SERVER['HTTP_USER_AGENT']);
-
-if (!isset($_SESSION['mobile_referer'])) {
-    $_SESSION['mobile_referer'] = "";
-}
-
-if (isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == "http://m.itroisolutions.com/") {
-    $_SESSION['mobile_referer'] = $_SERVER['HTTP_REFERER'];
-}
-
-if ($_SESSION['mobile_referer'] != "http://m.itroisolutions.com/") {
-    if ($iphone || $android || $palmpre || $ipod || $ipad || $berry || $iphone_a || $android_a || $palmpre_a  || $berry_a == true) {
-        echo "<script>window.location='http://m.itroisolutions.com/'</script>";
-        $_SESSION['mobile_referer'] = $_SERVER['HTTP_REFERER'];
-    }
-}
-
-
 ini_set('session.cookie_httponly', 1);
 ini_set('session.cookie_secure', 1);
 
