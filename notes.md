@@ -8,15 +8,7 @@
  - [Full changelog](https://github.com/Pressed-Solutions/IT-ROI-dev/compare/develop) and [list of changed files](https://github.com/Pressed-Solutions/IT-ROI-dev/compare/develop#files_bucket) on GitHub
 
 #Deployment Notes
- - PPM Excel Integration
-     - Change template for [ideaBoss page](https://itroisolutions.com/wp-admin/post.php?post=3396&action=edit)
-     - Add [PPM Excel logo](http://dev.itroisolutions.com/wp-content/uploads/2014/01/ppm-excel-interface-logo.png) to live site, update URL in post
- - Events
-     - Install [Modernizr plugin](https://downloads.wordpress.org/plugin/modernizr.2.8.3.zip)
-     - Add events [icon](https://github.com/Pressed-Solutions/IT-ROI-dev/blob/8c0228ce55cf3ad290546de78418c503d3645bde/images/menu-icons-embedded/Events.png) to [menu](https://itroisolutions.com/wp-admin/nav-menus.php), switch menu order to put Events on far right, open in same tab
-     - Categorize [event posts](https://itroisolutions.com/wp-admin/edit.php?post_type=event)
-     - Add event taxonomy icons [here](https://itroisolutions.com/wp-admin/edit-tags.php?taxonomy=event_type&post_type=event)
-     - Remove [unnecessary field](https://itroisolutions.com/wp-admin/post.php?post=3230)
+ - Find modification that saves bio info to `wp_user`.`boi` and update to save to `wp_user`.`bio`
 
 #Plugin Update Notes
  - Add Meta Tags 2.4.3: up-to-date; no hacks

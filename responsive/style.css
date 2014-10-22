@@ -41,6 +41,12 @@ Text Domain: Pressed Solutions
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Maven+Pro:400,700,500");
 /* 1.0 - Variables */
 /* 2.0 - General layout */
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -753,9 +759,26 @@ h2.page-header-event-type {
   .widget_author_avatars .author-list .with-name:last-child {
     border-bottom: none;
     padding-bottom: 0; }
+  .widget_author_avatars .author-list .with-name .bio-link,
+  .widget_author_avatars .author-list .with-name .position {
+    display: block;
+    width: 100%;
+    clear: right;
+    padding-left: 60px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left; }
+  .widget_author_avatars .author-list .with-name .position {
+    color: #666666; }
+  .widget_author_avatars .author-list .with-name .bio-link {
+    text-decoration: underline; }
 .widget_author_avatars .author-list .avatar img {
   float: left !important;
   margin-bottom: 10px; }
+.widget_author_avatars .alignleft {
+  padding-left: 10px; }
+.widget_author_avatars .alignright {
+  color: #666666; }
 
 /* 9.0 - Media queries */
 /* 9.1 - Papa Bear and up */
