@@ -26,15 +26,16 @@ Text Domain: Pressed Solutions
  *     6.4 - Sharepoint
  *     6.5 - Events
  * 7.0 - Footer
- * 8.0 - Media oueries
- *     8.1 - Papa Bear and up
- *     8.2 - Papa Bear on a diet
- *     8.3 - Uncle Bear and up
- *     8.4 - Uncle Bear and down
- *     8.5 - Mama Bear and up
- *     8.6 - Mama Bear
- *     8.7 - Mama and Baby Bear
- *     8.8 - Baby Bear
+ * 8.0 - Widgets
+ * 9.0 - Media queries
+ *     9.1 - Papa Bear and up
+ *     9.2 - Papa Bear on a diet
+ *     9.3 - Uncle Bear and up
+ *     9.4 - Uncle Bear and down
+ *     9.5 - Mama Bear and up
+ *     9.6 - Mama Bear
+ *     9.7 - Mama and Baby Bear
+ *     9.8 - Baby Bear
  */
 /* 0.0 - Imports */
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Maven+Pro:400,700,500");
@@ -732,8 +733,32 @@ h2.page-header-event-type {
     color: #696969;
     font-size: smaller; }
 
-/* 8.0 - Media queries */
-/* 8.1 - Papa Bear and up */
+/* 8.0 - Widgets */
+.widget_author_avatars .author-list .user {
+  padding: 0; }
+  .widget_author_avatars .author-list .user .name {
+    float: left;
+    padding-left: 10px;
+    width: 85%;
+    color: #275279;
+    font-size: 13px;
+    line-height: 20px; }
+.widget_author_avatars .author-list .with-name {
+  min-height: 75px;
+  border-bottom: 1px solid #DFDBCE;
+  list-style: none outside none;
+  overflow: hidden;
+  padding-bottom: 9px;
+  padding-top: 10px; }
+  .widget_author_avatars .author-list .with-name:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+.widget_author_avatars .author-list .avatar img {
+  float: left !important;
+  margin-bottom: 10px; }
+
+/* 9.0 - Media queries */
+/* 9.1 - Papa Bear and up */
 @media screen and (min-width: 1200px) {
   .navbar-nav {
     display: -webkit-flex;
@@ -756,14 +781,14 @@ h2.page-header-event-type {
         -ms-transform: translateY(25%);
             transform: translateY(25%);
     font-size: larger; } }
-/* 8.2 - Papa Bear on a diet */
+/* 9.2 - Papa Bear on a diet */
 @media screen and (min-width: 992px) {
   .header-wrapper .navbar-nav > li > a {
     padding-left: 77px; }
 
   .social-links li {
     width: 25%; } }
-/* 8.3 - Uncle Bear and up */
+/* 9.3 - Uncle Bear and up */
 @media screen and (min-width: 768px) {
   .header-wrapper .navbar-nav > li > a {
     padding-left: 65px; }
@@ -775,7 +800,7 @@ h2.page-header-event-type {
     width: 50%;
     -moz-box-sizing: border-box;
     box-sizing: border-box; } }
-/* 8.4 - Uncle Bear and down */
+/* 9.4 - Uncle Bear and down */
 @media screen and (max-width: 992px) {
   #logo img,
   .topbar.search-form input {
@@ -792,7 +817,7 @@ h2.page-header-event-type {
 
   .social-links li {
     width: 50%; } }
-/* 8.5 - Mama Bear and up */
+/* 9.5 - Mama Bear and up */
 @media screen and (min-width: 680px) {
   .header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
     position: absolute;
@@ -839,7 +864,7 @@ h2.page-header-event-type {
   .navbar-collapse {
     border: none;
     box-shadow: none; } }
-/* 8.6 - Mama Bear */
+/* 9.6 - Mama Bear */
 @media (max-width: 991px) and (min-width: 680px) {
   .navbar-collapse {
     width: 100% !important; }
@@ -854,7 +879,7 @@ h2.page-header-event-type {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
-/* 8.7 - Mama and Baby Bear */
+/* 9.7 - Mama and Baby Bear */
 @media screen and (max-width: 680px) {
   .integration-footer h3,
   .integration-product {
@@ -877,7 +902,7 @@ h2.page-header-event-type {
   .copyright li,
   .copyright .itroi {
     text-align: center; } }
-/* 8.8 - Baby Bear */
+/* 9.8 - Baby Bear */
 @media screen and (max-width: 480px) {
   .social-links li {
     width: 100%; } }
