@@ -15,7 +15,7 @@
     - Is this needed? It looks like it’s not being used.
  - [Advanced Custom Fields](https://downloads.wordpress.org/plugin/advanced-custom-fields.zip) 4.3.9: no hacks and no visible issues after upgrade
  - Attach Files Widget 2.3: up-to-date; no hacks
- - [Author Avatars List](https://downloads.wordpress.org/plugin/author-avatars.zip): modified `css/widget.css` and `lib/UserList.class.php`
+ - [Author Avatars List](https://downloads.wordpress.org/plugin/author-avatars.zip) 1.8.5.0: modified `css/widget.css` and `lib/UserList.class.php`
     - Edit all “author” users:
         - Add link to **website** field
         - Add position to **biography** field
@@ -25,7 +25,46 @@
     - Ready to upgrade
  - [Categories Images](https://downloads.wordpress.org/plugin/categories-images.2.4.2.zip) 2.4.2: no hacks and no visible issues after upgrade
  - Checkmail Validation for Contact Form 7 0.2: up-to-date; no hacks
- - Contact Form 7
+    - Update adds annoying popup until you go to the [CF7 Integrations page](https://itroisolutions.com/wp-admin/admin.php?page=cf7-integrations)
+ - Contact Form 7 3.5.3: no hacks; up-to-date for current WP version
+    - Demo.png added to images/ in v3.5.3
+    - v4.0.1 requires WordPress 3.9 or higher; upgrade to [v4.0.1](https://downloads.wordpress.org/plugin/contact-form-7.4.0.1.zip) at that point
+ - [Contact Form 7 - Minlength Text Extension](https://downloads.wordpress.org/plugin/minimum-length-for-contact-form-7.1.3.4.zip) 1.3.4: no hacks
+ - [Contact Form 7 Datepicker](https://downloads.wordpress.org/plugin/contact-form-7-datepicker.zip) 2.4.5: unable to download v2.4.3; no apparent issues after upgrading
+ - [Contact Form 7 Integrations](https://downloads.wordpress.org/plugin/contact-form-7-integrations.1.3.11.zip) 1.3.11: no hacks
+    - If not used for Hubspot integration, maybe can remove this plugin
+ - [Contact Form DB](https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.16.zip) 2.8.16
+    - The following code was added on line 510 of `CF7DBPlugin.php` (commit 7cd0e6bf7cc0814e27b92ebeecb4d15d12b198df)
+    ````
+    if($_POST['newsletter']=="1")
+        {
+        $Email=$_POST['Email'];
+        $first_name=$_POST['first_name'];
+        $last_name=$_POST['last_name'];
+        
+        $r=  mysql_query("insert into wp_sml(sml_name,sml_email)values('".$first_name." ".$last_name."','".$Email."')");
+        }
+        ````
+    - Is the `wp_sml` table used? There are only 15 entries. If not, there should be no problem with upgrading to v2.8.16. If need be, I can write an addon function to replace the functionality.
+ - Custom Post Templates 1.5: no hacks; up-to-date
+ - [Fancy Gallery Lite](https://downloads.wordpress.org/plugin/fancy-gallery.zip) 1.5.2: no visible issues after upgrade
+ - Follow us on widget 1.3: icons modified; needs CSS overrides. Widget no longer in use; can delete?
+    - linkedin.png
+    - linkedin00.png
+    - linkedshare02.png
+    - twitter.png
+    - twitter1.png
+    - CSS overrides required:
+        - `.wpFUP li { display: block !important; }`
+        - `.wpFUP li:first-child { padding-top: 5px; }`
+ - [Frontier Post](https://downloads.wordpress.org/plugin/frontier-post.2.1.2.zip) 2.1.2: no hacks; no visible issues after upgrade. Not active on production site and only [one draft](http://dev.itroisolutions.com/my-posts/) created on dev site; can remove?
+ - Google Authenticator 0.47: no hacks; up-to-date. Not required, so why installed? Can remove?
+ - [Hubspot](https://downloads.wordpress.org/plugin/hubspot.zip) 1.9.4: no hacks; no visible issues after upgrade
+    - Deactivate and reactivate to get rid of error shown on all admin pages
+ - [iframe](https://downloads.wordpress.org/plugin/iframe.2.9.zip) 2.9: no hacks; no visible issues after upgrade. Apparently not used in any posts; can remove?
+ - [Image Widget](https://downloads.wordpress.org/plugin/image-widget.4.1.zip) 4.1: no hacks; no visible issues after upgrade. Only used on [this page](http://dev.itroisolutions.com/overview/); can remove after rebuilding the page responsively?
+ - Insert PHP 1.2: no hacks; up-to-date. Apparently not used; can remove?
+ - KNR Author List 2.0.4: [hacked](8a3afc06b8) to show position and change URL; needs to be built into responsive page or use Author Avatar widget
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
