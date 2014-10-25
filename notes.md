@@ -64,7 +64,15 @@
  - [iframe](https://downloads.wordpress.org/plugin/iframe.2.9.zip) 2.9: no hacks; no visible issues after upgrade. Apparently not used in any posts; can remove?
  - [Image Widget](https://downloads.wordpress.org/plugin/image-widget.4.1.zip) 4.1: no hacks; no visible issues after upgrade. Only used on [this page](http://dev.itroisolutions.com/overview/); can remove after rebuilding the page responsively?
  - Insert PHP 1.2: no hacks; up-to-date. Apparently not used; can remove?
- - KNR Author List 2.0.4: [hacked](8a3afc06b8) to show position and change URL; needs to be built into responsive page or use Author Avatar widget
+ - KNR Author List 2.0.4: hacked (commit 8a3afc06b8) to show position and change URL; needs to be built into responsive page or use Author Avatar widget
+ - [Login Lockdown](https://downloads.wordpress.org/plugin/login-lockdown.v1.6.1.zip) 1.5: hacked to keep record of logins with no username and disable the credit line; update adds same features
+    - After update, set **Show Credit Line** to false in [settings](https://itroisolutions.com/wp-admin/options-general.php?page=loginlockdown.php)
+    - On dev server, there have been 4 blocks against user id 3 (host), 98 against user id 1 (itroiadmin), and 24,936 against user id 0 (not a valid user)
+    - Maybe consider switching to [this plugin](https://wordpress.org/plugins/login-security-solution/)?
+        - Slows down repeated submissions from same IP
+        - If an account seems to be breached, immediately locks them out and forces them to reset their password.
+        - Enforces password strength
+ - Mail Subscribe List 2.1.1: remove `nice-login-register-widget/sml.php` to remove extra duplicate copy
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
