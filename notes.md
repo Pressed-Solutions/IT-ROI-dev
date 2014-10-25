@@ -22,7 +22,7 @@
     - In [widget settings](https://itroisolutions.com/wp-admin/widgets.php), turn on “Show biography”
     - Ready to upgrade
  - [AVH Extended Categories Widgets](https://downloads.wordpress.org/plugin/extended-categories-widget.3.9.3.zip) 3.9.3: update changes HTML output, requiring [CSS changes](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/c3ec8f997fcc13e57b976d2e5d4339b8751ffa6a#diff-1)
-    - Ready to upgrade
+    - Ready to upgrade, as long as [this function](https://github.com/macbookandrew/wp-author-avatars/commit/a3e9ffa1c7690c10394272482fdb1182fafeb1ab) remains pluggable in the next release(s)
  - [Categories Images](https://downloads.wordpress.org/plugin/categories-images.2.4.2.zip) 2.4.2: no hacks and no visible issues after upgrade
  - Checkmail Validation for Contact Form 7 0.2: up-to-date; no hacks
     - Update adds annoying popup until you go to the [CF7 Integrations page](https://itroisolutions.com/wp-admin/admin.php?page=cf7-integrations)
@@ -72,10 +72,20 @@
         - Slows down repeated submissions from same IP
         - If an account seems to be breached, immediately locks them out and forces them to reset their password.
         - Enforces password strength
- - Mail Subscribe List 2.1.1: remove `nice-login-register-widget/sml.php` to remove extra duplicate copy
+ - Mail Subscribe List 2.1.1: hacked; apparently not used; can remove?
+    - remove `nice-login-register-widget/sml.php` to remove extra duplicate copy listed in WP dashboard
+ - Modernizr 2.8.3: remove in favor of theme-loaded script
+ - [Most Popular Tags](https://downloads.wordpress.org/plugin/most-popular-tags.zip) 4.0: apparently no hacks; no visible issues after upgrade
+    - Not sure where or if this widget is used. Disabled for now…can remove?
+ - [Nav Menu Images](https://downloads.wordpress.org/plugin/nav-menu-images.3.2.zip) 3.2: no hacks; no visible issues after upgrade
+ - [Nice Login Widget](https://downloads.wordpress.org/plugin/nice-login-register-widget.1.3.10.zip) 1.3.10: [heavily modified](https://github.com/Pressed-Solutions/IT-ROI-nice-login-widget/commit/c7ec6e1c9dd234d3da668bf82a465522a6288c4c); needs to be gone through and move as much as possible to main `style.css`
+ - Post Comment Notification to Multiple User 1.0: [minor hack](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) to prevent email overload
+ - [Redirection](https://wordpress.org/plugins/redirection/) 2.3.6: no hacks; no visible issues after upgrade
+    - Possibly remove this plugin and manage `.htaccess` manually? 404 errors are all logged to database, causing at least some slight overhead; however, good for troubleshooting
+ - 
 
 #To do when theme conversion is finished
- - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php) and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
+ - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php), remove & disable Nav Menu Images plugin, and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
  - Update links to images directory such as [this commit](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/3bfd09dc040f4f8046081360e2771929ac1c7aaf)
  - Remove unnecessary custom field groups from Sharepoint and Integration post types
  - Go through existing functions.php to see what needs to be kept in responsive site
@@ -83,9 +93,14 @@
 #“Do It Right” Upgrades
  - Footer social links: SVG icons, actual text
  - Main menu: replace with SVG icons, fallback to PNG (Modernizr)
- - PPM main images: convert to SVG, redesign for responsiveness\
+ - PPM main images: convert to SVG, redesign for responsiveness
  - Optimization
      - Defer scripts
      - mod_pagespeed?
      - nginx proxy to apache/varnish cache?
      - Google PageSpeed widget?
+
+#Long-Term Notes
+##Plugin updates
+ - “Author Avatars List” plugin v1.8.5.0: fine to update as long as [this function](https://github.com/macbookandrew/wp-author-avatars/commit/a3e9ffa1c7690c10394272482fdb1182fafeb1ab) remains pluggable in the next release(s) (the patch was accepted into the master branch, so it should not be a problem).
+ - “Post Comment Notification to Multiple User” plugin v1.0: fine to update as long as [this](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) or a similar change is made to prevent email overload.
