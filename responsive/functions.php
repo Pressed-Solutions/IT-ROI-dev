@@ -517,6 +517,36 @@ function pagination($pages = '', $range = 2)
      }
 }
 
+// pagination - past events
+function pagination_past( $pages = '', $range = 2 ) {
+     $showitems = ( $range * 2 ) + 1;
+
+     global $paged;
+     if( empty( $paged ) ) { $paged = 1; }
+
+     if( $pages == '' ) {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if( !$pages ) {
+             $pages = 1;
+         }
+     }
+
+     if(1 != $pages) {
+         echo '<div class="pagination">';
+         for ( $i = 1; $i <= $pages; $i++ ) {
+             if ( $pages != 1 && ( ! ( $i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems )) {
+                 if ( $i == 1 ) { $pagination_hyperlink = str_replace( 'events-past/', 'events/', get_pagenum_link( $i ) ); }
+                 else { $pagination_hyperlink = str_replace( 'events/', 'events-past/', get_pagenum_link( $i ) ); }
+                 echo ( $paged == $i ) ? '<span class="current">' . $i . '</span>' : '<a href="' . $pagination_hyperlink . '" class="inactive" >' . $i . '</a>';
+             }
+         }
+
+         if ( $paged < $pages && $showitems < $pages) echo '<a href="' . get_pagenum_link( $paged + 1 ) . '">&rsaquo;</a>';
+         if ( $paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages ) echo '<a href="' . get_pagenum_link( $pages ) . '">&raquo;</a>';
+         echo '</div>';
+     }
+}
 
 /*
  * Dev site: point search engines at live site

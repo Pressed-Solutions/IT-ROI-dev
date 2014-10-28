@@ -572,10 +572,12 @@ form.search-form.topbar input {
   font-size: 18px;
   line-height: 30px; }
 
-.slug-events {
+.slug-events,
+.slug-events-past {
   border-left: none;
   border-right: none; }
-  .slug-events .page-header {
+  .slug-events,
+  .slug-events-past .page-header {
     text-align: center;
     text-transform: uppercase;
     font-family: 'MavenProBold', sans-serif;
@@ -585,18 +587,18 @@ form.search-form.topbar input {
     padding-bottom: 9px;
     border-bottom: 1px solid #FFFFFF; }
 
-.slug-events h3, .single-event h3 {
+.slug-events h3, .slug-events-past h3, .single-event h3 {
   font-size: 24px; }
-.slug-events .register-button, .single-event .register-button {
+.slug-events .register-button, .slug-events-past .register-button, .single-event .register-button {
   margin-top: 15px; }
-  .slug-events .register-button a, .single-event .register-button a {
+  .slug-events .register-button a, .slug-events-past .register-button a, .single-event .register-button a {
     font-size: 17px; }
-.slug-events .register-button a, .slug-events .register-button a:hover, .slug-events .register-button a span, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span, .single-event .register-button a, .single-event .register-button a:hover, .single-event .register-button a span, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span {
+.slug-events .register-button a, .slug-events .register-button a:hover, .slug-events .register-button a span, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .slug-events #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span, .slug-events-past .register-button a, .slug-events-past .register-button a:hover, .slug-events-past .register-button a span, .slug-events-past #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .slug-events-past #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .slug-events-past #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span, .single-event .register-button a, .single-event .register-button a:hover, .single-event .register-button a span, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5:hover, .single-event #cta_button_369848_81e8e780-094e-4aa5-a7c3-2fe53da054f5 span {
   padding: 7px 15px !important;
   text-transform: uppercase !important;
   font-weight: 600 !important;
   font-size: 12px !important; }
-.slug-events hr, .single-event hr {
+.slug-events hr, .slug-events-past hr, .single-event hr {
   margin: 20px 0;
   border: 0;
   border-top: 1px solid #eee; }

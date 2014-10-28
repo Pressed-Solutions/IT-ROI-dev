@@ -1963,7 +1963,23 @@ $uri_whitelist = array(
     '/events/',
     '/events/page/1/',
     '/events/page/2/',
-    '/events/page/3/'
+    '/events/page/3/',
+    '/events/page/4/',
+    '/events/page/5/',
+    '/events/page/6/',
+    '/events/page/7/',
+    '/events/page/8/',
+    '/events/page/9/',
+    '/events-past/',
+    '/events-past/page/1/',
+    '/events-past/page/2/',
+    '/events-past/page/3/',
+    '/events-past/page/4/',
+    '/events-past/page/5/',
+    '/events-past/page/6/',
+    '/events-past/page/7/',
+    '/events-past/page/8/',
+    '/events-past/page/9/',
 );
 
 $requested_uri = $_SERVER["REQUEST_URI"];

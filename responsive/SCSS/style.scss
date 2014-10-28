@@ -703,7 +703,8 @@ form.search-form.topbar input {
     line-height: 30px;
 }
 
-.slug-events {
+.slug-events,
+.slug-events-past {
     border-left: none;
     border-right: none;
     
@@ -720,7 +721,7 @@ form.search-form.topbar input {
     
 }
 
-.slug-events, .single-event {
+.slug-events, .slug-events-past, .single-event {
     h3 { font-size: 24px; }
     
     .register-button {

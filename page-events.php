@@ -27,36 +27,33 @@ get_header( 'responsive' ); ?>
 </div><!-- .dmbs-container -->
 
 <?php
-$loop = new WP_Query( array(
+$upcoming_loop = new WP_Query( array(
         'post_type'      => 'event',
         'posts_per_page' => 5,
         'paged'          => get_query_var( 'paged' ),
         'order'          => 'ASC',
         'orderby'        => 'meta_value',
         'meta_key'       => 'begin_date',
+        'meta_compare'   => '>=',
+        'meta_value'     => date( 'Y-m-d' ),
     ) );
 $counter = 1;
 
-if ( $loop->have_posts()) {
+if ( $upcoming_loop->have_posts()) {
     if ( ! is_paged() ) { echo '<h3 class="event-list-header">Next Event</h3>'; }
 }
 
-while ( $loop->have_posts() ) : $loop->the_post();
+while ( $upcoming_loop->have_posts() ) : $upcoming_loop->the_post();
 
     $begin_date_raw = strtotime( get_field( 'begin_date' ) );
     $end_date_raw = strtotime( get_field( 'end_date' ) );
-
-    // check whether this is past or future event; skip to next item if this is a past event
-    if ( ( empty( $end_date_raw ) AND ( date( 'Y-m-d', $begin_date_raw ) <= date( 'Y-m-d' ) ) ) OR ( ! empty( $end_date_raw ) AND ( date( 'Y-m-d', $end_date_raw ) <= date( 'Y-m-d' ) ) ) ) {
-        continue;
-    }
 
     // format date as a nice range
     $full_date = format_event_date( $begin_date_raw, $end_date_raw );
     $datetime = date( 'c', $begin_date_raw );
 
     // get custom taxonomy name and image
-    $category_array = get_the_terms( $loop->ID, 'event_type' );
+    $category_array = get_the_terms( $upcoming_loop->ID, 'event_type' );
     foreach ($category_array as $this_category) {
         $category_name = $this_category->name;
         $category_thumb = z_taxonomy_image_url( $this_category->term_id );
@@ -137,8 +134,8 @@ while ( $loop->have_posts() ) : $loop->the_post();
             $backup_page_total = $wp_query->max_num_pages;
 
             // Copy the custom query property to the $wp_query object
-            $wp_query->max_num_pages = $loop->max_num_pages;
-            if ( function_exists("pagination") ) {
+            $wp_query->max_num_pages = $upcoming_loop->max_num_pages;
+            if ( function_exists( 'pagination' ) ) {
                 pagination( $custom_query->max_num_pages );
             }
 
@@ -152,7 +149,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 </div><!-- .container.dmbs-container -->
 
 <?php
-endwhile; // end $loop for upcoming events
+endwhile; // end $upcoming_loop for upcoming events
 
 if ( ! is_paged() ) { // show past events only on first page ?>
 
@@ -160,24 +157,28 @@ if ( ! is_paged() ) { // show past events only on first page ?>
     <div class="col-md-8 col-md-offset-2 main-tt events-list past-events">
         <h3 class="event-list-header">Past Events</h3>
 
-<?php // rewind the loop to get past events
-rewind_posts();
+<?php // query to get past events
+$past_loop = new WP_Query( array(
+        'post_type'      => 'event',
+        'posts_per_page' => 5,
+        'paged'          => get_query_var( 'paged' ),
+        'order'          => 'ASC',
+        'orderby'        => 'meta_value',
+        'meta_key'       => 'begin_date',
+        'meta_compare'   => '<',
+        'meta_value'     => date( 'Y-m-d' ),
+    ) );
 
-while ( $loop->have_posts() ) : $loop->the_post();
+while ( $past_loop->have_posts() ) : $past_loop->the_post();
 
     $begin_date_raw = strtotime( get_field( 'begin_date' ) );
     $end_date_raw = strtotime( get_field( 'end_date' ) );
-
-    // check whether this is past or future event; skip to next item if this is a past event
-    if ( ( empty( $end_date_raw ) AND ( date( 'Y-m-d', $begin_date_raw ) > date( 'Y-m-d' ) ) ) OR ( ! empty( $end_date_raw ) AND ( date( 'Y-m-d', $end_date_raw ) > date( 'Y-m-d' ) ) ) ) {
-        continue;
-    }
 
     // format date as a nice range
     $full_date = format_event_date($begin_date_raw, $end_date_raw);
 
     // get custom taxonomy name and image
-    $category_array = get_the_terms( $loop->ID, 'event_type' );
+    $category_array = get_the_terms( $past_loop->ID, 'event_type' );
     foreach ($category_array as $this_category) {
         $category_name = $this_category->name;
         $category_thumb = z_taxonomy_image_url( $this_category->term_id );
@@ -201,8 +202,28 @@ while ( $loop->have_posts() ) : $loop->the_post();
                 <?php the_content(); ?>
             </div><!-- .col-md-9.evt-content -->
         </div><!-- .evt-post -->
-    <?php endwhile; // end $loop for past events ?>
+    <?php endwhile; // end $past_loop for past events ?>
 
+        <div class="pagen">
+            <div class="navigation clearfix">
+            <?php
+            // Bring $wp_query into the scope of the function
+            global $wp_query;
+
+            // Backup the original property value
+            $backup_page_total = $wp_query->max_num_pages;
+
+            // Copy the custom query property to the $wp_query object
+            $wp_query->max_num_pages = $past_loop->max_num_pages;
+            if ( function_exists( 'pagination_past' ) ) {
+                pagination_past( $custom_query->max_num_pages );
+            }
+
+            // Finally restore the $wp_query property to its original value
+            $wp_query->max_num_pages = $backup_page_total;
+            ?>
+            </div><!-- .navigation -->
+        </div><!-- .pagen -->
     </div><!-- .past-events -->
 <?php } // end is_paged check ?>
 <?php else: // if check for original page content ?>
