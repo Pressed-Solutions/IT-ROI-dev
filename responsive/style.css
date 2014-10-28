@@ -683,7 +683,7 @@ h3.event-list-header {
 .pagination {
   width: auto; }
   .pagination span, .pagination a.inactive {
-    padding: 6px 4px 5px;
+    padding: 6px 6px 5px;
     background-color: #126aa9;
     color: white;
     font-size: smaller;
