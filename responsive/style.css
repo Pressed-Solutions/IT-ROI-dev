@@ -137,6 +137,8 @@ body {
     font-size: 28px; }
   .dmbs-main h2.text-left {
     text-align: left; }
+  .dmbs-main .youtube-player {
+    margin-top: 2em; }
 
 .separate {
   margin-top: 30px; }
