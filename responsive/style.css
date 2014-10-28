@@ -79,14 +79,32 @@ Text Domain: Pressed Solutions
   .col-md-offset-0-5 {
     margin-left: 4.1666666667%; }
 
+  .col-md-offset-1-5 {
+    margin-left: 12.5%; }
+
   .col-md-offset-2-5 {
-    margin-left: 20.833333333%; } }
+    margin-left: 20.833333333%; }
+
+  .col-md-offset-3-5 {
+    margin-left: 29.166666667%; }
+
+  .col-md-offset-4-5 {
+    margin-left: 37.5%; } }
 @media (min-width: 1200px) {
   .col-lg-offset-0-5 {
     margin-left: 4.1666666667%; }
 
+  .col-lg-offset-1-5 {
+    margin-left: 12.5%; }
+
   .col-lg-offset-2-5 {
-    margin-left: 20.833333333%; } }
+    margin-left: 20.833333333%; }
+
+  .col-lg-offset-3-5 {
+    margin-left: 29.166666667%; }
+
+  .col-lg-offset-4-5 {
+    margin-left: 37.5%; } }
 /* 3.0 - General styles */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -95,9 +113,12 @@ body {
   padding-bottom: 0; }
 
 .dmbs-main {
-  padding-top: 40px;
+  margin-top: 40px;
   border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc; }
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc; }
+  .single-integration .dmbs-main {
+    border-top: none; }
   .dmbs-main h1,
   .dmbs-main h2,
   .dmbs-main h3 {
@@ -116,6 +137,8 @@ body {
     font-size: 28px; }
   .dmbs-main h2.text-left {
     text-align: left; }
+  .dmbs-main .youtube-player {
+    margin-top: 2em; }
 
 .separate {
   margin-top: 30px; }
@@ -426,7 +449,8 @@ form.search-form.topbar input {
 
 /* 6.2 - CTA buttons */
 .cta-buttons {
-  margin: 24px 0; }
+  margin-top: 24px;
+  margin-bottom: 24px; }
   .cta-buttons .cta-button {
     position: relative;
     padding: 1.5em .5em;
@@ -441,22 +465,25 @@ form.search-form.topbar input {
     font-size: 18px;
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased; }
-  .cta-buttons .background-purple {
+  .cta-buttons .cta-button {
+    -webkit-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease; }
+  .cta-buttons .cta_download_product_brief {
     background-color: #9900cc; }
-    .cta-buttons .background-purple:hover, .cta-buttons .background-purple:active {
+    .cta-buttons .cta_download_product_brief:hover, .cta-buttons .cta_download_product_brief:active {
       background-color: #7700aa; }
-  .cta-buttons .background-red {
+  .cta-buttons .cta_replay_webinar {
     background-color: #fe3b00; }
-    .cta-buttons .background-red:hover, .cta-buttons .background-red:active {
+    .cta-buttons .cta_replay_webinar:hover, .cta-buttons .cta_replay_webinar:active {
       background-color: #dc1000; }
-  .cta-buttons .background-green {
-    background-color: #47b800; }
-    .cta-buttons .background-green:hover, .cta-buttons .background-green:active {
-      background-color: #259600; }
-  .cta-buttons .background-blue {
+  .cta-buttons .cta_request_demo {
     background-color: #0098da; }
-    .cta-buttons .background-blue:hover, .cta-buttons .background-blue:active {
+    .cta-buttons .cta_request_demo:hover, .cta-buttons .cta_request_demo:active {
       background-color: #0076b8; }
+  .cta-buttons .cta_talk_now {
+    background-color: #47b800; }
+    .cta-buttons .cta_talk_now:hover, .cta-buttons .cta_talk_now:active {
+      background-color: #259600; }
   .cta-buttons .talk-now-number {
     display: block; }
 
@@ -471,6 +498,8 @@ form.search-form.topbar input {
   margin: 0 -15px 2em;
   padding: 0 1em 1em;
   background-color: #125f9f; }
+  .integration-header-image img {
+    max-width: 100%; }
 
 .single-integration .dmbs-content .integration-header-image img {
   margin: 0; }
@@ -483,8 +512,8 @@ form.search-form.topbar input {
 .single-integration h2 + h1 {
   margin-top: 0;
   margin-bottom: 1em; }
-.single-integration .dmbs-content img,
-.single-integration .dmbs-content iframe {
+.single-integration .dmbs-content img:not(.hs-cta-img),
+.single-integration .dmbs-content iframe:not(.youtube-iframe) {
   margin-top: 2em; }
 .single-integration .dmbs-content img.hs-cta-img {
   margin-top: 0; }
@@ -500,8 +529,8 @@ form.search-form.topbar input {
 .integration-products {
   padding-left: 0;
   list-style-type: none; }
-  .integration-products li:last-child {
-    padding-right: 0; }
+  @media (min-width: 680px) { .integration-products li:last-child {
+    padding-right: 0; } }
 
 /* 6.4 - Sharepoint pages */
 .sharepoint-orange {

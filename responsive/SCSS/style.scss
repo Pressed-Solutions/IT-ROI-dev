@@ -98,12 +98,18 @@ Text Domain: Pressed Solutions
 
 @media (min-width: 992px) {
     .col-md-offset-0-5 { margin-left: 4.1666666667%; }
+    .col-md-offset-1-5 { margin-left: 12.5%; }
     .col-md-offset-2-5 { margin-left: 20.833333333%; }
+    .col-md-offset-3-5 { margin-left: 29.166666667%; }
+    .col-md-offset-4-5 { margin-left: 37.5%; }
 }
 
 @media (min-width: 1200px) {
     .col-lg-offset-0-5 { margin-left: 4.1666666667%; }
+    .col-lg-offset-1-5 { margin-left: 12.5%; }
     .col-lg-offset-2-5 { margin-left: 20.833333333%; }
+    .col-lg-offset-3-5 { margin-left: 29.166666667%; }
+    .col-lg-offset-4-5 { margin-left: 37.5%; }
 }
 
 /* 3.0 - General styles */
@@ -116,9 +122,12 @@ body {
 }
 
 .dmbs-main {
-    padding-top: 40px;
+    margin-top: 40px;
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+
+    .single-integration & { border-top: none; }
 
     h1,
     h2,
@@ -143,6 +152,10 @@ body {
 
     h2.text-left {
         text-align: left;
+    }
+
+    .youtube-player {
+        margin-top: 2em;
     }
 }
 
@@ -535,7 +548,8 @@ form.search-form.topbar input {
 
 /* 6.2 - CTA buttons */
 .cta-buttons {
-    margin: 24px 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
 
     .cta-button {
         position: relative;
@@ -555,28 +569,32 @@ form.search-form.topbar input {
         -webkit-font-smoothing: antialiased;
     }
 
-    .background-purple {
+    .cta-button {
+        transition: background-color 0.3s ease;
+    }
+
+    .cta_download_product_brief {
         background-color: #9900cc;
         
         &:hover, &:active { background-color: #7700aa; }
     }
 
-    .background-red {
+    .cta_replay_webinar {
         background-color: #fe3b00;
         
         &:hover, &:active { background-color: #dc1000; }
     }
 
-    .background-green {
-        background-color: #47b800;
-        
-        &:hover, &:active { background-color: #259600; }
-    }
-
-    .background-blue {
+    .cta_request_demo {
         background-color: #0098da;
         
         &:hover, &:active { background-color: #0076b8; }
+    }
+
+    .cta_talk_now {
+        background-color: #47b800;
+        
+        &:hover, &:active { background-color: #259600; }
     }
 
     .talk-now-number {
@@ -595,6 +613,8 @@ form.search-form.topbar input {
     margin: 0 -15px 2em;
     padding: 0 1em 1em;
     background-color: #125f9f;
+
+    img { max-width: 100%; }
 }
 
 .integration-header-image img {
@@ -614,9 +634,11 @@ form.search-form.topbar input {
         margin-bottom: 1em;
     }
 
-    .dmbs-content img,
-    .dmbs-content iframe {
-        margin-top: 2em;
+    .dmbs-content {
+        img:not(.hs-cta-img),
+        iframe:not(.youtube-iframe) {
+            margin-top: 2em;
+        }
     }
     .dmbs-content img.hs-cta-img { margin-top: 0; }
 }
@@ -634,7 +656,7 @@ form.search-form.topbar input {
     padding-left: 0;
     list-style-type: none;
     
-    li:last-child { padding-right: 0; }
+    @media (min-width: ) { li:last-child { padding-right: 0; } }
 }
 
 /* 6.4 - Sharepoint pages */
