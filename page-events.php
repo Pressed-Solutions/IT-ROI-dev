@@ -17,7 +17,7 @@ get_header( 'responsive' ); ?>
     // the loop
     if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <div class="col-md-8 main-tt maincon container clearfix">
+    <div class="main-tt maincon clearfix">
         <h2 class="page-header">Events</h2>
         <?php the_content(); ?>
     </div><!-- .main-tt.maincon -->
