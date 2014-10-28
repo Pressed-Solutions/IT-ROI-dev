@@ -630,11 +630,10 @@ form.search-form.topbar input {
         margin-bottom: 1em;
     }
 
-    .dmbs-content img,
-    .dmbs-content iframe {
+    .dmbs-content img:not(.hs-cta-img),
+    .dmbs-content iframe:not(.youtube-iframe) {
         margin-top: 2em;
     }
-    .dmbs-content img.hs-cta-img { margin-top: 0; }
 }
 
 .integration-footer {
