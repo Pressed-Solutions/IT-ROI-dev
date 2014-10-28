@@ -527,8 +527,8 @@ form.search-form.topbar input {
 .integration-products {
   padding-left: 0;
   list-style-type: none; }
-  .integration-products li:last-child {
-    padding-right: 0; }
+  @media (min-width: 680px) { .integration-products li:last-child {
+    padding-right: 0; } }
 
 /* 6.4 - Sharepoint pages */
 .sharepoint-orange {

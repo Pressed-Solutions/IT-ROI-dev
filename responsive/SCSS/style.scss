@@ -650,7 +650,7 @@ form.search-form.topbar input {
     padding-left: 0;
     list-style-type: none;
     
-    li:last-child { padding-right: 0; }
+    @media (min-width: ) { li:last-child { padding-right: 0; } }
 }
 
 /* 6.4 - Sharepoint pages */
