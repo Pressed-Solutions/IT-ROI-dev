@@ -119,7 +119,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                     <div class="evt-location"><?php echo the_field( 'location'); ?></div>
                 <?php } ?>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
             </div><!-- .col-md-9.evt-content -->
         </div><!-- .evt-post -->
     <?php
@@ -199,13 +199,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
                     <div class="evt-location"><?php echo the_field( 'location'); ?></div>
                 <?php } ?>
                 <div class="register-button"><?php echo get_post_meta( get_the_ID(), 'register_now', true ); ?></div><!-- .register-button -->
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
             </div><!-- .col-md-9.evt-content -->
         </div><!-- .evt-post -->
+    <?php endwhile; // end $loop for past events ?>
 
     </div><!-- .past-events -->
-
-<?php endwhile; // end $loop for past events ?>
 <?php } // end is_paged check ?>
 <?php else: // if check for original page content ?>
 
