@@ -576,7 +576,7 @@ form.search-form.topbar input {
 .slug-events-past {
   border-left: none;
   border-right: none; }
-  .slug-events,
+  .slug-events .page-header,
   .slug-events-past .page-header {
     text-align: center;
     text-transform: uppercase;
