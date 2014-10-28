@@ -513,6 +513,8 @@ form.search-form.topbar input {
 .single-integration .dmbs-content img,
 .single-integration .dmbs-content iframe {
   margin-top: 2em; }
+.single-integration .dmbs-content img.hs-cta-img {
+  margin-top: 0; }
 
 .integration-footer {
   border-top: 9px solid #125f9f;
