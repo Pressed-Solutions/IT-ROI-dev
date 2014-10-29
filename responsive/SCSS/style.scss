@@ -656,7 +656,7 @@ form.search-form.topbar input {
     padding-left: 0;
     list-style-type: none;
     
-    @media (min-width: ) { li:last-child { padding-right: 0; } }
+    @media (min-width: 680px) { li:last-child { padding-right: 0; } }
 }
 
 /* 6.4 - Sharepoint pages */
@@ -977,13 +977,15 @@ h3.event-list-header {
         width: 83.3333333333%;
     }
 
-    .navbar-nav > li > a {
-        color: #027ac6;
-        padding: 5px 24%;
+    .navbar-nav > li {
+        > a {
+            color: #027ac6;
+            padding: 5px 24%;
+
+            &:hover { color: white; }
+        }
         
-        &:last-child a { padding-right: 0; }
-        
-        > a:hover { color: white; }
+        &:last-child > a { padding-right: 0; }
     }
 }
 
