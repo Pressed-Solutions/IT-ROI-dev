@@ -1980,6 +1980,7 @@ $uri_whitelist = array(
     '/events-past/page/7/',
     '/events-past/page/8/',
     '/events-past/page/9/',
+    '/reporting/',
 );
 
 $requested_uri = $_SERVER["REQUEST_URI"];
