@@ -24,7 +24,7 @@ get_header( 'responsive' ); ?>
         </div>
         <?php the_content(); ?>
         <div class="row integration-footer">
-            <?php include('images/integrations/powered-by-ib3.svg'); ?>
+            <?php include('images/integrations/powered-by-ib3.svg'); ?> <a href="/integration/integration-bridge/">Integration Bridge</a>
         </div>
         <?php wp_link_pages(); ?>
 
