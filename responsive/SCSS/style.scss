@@ -26,6 +26,7 @@ Text Domain: Pressed Solutions
  *     6.3 - Integrations
  *     6.4 - Sharepoint
  *     6.5 - Events
+ *     6.6 - Reporting
  * 7.0 - Footer
  * 8.0 - Media oueries
  *     8.1 - Papa Bear and up
@@ -872,6 +873,19 @@ h3.event-list-header {
 }
 
 
+/* 6.6 - Reporting */
+.integration-footer .powered-by-ib3 {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.ib3-color {
+    #i-right-half { fill: #376299; }
+    #ib, #powered-by { fill: #2D4561; }
+}
+
+
 /* 7.0 - Footer */
 .dmbs-footer {
     background-color: #2b2b2b;
@@ -1103,6 +1117,20 @@ h3.event-list-header {
         margin-top: 24px;
     }
     
+    .flexbox, .flexbox-legacy {
+        .slug-reporting .integration-header-image, { display: flex; }
+        svg.powerdata360 { align-self: flex-start; }
+        svg.powered-by-ib3 {
+            align-self: flex-end;
+            margin-left: auto;
+        }
+    }
+
+    .no-flexbox svg.powered-by-ib3 {
+        float: right;
+        margin-top: 90px;
+    }
+
     .bottom-nav .nav {
         display: flex;
         flex-direction: row;
