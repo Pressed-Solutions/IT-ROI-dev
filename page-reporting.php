@@ -18,7 +18,10 @@ get_header( 'responsive' ); ?>
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <div class="integration-header-gradient"></div>
-        <div class="integration-header-image clearfix"><img src="<?php include('images/reporting/powerdata.svg'); ?>"><?php include('images/integrations/powered-by-ib3.svg'); ?></div>
+        <div class="integration-header-image clearfix"><?php
+            include('images/reporting/powerdata.svg');
+            include('images/integrations/powered-by-ib3.svg'); ?>
+        </div>
         <?php the_content(); ?>
         <div class="row integration-footer">
             <?php include('images/integrations/powered-by-ib3.svg'); ?>
