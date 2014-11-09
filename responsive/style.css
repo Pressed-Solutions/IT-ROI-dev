@@ -128,17 +128,25 @@ body {
     font-family: 'MavenProRegular';
     font-weight: 700; }
   .dmbs-main h1 {
-    font-size: 4.7em;
-    font-weight: 100; }
+    font-size: 4.8em;
+    font-weight: bold; }
     .dmbs-main h1 + h2 {
       margin-top: 0; }
     .dmbs-main h1 + p {
       margin-top: 30px; }
+  .dmbs-main h2 + h1 {
+    margin-top: 0;
+    margin-bottom: 0; }
   .dmbs-main h2.smaller {
     font-size: 28px; }
   .dmbs-main h2.text-left {
     text-align: left; }
+  .dmbs-main img.hs-cta-img {
+    margin-top: 0; }
   .dmbs-main .youtube-player {
+    margin-top: 2em; }
+  .dmbs-main img:not(.hs-cta-img),
+  .dmbs-main iframe:not(.youtube-iframe) {
     margin-top: 2em; }
 
 .separate {
@@ -506,18 +514,6 @@ form.search-form.topbar input {
   margin: 0; }
 .slug-ppm-excel-interface .integration-header-image img {
   float: right; }
-
-.single-integration h1 {
-  font-size: 48px;
-  font-weight: bold; }
-.single-integration h2 + h1 {
-  margin-top: 0;
-  margin-bottom: 1em; }
-.single-integration .dmbs-content img:not(.hs-cta-img),
-.single-integration .dmbs-content iframe:not(.youtube-iframe) {
-  margin-top: 2em; }
-.single-integration .dmbs-content img.hs-cta-img {
-  margin-top: 0; }
 
 .integration-footer {
   border-top: 9px solid #125f9f;

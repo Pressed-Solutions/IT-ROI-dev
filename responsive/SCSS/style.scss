@@ -140,22 +140,30 @@ body {
     }
 
     h1 {
-        font-size: 4.7em;
-        font-weight: 100;
+        font-size: 4.8em;
+        font-weight: bold;
 
         + h2 { margin-top: 0; }
         + p { margin-top: 30px; }
     }
 
-    h2.smaller {
-        font-size: 28px;
+    h2 + h1 {
+        margin-top: 0;
+        margin-bottom: 0;
     }
+
+    h2.smaller { font-size: 28px; }
 
     h2.text-left {
         text-align: left;
     }
 
-    .youtube-player {
+    img.hs-cta-img { margin-top: 0; }
+
+    .youtube-player { margin-top: 2em; }
+
+    img:not(.hs-cta-img),
+    iframe:not(.youtube-iframe) {
         margin-top: 2em;
     }
 }
@@ -170,9 +178,7 @@ a.tel:hover {
     text-decoration: none;
 }
 
-.center {
-    text-align: center;
-}
+.center { text-align: center; }
 
 ul.center li {
     display: inline-block;
@@ -188,9 +194,7 @@ ul.center li {
     display: block;
 }
 
-.extra-lineheight {
-    line-height: 2;
-}
+.extra-lineheight { line-height: 2; }
 
 
 /* 4.0 - Header */
@@ -622,26 +626,6 @@ form.search-form.topbar input {
     .single-integration .dmbs-content & { margin: 0; }
 
     .slug-ppm-excel-interface & { float: right; }
-}
-
-.single-integration {
-    h1 {
-        font-size: 48px;
-        font-weight: bold;
-    }
-    
-    h2 + h1 {
-        margin-top: 0;
-        margin-bottom: 1em;
-    }
-
-    .dmbs-content {
-        img:not(.hs-cta-img),
-        iframe:not(.youtube-iframe) {
-            margin-top: 2em;
-        }
-    }
-    .dmbs-content img.hs-cta-img { margin-top: 0; }
 }
 
 .integration-footer {
