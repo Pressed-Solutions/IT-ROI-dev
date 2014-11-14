@@ -24,8 +24,10 @@ get_header( 'responsive' ); ?>
         </div>
         <?php the_content(); ?>
         <div class="row integration-footer ib3-color">
-            <a href="/integration/integration-bridge/"><?php include('images/integrations/powered-by-ib3.svg'); ?></a>
-            <a href="/integration/integration-bridge/" class="powered-by-ib3">Integration Bridge</a>
+            <div class="wrapper">
+                <a href="/integration/integration-bridge/"><?php include('images/integrations/powered-by-ib3.svg'); ?></a>
+                <a href="/integration/integration-bridge/" class="powered-by-ib3">Integration Bridge</a>
+            </div><!-- .wrapper -->
         </div>
         <?php wp_link_pages(); ?>
 

@@ -858,10 +858,13 @@ h3.event-list-header {
 
 
 /* 6.6 - Reporting */
-.integration-footer .powered-by-ib3 {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
+.integration-footer {
+    .wrapper {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .powered-by-ib3 { margin: 0 5px; }
 }
 
 .ib3-color {
@@ -878,7 +881,7 @@ h3.event-list-header {
 .it-new-content {
     font-family: 'MavenProRegular';
     color: white;
-    
+
     .itroi-info {
         padding: 0;
         padding-bottom: 30px;
@@ -905,7 +908,7 @@ h3.event-list-header {
             height: 40px;
             background-position: 0 0;
             background-repeat: no-repeat;
-            
+
             &:hover, &:active {
                 background-position: 0 -40px;
                 background-color: rgb(168, 168, 168);
@@ -938,7 +941,7 @@ h3.event-list-header {
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
-    
+
     ol { margin-top: 1em; }
 }
 
@@ -982,7 +985,7 @@ h3.event-list-header {
 
             &:hover { color: white; }
         }
-        
+
         &:last-child > a { padding-right: 0; }
     }
 }
@@ -995,13 +998,13 @@ h3.event-list-header {
     padding-bottom: 15px;
 
     .menu-footer-2-container a { color: #696969; }
-    
+
     ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
-    
+
     li { font-size: smaller; }
 
     .itroi {
@@ -1019,16 +1022,16 @@ h3.event-list-header {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .header-wrapper .navbar-nav > li > a {
         font-size: 15px;
     }
-    
+
     .integration-footer h3,
     .integration-products li {
         padding-right: 6%;
     }
-    
+
     .about {
         top: 50%;
         transform: translateY(25%);
@@ -1063,17 +1066,17 @@ h3.event-list-header {
         display: block;
         margin: 0 auto;
     }
-    
+
     form.search-form.topbar input {
         position: relative;
         right: auto;
     }
-    
+
     .search-form.col-sm-12 label {
         width: 100%;
         margin-bottom: 30px;
     }
-    
+
     .social-links li {
         width: 50%;
     }
@@ -1086,11 +1089,11 @@ h3.event-list-header {
         top: -8px;
         left: 222px;
     }
-    
+
     .integration-footer h3 {
         float: left;
     }
-    
+
     .single-integration ol.larger {
         font-size: 1.5em;
         margin-top: 1em;

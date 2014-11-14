@@ -697,10 +697,12 @@ h3.event-list-header {
     text-transform: uppercase; }
 
 /* 6.6 - Reporting */
-.integration-footer .powered-by-ib3 {
+.integration-footer .wrapper {
   display: block;
   margin: 10px auto;
   text-align: center; }
+.integration-footer .powered-by-ib3 {
+  margin: 0 5px; }
 
 .ib3-color #i-right-half {
   fill: #376299; }
