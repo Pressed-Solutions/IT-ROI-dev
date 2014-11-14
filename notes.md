@@ -81,7 +81,14 @@
  - Post Comment Notification to Multiple User 1.0: [minor hack](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) to prevent email overload
  - [Redirection](https://downloads.wordpress.org/plugin/redirection.2.3.6.zip) 2.3.6: no hacks; no visible issues after upgrade. Do not upgrade to v2.3.10—the settings page results in white screen of death.
     - Possibly remove this plugin and manage `.htaccess` manually? 404 errors are all logged to database, causing at least some slight overhead; however, good for troubleshooting
- - 
+ - [Respond.js](https://downloads.wordpress.org/plugin/respondjs.1.4.2.zip) 1.4.2: no hacks; no visible issues after upgrade
+ - [SB-RSS_feed-plus](https://downloads.wordpress.org/plugin/sb-rss-feed-plus.1.4.7.zip) 1.4.7: no hacks; no visible issues after upgrade
+ - [Search Everything](https://downloads.wordpress.org/plugin/search-everything.8.1.2.zip) 8.1.2: no hacks; no visible issues after upgrade
+ - [SF Author Url Control](https://downloads.wordpress.org/plugin/sf-author-url-control.zip) 1.1.2: no hacks; no visible issues after upgrade
+ - [ShareThis](https://downloads.wordpress.org/plugin/share-this.zip) 7.0.18: possible hack in `sharethis.php` line 232: `return $content.'<div class="share">'.st_makeEntries().'</div>';` instead of `return $content.'<p>'.st_makeEntries().'</p>';`; no visible issues after upgrade
+ - Simple HTML Slider 1.1.4: [major hacks](https://github.com/Pressed-Solutions/simple-html-slider/compare/hacks?expand=1)
+    - Move fonts and images to main theme or uploads folder and edit [post content](https://dev.itroisolutions.com/wp-admin/admin.php?page=shs_slider_options) to match
+ - [Slideshow](https://downloads.wordpress.org/plugin/slideshow-jquery-image-gallery.2.2.21.zip) 2.2.21: some changes?
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php), remove & disable Nav Menu Images plugin, and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
