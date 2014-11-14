@@ -11,18 +11,17 @@
 
 #Plugin Update Notes
  - Add Meta Tags 2.4.3: up-to-date; no hacks
- - [AddThis Social Bookmarking Widget](https://downloads.wordpress.org/plugin/addthis.4.0.zip) 4.0: no hacks and no visible issues after upgrade
-    - Is this needed? It looks like it’s not being used.
+ - [AddThis Social Bookmarking Widget](https://downloads.wordpress.org/plugin/addthis.4.0.1.zip) 4.0.1: no hacks and no visible issues after upgrade
+    - Is this needed? It looks like it’s not being used. Disabled on dev.
  - [Advanced Custom Fields](https://downloads.wordpress.org/plugin/advanced-custom-fields.zip) 4.3.9: no hacks and no visible issues after upgrade
- - Attach Files Widget 2.3: up-to-date; no hacks
- - [Author Avatars List](https://downloads.wordpress.org/plugin/author-avatars.zip) 1.8.5.0: modified `css/widget.css` and `lib/UserList.class.php`
-    - Edit all “author” users:
+ - [Attach Files Widget 2.4](https://downloads.wordpress.org/plugin/attach-files-widget.zip): no hacks; no visible issues after upgrade
+ - [Author Avatars List](https://downloads.wordpress.org/plugin/author-avatars.1.8.6.4.zip) 1.8.6.4: modified `css/widget.css` and `lib/UserList.class.php`
+    - Edit all users with role “author”:
         - Add link to **website** field
         - Add position to **biography** field
-    - In [widget settings](https://itroisolutions.com/wp-admin/widgets.php), turn on “Show biography”
-    - Ready to upgrade
- - [AVH Extended Categories Widgets](https://downloads.wordpress.org/plugin/extended-categories-widget.3.9.3.zip) 3.9.3: update changes HTML output, requiring [CSS changes](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/c3ec8f997fcc13e57b976d2e5d4339b8751ffa6a#diff-1)
+    - In [widget settings](https://itroisolutions.com/wp-admin/widgets.php) (Secondary Widget Area), turn on “Show biography”
     - Ready to upgrade, as long as [this function](https://github.com/macbookandrew/wp-author-avatars/commit/a3e9ffa1c7690c10394272482fdb1182fafeb1ab) remains pluggable in the next release(s)
+ - [AVH Extended Categories Widgets](https://downloads.wordpress.org/plugin/extended-categories-widget.3.9.3.zip) 3.9.3: update changes HTML output, requiring [CSS changes](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/c3ec8f997fcc13e57b976d2e5d4339b8751ffa6a#diff-1)
  - [Categories Images](https://downloads.wordpress.org/plugin/categories-images.2.4.2.zip) 2.4.2: no hacks and no visible issues after upgrade
  - Checkmail Validation for Contact Form 7 0.2: up-to-date; no hacks
     - Update adds annoying popup until you go to the [CF7 Integrations page](https://itroisolutions.com/wp-admin/admin.php?page=cf7-integrations)
@@ -31,9 +30,9 @@
     - v4.0.1 requires WordPress 3.9 or higher; upgrade to [v4.0.1](https://downloads.wordpress.org/plugin/contact-form-7.4.0.1.zip) at that point
  - [Contact Form 7 - Minlength Text Extension](https://downloads.wordpress.org/plugin/minimum-length-for-contact-form-7.1.3.4.zip) 1.3.4: no hacks
  - [Contact Form 7 Datepicker](https://downloads.wordpress.org/plugin/contact-form-7-datepicker.zip) 2.4.5: unable to download v2.4.3; no apparent issues after upgrading
- - [Contact Form 7 Integrations](https://downloads.wordpress.org/plugin/contact-form-7-integrations.1.3.11.zip) 1.3.11: no hacks
+ - [Contact Form 7 Integrations](https://downloads.wordpress.org/plugin/contact-form-7-integrations.1.3.12.zip) 1.3.12: no hacks
     - If not used for Hubspot integration, maybe can remove this plugin
- - [Contact Form DB](https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.16.zip) 2.8.16
+ - [Contact Form DB](https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.17.zip) 2.8.17
     - The following code was added on line 510 of `CF7DBPlugin.php` (commit 7cd0e6bf7cc0814e27b92ebeecb4d15d12b198df)
     ````
     if($_POST['newsletter']=="1")
@@ -41,13 +40,13 @@
         $Email=$_POST['Email'];
         $first_name=$_POST['first_name'];
         $last_name=$_POST['last_name'];
-        
+
         $r=  mysql_query("insert into wp_sml(sml_name,sml_email)values('".$first_name." ".$last_name."','".$Email."')");
         }
         ````
     - Is the `wp_sml` table used? There are only 15 entries. If not, there should be no problem with upgrading to v2.8.16. If need be, I can write an addon function to replace the functionality.
  - Custom Post Templates 1.5: no hacks; up-to-date
- - [Fancy Gallery Lite](https://downloads.wordpress.org/plugin/fancy-gallery.zip) 1.5.2: no visible issues after upgrade
+ - [Fancy Gallery Lite](https://downloads.wordpress.org/plugin/fancy-gallery.zip) 1.5.12: no visible issues after upgrade
  - Follow us on widget 1.3: icons modified; needs CSS overrides. Widget no longer in use; can delete?
     - linkedin.png
     - linkedin00.png
@@ -57,7 +56,7 @@
     - CSS overrides required:
         - `.wpFUP li { display: block !important; }`
         - `.wpFUP li:first-child { padding-top: 5px; }`
- - [Frontier Post](https://downloads.wordpress.org/plugin/frontier-post.2.1.2.zip) 2.1.2: no hacks; no visible issues after upgrade. Not active on production site and only [one draft](http://dev.itroisolutions.com/my-posts/) created on dev site; can remove?
+ - [Frontier Post](https://downloads.wordpress.org/plugin/frontier-post.2.5.5.zip) 2.5.5: no hacks; no visible issues after upgrade. Not active on production site and only [one draft](http://dev.itroisolutions.com/my-posts/) created on dev site; can remove?
  - Google Authenticator 0.47: no hacks; up-to-date. Not required, so why installed? Can remove?
  - [Hubspot](https://downloads.wordpress.org/plugin/hubspot.zip) 1.9.4: no hacks; no visible issues after upgrade
     - Deactivate and reactivate to get rid of error shown on all admin pages
@@ -78,9 +77,9 @@
  - [Most Popular Tags](https://downloads.wordpress.org/plugin/most-popular-tags.zip) 4.0: apparently no hacks; no visible issues after upgrade
     - Not sure where or if this widget is used. Disabled for now…can remove?
  - [Nav Menu Images](https://downloads.wordpress.org/plugin/nav-menu-images.3.2.zip) 3.2: no hacks; no visible issues after upgrade
- - [Nice Login Widget](https://downloads.wordpress.org/plugin/nice-login-register-widget.1.3.10.zip) 1.3.10: [heavily modified](https://github.com/Pressed-Solutions/IT-ROI-nice-login-widget/commit/c7ec6e1c9dd234d3da668bf82a465522a6288c4c); needs to be gone through and move as much as possible to main `style.css`
+ - [Nice Login Widget](https://downloads.wordpress.org/plugin/nice-login-register-widget.1.3.10.zip) 1.3.10: [heavily modified](https://github.com/Pressed-Solutions/IT-ROI-nice-login-widget/commit/c7ec6e1c9dd234d3da668bf82a465522a6288c4c); needs to be gone through and move as much as possible to main `style.css` with pseudo-selector content or WP hooks
  - Post Comment Notification to Multiple User 1.0: [minor hack](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) to prevent email overload
- - [Redirection](https://wordpress.org/plugins/redirection/) 2.3.6: no hacks; no visible issues after upgrade
+ - [Redirection](https://downloads.wordpress.org/plugin/redirection.2.3.6.zip) 2.3.6: no hacks; no visible issues after upgrade. Do not upgrade to v2.3.10—the settings page results in white screen of death.
     - Possibly remove this plugin and manage `.htaccess` manually? 404 errors are all logged to database, causing at least some slight overhead; however, good for troubleshooting
  - 
 
@@ -102,5 +101,4 @@
 
 #Long-Term Notes
 ##Plugin updates
- - “Author Avatars List” plugin v1.8.5.0: fine to update as long as [this function](https://github.com/macbookandrew/wp-author-avatars/commit/a3e9ffa1c7690c10394272482fdb1182fafeb1ab) remains pluggable in the next release(s) (the patch was accepted into the master branch, so it should not be a problem).
  - “Post Comment Notification to Multiple User” plugin v1.0: fine to update as long as [this](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) or a similar change is made to prevent email overload.
