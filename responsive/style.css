@@ -130,6 +130,9 @@ body {
   .dmbs-main h1 {
     font-size: 3.5em;
     font-weight: bold; }
+    @media (max-width: 480px) {
+      .dmbs-main h1 {
+        font-size: 3em; } }
     .dmbs-main h1 + h2 {
       margin-top: 0; }
     .dmbs-main h1 + p {
