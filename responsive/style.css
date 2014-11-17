@@ -697,6 +697,9 @@ h3.event-list-header {
     text-transform: uppercase; }
 
 /* 6.6 - Reporting */
+.powerdata360 {
+  max-width: 100%; }
+
 .integration-footer .wrapper {
   display: block;
   margin: 10px auto;
