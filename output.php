@@ -63,13 +63,14 @@ $site_url=get_site_url();
 $message="
 Dear ".$display_name.",
     
-Thank you for registering at IT-ROI SOLUTIONS. Please read the following informaion carefully and be sure to save this message in a safe location for future reference.
+Thank you for registering at IT-ROI SOLUTIONS. Please read the following information carefully and be sure to save this message in a safe location for future reference.
 
 Website Address: ".$site_url."
 Username: ".$user_name."
 
-Your account detail will be reviewed by the website Administartor and you will receive a notification upon account activation.
-Thank you,we appreciate your support...
+Your account details will be reviewed by the website administrator and you will receive a notification upon account activation.
+
+Thank you; we appreciate your support.
 
 IT-ROI SOLUTIONS";
 
@@ -83,10 +84,10 @@ $site_url=get_site_url();
 
 $message_admin="
 Dear Admin,
-    
+
 You have received new account registration request by the new user.
 
-Here is the other details:
+Here are their details:
 
 Username: ".$user_name."
 Display Name: ".$display_name."
