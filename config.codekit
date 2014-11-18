@@ -5532,6 +5532,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/responsive\/SCSS\/style.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/responsive\/SCSS\/style.scss",
+		"outputAbbreviatedPath": "\/responsive\/style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/responsive\/sidebar-left.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5564,6 +5580,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/responsive\/single-post.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/responsive\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/responsive\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -5999,12 +6024,28 @@
 		},
 	"\/style4.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/style4.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/style4.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style4.scss",
+		"outputAbbreviatedPath": "\/style4.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
 		},
 	"\/style5.css": {
 		"fileType": 16,
@@ -6676,7 +6717,7 @@
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
-	"sassUseLibsass": 0,
+	"sassUseLibsass": 1,
 	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",

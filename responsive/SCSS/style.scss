@@ -28,15 +28,16 @@ Text Domain: Pressed Solutions
  *     6.5 - Events
  *     6.6 - Reporting
  * 7.0 - Footer
- * 8.0 - Media oueries
- *     8.1 - Papa Bear and up
- *     8.2 - Papa Bear on a diet
- *     8.3 - Uncle Bear and up
- *     8.4 - Uncle Bear and down
- *     8.5 - Mama Bear and up
- *     8.6 - Mama Bear
- *     8.7 - Mama and Baby Bear
- *     8.8 - Baby Bear
+ * 8.0 - Widgets
+ * 9.0 - Media queries
+ *     9.1 - Papa Bear and up
+ *     9.2 - Papa Bear on a diet
+ *     9.3 - Uncle Bear and up
+ *     9.4 - Uncle Bear and down
+ *     9.5 - Mama Bear and up
+ *     9.6 - Mama Bear
+ *     9.7 - Mama and Baby Bear
+ *     9.8 - Baby Bear
  */
 
 /* 0.0 - Imports */
@@ -46,6 +47,14 @@ Text Domain: Pressed Solutions
 /* 1.0 - Variables */
 
 /* 2.0 - General layout */
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
 
 @media (min-width: 1200px) {
     .container {
@@ -1012,8 +1021,31 @@ h3.event-list-header {
     }
 }
 
-/* 8.0 - Media queries */
-/* 8.1 - Papa Bear and up */
+/* 8.0 - Widgets */
+.widget_author_avatars {
+    .user + .user { border-top: 1px solid #dfdbce; }
+
+    .author-list .with-biography {
+        .name {
+            font-size: 15px;
+            strong { font-weight: normal; }
+        }
+
+        .post-count {
+            float: right;
+            color: #666;
+        }
+
+        .biography {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+/* 9.0 - Media queries */
+/* 9.1 - Papa Bear and up */
 @media screen and (min-width: 1200px) {
     .navbar-nav {
         display: flex;
@@ -1036,14 +1068,14 @@ h3.event-list-header {
     }
 }
 
-/* 8.2 - Papa Bear on a diet */
+/* 9.2 - Papa Bear on a diet */
 @media screen and (min-width: 992px) {
     .social-links li {
         width: 25%;
     }
 }
 
-/* 8.3 - Uncle Bear and up */
+/* 9.3 - Uncle Bear and up */
 @media screen and (min-width: 768px) {
     .itroi-info .left,
     .itroi-info .right {
@@ -1055,7 +1087,7 @@ h3.event-list-header {
     }
 }
 
-/* 8.4 - Uncle Bear and down */
+/* 9.4 - Uncle Bear and down */
 @media screen and (max-width: 992px) {
     #logo,
     #logo img,
@@ -1079,7 +1111,7 @@ h3.event-list-header {
     }
 }
 
-/* 8.5 - Mama Bear and up */
+/* 9.5 - Mama Bear and up */
 @media screen and (min-width: 680px) {
     .header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
         position: absolute;
@@ -1146,7 +1178,7 @@ h3.event-list-header {
     }
 }
 
-/* 8.6 - Mama Bear */
+/* 9.6 - Mama Bear */
 @media (max-width: 991px) and (min-width: 680px) {
     .navbar-collapse {
         width: 100% !important;
@@ -1159,7 +1191,7 @@ h3.event-list-header {
     }
 }
 
-/* 8.7 - Mama and Baby Bear */
+/* 9.7 - Mama and Baby Bear */
 @media screen and (max-width: 680px) {
     .integration-footer h3,
     .integration-product {
@@ -1190,7 +1222,7 @@ h3.event-list-header {
     }
 }
 
-/* 8.8 - Baby Bear */
+/* 9.8 - Baby Bear */
 @media screen and (max-width: 480px) {
     .social-links li {
         width: 100%;

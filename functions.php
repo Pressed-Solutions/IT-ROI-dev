@@ -1988,3 +1988,15 @@ $requested_uri = $_SERVER["REQUEST_URI"];
 if ( in_array( $requested_uri, $uri_whitelist ) || is_admin() ) {
     require_once('responsive/functions.php');
 }
+
+// modify Author Avatar plugin output
+// NOTE: move to responsive functions.php
+function modify_avatar_list( $postcount ) {
+    // modify post count display
+    $postcount = str_replace( '(', '', $postcount );
+    $postcount = str_replace( ')', '', $postcount );
+    $output = sprintf( '<span class="post-count">%s posts</span>', $postcount );
+
+    return $output;
+}
+add_filter( 'aa_post_count', 'modify_avatar_list' );
