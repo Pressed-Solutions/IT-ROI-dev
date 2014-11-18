@@ -5,5 +5,4 @@
 .todo
 .DS_Store
 *.scssc
-.sass-cache/
-
+.sass-cache/*
