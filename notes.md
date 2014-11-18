@@ -25,9 +25,8 @@
  - [Categories Images](https://downloads.wordpress.org/plugin/categories-images.2.4.2.zip) 2.4.2: no hacks and no visible issues after upgrade
  - Checkmail Validation for Contact Form 7 0.2: up-to-date; no hacks
     - Update adds annoying popup until you go to the [CF7 Integrations page](https://itroisolutions.com/wp-admin/admin.php?page=cf7-integrations)
- - Contact Form 7 3.5.3: no hacks; up-to-date for current WP version
+ - [Contact Form 7](https://downloads.wordpress.org/plugin/contact-form-7.4.0.1.zip) 4.0.1: no hacks; no visible issues after upgrade
     - Demo.png added to images/ in v3.5.3
-    - v4.0.1 requires WordPress 3.9 or higher; upgrade to [v4.0.1](https://downloads.wordpress.org/plugin/contact-form-7.4.0.1.zip) at that point
  - [Contact Form 7 - Minlength Text Extension](https://downloads.wordpress.org/plugin/minimum-length-for-contact-form-7.1.3.4.zip) 1.3.4: no hacks
  - [Contact Form 7 Datepicker](https://downloads.wordpress.org/plugin/contact-form-7-datepicker.zip) 2.4.5: unable to download v2.4.3; no apparent issues after upgrading
  - [Contact Form 7 Integrations](https://downloads.wordpress.org/plugin/contact-form-7-integrations.1.3.12.zip) 1.3.12: no hacks
@@ -79,7 +78,7 @@
  - [Nav Menu Images](https://downloads.wordpress.org/plugin/nav-menu-images.3.2.zip) 3.2: no hacks; no visible issues after upgrade
  - [Nice Login Widget](https://downloads.wordpress.org/plugin/nice-login-register-widget.1.3.10.zip) 1.3.10: [heavily modified](https://github.com/Pressed-Solutions/IT-ROI-nice-login-widget/commit/c7ec6e1c9dd234d3da668bf82a465522a6288c4c); needs to be gone through and move as much as possible to main `style.css` with pseudo-selector content or WP hooks
  - Post Comment Notification to Multiple User 1.0: [minor hack](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) to prevent email overload
- - [Redirection](https://downloads.wordpress.org/plugin/redirection.2.3.6.zip) 2.3.6: no hacks; no visible issues after upgrade. Do not upgrade to v2.3.10—the settings page results in white screen of death.
+ - [Redirection](https://downloads.wordpress.org/plugin/redirection.2.3.10.zip) 2.3.10: no hacks; no visible issues after upgrade; upgrade to WP 4.0 first.
     - Possibly remove this plugin and manage `.htaccess` manually? 404 errors are all logged to database, causing at least some slight overhead; however, good for troubleshooting
  - [Respond.js](https://downloads.wordpress.org/plugin/respondjs.1.4.2.zip) 1.4.2: no hacks; no visible issues after upgrade
  - [SB-RSS_feed-plus](https://downloads.wordpress.org/plugin/sb-rss-feed-plus.1.4.7.zip) 1.4.7: no hacks; no visible issues after upgrade
@@ -96,7 +95,7 @@
  - WordPress Gallery Plugin: deactivated, so deleted from dev site
  - WordPress HTTPS: no hacks; no visible issues after upgrade
  - [WordPress Zero Spam](https://downloads.wordpress.org/plugin/zero-spam.1.5.2.zip) 1.5.2: no hacks; no visible visible issues after update
- - WP-reCAPTCHA 3.2: no hacks
+ - [WP-reCAPTCHA](https://downloads.wordpress.org/plugin/wp-recaptcha.4.0.zip) 4.0: no hacks; may have to re-enter [API keys](https://itroisolutions.com/wp-admin/options-general.php?page=wp-recaptcha/recaptcha.php)
  - [WP Google Analytics](https://downloads.wordpress.org/plugin/wp-google-analytics.1.4.1.zip) 1.4.1: no hacks; no visible issues after update
  - [WP Retina 2X](https://downloads.wordpress.org/plugin/wp-retina-2x.latest-stable.zip) 2.2.0: no hacks; no issues after upgrade
  - [WP Sitemap Page](https://downloads.wordpress.org/plugin/wp-sitemap-page.zip) 1.3.0: needs following changes after upgrade:
@@ -110,7 +109,7 @@
 
 #WordPress Update Notes
  - `wp-admin/user-edit.php` had code added; changes above under **Author Avatar List** should accomplish the same thing
- - `wp-includes/default-widgets` had code adding the years to the archives widget; may or may not be necessary. See [this post](http://www.wpbeginner.com/wp-themes/how-to-customize-the-display-of-wordpress-archives-in-your-sidebar/)for the basic idea
+ - `wp-includes/default-widgets` had code adding the years to the archives widget; may or may not be necessary. See [this post](http://www.wpbeginner.com/wp-themes/how-to-customize-the-display-of-wordpress-archives-in-your-sidebar/) for the basic idea
  - `wp-includes/general-template.php` has modified the menubar search form
  - `wp-includes/link-template.php` has modified the next/previous links to “Next” and “Prev” instead of “Next Page” and “Previous Page”—could psosibly be accomplished with filters
 
