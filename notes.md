@@ -103,7 +103,7 @@
  - `wp-admin/user-edit.php` had code added; changes above under **Author Avatar List** should accomplish the same thing
  - `wp-includes/default-widgets` had code adding the years to the archives widget; may or may not be necessary. See [this post](http://www.wpbeginner.com/wp-themes/how-to-customize-the-display-of-wordpress-archives-in-your-sidebar/) for the basic idea
  - `wp-includes/general-template.php` has modified the menubar search form
- - `wp-includes/link-template.php` has modified the next/previous links to “Next” and “Prev” instead of “Next Page” and “Previous Page”—could psosibly be accomplished with filters
+ - `wp-includes/link-template.php` has modified the next/previous links to “Next” and “Prev” instead of “Next Page” and “Previous Page”—could possibly be accomplished with filters
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php), remove & disable Nav Menu Images plugin, and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
