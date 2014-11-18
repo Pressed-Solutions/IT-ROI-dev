@@ -46,7 +46,7 @@
         ````
     - Is the `wp_sml` table used? There are only 15 entries. If not, there should be no problem with upgrading to v2.8.16. If need be, I can write an addon function to replace the functionality.
  - Custom Post Templates 1.5: no hacks; up-to-date
- - [Fancy Gallery Lite](https://downloads.wordpress.org/plugin/fancy-gallery.zip) 1.5.12: no visible issues after upgrade
+ - [Fancy Gallery Lite](https://downloads.wordpress.org/plugin/fancy-gallery.zip) 1.5.13: no visible issues after upgrade
  - Follow us on widget 1.3: icons modified; needs CSS overrides. Widget no longer in use; can delete?
     - linkedin.png
     - linkedin00.png
@@ -56,7 +56,7 @@
     - CSS overrides required:
         - `.wpFUP li { display: block !important; }`
         - `.wpFUP li:first-child { padding-top: 5px; }`
- - [Frontier Post](https://downloads.wordpress.org/plugin/frontier-post.2.5.5.zip) 2.5.5: no hacks; no visible issues after upgrade. Not active on production site and only [one draft](http://dev.itroisolutions.com/my-posts/) created on dev site; can remove?
+ - [Frontier Post](https://downloads.wordpress.org/plugin/frontier-post.2.6.1.zip) 2.6.1: no hacks; no visible issues after upgrade. Not active on production site and only [one draft](http://dev.itroisolutions.com/my-posts/) created on dev site; can remove?
  - Google Authenticator 0.47: no hacks; up-to-date. Not required, so why installed? Can remove?
  - [Hubspot](https://downloads.wordpress.org/plugin/hubspot.zip) 1.9.4: no hacks; no visible issues after upgrade
     - Deactivate and reactivate to get rid of error shown on all admin pages
@@ -88,13 +88,31 @@
  - [ShareThis](https://downloads.wordpress.org/plugin/share-this.zip) 7.0.18: possible hack in `sharethis.php` line 232: `return $content.'<div class="share">'.st_makeEntries().'</div>';` instead of `return $content.'<p>'.st_makeEntries().'</p>';`; no visible issues after upgrade
  - Simple HTML Slider 1.1.4: [major hacks](https://github.com/Pressed-Solutions/simple-html-slider/compare/hacks?expand=1)
     - Move fonts and images to main theme or uploads folder and edit [post content](https://dev.itroisolutions.com/wp-admin/admin.php?page=shs_slider_options) to match
- - [Slideshow](https://downloads.wordpress.org/plugin/slideshow-jquery-image-gallery.2.2.21.zip) 2.2.21: some changes?
+ - [Slideshow](https://downloads.wordpress.org/plugin/slideshow-jquery-image-gallery.2.2.21.zip) 2.2.21: some changes? apparently not used, so disabled on dev; can delete?
+ - [Special Recent Posts FREE edition](https://downloads.wordpress.org/plugin/special-recent-posts.2.0.4.zip) 2.0.4: no hacks; apparently not used, so disabled on dev; can delete?
+ - SSL for Logged In Users: disabled; can delete
+ - [TinyMCE Advanced](https://downloads.wordpress.org/plugin/tinymce-advanced.3.5.9.zip) 3.5.9: no hacks; unable to upgrade to [latest 4.5.1](https://downloads.wordpress.org/plugin/tinymce-advanced.4.1.1.zip) until after upgrading to WordPress 4. What does this add that you need? Can delete?
+ - [WordFence](https://downloads.wordpress.org/plugin/wordfence.5.3.2.zip) 5.3.2: no hacks; no visible issues after upgrade
+ - WordPress Gallery Plugin: deactivated, so deleted from dev site
+ - WordPress HTTPS: no hacks; no visible issues after upgrade
+ - [WordPress Zero Spam](https://downloads.wordpress.org/plugin/zero-spam.1.5.2.zip) 1.5.2: no hacks (installed by me); no visible issues after update
+ - WP-reCAPTCHA 3.2: no hacks
+ - [WP Google Analytics](https://downloads.wordpress.org/plugin/wp-google-analytics.1.4.1.zip) 1.4.1: no hacks; no visible issues after update
+ - [WP Retina 2X](https://downloads.wordpress.org/plugin/wp-retina-2x.latest-stable.zip) 2.2.0: no hacks; no issues after upgrade
+ - [WP Sitemap Page](https://downloads.wordpress.org/plugin/wp-sitemap-page.zip) 1.3.0: needs following changes:
+    - check [settings](https://itroisolutions.com/wp-admin/options-general.php?page=wp_sitemap_page&tab=main) against [dev site settings](https://dev.itroisolutions.com/wp-admin/options-general.php?page=wp_sitemap_page&tab=main)
+    - update [page content](https://itroisolutions.com/wp-admin/post.php?post=106&action=edit) to match dev site [page content](https://dev.itroisolutions.com/wp-admin/post.php?post=106&action=edit)
+ - WP Smush.it 1.6.5.4.: no hacks; up-to-date
+ - WP Super Cache: not in use; deleted from dev; can delete
+    - delete lines 18–19 from `wp-config.php`
+ - [WP User Avatar](https://downloads.wordpress.org/plugin/wp-user-avatar.1.9.13.zip) 1.9.13: no hacks; 
+ - WP User Frontend: disabled on production; can delete?
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php), remove & disable Nav Menu Images plugin, and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
  - Update links to images directory such as [this commit](https://github.com/Pressed-Solutions/IT-ROI-dev/commit/3bfd09dc040f4f8046081360e2771929ac1c7aaf)
  - Remove unnecessary custom field groups from Sharepoint and Integration post types
- - Go through existing functions.php to see what needs to be kept in responsive site
+ - Go through existing `functions.php` to see what needs to be kept in responsive site
 
 #“Do It Right” Upgrades
  - Footer social links: SVG icons, actual text
