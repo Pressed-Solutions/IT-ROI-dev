@@ -57,12 +57,12 @@
         - `.wpFUP li { display: block !important; }`
         - `.wpFUP li:first-child { padding-top: 5px; }`
  - [Frontier Post](https://downloads.wordpress.org/plugin/frontier-post.2.6.1.zip) 2.6.1: no hacks; no visible issues after upgrade. Not active on production site and only [one draft](http://dev.itroisolutions.com/my-posts/) created on dev site; can remove?
- - Google Authenticator 0.47: no hacks; up-to-date. Not required, so why installed? Can remove?
+ - Google Authenticator 0.47: no hacks; up-to-date. Not required to log in, so why installed? Can remove?
  - [Hubspot](https://downloads.wordpress.org/plugin/hubspot.zip) 1.9.4: no hacks; no visible issues after upgrade
     - Deactivate and reactivate to get rid of error shown on all admin pages
- - [iframe](https://downloads.wordpress.org/plugin/iframe.2.9.zip) 2.9: no hacks; no visible issues after upgrade. Apparently not used in any posts; can remove?
+ - [iframe](https://downloads.wordpress.org/plugin/iframe.2.9.zip) 2.9: no hacks; no visible issues after upgrade. Apparently not used in any posts, so disabled on dev; can remove?
  - [Image Widget](https://downloads.wordpress.org/plugin/image-widget.4.1.zip) 4.1: no hacks; no visible issues after upgrade. Only used on [this page](http://dev.itroisolutions.com/overview/); can remove after rebuilding the page responsively?
- - Insert PHP 1.2: no hacks; up-to-date. Apparently not used; can remove?
+ - Insert PHP 1.2: no hacks; up-to-date. Apparently not used, so disabled on dev; can remove?
  - KNR Author List 2.0.4: hacked (commit 8a3afc06b8) to show position and change URL; needs to be built into responsive page or use Author Avatar widget
  - [Login Lockdown](https://downloads.wordpress.org/plugin/login-lockdown.v1.6.1.zip) 1.5: hacked to keep record of logins with no username and disable the credit line; update adds same features
     - After update, set **Show Credit Line** to false in [settings](https://itroisolutions.com/wp-admin/options-general.php?page=loginlockdown.php)
@@ -71,11 +71,11 @@
         - Slows down repeated submissions from same IP
         - If an account seems to be breached, immediately locks them out and forces them to reset their password.
         - Enforces password strength
- - Mail Subscribe List 2.1.1: hacked; apparently not used; can remove?
+ - Mail Subscribe List 2.1.1: hacked; apparently not used, so disabled on dev; can remove?
     - remove `nice-login-register-widget/sml.php` to remove extra duplicate copy listed in WP dashboard
  - Modernizr 2.8.3: remove in favor of theme-loaded script
  - [Most Popular Tags](https://downloads.wordpress.org/plugin/most-popular-tags.zip) 4.0: apparently no hacks; no visible issues after upgrade
-    - Not sure where or if this widget is used. Disabled for now…can remove?
+    - Not sure where or if this widget is used, so disabled on dev; can remove?
  - [Nav Menu Images](https://downloads.wordpress.org/plugin/nav-menu-images.3.2.zip) 3.2: no hacks; no visible issues after upgrade
  - [Nice Login Widget](https://downloads.wordpress.org/plugin/nice-login-register-widget.1.3.10.zip) 1.3.10: [heavily modified](https://github.com/Pressed-Solutions/IT-ROI-nice-login-widget/commit/c7ec6e1c9dd234d3da668bf82a465522a6288c4c); needs to be gone through and move as much as possible to main `style.css` with pseudo-selector content or WP hooks
  - Post Comment Notification to Multiple User 1.0: [minor hack](https://github.com/Pressed-Solutions/post-comment-notification-to-multiple-user/commit/cb63c8de1af0a01077796615d0618db790bdf0b1) to prevent email overload
@@ -95,18 +95,31 @@
  - [WordFence](https://downloads.wordpress.org/plugin/wordfence.5.3.2.zip) 5.3.2: no hacks; no visible issues after upgrade
  - WordPress Gallery Plugin: deactivated, so deleted from dev site
  - WordPress HTTPS: no hacks; no visible issues after upgrade
- - [WordPress Zero Spam](https://downloads.wordpress.org/plugin/zero-spam.1.5.2.zip) 1.5.2: no hacks (installed by me); no visible issues after update
+ - [WordPress Zero Spam](https://downloads.wordpress.org/plugin/zero-spam.1.5.2.zip) 1.5.2: no hacks; no visible visible issues after update
  - WP-reCAPTCHA 3.2: no hacks
  - [WP Google Analytics](https://downloads.wordpress.org/plugin/wp-google-analytics.1.4.1.zip) 1.4.1: no hacks; no visible issues after update
  - [WP Retina 2X](https://downloads.wordpress.org/plugin/wp-retina-2x.latest-stable.zip) 2.2.0: no hacks; no issues after upgrade
- - [WP Sitemap Page](https://downloads.wordpress.org/plugin/wp-sitemap-page.zip) 1.3.0: needs following changes:
+ - [WP Sitemap Page](https://downloads.wordpress.org/plugin/wp-sitemap-page.zip) 1.3.0: needs following changes after upgrade:
     - check [settings](https://itroisolutions.com/wp-admin/options-general.php?page=wp_sitemap_page&tab=main) against [dev site settings](https://dev.itroisolutions.com/wp-admin/options-general.php?page=wp_sitemap_page&tab=main)
     - update [page content](https://itroisolutions.com/wp-admin/post.php?post=106&action=edit) to match dev site [page content](https://dev.itroisolutions.com/wp-admin/post.php?post=106&action=edit)
  - WP Smush.it 1.6.5.4.: no hacks; up-to-date
  - WP Super Cache: not in use; deleted from dev; can delete
     - delete lines 18–19 from `wp-config.php`
- - [WP User Avatar](https://downloads.wordpress.org/plugin/wp-user-avatar.1.9.13.zip) 1.9.13: no hacks; 
+ - [WP User Avatar](https://downloads.wordpress.org/plugin/wp-user-avatar.1.9.13.zip) 1.9.13: no hacks; no visible issues after upgrade
  - WP User Frontend: disabled on production; can delete?
+
+#WordPress Update Notes
+ - `wp-admin/user-edit.php` has had this code added to it:
+     ```
+      <tr class="form-field">
+		<th scope="row"><label for="url"><?php _e('BIO') ?></label></th>
+		<td><input name="boi" type="text" id="url" class="code" value="<?php echo esc_attr($profileuser->boi) ?>" /></td>
+	</tr>
+         <tr class="form-field">
+		<th scope="row"><label for="url"><?php _e('Position') ?></label></th>
+		<td><input name="Position" type="text" id="url" class="code" value="<?php echo esc_attr($profileuser->Position) ?>" /></td>
+	</tr>
+    ```
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php), remove & disable Nav Menu Images plugin, and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
