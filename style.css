@@ -41,3 +41,8 @@ tr.selected td{background:#ffc;}td.checkbox,th.checkbox{text-align:center;}.prog
     margin-top: 28px;
     padding: 10px;
 }
+
+.widget_archive li {
+    font-weight: bold;
+    font-size: 15px;
+}
