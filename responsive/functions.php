@@ -356,14 +356,10 @@ if ( ! isset( $content_width ) ) $content_width = 800;
 
 
 
-////////////////////////////////////////////////////////////////////
 
-// Add Homepage Slider Scripts
-
-////////////////////////////////////////////////////////////////////
-
-// filter the Gravity Forms button type
-
+/*
+ * Filter the Gravity Forms button type
+ */
 add_filter("gform_submit_button", "form_submit_button", 10, 2);
 
 function form_submit_button($button, $form){
@@ -372,7 +368,9 @@ function form_submit_button($button, $form){
 
 }
 
-// add title back to menu images for responsive pages
+/*
+ * Add title back to menu images for responsive pages
+ */
 function md_nmi_custom_content( $content, $item_id, $original_content ) {
   $content = $content . '<span class="page-title">' . $original_content . '</span>';
 
@@ -381,7 +379,9 @@ function md_nmi_custom_content( $content, $item_id, $original_content ) {
 add_filter( 'nmi_menu_item_content', 'md_nmi_custom_content', 10, 3 );
 
 
-// add shortcode to handle CTA buttons
+/*
+ * Add shortcode to handle CTA buttons
+ */
 function display_cta_buttons( $atts ) {
     $cta_string = '<section class="cta-buttons col-md-12">';
     $cta_string .= '<div class="col-md-3"><div class="cta-button background-purple">' . get_post_meta( get_the_ID(), 'cta_download_the_product_brief', true ) . '</div></div>';
@@ -464,42 +464,45 @@ function register_event_type() {
 /*
  * Pagination
  */
+function pagination($pages = '', $range = 2) {
+    $showitems = ($range * 2) + 1;
 
-function pagination($pages = '', $range = 2)
-{
-     $showitems = ($range * 2)+1;
+    global $paged;
+    if ( empty( $paged ) ) {
+        $paged = 1;
+    }
 
-     global $paged;
-     if(empty($paged)) $paged = 1;
+    if ( $pages == '' ) {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if( ! $pages ) {
+            $pages = 1;
+        }
+    }
 
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }
+    if ( 1 != $pages ) {
+        echo "<div class='pagination'>";
+        if ( ( $paged > 2 ) && ( $paged > $range + 1 ) && ( $showitems < $pages ) ) {
+            echo "<a href='" . get_pagenum_link( 1 ) . "'>&laquo;</a>";
+        }
+        if ( ( $paged > 1 ) && ( $showitems < $pages ) ) {
+            echo "<a href='" . get_pagenum_link( $paged - 1 ) . "'>&lsaquo;</a>";
+        }
 
-     if(1 != $pages)
-     {
-         echo "<div class='pagination'>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+        for ($i=1; $i <= $pages; $i++) {
+            if ( ( 1 != $pages ) && ( ! ( ( $i >= $paged + $range + 1 ) || ( $i <= $paged - $range - 1 ) ) || ( $pages <= $showitems ) ) ) {
+                echo ( $paged == $i ) ? "<span class='current'>" . $i . "</span>" : "<a href='" . get_pagenum_link( $i ) . "' class='inactive' >" . $i . "</a>";
+            }
+        }
 
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-             }
-         }
-
-         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-         echo "</div>\n";
-     }
+        if ( ( $paged < $pages ) && ( $showitems < $pages ) ) {
+            echo "<a href='" . get_pagenum_link( $paged + 1 ) . "'>&rsaquo;</a>";
+        }
+        if ( ( $paged < $pages - 1 ) && ( $paged + $range - 1 < $pages ) && ( $showitems < $pages ) ) {
+            echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+        }
+        echo "</div>\n";
+    }
 }
 
 
@@ -516,8 +519,10 @@ if ( strpos( get_site_url(), $subdomain . '.' ) !== false ) {
     add_action( 'wp_head', 'my_rel_canonical' );
 }
 
-// rebuild canonical link
-// slightly modified from the original rel_canonical function in /wp-includes/link-template.php
+/*
+ * Rebuild canonical link
+ * Slightly modified from the original rel_canonical function in /wp-includes/link-template.php
+ */
 function my_rel_canonical() {
     global $subdomain;
 
@@ -545,6 +550,9 @@ function my_rel_canonical() {
     }
 }
 
+/*
+ * Format dates for events
+ */
 function format_event_date( $begin_date_raw, $end_date_raw ) {
     /*
      * Parameters:
