@@ -43,7 +43,7 @@
 
         $r=  mysql_query("insert into wp_sml(sml_name,sml_email)values('".$first_name." ".$last_name."','".$Email."')");
         }
-        ````
+    ````
     - Is the `wp_sml` table used? There are only 15 entries. If not, there should be no problem with upgrading to v2.8.16. If need be, I can write an addon function to replace the functionality.
  - Custom Post Templates 1.5: no hacks; up-to-date
  - [Fancy Gallery Lite](https://downloads.wordpress.org/plugin/fancy-gallery.zip) 1.5.13: no visible issues after upgrade
@@ -109,17 +109,10 @@
  - WP User Frontend: disabled on production; can delete?
 
 #WordPress Update Notes
- - `wp-admin/user-edit.php` has had this code added to it:
-     ```
-      <tr class="form-field">
-		<th scope="row"><label for="url"><?php _e('BIO') ?></label></th>
-		<td><input name="boi" type="text" id="url" class="code" value="<?php echo esc_attr($profileuser->boi) ?>" /></td>
-	</tr>
-         <tr class="form-field">
-		<th scope="row"><label for="url"><?php _e('Position') ?></label></th>
-		<td><input name="Position" type="text" id="url" class="code" value="<?php echo esc_attr($profileuser->Position) ?>" /></td>
-	</tr>
-    ```
+ - `wp-admin/user-edit.php` had code added; changes above under **Author Avatar List** should accomplish the same thing
+ - `wp-includes/default-widgets` had code adding the years to the archives widget; may or may not be necessary. See [this post](http://www.wpbeginner.com/wp-themes/how-to-customize-the-display-of-wordpress-archives-in-your-sidebar/)for the basic idea
+ - `wp-includes/general-template.php` has modified the menubar search form
+ - `wp-includes/link-template.php` has modified the next/previous links to “Next” and “Prev” instead of “Next Page” and “Previous Page”—could psosibly be accomplished with filters
 
 #To do when theme conversion is finished
  - Remove images from [menu](https://itroisolutions.com/wp-admin/nav-menus.php), remove & disable Nav Menu Images plugin, and remove [these changes](https://github.com/macbookandrew/IT-ROI-dev/commit/944cef2) from `functions.php`
