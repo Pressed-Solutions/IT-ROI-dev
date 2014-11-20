@@ -679,13 +679,13 @@ form.search-form.topbar input {
         margin-bottom: 3em;
 
         &:hover { background-position: 0 -91px; }
-
-        .ideaboss & { background-image: url(../images/ppm-rollovers/ppm-ideaboss.png); }
-        .docboss & { background-image: url(../images/ppm-rollovers/ppm-docboss.png); }
-        .taskboss & { background-image: url(../images/ppm-rollovers/ppm-taskboss.png); }
-        .timesheetboss & { background-image: url(../images/ppm-rollovers/ppm-timesheetboss.png); }
     }
+    .ideaboss .rollover { background-image: url(../images/ppm-rollovers/ppm-ideaboss.png); }
+    .docboss .rollover { background-image: url(../images/ppm-rollovers/ppm-docboss.png); }
+    .taskboss .rollover { background-image: url(../images/ppm-rollovers/ppm-taskboss.png); }
+    .timesheetboss .rollover { background-image: url(../images/ppm-rollovers/ppm-timesheetboss.png); }
 }
+
 
 /* 6.5 - Events */
 .dmbs-main.event-page {
