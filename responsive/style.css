@@ -306,7 +306,7 @@ ul.center li {
 .header-wrapper .caret {
   display: none; }
 .header-wrapper .dropdown ul {
-  min-width: 225px; }
+  min-width: 275px; }
 .header-wrapper li.dropdown:hover ul {
   display: block; }
 
@@ -415,12 +415,12 @@ ul.center li {
   display: block; }
 
 .header-wrapper .dropdown-menu .dropdown::after {
-  content: "\00a0\bb";
+  content: "\25b8";
   position: absolute;
   top: 7px;
   right: 10px;
   font-size: 18px;
-  color: white; }
+  color: black; }
 
 form.search-form.topbar input {
   background: #cccccc;
@@ -907,7 +907,7 @@ h3.event-list-header {
   .header-wrapper .dropdown-menu li.dropdown > .dropdown-menu {
     position: absolute;
     top: -8px;
-    left: 222px; }
+    left: 272px; }
 
   .integration-footer h3 {
     float: left; }
