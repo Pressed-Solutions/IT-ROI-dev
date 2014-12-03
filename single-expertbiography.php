@@ -21,75 +21,7 @@ get_header();
    
   
   <div class="pane-content">
-    <div class="view view-latest-articles view-id-latest_articles view-display-id-block_2 view-dom-id-2ce348f08e1407ac8b441212711a46a3">
-        
-  
-  
-      <div class="">
-      
-<div class="skin-default">
-  
-  <div id="flexslider_views_slideshow_main_latest_articles-block_2" class="flexslider_views_slideshow_main views_slideshow_main"><div style="">
-  <div class="careerinternalslider" style="">
-      <div class="ds-1col node node-article node-promoted view-mode-slide  clearfix">
-
-  
-  <div class="field field-name-field-image-homepage-story field-type-image field-label-hidden">
-    <div class="field-vitems">
-        <div class="career">
-        <img src="<?php bloginfo("stylesheet_directory");?>/images/careerhead.png" class="career"/>
-        </div>
-        <div class="career_title">
-          <?php //dynamic_sidebar('integration_bridge'); ?>
-         <h10><?php the_title();?></h10>
-                 </div>
-        <div class="career_title"> <?php 
-   $custom = get_post_custom($post->ID);?>
-    <?php
-    $metatitle = $custom ["metatitle"][0];
-    echo "<h9>".$metatitle."<h9>";
-    ?></div>
-      </div>
-      
-</div
-          
-</div>
-  </div>
-          
-          
-</div>
-      
-
-  </div>
-   
-  </div>
-          
-    </div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-
-  
-  </div>
-         
-<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-recipe-of-the-day-panel-pane-1" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="view view-recipe-of-the-day view-id-recipe_of_the_day view-display-id-panel_pane_1 recipe-of-day view-dom-id-2d6cc28c03c7738e8d31aa702058465b">
-        
-  
-  </div>  </div>
-
-  
-  </div>
-
-<div class="panel-separator"></div><div class="internalpagecontent">
+    <div class="internalpagecontent" style="margin-top: 16px;">
   
       
   

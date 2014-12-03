@@ -12,28 +12,7 @@ get_header(); ?>
 <div class="internalcontent casolution" style="padding: 0px 0px 16px 0px;border: 1px solid rgb(198, 198, 198);background: white;">
     <div class="internalpage clearfix">
         <div>
-            <div class="panel-pane pane-block pane-views-latest-articles-block-2" >
-                <div class="pane-content">
-                    <div class="skin-default">
-                            <div id="flexslider_views_slideshow_main_latest_articles-block_2" class="flexslider_views_slideshow_main views_slideshow_main">
-                                <div style="">
-                                    <div class="casolutionslider" >
-                                        <div class="field-vitems" style="float: left; padding-top: 10px;">
-                                            <div> <img src="<?php bloginfo("stylesheet_directory");?>/images/casolutionplus.png" /> </div>
-                                            <div class="casolution_title"> <h10><?php echo "Services";?></h10> </div>
-                                            <div class="casolution-subtitle"> <?php $custom = get_post_custom($post->ID);?>
-                                            <?php $metatitle = $custom ["header_footer_data_title"][0]; echo "<h9>IT-ROI Solutions & CA Technologies - Specialty Services Partnership</h9>"; ?>
-                                            </div>
-                                        </div>
-                                        <style> #menu-item-1549 a{color:#468DBD;} </style>
-                                        <div class="caservices"> <?php dynamic_sidebar('integration_bridge'); ?>   </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-            </div>
-            <div class="cainternalpagecontent casolutionpage">
+            <div class="cainternalpagecontent casolutionpage" style="margin-top: 16px;">
                 <div class="pane-content" style="padding-top:10px;">
                     <div  id="quicktabs-homepage_quicktab" class="quicktabs-wrapper quicktabs-style-nostyle">
                         <div id="quicktabs-container-homepage_quicktab" class="quicktabs_main quicktabs-style-nostyle">

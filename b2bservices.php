@@ -16,68 +16,8 @@ get_header();
 <div class="internalcontent" >
     <div class="internalpage clearfix" style="padding: 0px 0px 16px 0px;" >
         <div class="panel-panel panel-col-first" >
-            <div class="inside"><div class="panel-pane pane-block pane-views-latest-articles-block-2" >
-
-
-                    <div class="pane-content">
-                        <div class="view view-latest-articles view-id-latest_articles view-display-id-block_2 view-dom-id-2ce348f08e1407ac8b441212711a46a3">
-
-
-
-                            <div class="">
-
-                                <div class="skin-default">
-
-                                    <div id="flexslider_views_slideshow_main_latest_articles-block_2" class="flexslider_views_slideshow_main views_slideshow_main"><div style="">
-                                            <div class="internalslider" style="">
-                                                <div class="ds-1col node node-article node-promoted view-mode-slide  clearfix">
-
-
-                                                    <div class="field field-name-field-image-homepage-story field-type-image field-label-hidden">
-                                                        <div class="field-vitems">
-                                                            <?php //dynamic_sidebar('integration_bridge'); ?>
-                                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/B2B_Services_Header.png" height="208" width="1280"/>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-
-
-
-
-                        </div>  </div>
-
-
-                </div>
-
-                <div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-recipe-of-the-day-panel-pane-1" >
-
-
-
-                    <div class="pane-content">
-                        <div class="view view-recipe-of-the-day view-id-recipe_of_the_day view-display-id-panel_pane_1 recipe-of-day view-dom-id-2d6cc28c03c7738e8d31aa702058465b">
-
-
-                        </div>  </div>
-
-
-                </div>
-
-                <div class="panel-separator"></div><div>
+            <div class="inside">
+                <div style="margin-top: 16px;">
 
 
 

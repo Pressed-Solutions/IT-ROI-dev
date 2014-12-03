@@ -80,42 +80,8 @@ $(".close").click(function()
  <div class="content" >
     <div class="panel-display panel-2col clearfix" style="padding: 0px 0px 16px 0px;">
   <div class="panel-panel panel-col-first">
-    <div class="inside"><div class="panel-pane pane-block pane-views-latest-articles-block-2" >
-   
-  
-  <div class="pane-content">
-    <div class="view view-latest-articles view-id-latest_articles view-display-id-block_2 view-dom-id-2ce348f08e1407ac8b441212711a46a3">
-        
-  
-  
-      <?php /************************************************************ Silder Block *******************************************************************/ ?>  
-        <div class="view-content" style="padding-right: 11px;">
-            <div id="flexslider_views_slideshow_main_latest_articles-block_2" class="flexslider_views_slideshow_main views_slideshow_main">
-              <div class="flexslider" >
-                              <link type="text/css" rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/slidercss.css" media="all"/>
-                               <?php if(function_exists('shs_slider_view')){ shs_slider_view(); }else{dynamic_sidebar('sidebar-3');}   ?>
-              </div>
-              <div id="rss">
-                   <p> Home <a href="<?php echo site_url(); ?>/feed/" target="_blank">Rss Feed</a>  </p>
-              </div>
-            </div>
-        </div>
-<?php /************************************************************ Silder Block *******************************************************************/ ?>  
- 
-  
-  
-  
-  
-  
-  
-</div>  </div>
-
-  
-  </div>
-         
-
-
-<div class="panel-pane pane-block pane-quicktabs-homepage-quicktab" >
+    <div class="inside">
+<div class="panel-pane pane-block pane-quicktabs-homepage-quicktab" style="margin-top: 16px;">
   
       
   
@@ -305,4 +271,3 @@ wp_reset_query();
     </section>
 </div>
 <?php get_footer(); ?>
-	

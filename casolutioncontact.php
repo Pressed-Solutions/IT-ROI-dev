@@ -13,75 +13,8 @@ get_header();
 <div class="internalcontent casolution" style="padding: 0px 0px 16px 0px;border: 1px solid rgb(198, 198, 198);">
     <div class="internalpage clearfix">
         <div>
-            <div class="inside"><div class="panel-pane pane-block pane-views-latest-articles-block-2" >
-
-
-                    <div class="pane-content">
-                        <div class="view view-latest-articles view-id-latest_articles view-display-id-block_2 view-dom-id-2ce348f08e1407ac8b441212711a46a3">
-
-
-
-                            <div class="">
-
-                                <div class="skin-default">
-
-                                    <div id="flexslider_views_slideshow_main_latest_articles-block_2" class="flexslider_views_slideshow_main views_slideshow_main"><div style="">
-                                            <div class="casolutionslider" style="">
-
-                                                <div class="ds-1col node node-article node-promoted view-mode-slide  clearfix">
-
-
-                                                    <div class="field field-name-field-image-homepage-story field-type-image field-label-hidden">
-                                                        <div class="field-vitems" style="float: left; padding-top: 10px;">
-                                                            <div>
-                                                                <img src="<?php bloginfo("stylesheet_directory"); ?>/images/casolutionplus.png"/>
-                                                            </div>
-                                                            <div class="casolution_title">
-                                                                <?php //dynamic_sidebar('integration_bridge'); ?>
-                                                                <h10><?php echo "Services"; ?></h10>
-                                                            </div>
-                                                            <div class="casolution-subtitle"> 
-                                                                <?php $custom = get_post_custom($post->ID); ?>
-                                                                <?php
-                                                                $metatitle = $custom ["header_footer_data_title"][0];
-                                                                echo "<h9>IT-ROI Solutions & CA Technologies - Specialty Services Partnership</h9>";
-                                                                ?></div>
-
-                                                        </div>
-                                                        <div class="caservices">
-                                                            <style>
-                                                                #menu-item-1524 a{color:#468DBD;}
-                                                            </style>
-                                                            <?php dynamic_sidebar('integration_bridge'); ?>      
-                                                        </div>
-
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-
-
-
-
-                        </div>  </div>
-
-
-                </div>
-
-                <div class="cainternalpagecontent casolutionpage">
+            <div class="inside">
+                <div class="cainternalpagecontent casolutionpage" style="margin-top: 16px;">
 
 
 
