@@ -803,6 +803,114 @@ form.search-form.topbar input {
     }
 }
 
+.slug-sharepoint-to-clarity-document-collaboration-and-portlets {
+    .docboss_sharepoint_background {
+        background: url("images/ppm_docc_boss_sharepoint.png") no-repeat scroll 0 0 transparent;
+        height: 380px;
+        margin: 90px auto auto;
+        padding-top: 20px;
+        position: relative;
+        text-align: center;
+        width: 873px;
+    }
+    .docboss_sharepoint_background span {
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+    }
+    .an1_sharepoint ul li {
+        font-size: 12px;
+    }
+    .an1_sharepoint {
+        left: -5px;
+        overflow: hidden;
+        position: absolute;
+        text-align: left;
+        top: 15px;
+    }
+    .an2_sharepoint {
+        overflow: hidden;
+        position: absolute;
+        right: 140px;
+        text-align: left;
+        top: 7px;
+    }
+    .an3_sharepoint {
+        left: 600px;
+        overflow: hidden;
+        position: absolute;
+        top: 211px;
+    }
+    .an4_sharepoint {
+        overflow: hidden;
+        position: absolute;
+        right: 19px;
+        text-align: left;
+        top: 102px;
+    }
+    .an5_sharepoint {
+        left: 558px;
+        overflow: hidden;
+        position: absolute;
+        text-align: left;
+        top: 337px;
+    }
+    .an6_sharepoint {
+        overflow: hidden;
+        position: absolute;
+        right: 55px;
+        text-align: left;
+        top: 208px;
+    }
+    .content_sharepoint_text {
+        border-left: 2px solid #CCCCCC;
+        border-right: 2px solid #CCCCCC;
+        border-bottom: 2px solid #CCCCCC;
+        margin: auto;
+        position: relative;
+    }
+
+    .top_white {
+        background: url("/wp-content/themes/twentythirteen/images/pleca_top.png") repeat scroll 0 0 transparent;
+        height: 70px;
+    }
+    .content_sharepoint_text_title {
+        left: 29%;
+        position: absolute;
+        top: 35px;
+    }
+    .content_sharepoint_text_body h4 {
+
+        color: #000000;
+        letter-spacing: -1px;
+        line-height: 36px;
+        font-size: 65px;
+        font-weight: lighter;
+    }
+    .content_sharepoint_text_title h3 {
+        font-size: 27px;
+        letter-spacing: -1px;
+        line-height: 36px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .content_sharepoint_text_body h4 {
+        color: #333333;
+        display: block;
+        line-height: 36px;
+        margin-bottom: 55px;
+    }
+    .content_sharepoint_text_body p {
+        font-size:11pt;
+        padding: 0 55px;
+    }
+    .content_sharepoint_text_body {
+        margin-bottom: 55px;
+        text-align: center;
+        margin-top: -75px;
+    }
+}
+
 /* 6.5 - Events */
 .dmbs-main.event-page {
     border: none;
