@@ -686,6 +686,122 @@ form.search-form.topbar input {
     .timesheetboss .rollover { background-image: url(../images/ppm-rollovers/ppm-timesheetboss.png); }
 }
 
+.slug-sharepoint-to-clarity-integration-suite {
+    .ppmboss_sharepoint_background {
+        background: url("/wp-content/themes/twentythirteen/images/ppm_document_boss_home.png") no-repeat scroll 0 0 transparent;
+        height: 380px;
+        margin: 125px auto 0 auto;
+        padding-top: 20px;
+        position: relative;
+        text-align: center;
+        width: 514px;
+    }
+    .an1, .an2, .an3, .an4, .an5, .an6 {
+        overflow: hidden;
+        position: absolute;
+    }
+    .an1 {
+        left: 7px;
+        top: -70px;
+    }
+    .an2 {
+        right: 1px;
+        top: -67px;
+    }
+    .an3 {
+        left: -60px;
+        top: 82px;
+    }
+    .an4 {
+        right: -60px;
+        top: 82px;
+    }
+    .an5 {
+        left: -8px;
+        top: 230px;
+    }
+    .an6 {
+        right: -12px;
+        top: 230px;
+    }
+    .doc_boss {
+        background: url("/wp-content/themes/twentythirteen/images/doc_boss.png") repeat scroll 0 0 transparent;
+        float: left;
+        height: 112px;
+        width: 113px;
+
+        &:hover {
+            background-position: center top;
+            height: 224px;
+            margin-top: -112px;
+            overflow: hidden;
+        }
+    }
+    .porlet_boss {
+        background: url("/wp-content/themes/twentythirteen/images/portletBoss_circle.png") repeat scroll 0 0 transparent;
+        float: left;
+        height: 111px;
+        width: 111px;
+
+        &:hover {
+            background-image: url("/wp-content/themes/twentythirteen/images/portletBoss_circle_blue.png");
+            background-position: center top;
+            overflow: hidden;
+        }
+    }
+    .scrum_boss {
+        background: url("/wp-content/themes/twentythirteen/images/scrum_boss.png") repeat scroll 0 0 transparent;
+        float: left;
+        height: 112px;
+        width: 113px;
+
+        &:hover {
+            background-position: center top;
+            height: 224px;
+            margin-top: -112px;
+            overflow: hidden;
+        }
+    }
+    .idea_boss {
+        background: url("/wp-content/themes/twentythirteen/images/idea_boss.png") repeat scroll 0 0 transparent;
+        float: left;
+        height: 112px;
+        width: 113px;
+
+        &:hover {
+            background-position: center top;
+            height: 224px;
+            margin-top: -112px;
+            overflow: hidden;
+        }
+    }
+    .timesheet_boss {
+        background: url("/wp-content/themes/twentythirteen/images/timesheet_boss.png") repeat scroll 0 0 transparent;
+        float: left;
+        height: 112px;
+        width: 113px;
+
+        &:hover {
+            background-position: center top;
+            height: 224px;
+            margin-top: -112px;
+            overflow: hidden;
+        }
+    }
+    .task_boss {
+        background: url("/wp-content/themes/twentythirteen/images/task_boss.png") repeat scroll 0 0 transparent;
+        float: left;
+        height: 112px;
+        width: 113px;
+
+        &:hover {
+            background-position: center top;
+            height: 224px;
+            margin-top: -112px;
+            overflow: hidden;
+        }
+    }
+}
 
 /* 6.5 - Events */
 .dmbs-main.event-page {

@@ -578,6 +578,95 @@ form.search-form.topbar input {
   .ppm-links .timesheetboss .rollover {
     background-image: url(../images/ppm-rollovers/ppm-timesheetboss.png); }
 
+.slug-sharepoint-to-clarity-integration-suite .ppmboss_sharepoint_background {
+  background: url("/wp-content/themes/twentythirteen/images/ppm_document_boss_home.png") no-repeat scroll 0 0 transparent;
+  height: 380px;
+  margin: 125px auto 0 auto;
+  padding-top: 20px;
+  position: relative;
+  text-align: center;
+  width: 514px; }
+.slug-sharepoint-to-clarity-integration-suite .an1, .slug-sharepoint-to-clarity-integration-suite .an2, .slug-sharepoint-to-clarity-integration-suite .an3, .slug-sharepoint-to-clarity-integration-suite .an4, .slug-sharepoint-to-clarity-integration-suite .an5, .slug-sharepoint-to-clarity-integration-suite .an6 {
+  overflow: hidden;
+  position: absolute; }
+.slug-sharepoint-to-clarity-integration-suite .an1 {
+  left: 7px;
+  top: -70px; }
+.slug-sharepoint-to-clarity-integration-suite .an2 {
+  right: 1px;
+  top: -67px; }
+.slug-sharepoint-to-clarity-integration-suite .an3 {
+  left: -60px;
+  top: 82px; }
+.slug-sharepoint-to-clarity-integration-suite .an4 {
+  right: -60px;
+  top: 82px; }
+.slug-sharepoint-to-clarity-integration-suite .an5 {
+  left: -8px;
+  top: 230px; }
+.slug-sharepoint-to-clarity-integration-suite .an6 {
+  right: -12px;
+  top: 230px; }
+.slug-sharepoint-to-clarity-integration-suite .doc_boss {
+  background: url("/wp-content/themes/twentythirteen/images/doc_boss.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: 112px;
+  width: 113px; }
+  .slug-sharepoint-to-clarity-integration-suite .doc_boss:hover {
+    background-position: center top;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden; }
+.slug-sharepoint-to-clarity-integration-suite .porlet_boss {
+  background: url("/wp-content/themes/twentythirteen/images/portletBoss_circle.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: 111px;
+  width: 111px; }
+  .slug-sharepoint-to-clarity-integration-suite .porlet_boss:hover {
+    background-image: url("/wp-content/themes/twentythirteen/images/portletBoss_circle_blue.png");
+    background-position: center top;
+    overflow: hidden; }
+.slug-sharepoint-to-clarity-integration-suite .scrum_boss {
+  background: url("/wp-content/themes/twentythirteen/images/scrum_boss.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: 112px;
+  width: 113px; }
+  .slug-sharepoint-to-clarity-integration-suite .scrum_boss:hover {
+    background-position: center top;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden; }
+.slug-sharepoint-to-clarity-integration-suite .idea_boss {
+  background: url("/wp-content/themes/twentythirteen/images/idea_boss.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: 112px;
+  width: 113px; }
+  .slug-sharepoint-to-clarity-integration-suite .idea_boss:hover {
+    background-position: center top;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden; }
+.slug-sharepoint-to-clarity-integration-suite .timesheet_boss {
+  background: url("/wp-content/themes/twentythirteen/images/timesheet_boss.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: 112px;
+  width: 113px; }
+  .slug-sharepoint-to-clarity-integration-suite .timesheet_boss:hover {
+    background-position: center top;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden; }
+.slug-sharepoint-to-clarity-integration-suite .task_boss {
+  background: url("/wp-content/themes/twentythirteen/images/task_boss.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: 112px;
+  width: 113px; }
+  .slug-sharepoint-to-clarity-integration-suite .task_boss:hover {
+    background-position: center top;
+    height: 224px;
+    margin-top: -112px;
+    overflow: hidden; }
+
 /* 6.5 - Events */
 .dmbs-main.event-page {
   border: none; }
