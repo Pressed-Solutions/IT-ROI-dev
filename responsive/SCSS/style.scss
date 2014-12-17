@@ -986,6 +986,82 @@ form.search-form.topbar input {
 
 }
 
+.slug-bi-directional-task-and-scrum-clarity-integration {
+    .task_background
+    {
+        background: url("/wp-content/themes/twentythirteen/images/task_page.png") no-repeat scroll 0 0 transparent;
+        height: 520px;
+        margin: 54px auto auto;
+        padding-top: 20px;
+        position: relative;
+        text-align: center;
+        width: 970px;
+    }
+    .an1_task
+    {
+        color: #FFFFFF;
+        left: 114px;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        top: 118px;
+    }
+    .an2_task
+    {
+        overflow: hidden;
+        position: absolute;
+        right: 161px;
+        text-align: left;
+        top: 63px;
+    }
+    .an3_task
+    {
+        left: 668px;
+        overflow: hidden;
+        position: absolute;
+        top: 295px;
+    }
+    .an4_task
+    {
+        overflow: hidden;
+        position: absolute;
+        right: 31px;
+        text-align: left;
+        top: 171px;
+    }
+    .an5_task
+    {
+        left: 70px;
+        overflow: hidden;
+        position: absolute;
+        text-align: left;
+        top: 300px;
+    }
+    .an9_task
+    {
+        left: 690px;
+        overflow: hidden;
+        position: absolute;
+        text-align: left;
+        top: 450px;
+    }
+    .an6_task
+    {
+        overflow: hidden;
+        position: absolute;
+        right: 68px;
+        text-align: left;
+        top: 290px;
+    }
+    .task_background span
+    {
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+    }
+
+}
+
 /* 6.5 - Events */
 .dmbs-main.event-page {
     border: none;
