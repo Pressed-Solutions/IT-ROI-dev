@@ -754,6 +754,60 @@ form.search-form.topbar input {
   text-align: center;
   margin-top: -75px; }
 
+.slug-bi-directional-timesheet-integration .timesheet_background {
+  background: url("/wp-content/themes/twentythirteen/images/timesheet_page.png") no-repeat scroll 0 0 transparent;
+  height: 470px;
+  margin: 40px auto auto;
+  padding-top: 20px;
+  position: relative;
+  text-align: center;
+  width: 970px; }
+.slug-bi-directional-timesheet-integration .timesheet_background span {
+  font-size: 12px;
+  line-height: 18px;
+  display: block; }
+.slug-bi-directional-timesheet-integration .an1_timesheet {
+  color: #FFFFFF;
+  left: 114px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 118px; }
+.slug-bi-directional-timesheet-integration .an2_timesheet {
+  overflow: hidden;
+  position: absolute;
+  right: 35px;
+  text-align: left;
+  top: 176px; }
+.slug-bi-directional-timesheet-integration .an3_timesheet {
+  left: 682px;
+  overflow: hidden;
+  position: absolute;
+  top: 339px; }
+.slug-bi-directional-timesheet-integration .an4_timesheet {
+  overflow: hidden;
+  position: absolute;
+  right: 26px;
+  text-align: left;
+  top: 227px; }
+.slug-bi-directional-timesheet-integration .an5_timesheet {
+  left: 65px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: 364px; }
+.slug-bi-directional-timesheet-integration .an9_timesheet {
+  left: 770px;
+  overflow: hidden;
+  position: absolute;
+  top: 468px; }
+.slug-bi-directional-timesheet-integration .an6_timesheet {
+  overflow: hidden;
+  position: absolute;
+  right: 68px;
+  text-align: left;
+  top: 337px; }
+
 /* 6.5 - Events */
 .dmbs-main.event-page {
   border: none; }
